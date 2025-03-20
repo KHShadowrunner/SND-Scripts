@@ -212,7 +212,7 @@ function GoToDravanianHinterlands()
 	if not GetCharacterCondition(4) then
 		yield('/gaction "mount roulette"')
 	end
-	/yield('/wait 4')
+	yield('/wait 4')
         PathfindAndMoveTo(148.51, 207.0, 118.47)	
 end
 
