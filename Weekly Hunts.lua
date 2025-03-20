@@ -25,6 +25,7 @@ will do the weekly Elite hunts.
 ********************************************************************************
 --]]
 yield("/xlenableplugin Wrath Combo")
+yield("/xlenableplugin Hunt Buddy")
 yield("/wait 5")
 
 ARR = false
@@ -75,62 +76,62 @@ HuntBoards =
 		bills = 2001362,
 		x=94, y=40, z=60,
 	},
-    {
-        city = "Ishgard",
-        zoneId = 418,
-        aetheryte = "Foundation",
-        miniAethernet = {
-            name = "Forgotten Knight",
-            x=45, y=24, z=0
-        },
-        boardName = "Clan Hunt Board",
-        bills = 2001703,
-        x=73, y=24, z=22,
-    },
-    {
-        city = "Kugane",
-        zoneId = 628,
-        aetheryte = "Kugane",
-        boardName = "Clan Hunt Board",
-        bills = 2002116,
-        x=-32, y=0, z=-44
-    },
-    {
-        city = "Crystarium",
-        zoneId = 819,
-        aetheryte = "The Crystarium",
-        miniAethernet = {
-            name = "Temenos Rookery",
-            x=-108, y=-1, z=-59
-        },
-        boardName = "Nuts Board",
-        bills = 2002631,
-        x=-84, y=-1, z=-91
-    },
-    {
-        city = "Old Sharlayan",
-        zoneId = 962,
-        aetheryte = "Old Sharlayan",
-        miniAethernet = {
-            name = "Scholar's Harbor",
-            x=16, y=-17, z=127
-        },
-        boardName = "Guildship Hunt Board",
-        bills = 2003093,
-        x=29, y=-16, z=98
-    },
-    {
-        city = "Tuliyollal",
-        zoneId = 1185,
-        aetheryte = "Tuliyollal",
-        miniAethernet = {
-            name = "Bayside Bevy Marketplace",
-            x=-15, y=-11, z=135
-        },
-        boardName = "Hunt Board",
-        bills = 2003513,
-        x=25, y=-15, z=135
-    }
+	{
+	        city = "Ishgard",
+	        zoneId = 418,
+	        aetheryte = "Foundation",
+	        miniAethernet = {
+	            name = "Forgotten Knight",
+	            x=45, y=24, z=0
+	        },
+	        boardName = "Clan Hunt Board",
+	        bills = 2001703,
+	        x=73, y=24, z=22,
+    	},
+	{
+   	     	city = "Kugane",
+	        zoneId = 628,
+	        aetheryte = "Kugane",
+	        boardName = "Clan Hunt Board",
+	        bills = 2002116,
+	        x=-32, y=0, z=-44
+    	},
+    	{
+	        city = "Crystarium",
+	        zoneId = 819,
+	        aetheryte = "The Crystarium",
+	        miniAethernet = {
+	            name = "Temenos Rookery",
+	            x=-108, y=-1, z=-59
+	        },
+	        boardName = "Nuts Board",
+	        bills = 2002631,
+	        x=-84, y=-1, z=-91
+    	},
+   	{
+	        city = "Old Sharlayan",
+	        zoneId = 962,
+	        aetheryte = "Old Sharlayan",
+	        miniAethernet = {
+	            name = "Scholar's Harbor",
+	            x=16, y=-17, z=127
+	        },
+	        boardName = "Guildship Hunt Board",
+	        bills = 2003093,
+	        x=29, y=-16, z=98
+	},
+    	{
+	        city = "Tuliyollal",
+	        zoneId = 1185,
+	        aetheryte = "Tuliyollal",
+	        miniAethernet = {
+	            name = "Bayside Bevy Marketplace",
+	            x=-15, y=-11, z=135
+	        },
+	        boardName = "Hunt Board",
+	        bills = 2003513,
+	        x=25, y=-15, z=135
+    	}
 }
 
 -- #region Movement
@@ -174,7 +175,10 @@ lochs = "H4sIAAAAAAAACu2Z32/TMBDH/xXk59ayff6ZN1S2qcDG2IoGQzxkq7dEauLSOKBp2v/OOUm
 ruby = "H4sIAAAAAAAACu2Y30/bMBDH/xXk52Kdf9t5mzpA3QRj0ImNaQ9mNTRSE3eNswmh/u9cnBbo+BOSp/gu9t3Z+chfx0/kwleBFGS+DEdX7d3j0XXwZELONrFdo/tb/dC1wgJ9pzEuSAETcu7r1q9yc+43DyGd+bQMm1kKVXbe+Md1LOvUkOLnE7mMTZnKWJPiiXwnhbWUO8vYhPwgBVdUccksWrekOFZWUGDA1RbtWIfZR1JoJibkyi/KFsPha0wf/4Yq1IkUOOwSU9+XNRaWNm2YkFmdwsb/TjdlWn7pxsOhbzddcuj9r0bo0mB5+Xmbn1hRs4z/9oOwL5Zz71fNm5w5ANZ0UsUU9rlxUXbND7nHzvjahia9bV+HP/3ixrud+zrF9TTWi11l6PlcrlbT2HZTR+sqtim8zme69Gkaq8p3i9E5unpvfJleC+2s07g5DNo552UVzpsD82T+fjFwEWbN5dLXKVYvQbsvQIq6Xa0QmwxCWT/MH9dYlnPdgIu4CC+9O+NTvMNw28k7NpjRVArgOR9zVFsudI+GtoxKDXwkY5BkHOPnBwPG5YSaIyaWK7VnQ1LFJBvZGCYbAjQVzvWSIjU1RinNezakBIqy4uwIxzDhMBKFQ3KRE1qgApWk1xSNAuOM5HpEY6BoME6ts1bv2QBroNcUoQCpMWbcNobJBuOcOgcc5AsbmQuuJRUW5WXcMwbJhXScKiVUv2UYQy1o0x81OKCeCJDjljFMNLiT+IeqoD9p4OECuOvJkILhscON/67DBIPhlZdkYHopQQHhoGwGQymOl2FcyVFNBkmGlI4ablXOpyxlDFBPMhoWz6bMsPEmdAhk/No+Aw0brDCIFwAA"
 yanx = "H4sIAAAAAAAACu2XzW7bMAzH30VnV9C3Jd+GrC2yoV3WZsjaYQd1URMDtpTF8rYiyLuXcpy2WR/BPpkkJPEv5gdS2aFrWztUoDvr/5UWZehyG9oNBL75VbLcEmIXISxRQTJ0ZX1rq86c2+3KxUsb1247ja7uggv7tAmljw0qfuzQLDRlLINHxQ59RwUTChOmhMjQXfKwyTUXKkP3qDgThGJG+B684N30IyoUhYU3dlm2cBrHKXv442rnIypohmaQ+bH0oCtuW5ehqY9ua3/FRRnXX9J+chrr74lOo/9JJCkNiOu+990XFDXr8Pe4CdaCnEdbNW9ydgeApvM6RHfMDTXpzQ/dit752romvrVv3e9DbcNDH76NYTMJftkrg8jnsqomoU1XB+8mtNG93meytnES6tqmYqRA0ruwZXwVmryLsD09NAXnZe2umhP3fP6+GFCEaTNbWx9D/XJo+gVQ4duqAmo6Dkq/mj9tQJYxacN1WLqX1cn5FB7guH32Dg1ODdZEsgMaXGEwad6TYSQ2WpkRjUGiQZXERGumuoRGYSMplwc0JCVYM0NHNAaJBswTTgQ18oCGwVSw/IiGAAGMjgNlmGicUcWxMprzLiOlHOfaKCIOdHAtsZZSjY1joHRA68gl6eEgacJI0ncOThS8RMXIxkDZEJJhIqTOD3AwjaXUxHRwcM0xk/AaGRvHMOFgIoc/Koz2UyXHPIcp07Eh0wOEUDY2jiGw8XP/DApriwA7EQAA"
 azim = "H4sIAAAAAAAACu2Z224bIRBAfyXi2Yu4X/YtcpPIrZKmiav0oj5sahKv5F1cL9sqjfLvHVznYvwJ8GRmDMPAHsHM8Igums6hGs2X7uj4b9sdXQe3Xjs0QWcbP67hn8/9fWy5BehOvV+gmkzQedOPzWrbnDebexfOmrB0m1lw3VZ50zysfduHAdXfH9GlH9rQ+h7Vj+gLqistJSZcSzFBX1FNJcEw5Bu0qMTWWsOeQPS9m71DtWJsgq6aRTuCLR47nvvfrnN9gP4TdAnz3rU9eBU2o5ugWR/cpvkZbtqw/BjHk33dbrloX5s4uPUHPHv2C37Bo2Hp/zwPgr7gzl2zGt7MuTUAPp10PrjnuWFHds3jbY+d8Gl0Q3jbvna//u+sv92pr4NfT32/2HkGmg/tajX1Y1w6SFd+DO51PdNlE6a+65q4GVER/b1p2vDqaJRO/WbfaFTO286dD3viyfxwM2ATZsPlsumD716Mxi+A6n5crYCZLQVtfz9/AIZqa+OAC79wL72j8N7fgrmnySEYinHMiLIHXBBsCdGqcJEnF9JyzCVRMgVDUiytpLKAkScYwhisNdwbCRjMaEyV4LqAkScYXAtsqDI8BUNbbAUjpoCRKRicYU61ZgkYHMAwjIrCRZ5cUC0xN0SphAtpKGashJ65piQac82FsWmuqgjBlHFazossuaCWYsM10SkWMVVVsmCRKxYCEyPT4EIYgoWCNKWcFlliwYTCWhiaJiOMYaEFLfXOTLGQDBtFZZqkVpRAvUsYxst5kSUYQAJ8/oMctYLaOCaalOgiTywqKGhB9YqYNEmtYtwhiSUlwMiUDEEYZlofksEUx5QKUQpbmZLBIfa0DG6OlAwJqSo1zJRX1UzJoEZAcUuRtLRVSQ7pimYFjDzBgHI3VkqZ9FG1kgbyVU5tiTLyBCPWvAmxBzcJVxpLQ3R5VM2Bix9P/wCrWfeuNigAAA=="
-bRank = {}
+bRank = {
+	{"Buccaboo", "Ala Gannha", "H4sIAAAAAAAACu2YTXPTMBCG/wqjs6vRpyX5BqEtgWnpR2YKZTioidp4JrZCLMN0Mv3vrGwlbeiFM+hk7VpevV49o117i85t41CF3vXzub3zHhXodOP7Nbg+9G14c2HDsgPnifcLVJECndm2t6thOLObBxdOYYbbTINrBueNfVz7ug0dqr5t0YXv6lD7FlVb9AVVlCjMDeOsQF/Bohozqjkv0C2qjpSg2BhN1RPYvnXT96gqGYS8sou6h3gUC0pBgf/pGtcGVEGYqO++bkFb2PSuQNM2uI2dh5s6LD/HCOTQl14XHXr/kEkwGQQO19vhCpq6pf+1ewjmgqB7u+perDkEAIHHjQ9utzbkJQ3fDjOScdm7LrwcX7sfY379XXJfB7+e+HaRlIHnU71aTTxsy2Bd+T645/eZLG2Y+KaxMRnREfXe2Do8C43Wid8cBo3OWd24s+7APJ69TgYkYdpdLG0bfLMPGncAVW2/WhXo3LlFdzYqHPdjpKNuH2aPaxBqTAxx7hdu/3w0Pvo7WOCpeAUMUxwzXgo9AsMp5loLNQJTaoEFM+aveQEj8/JP8yI5xyUXdFDAeORDUpFwkXAP4JGZl3y+JF4UV1gaLkdepMGl4CTxIoTGnCtaZl4yL7t6JIAXweKRMtQjjo1iLPGiI0uEicxL5iXxYiTWhkMhGnmBDpdSVtIRGC4Y1lzpzEvmZXe+cIYpADP2u4xwLEwpysQL9MJGcpZ5ybwkXo6UopjI1PBqg5XRTO54EQQrTUwuSBmYPTClkFhJqgZgIjzakMSLKKEeSaIyL5mXPS/CGOhZZFkOwEggRHPoe3d/YBiW+Qvp//1j9/3pN7UdXRxCFgAA"},
+	
+}
 bRank.SkogsFru = "H4sIAAAAAAAACu2bTW/cNhCG/0rA84Ygh8OvvRVunLqFXTc24CZFD0pX8QrdFd2V1CIw/N8zlCjJTg8FemzntCJXS81KD17Olx7FVXWsxVbc/J7uu1fnp0FsxNtTGh5o7ruh7V9dV/2+o8nzlHZiqzbismqH6jAe3lan+7p/S2fUp4u+Po6Td9Xnh9S0fSe2vzyK69Q1fZNasX0UP4stgJYaFNqNeC+2WhupAKyn4QexfQ1OSwsG4InGqa0vvqVzDG7Eu2rXDLSglqg1mZD+rI9129N6G5EN/NS0ZFx/GuqNuGj7+lT91t81/f7HvIJ6OVf+sHg5+5WdSqrRwvHzw/hJNnX79Nf8IzqXDPpUHbpn1xwXIAPfHFNfz9emG1MOvxnPKIOfhrrrnx/f1H9MNzh9LNM3fXo4S+2uWEYzPzSHw1mi5zKO3qWhr9f/c7av+rN0PFb5ZuSJbO9d1fSroXl0nk4vF82Tt82xvuxeDN/c/v1m0E246K73Vdun47JofgJi2w6Hw0Zc1fWuu5wsnJ7HhEfT3t9+fiBDY8xLXKVdvfw+D75PH+kCT5t/IoZG6Kz17t8SQwMm5j9NjLNSu6jiaEHQ0oELseCi6TvtA9PC+lJoeW20jAqjw5EXGyVGq50pwESQAOg8E8PEzMTQnuPABxUmYrQEDBYLMcYB7UjB847ExCzEaG+kMc7DSAxqaayKULxeE1EiGm9YY1hjZmLAGAlBZ1UhYkyUOpiocSLGKiXBQ2RgGJgFGIcSjJrCJFSkKMHZmRcEqbxHy8AwMMueRHGSBRv1RAzQBoWAhRinaByAAyUGZg2UnJHkwuCsMAGc0RMupDUyxmgcCwwLzMIL+bkWoy4ujJUqehtCIUZjdmk0A8PALMB4JzEgTHE15WXAe1N4MdFJrwLHSMzL6vLGKEOAXD0iXoB8XOUpyp4zdy77vMCZOyZmJQYDuTBWLcQgooqFGINRWh05ccfArEES5jQMuClxZ60MRlGcVCTGU30LWWK4XL0WH6nESKqiisJQbQApLLJ2LT96w+VHVpjnpYEgjXJxipIsNcRgDIUX7RSVqympx1ESR0kLMBClQWv8vCUpm0PsMWsXpdeOgyTWl2dZO0sOTPSlvYGK00j+byxRtUbKAbvgkQWGBWYmhmrVgXoySz+MkQhK56zvCAy5w95T0YCBYWBmYKKifgavCjBUGFDUYzfyAl7agFZzEoZxmXExOeuSU7kLLt6OOTzihWrY0SrP6sK4zLhYJ52mmKi4uwSIn7u/NVhJ7XYa2X1hXmZesktLMZAbcfEgoyvZFwiGki/ArbwMywqL9uTrYpjEhRpijNN2CqaptoSEEadeWFoWWoB6FpRxcdYWoGL1/GYJNcAE2qeYF+Zl4UVR+APOTf0MHim1a+Y3kaKXoEBzw9T/FZdfn74AujSm0Xw7AAA="
 bRank.Barbasetelle = "H4sIAAAAAAAACu2aT2/bRhDFv0qxZ3mxf2d3dWvcJHULu25iwG2KHuiKiQhIXFeiWgSGv3vfckk6Ti45p3OSdkFRI+qH2Tdv5kFcNftWrMWL5nDXHNuh3e1asRKvD/l0j+0fT/3w3XUzbI/YfJXzRqzVSlw2/anZjW9vmsOHdniNK9rDxdDux83b5uN97vrhKNZ/PIjrfOyGLvdi/SB+E2tNQUZK1qzE71g5qZKPUa/EO7GmgKV3zj1imfv24gdcYf1KvGk23Qm309JpXHqZ/2n3bT+INe5Swnvf9QhtOJzalbjoh/bQ/DXcdsP2l3IH9Xxv+sXi+e5nUSqpxvjG13fjK2I6bvO/84dwLQJ63+yOn3zneAME+HKfh3b+bjyW6e334xXT4tdTexw+ff+2/bs+3nw3bb8d8v157jdTZNj5udvtzjP+lXH1Jp+G9un3nG+b4Tzv9015GGWjxHvbdMNToGX1Kh+e37Rs3nT79vL4bPny5suHgYdwcbzeNv2Q98tNyz8g1v1pt1uJq7bdHC9rhPX/qHB0/Yebj/cINKVyi6u8aZfPl8VP+Q5f8Lj6khdrpfUmujGEkKSxKQVfeSEjY7BfTQsWTMs3TYuzUjlvTc0uPsmookqx0uIRUiLNuHBymXDxTmqv7AgLKWmTizqMsAQdpSeynmlhWiZaDJSL18bX5GK8JKM1ucpLMtIZn4h5YV5m6SK1jtGEWHmBHDHO2AkXLWPyjtML4zLjcgZx6yl5qpWRlkYFihMvqIxSIM4ujMuCiyYrjQ5xqqQVpIyPpeApWjd56ZVPfBrxaTTzYqyRyYSKC0mddAhmKqSjldGGr/dduJL+1n2XMygUnVLSYwhWgQDYLlXsEuomRSYG5oXTy8yLQwGUHDRKtV4IRp3WU3GktAxRWXbqmJeFFyJpA9yXygt5aYFPVS8O6iXAfTGcXzi/zMU0rH4y5Ot5FJ00ZnRigIuF94LWEYtdpmWhxXl4/UgvlRYlCXJ3hMUEki7AxePcwrllpsXj9ImplDilx4hGgPGWKi5eS/QbLXeNGJelDwAr12BOIVSlGyQ8O0fVqEN3WjqLAonTC6eXmReVpFXoJY68OId5BlTPIy6aMNBA2nMlzbgsp1GwMsDWrYWRAyCaYvXpUFVHp4iTC9Py1JQu3grFehhFNKVh5tYZBgzXxeB9Yu3CuMy4WIzMaTKlDT2N00VFvmaXM5gwGIDxbNMxLwsvpRqiNI1fRpgwGNat2uVMuwibTpvIWpe17sxLDKVXaONs02GjnE2FFzP2qGHLMC/MyzywC7FrlZq6RmhDo+9cnZczgy4jTqfIXQDGZcEFA97W+VRpiZjADDpVXIqyMfB9ObswLst8t0IbOtXcgnkGT3GGBbMwVhNLXYblCRZU0ph3mQppyBgFrTLhokmmqHn8klPLTAsZiFm4/TW5BBRGZRRzKqSNLXnHs/Hyf+Xlz8f/AB6NzIRbOwAA"
 bRank.BloodyMary = "H4sIAAAAAAAACu2cS2/bRhDHv0rAs7rYncc+dGvdJHULu25iwG2KHpiaiQVIpCtRLYwg372z3CVlN5f0msxJ2hVNjcgf5vmnPzSX7a5r1s1322G4fXh20e4fmlXzcj8c72X3h2M/Prtqx7uDbL6QI5q1XTUXbX9st9Pb63b/vhtfyhHd/nzsdtPmTftwP2z68dCsf//QXA2HzbgZ+mb9ofm1WbP1JnJItGp+a9YuGGspeVw1b5o1eTae2fFHWQ59d/69HIFh1bxqbzdHOZ0z5JwYMPzd7bp+bNawarJ57za9mDbuj92qOe/Hbt/+Od5sxruf8xns0736g5unu/+x0ho72Te9vplexabD3fDP/EdyrBj0rt0eHn3ndAIx8PluGLv5u+Wy1LffTkfUxS/H7jA+fv+6+6tc3uFt3X49DvdnQ39bLZOdnzbb7dkgd2VavRqOY3f6PWd37Xg27HZtvhh5I9t7027Gk6F59WLYPz1p3rze7LqLw5Pl8+tPL4ZchPPD1V3bj8NuOWm+A826P263q+ay624PF8XCcj8KHJv+/fXDvRiaUj7F5XDbLX+fFz8Ob+ULPq4+4YUSGkgJJwsYjUuYTyH3hF00Nsbw2bDIQmH5smGJ0SRyAJMJ4AxHCC5OuARMxnKMiov6looLBjDeBw4TLkiGUrJQYlEANgzWKy6KS8UFAhp2BLHEIjKByIWJFk/RxCQfKi6Ky4wL2Rx/sj8RXLwzjpFt5cV5A05TF6VlocUHk7yreS6YgADkS6IbwXD6/KJI89yvAhaLyJMJJEU0oM0ldS6ig5iEqJFIfcuCSyJjaYo9ORKRNGAgWS64OOm5xKB5ruKylEXIRirpEonYpOhdLEURSlEE8D/6cxqKvvRQRFEI8bWdC9GEKAi4iRbwIA06Bk1z1bcsuHA0zgY34wIO5xoaCAyF6BUXxWXBxUoXDmsJjdLvTym6krg4IUm6/0kTXcVlyVxAmnJABRdxJ8EF6ckV7wJB8lxG7f8rLgsuVoIRel9w8ZKsBKpVtAveCDsWNNXVhu5SRoNBGScW9xKdScgMlReU5MVZi8qL8lJ5ceJSmFPlJbCJ4Etl5CTzTcBJuy5Ky0KLCKMcYqjhyFkZGCWXinjBoTUEwSd1L+peZiWdyFtStFgaddEaeU9Uw1H+UBoxWksrLzMv34iSLniuI0bvDSFxxUV0U4JO1Mau4rLg4kIw0pyzRUzHSQKQxzqSBlFiWvTgNB5pPFqAiclEBE+z4CX4uZxG6b7kVoziorjMuKAUQZ4xxBkXAElZCi55lcBqPFJenvASI4XiXtgbH8iW8ohYJDCRg/KivCy8gGgXAkdbeUHJcMXd1CeNpL3rRVOn0wAF5pS/kKQsERPPDgYt+ayDyRFJJJnkPGh/V4E5AeNkBsBQPYyXFh1RfdooJ7xIqBFJeTnxIiMjj9aneX4kbZea7orAG/RhI4XlESwiZWDp1gU/P20k/RhXnnwlGRV4Qq/ZiwajhRdvogCSC6IsZoiGnS9CKURRNlBwKmVQWhZaWMTClmQgPTd3IViu3iV37tiy8qK8nFKXYFLynMeL9f8wxIhlFpAV4M6JBFybu9rcXUqjlKUvVFJdcSiTUqrovFmUDcxWpQyKyyl5AclepFVX3YvMkWRSHSsvYZLWabKrvJyKI2dF6B3KaNpjroakHiqP1kPu9KrwRWk50SIVUAiWqpKBTJK2bh5TZ+8iQpiUnAoZvlZe/vj4L1Jd50oFTwAA"
@@ -201,16 +205,15 @@ function TeleportTo(aetheryteName)
 end
 
 function GoToDravanianHinterlands()
-    if IsInZone(478) then
-        if not GetCharacterCondition(CharacterCondition.mounted) then
-            State = CharacterState.mounting
-            LogInfo("[DailyHunts] State Change: Mounting")
-        elseif not PathIsRunning() and not PathfindInProgress() then
-            PathfindAndMoveTo(148.51, 207.0, 118.47)
-        end
-    else
-        TeleportTo("Idyllshire")
-    end
+	while not IsInZone(478) do
+		yield('/wait 1')
+	end
+	yield('/wait 3')
+	if not GetCharacterCondition(4) then
+		yield('/gaction "mount roulette"')
+	end
+	/yield('/wait 4')
+        PathfindAndMoveTo(148.51, 207.0, 118.47)	
 end
 
 
@@ -310,7 +313,7 @@ end
 
 function GoToZone(hunt)
 
-    if hunt == "The Dravanian Hinterlands" then
+    if hunt == "Idyllshire" then
         GoToDravanianHinterlands()
     else
         TeleportTo(hunt)
@@ -342,52 +345,52 @@ end
 
 
 for i=1,6,1 do
-skipPickup = nil
-skipStatus = skipBoard[i]
-if not skipStatus.status == true then
-else 
-skipPickup = GoToHuntBoard(i)
-if skipPickup == nil then
-yield ('/wait 1')
-PickUpHunts(i)
+	skipStatus = skipBoard[i]
+	if not skipStatus.status == true then
+	else 
+		skipPickup = GoToHuntBoard(i)
+		if skipPickup ~= 1 then
+			yield ('/wait 1')
+			PickUpHunts(i)
+		end
+		yield ("/wait 1")
+		yield ("/phb next")
+		yield ("/wait 0.5")
+		hunt = ParseHuntChat()
+		yield ("/wait 0.5")
+		for _,i in pairs(bRank) do
+			if i.name == hunt.name then 
+				huntLocation = i.location
+				huntPath = i.path
+				break
+			end
+		end
+		GoToZone(huntLocation)
+		yield ("/wait 0.5")
+		if not GetCharacterCondition(4) then
+			yield('/gaction "mount roulette"')
+		end
+		exitLoop = false
+		VislandStartRoute(huntPath, true)
+		yield ("/wait 5")
+		while IsVislandRouteRunning() do
+			if DoesObjectExist(hunt.name) then exitLoop = true end
+			if exitLoop then
+				yield('/wait 3')
+				yield('/visland stop')
+			end
+			yield("/wait 1")
+		end
+		while GetCharacterCondition(4) do
+			yield('/ac dismount')
+			yield('/wait 1')
+		end
+		yield('/wait 1')
+		yield('/target '.. hunt.name)
+		DoHunt(hunt.name)
+		yield('/wait 5')
+		yield('/wrath auto off')
+		yield('/vbm ai off')
+	end
 end
-yield ("/wait 1")
-yield ("/phb next")
-yield ("/wait 0.5")
-hunt = ParseHuntChat()
-yield ("/wait 0.5")
-GoToZone(hunt.location)
-yield ("/wait 0.5")
-if not GetCharacterCondition(4) then
-yield('/gaction "mount roulette"')
-end
-exitLoop = false
-noSpace = hunt.name:gsub("%s+", "")
-yield('/echo Mob Name: '..noSpace)
-for k, v in pairs(bRank) do
-if noSpace == k then 
-	noSpace = v
-	break
-end
-end
-VislandStartRoute(noSpace, true)
-yield ("/wait 5")
-while IsVislandRouteRunning() do
-if DoesObjectExist(hunt.name) then exitLoop = true end
-if exitLoop then
-yield('/wait 3')
-yield('/visland stop')
-end
-yield("/wait 1")
-end
-while GetCharacterCondition(4) do
-yield('/ac dismount')
-yield('/wait 1')
-end
-yield('/target '.. hunt.name)
-DoHunt(hunt.name)
-yield('/wait 5')
-yield('/wrath auto off')
-yield('/vbm ai off')
-end
-end
+yield("/xldisableplugin Hunt Buddy")
