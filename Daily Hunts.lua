@@ -41,7 +41,6 @@ yield("/xlenableplugin Hunt Buddy")
 yield("/xlenableplugin Wrath Combo")
 yield("/wait 5")
 BoardNumber = 6 -- If starting fresh, set to 1, otherwise set to 6 to skip picking up the hunts.
-NumberOfMobs = 3
 --[[ 
 ********************************************************************************
 *           Code: Don't touch this unless you know what you're doing           *
@@ -110,8 +109,6 @@ HuntBoards =
 }
 
 -- #region Movement
--- NumberOfMobs = NumberOfMobs * 5
-yield('/echo '..NumberOfMobs)
 
 function TeleportTo(aetheryteName)
     yield("/tp "..aetheryteName)
@@ -320,9 +317,6 @@ function ParseHuntChat() -- Pattern to match the quantity and item name
                 markName = markName:lower()
                 LogInfo("[DailyHunts] Found slain mark "..markName)
                 if hunt.name == markName and slain == goal then
-yield('/echo Do I get here? 2')
-                    LogInfo("[DailyHunts] Hunt mark complete. Setting hunt to nil")
-NumberOfMobs = NumberOfMobs - 1
                     hunt = nil
                 end
             end
@@ -344,10 +338,6 @@ function SelectNextHunt()
     while Hunt == nil or Hunt.name:sub(1, 5):lower() == "elite" do
         yield("/phb next")
         yield("/wait 1")
-        if NumberOfMobs < 1 then
-          yield('/echo Do I get here? 5')
-          State = CharacterState.endHunts
-        return
     end
         Hunt = ParseHuntChat()
     end
