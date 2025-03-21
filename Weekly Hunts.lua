@@ -43,24 +43,24 @@ DT = true
 
 skipBoard =
 {
-{
-status = ARR
-},
-{
-status = HW
-},
-{
-status = SB
-},
-{
-status = SHB
-},
-{
-status = EW
-},
-{
-status = DT
-},
+	{
+		status = ARR
+	},
+	{
+		status = HW
+	},
+	{
+		status = SB
+	},
+	{
+		status = SHB
+	},
+	{
+		status = EW
+	},
+	{
+		status = DT
+	},
 }
 HuntBoards =
 {
@@ -222,44 +222,46 @@ end
 -- #region Hunt
 
 function GoToHuntBoard(BoardNumber)
-    Board = HuntBoards[BoardNumber]
-    if GetItemCount(Board.bills) == 1 then
-		yield('/echo Skipping Pickup...')
-        return 1
-    elseif not IsInZone(Board.zoneId) then
-        TeleportTo(Board.aetheryte)
-repeat
-yield('/wait 1')
-until IsInZone(Board.zoneId)
-end
-yield ('/wait 2')
+	Board = HuntBoards[BoardNumber]
+	if GetItemCount(Board.bills) == 1 then
+		yield('/echo Skipping Pickup, we have the bill...')
+        	return 1
+	elseif not IsInZone(Board.zoneId) then
+		yield('/echo Bill missing! We need to get to the zone.')
+	        TeleportTo(Board.aetheryte)
+		repeat
+			yield('/wait 1')
+		until IsInZone(Board.zoneId)
+	end
+	yield ('/wait 2')
+	yield ('/echo Zone found, checking distance to the board to see if we need to use the aethernet to get there.')
+	if Board.miniAethernet ~= nil and GetDistanceToPoint(Board.x, Board.y, Board.z) > (DistanceBetween(Board.miniAethernet.x, Board.miniAethernet.y, Board.miniAethernet.z, Board.x, Board.y, Board.z) + 20) then
+	        yield("/target aetheryte")
+	        yield("/wait 0.5")
+		yield('/echo Aethernet required, moving to the aetherite and zoning.')
+		if GetDistanceToTarget() > 10 then
+			PathMoveTo(GetTargetRawXPos(), GetTargetRawYPos(), GetTargetRawZPos())
+			repeat
+		    		yield('/wait 0.1')
+			until GetDistanceToTarget() < 10
+		end
+		yield("/vnav stop")
+	        
+	        yield("/li "..Board.miniAethernet.name)
+	        yield("/wait 5")
+    	end
 
-    if Board.miniAethernet ~= nil and GetDistanceToPoint(Board.x, Board.y, Board.z) > (DistanceBetween(Board.miniAethernet.x, Board.miniAethernet.y, Board.miniAethernet.z, Board.x, Board.y, Board.z) + 20) then
-        yield("/target aetheryte")
-        yield("/wait 0.5")
-if GetDistanceToTarget() > 10 then
-PathMoveTo(GetTargetRawXPos(), GetTargetRawYPos(), GetTargetRawZPos())
-repeat
-    yield('/wait 0.1')
-until GetDistanceToTarget() < 10
-end
-yield("/vnav stop")
-        
-        yield("/li "..Board.miniAethernet.name)
-        yield("/wait 5")
-    end
-
-    if IsAddonVisible("TelepotTown") then
-        yield("/callback TelepotTown true -1")
-end
-    
-if GetDistanceToPoint(Board.x, Board.y, Board.z) > 3 then
-        PathfindAndMoveTo(Board.x, Board.y, Board.z)
-repeat
-yield('/wait 0.5')
-        until GetDistanceToPoint(Board.x, Board.y, Board.z) <= 3
-yield("/vnav stop")
-    end
+	if IsAddonVisible("TelepotTown") then
+	        yield("/callback TelepotTown true -1")
+	end
+	yield('/echo Moving to the board.')
+	if GetDistanceToPoint(Board.x, Board.y, Board.z) > 3 then
+	        PathfindAndMoveTo(Board.x, Board.y, Board.z)
+	repeat
+		yield('/wait 0.5')
+	until GetDistanceToPoint(Board.x, Board.y, Board.z) <= 3
+	yield("/vnav stop")
+	end
 end
 
 
@@ -283,10 +285,10 @@ local callback = "/callback Mobhunt true 0"
 else
 yield("/callback SelectString true 3")
 yield("/wait 0.5")
-while IsAddonVisible("Mobhunt"..BoardNumber+1) == false do
+while IsAddonVisible("Mobhunt"..BoardNumber) == false do
 yield("/wait 0.5")
 end
-local callback = "/callback Mobhunt"..BoardNumber+1 .." true 0"
+local callback = "/callback Mobhunt"..BoardNumber .." true 0"
     yield(callback)
 end
 
@@ -345,23 +347,32 @@ end
 
 
 for i=1,6,1 do
+	yield('/echo Starting Loop '..i..' of 6, checking to see if this loop is set to false.')
 	skipStatus = skipBoard[i]
 	if not skipStatus.status == true then
+		yield('/wait 0.5')
+		yield('/echo Skipping this board - we have opted not to hunt this target.)
 	else 
+		yield('/wait 0.5')
+		yield('/echo Hunt Board '..i..' set to true, checking to see if we need to go to pick up the bill.')
 		skipPickup = GoToHuntBoard(i)
 		if skipPickup ~= 1 then
 			yield ('/wait 1')
 			PickUpHunts(i)
+		else
+			yield('/echo Bill found, skipping pickup.')
 		end
 		yield ("/wait 1")
 		yield ("/phb next")
 		yield ("/wait 0.5")
+		yield ('/echo Checking for hunt string.')
 		hunt = ParseHuntChat()
 		yield ("/wait 0.5")
 		for _,i in pairs(bRank) do
 			if i.name == hunt.name then 
 				huntLocation = i.location
 				huntPath = i.path
+				yield ('/echo Hunt located. Target: '..i.name..' located near aetheryte: '..huntLocation)
 				break
 			end
 		end
