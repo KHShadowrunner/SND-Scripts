@@ -30,8 +30,8 @@ yield("/wait 5")
 
 ARR = false
 HW = false   -- In case you do not want to do a particular board, you can switch it to false here.
-SB = true
-SHB = true
+SB = false
+SHB = false
 EW = true
 DT = true
 
@@ -177,7 +177,8 @@ yanx = "H4sIAAAAAAAACu2XzW7bMAzH30VnV9C3Jd+GrC2yoV3WZsjaYQd1URMDtpTF8rYiyLuXcpy2
 azim = "H4sIAAAAAAAACu2Z224bIRBAfyXi2Yu4X/YtcpPIrZKmiav0oj5sahKv5F1cL9sqjfLvHVznYvwJ8GRmDMPAHsHM8Igums6hGs2X7uj4b9sdXQe3Xjs0QWcbP67hn8/9fWy5BehOvV+gmkzQedOPzWrbnDebexfOmrB0m1lw3VZ50zysfduHAdXfH9GlH9rQ+h7Vj+gLqistJSZcSzFBX1FNJcEw5Bu0qMTWWsOeQPS9m71DtWJsgq6aRTuCLR47nvvfrnN9gP4TdAnz3rU9eBU2o5ugWR/cpvkZbtqw/BjHk33dbrloX5s4uPUHPHv2C37Bo2Hp/zwPgr7gzl2zGt7MuTUAPp10PrjnuWFHds3jbY+d8Gl0Q3jbvna//u+sv92pr4NfT32/2HkGmg/tajX1Y1w6SFd+DO51PdNlE6a+65q4GVER/b1p2vDqaJRO/WbfaFTO286dD3viyfxwM2ATZsPlsumD716Mxi+A6n5crYCZLQVtfz9/AIZqa+OAC79wL72j8N7fgrmnySEYinHMiLIHXBBsCdGqcJEnF9JyzCVRMgVDUiytpLKAkScYwhisNdwbCRjMaEyV4LqAkScYXAtsqDI8BUNbbAUjpoCRKRicYU61ZgkYHMAwjIrCRZ5cUC0xN0SphAtpKGashJ65piQac82FsWmuqgjBlHFazossuaCWYsM10SkWMVVVsmCRKxYCEyPT4EIYgoWCNKWcFlliwYTCWhiaJiOMYaEFLfXOTLGQDBtFZZqkVpRAvUsYxst5kSUYQAJ8/oMctYLaOCaalOgiTywqKGhB9YqYNEmtYtwhiSUlwMiUDEEYZlofksEUx5QKUQpbmZLBIfa0DG6OlAwJqSo1zJRX1UzJoEZAcUuRtLRVSQ7pimYFjDzBgHI3VkqZ9FG1kgbyVU5tiTLyBCPWvAmxBzcJVxpLQ3R5VM2Bix9P/wCrWfeuNigAAA=="
 bRank = {
 	{name="Buccaboo", location="Ala Gannha", path="H4sIAAAAAAAACu2YTXPTMBCG/wqjs6vRpyX5BqEtgWnpR2YKZTioidp4JrZCLMN0Mv3vrGwlbeiFM+hk7VpevV49o117i85t41CF3vXzub3zHhXodOP7Nbg+9G14c2HDsgPnifcLVJECndm2t6thOLObBxdOYYbbTINrBueNfVz7ug0dqr5t0YXv6lD7FlVb9AVVlCjMDeOsQF/Bohozqjkv0C2qjpSg2BhN1RPYvnXT96gqGYS8sou6h3gUC0pBgf/pGtcGVEGYqO++bkFb2PSuQNM2uI2dh5s6LD/HCOTQl14XHXr/kEkwGQQO19vhCpq6pf+1ewjmgqB7u+perDkEAIHHjQ9utzbkJQ3fDjOScdm7LrwcX7sfY379XXJfB7+e+HaRlIHnU71aTTxsy2Bd+T645/eZLG2Y+KaxMRnREfXe2Do8C43Wid8cBo3OWd24s+7APJ69TgYkYdpdLG0bfLMPGncAVW2/WhXo3LlFdzYqHPdjpKNuH2aPaxBqTAxx7hdu/3w0Pvo7WOCpeAUMUxwzXgo9AsMp5loLNQJTaoEFM+aveQEj8/JP8yI5xyUXdFDAeORDUpFwkXAP4JGZl3y+JF4UV1gaLkdepMGl4CTxIoTGnCtaZl4yL7t6JIAXweKRMtQjjo1iLPGiI0uEicxL5iXxYiTWhkMhGnmBDpdSVtIRGC4Y1lzpzEvmZXe+cIYpADP2u4xwLEwpysQL9MJGcpZ5ybwkXo6UopjI1PBqg5XRTO54EQQrTUwuSBmYPTClkFhJqgZgIjzakMSLKKEeSaIyL5mXPS/CGOhZZFkOwEggRHPoe3d/YBiW+Qvp//1j9/3pN7UdXRxCFgAA"},
-	
+	{name="Indomitable",location="Stilltide", path="H4sIAAAAAAAACu1W32/TMBD+V5Cfg+XfdvKGyjYKailbpcIQDy7x1khJXBoHNFX937nEabeyF3gdebLvk33+fPfp7vZobiuHMjStc18Vwa5LhxJ0tfPtFtB3bR1eLWzYNABeep+jjCRoZuvWlv12aXf3LlzBCbebBlf14Mo+bH1RhwZlX/do4ZsiFL5G2R59RplSBjMiDE/QF5QxgymVkqQJuu0siqVQVBzA9LWbvkWZoSJB1zYvWnBHsaAUCPifrnJ1gBsJ6ujdFTVQC7vWJfCT4Hb2e1gVYfOx80DOseHD6Bz9gyXBpOfXr7f9Cpyajf91vARngdCdLZsnb/YOgOBF5YM7vg1hGbZv+hOD8al1TXi6v3E/Ynj9eoBvgt9OfJ0PzAD5UJTlxENWeuvat8E9/meysWHiq8p2weiAju/KFuGRaGdd+t250w5cFpWbNWfmxfJ5MCAI02axsXXw1clplwGU1W1ZJmjuXN7MIsOYjyiOor5fPmyBaAqpnjZzn7vT/c5479fwwCF5rhcusO4uAQEJDIxSTPQ5oUpjyjgxf60WMEa1vGi1MEWwMEywnoIw2BjD6KAXYrDm8h+qy6iXl15duJGYGqpjM+KYcW447+XCU40V53pUy9iLBrVQITEROhVRLtB+OKcmykVQjbngY3UZZ5dTdXlNoQERIWXUi8Sp5IoOeuEKa6FSNtaXsb4c9cIFxUpoFfsRzLdScKbj9CI4Jqka5TLK5SQXRVLMjJIqygWak6bGxGmXEZhmFNV8rC//aX35dvgNkCkv9t4RAAA="},
+	{name="Iravati", location="Yedlihmad", path="H4sIAAAAAAAACu2WXW/TMBSG/wo615nlbye5Q2UbBbWUrVJhiAuPemukxC6JMzRV/e84Ttqt282uIVf2eWUfvz5+dJIdzHVlIIdprR+0LyCBy9q126B8bK1/t9B+0wTxwrk15DiBmbatLuN0qet74y/DClNPvamiuNKPW1dY30D+YwcL1xS+cBbyHXyDnKQUESowS+A75AKxNGNMiQRuIJeUI0yVFPsQOmumHyDPhErgSq+LNqQjiBMSDLgHUxnrIacJdPbuChus+bo1CUytN7X+5VeF33zpMuBTbbgsnKovXGKEo7843sQxeGo27s9hU1gbDN3psnl2ZkwQDJ5XzpvD2aEsw/R9XDEEX1vT+Ofza/O7L6+7HeRr77YTZ9eDs6B8Lspy4sKrxOjKtd483Wey0X7iqkp3xeiEzu9KF/7JaBdduPo0aScui8rMmpPwfPm6GKEI02ax0da76pi0ewHIbVuWCcyNWTez3mH/Hj0chb1fPm6D0SzrUszd2hz3d8EndxsO2CeveDlTHBHBMxUtMIIoljSl8VW4UIhRRd+MSwhGXP5tXIgM5xJJel54irhIJe15ySRSlHAy8jK2l4EXmlEkVYZFxIVSlDGFs0gLkRxJLujYXkZcjrikGIm0/xQxpAimaf/rckZl92Vi2dhbxt4ywCIERYJLdWgtTDAme1pkGloLxyMt/ystP/d/Abjd1IR3DQAA"},
 }
 bRank.SkogsFru = "H4sIAAAAAAAACu2bTW/cNhCG/0rA84Ygh8OvvRVunLqFXTc24CZFD0pX8QrdFd2V1CIw/N8zlCjJTg8FemzntCJXS81KD17Olx7FVXWsxVbc/J7uu1fnp0FsxNtTGh5o7ruh7V9dV/2+o8nzlHZiqzbismqH6jAe3lan+7p/S2fUp4u+Po6Td9Xnh9S0fSe2vzyK69Q1fZNasX0UP4stgJYaFNqNeC+2WhupAKyn4QexfQ1OSwsG4InGqa0vvqVzDG7Eu2rXDLSglqg1mZD+rI9129N6G5EN/NS0ZFx/GuqNuGj7+lT91t81/f7HvIJ6OVf+sHg5+5WdSqrRwvHzw/hJNnX79Nf8IzqXDPpUHbpn1xwXIAPfHFNfz9emG1MOvxnPKIOfhrrrnx/f1H9MNzh9LNM3fXo4S+2uWEYzPzSHw1mi5zKO3qWhr9f/c7av+rN0PFb5ZuSJbO9d1fSroXl0nk4vF82Tt82xvuxeDN/c/v1m0E246K73Vdun47JofgJi2w6Hw0Zc1fWuu5wsnJ7HhEfT3t9+fiBDY8xLXKVdvfw+D75PH+kCT5t/IoZG6Kz17t8SQwMm5j9NjLNSu6jiaEHQ0oELseCi6TvtA9PC+lJoeW20jAqjw5EXGyVGq50pwESQAOg8E8PEzMTQnuPABxUmYrQEDBYLMcYB7UjB847ExCzEaG+kMc7DSAxqaayKULxeE1EiGm9YY1hjZmLAGAlBZ1UhYkyUOpiocSLGKiXBQ2RgGJgFGIcSjJrCJFSkKMHZmRcEqbxHy8AwMMueRHGSBRv1RAzQBoWAhRinaByAAyUGZg2UnJHkwuCsMAGc0RMupDUyxmgcCwwLzMIL+bkWoy4ujJUqehtCIUZjdmk0A8PALMB4JzEgTHE15WXAe1N4MdFJrwLHSMzL6vLGKEOAXD0iXoB8XOUpyp4zdy77vMCZOyZmJQYDuTBWLcQgooqFGINRWh05ccfArEES5jQMuClxZ60MRlGcVCTGU30LWWK4XL0WH6nESKqiisJQbQApLLJ2LT96w+VHVpjnpYEgjXJxipIsNcRgDIUX7RSVqympx1ESR0kLMBClQWv8vCUpm0PsMWsXpdeOgyTWl2dZO0sOTPSlvYGK00j+byxRtUbKAbvgkQWGBWYmhmrVgXoySz+MkQhK56zvCAy5w95T0YCBYWBmYKKifgavCjBUGFDUYzfyAl7agFZzEoZxmXExOeuSU7kLLt6OOTzihWrY0SrP6sK4zLhYJ52mmKi4uwSIn7u/NVhJ7XYa2X1hXmZesktLMZAbcfEgoyvZFwiGki/ArbwMywqL9uTrYpjEhRpijNN2CqaptoSEEadeWFoWWoB6FpRxcdYWoGL1/GYJNcAE2qeYF+Zl4UVR+APOTf0MHim1a+Y3kaKXoEBzw9T/FZdfn74AujSm0Xw7AAA="
 bRank.Barbasetelle = "H4sIAAAAAAAACu2aT2/bRhDFv0qxZ3mxf2d3dWvcJHULu25iwG2KHuiKiQhIXFeiWgSGv3vfckk6Ti45p3OSdkFRI+qH2Tdv5kFcNftWrMWL5nDXHNuh3e1asRKvD/l0j+0fT/3w3XUzbI/YfJXzRqzVSlw2/anZjW9vmsOHdniNK9rDxdDux83b5uN97vrhKNZ/PIjrfOyGLvdi/SB+E2tNQUZK1qzE71g5qZKPUa/EO7GmgKV3zj1imfv24gdcYf1KvGk23Qm309JpXHqZ/2n3bT+INe5Swnvf9QhtOJzalbjoh/bQ/DXcdsP2l3IH9Xxv+sXi+e5nUSqpxvjG13fjK2I6bvO/84dwLQJ63+yOn3zneAME+HKfh3b+bjyW6e334xXT4tdTexw+ff+2/bs+3nw3bb8d8v157jdTZNj5udvtzjP+lXH1Jp+G9un3nG+b4Tzv9015GGWjxHvbdMNToGX1Kh+e37Rs3nT79vL4bPny5suHgYdwcbzeNv2Q98tNyz8g1v1pt1uJq7bdHC9rhPX/qHB0/Yebj/cINKVyi6u8aZfPl8VP+Q5f8Lj6khdrpfUmujGEkKSxKQVfeSEjY7BfTQsWTMs3TYuzUjlvTc0uPsmookqx0uIRUiLNuHBymXDxTmqv7AgLKWmTizqMsAQdpSeynmlhWiZaDJSL18bX5GK8JKM1ucpLMtIZn4h5YV5m6SK1jtGEWHmBHDHO2AkXLWPyjtML4zLjcgZx6yl5qpWRlkYFihMvqIxSIM4ujMuCiyYrjQ5xqqQVpIyPpeApWjd56ZVPfBrxaTTzYqyRyYSKC0mddAhmKqSjldGGr/dduJL+1n2XMygUnVLSYwhWgQDYLlXsEuomRSYG5oXTy8yLQwGUHDRKtV4IRp3WU3GktAxRWXbqmJeFFyJpA9yXygt5aYFPVS8O6iXAfTGcXzi/zMU0rH4y5Ot5FJ00ZnRigIuF94LWEYtdpmWhxXl4/UgvlRYlCXJ3hMUEki7AxePcwrllpsXj9ImplDilx4hGgPGWKi5eS/QbLXeNGJelDwAr12BOIVSlGyQ8O0fVqEN3WjqLAonTC6eXmReVpFXoJY68OId5BlTPIy6aMNBA2nMlzbgsp1GwMsDWrYWRAyCaYvXpUFVHp4iTC9Py1JQu3grFehhFNKVh5tYZBgzXxeB9Yu3CuMy4WIzMaTKlDT2N00VFvmaXM5gwGIDxbNMxLwsvpRqiNI1fRpgwGNat2uVMuwibTpvIWpe17sxLDKVXaONs02GjnE2FFzP2qGHLMC/MyzywC7FrlZq6RmhDo+9cnZczgy4jTqfIXQDGZcEFA97W+VRpiZjADDpVXIqyMfB9ObswLst8t0IbOtXcgnkGT3GGBbMwVhNLXYblCRZU0ph3mQppyBgFrTLhokmmqHn8klPLTAsZiFm4/TW5BBRGZRRzKqSNLXnHs/Hyf+Xlz8f/AB6NzIRbOwAA"
@@ -192,7 +193,7 @@ bRank.Thextera = "H4sIAAAAAAAACu2ZTW/UMBCG/wryOWv5+yM3tLRlQS2lXalQxCFl3W6kTVw2Dl
 -- #Hunt Visland Scripts
 
 function TeleportTo(aetheryteName)
-    yield("/tpm "..aetheryteName)
+    yield("/tp "..aetheryteName)
     yield("/wait 1") -- wait for casting to begin
     while GetCharacterCondition(27) do
         yield("/wait 1")
@@ -329,15 +330,18 @@ function DoHunt(hunt)
     yield("/wrath auto on")
 
 	if GetDistanceToTarget() > 5 + GetTargetHitboxRadius() then
-        PathfindAndMoveTo(GetTargetRawXPos(), GetTargetRawYPos(), GetTargetRawZPos())
+        	PathfindAndMoveTo(GetTargetRawXPos(), GetTargetRawYPos(), GetTargetRawZPos())
 		yield("/wait 1")
-		while GetDistanceToTarget() < 5 + GetTargetHitboxRadius() do
+		while GetDistanceToTarget() > 5 + GetTargetHitboxRadius() do
 			yield("/wait 0.2")
 		end
 	end
-	yield('/send KEY_1')
+	while not GetCharacterCondition(26) do
+		yield('/send KEY_1')
+		yield('/wait 3')
+	end
 
-    while GetCharacterCondition(26) do
+    	while GetCharacterCondition(26) do
             yield("/wait 1")
 	end
 end
@@ -372,9 +376,9 @@ for i=1,6,1 do
 		for _,monsters in pairs(bRank) do
 			yield('/echo Mob name: '..monsters.name)
 			if monsters.name == hunt.name then 
-				huntLocation = i.location
-				huntPath = i.path
-				yield ('/echo Hunt located. Target: '..i.name..' located near aetheryte: '..huntLocation)
+				huntLocation = monsters.location
+				huntPath = monsters.path
+				yield ('/echo Hunt located. Target: '..monsters.name..' located near aetheryte: '..huntLocation)
 				break
 			end
 		end
