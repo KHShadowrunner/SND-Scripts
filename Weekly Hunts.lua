@@ -176,7 +176,7 @@ ruby = "H4sIAAAAAAAACu2Y30/bMBDH/xXk52Kdf9t5mzpA3QRj0ImNaQ9mNTRSE3eNswmh/u9cnBbo
 yanx = "H4sIAAAAAAAACu2XzW7bMAzH30VnV9C3Jd+GrC2yoV3WZsjaYQd1URMDtpTF8rYiyLuXcpy2WR/BPpkkJPEv5gdS2aFrWztUoDvr/5UWZehyG9oNBL75VbLcEmIXISxRQTJ0ZX1rq86c2+3KxUsb1247ja7uggv7tAmljw0qfuzQLDRlLINHxQ59RwUTChOmhMjQXfKwyTUXKkP3qDgThGJG+B684N30IyoUhYU3dlm2cBrHKXv442rnIypohmaQ+bH0oCtuW5ehqY9ua3/FRRnXX9J+chrr74lOo/9JJCkNiOu+990XFDXr8Pe4CdaCnEdbNW9ydgeApvM6RHfMDTXpzQ/dit752romvrVv3e9DbcNDH76NYTMJftkrg8jnsqomoU1XB+8mtNG93meytnES6tqmYqRA0ruwZXwVmryLsD09NAXnZe2umhP3fP6+GFCEaTNbWx9D/XJo+gVQ4duqAmo6Dkq/mj9tQJYxacN1WLqX1cn5FB7guH32Dg1ODdZEsgMaXGEwad6TYSQ2WpkRjUGiQZXERGumuoRGYSMplwc0JCVYM0NHNAaJBswTTgQ18oCGwVSw/IiGAAGMjgNlmGicUcWxMprzLiOlHOfaKCIOdHAtsZZSjY1joHRA68gl6eEgacJI0ncOThS8RMXIxkDZEJJhIqTOD3AwjaXUxHRwcM0xk/AaGRvHMOFgIoc/Koz2UyXHPIcp07Eh0wOEUDY2jiGw8XP/DApriwA7EQAA"
 azim = "H4sIAAAAAAAACu2Z224bIRBAfyXi2Yu4X/YtcpPIrZKmiav0oj5sahKv5F1cL9sqjfLvHVznYvwJ8GRmDMPAHsHM8Igums6hGs2X7uj4b9sdXQe3Xjs0QWcbP67hn8/9fWy5BehOvV+gmkzQedOPzWrbnDebexfOmrB0m1lw3VZ50zysfduHAdXfH9GlH9rQ+h7Vj+gLqistJSZcSzFBX1FNJcEw5Bu0qMTWWsOeQPS9m71DtWJsgq6aRTuCLR47nvvfrnN9gP4TdAnz3rU9eBU2o5ugWR/cpvkZbtqw/BjHk33dbrloX5s4uPUHPHv2C37Bo2Hp/zwPgr7gzl2zGt7MuTUAPp10PrjnuWFHds3jbY+d8Gl0Q3jbvna//u+sv92pr4NfT32/2HkGmg/tajX1Y1w6SFd+DO51PdNlE6a+65q4GVER/b1p2vDqaJRO/WbfaFTO286dD3viyfxwM2ATZsPlsumD716Mxi+A6n5crYCZLQVtfz9/AIZqa+OAC79wL72j8N7fgrmnySEYinHMiLIHXBBsCdGqcJEnF9JyzCVRMgVDUiytpLKAkScYwhisNdwbCRjMaEyV4LqAkScYXAtsqDI8BUNbbAUjpoCRKRicYU61ZgkYHMAwjIrCRZ5cUC0xN0SphAtpKGashJ65piQac82FsWmuqgjBlHFazossuaCWYsM10SkWMVVVsmCRKxYCEyPT4EIYgoWCNKWcFlliwYTCWhiaJiOMYaEFLfXOTLGQDBtFZZqkVpRAvUsYxst5kSUYQAJ8/oMctYLaOCaalOgiTywqKGhB9YqYNEmtYtwhiSUlwMiUDEEYZlofksEUx5QKUQpbmZLBIfa0DG6OlAwJqSo1zJRX1UzJoEZAcUuRtLRVSQ7pimYFjDzBgHI3VkqZ9FG1kgbyVU5tiTLyBCPWvAmxBzcJVxpLQ3R5VM2Bix9P/wCrWfeuNigAAA=="
 bRank = {
-	{"Buccaboo", "Ala Gannha", "H4sIAAAAAAAACu2YTXPTMBCG/wqjs6vRpyX5BqEtgWnpR2YKZTioidp4JrZCLMN0Mv3vrGwlbeiFM+hk7VpevV49o117i85t41CF3vXzub3zHhXodOP7Nbg+9G14c2HDsgPnifcLVJECndm2t6thOLObBxdOYYbbTINrBueNfVz7ug0dqr5t0YXv6lD7FlVb9AVVlCjMDeOsQF/Bohozqjkv0C2qjpSg2BhN1RPYvnXT96gqGYS8sou6h3gUC0pBgf/pGtcGVEGYqO++bkFb2PSuQNM2uI2dh5s6LD/HCOTQl14XHXr/kEkwGQQO19vhCpq6pf+1ewjmgqB7u+perDkEAIHHjQ9utzbkJQ3fDjOScdm7LrwcX7sfY379XXJfB7+e+HaRlIHnU71aTTxsy2Bd+T645/eZLG2Y+KaxMRnREfXe2Do8C43Wid8cBo3OWd24s+7APJ69TgYkYdpdLG0bfLMPGncAVW2/WhXo3LlFdzYqHPdjpKNuH2aPaxBqTAxx7hdu/3w0Pvo7WOCpeAUMUxwzXgo9AsMp5loLNQJTaoEFM+aveQEj8/JP8yI5xyUXdFDAeORDUpFwkXAP4JGZl3y+JF4UV1gaLkdepMGl4CTxIoTGnCtaZl4yL7t6JIAXweKRMtQjjo1iLPGiI0uEicxL5iXxYiTWhkMhGnmBDpdSVtIRGC4Y1lzpzEvmZXe+cIYpADP2u4xwLEwpysQL9MJGcpZ5ybwkXo6UopjI1PBqg5XRTO54EQQrTUwuSBmYPTClkFhJqgZgIjzakMSLKKEeSaIyL5mXPS/CGOhZZFkOwEggRHPoe3d/YBiW+Qvp//1j9/3pN7UdXRxCFgAA"},
+	{name="Buccaboo", location="Ala Gannha", path="H4sIAAAAAAAACu2YTXPTMBCG/wqjs6vRpyX5BqEtgWnpR2YKZTioidp4JrZCLMN0Mv3vrGwlbeiFM+hk7VpevV49o117i85t41CF3vXzub3zHhXodOP7Nbg+9G14c2HDsgPnifcLVJECndm2t6thOLObBxdOYYbbTINrBueNfVz7ug0dqr5t0YXv6lD7FlVb9AVVlCjMDeOsQF/Bohozqjkv0C2qjpSg2BhN1RPYvnXT96gqGYS8sou6h3gUC0pBgf/pGtcGVEGYqO++bkFb2PSuQNM2uI2dh5s6LD/HCOTQl14XHXr/kEkwGQQO19vhCpq6pf+1ewjmgqB7u+perDkEAIHHjQ9utzbkJQ3fDjOScdm7LrwcX7sfY379XXJfB7+e+HaRlIHnU71aTTxsy2Bd+T645/eZLG2Y+KaxMRnREfXe2Do8C43Wid8cBo3OWd24s+7APJ69TgYkYdpdLG0bfLMPGncAVW2/WhXo3LlFdzYqHPdjpKNuH2aPaxBqTAxx7hdu/3w0Pvo7WOCpeAUMUxwzXgo9AsMp5loLNQJTaoEFM+aveQEj8/JP8yI5xyUXdFDAeORDUpFwkXAP4JGZl3y+JF4UV1gaLkdepMGl4CTxIoTGnCtaZl4yL7t6JIAXweKRMtQjjo1iLPGiI0uEicxL5iXxYiTWhkMhGnmBDpdSVtIRGC4Y1lzpzEvmZXe+cIYpADP2u4xwLEwpysQL9MJGcpZ5ybwkXo6UopjI1PBqg5XRTO54EQQrTUwuSBmYPTClkFhJqgZgIjzakMSLKKEeSaIyL5mXPS/CGOhZZFkOwEggRHPoe3d/YBiW+Qvp//1j9/3pN7UdXRxCFgAA"},
 	
 }
 bRank.SkogsFru = "H4sIAAAAAAAACu2bTW/cNhCG/0rA84Ygh8OvvRVunLqFXTc24CZFD0pX8QrdFd2V1CIw/N8zlCjJTg8FemzntCJXS81KD17Olx7FVXWsxVbc/J7uu1fnp0FsxNtTGh5o7ruh7V9dV/2+o8nzlHZiqzbismqH6jAe3lan+7p/S2fUp4u+Po6Td9Xnh9S0fSe2vzyK69Q1fZNasX0UP4stgJYaFNqNeC+2WhupAKyn4QexfQ1OSwsG4InGqa0vvqVzDG7Eu2rXDLSglqg1mZD+rI9129N6G5EN/NS0ZFx/GuqNuGj7+lT91t81/f7HvIJ6OVf+sHg5+5WdSqrRwvHzw/hJNnX79Nf8IzqXDPpUHbpn1xwXIAPfHFNfz9emG1MOvxnPKIOfhrrrnx/f1H9MNzh9LNM3fXo4S+2uWEYzPzSHw1mi5zKO3qWhr9f/c7av+rN0PFb5ZuSJbO9d1fSroXl0nk4vF82Tt82xvuxeDN/c/v1m0E246K73Vdun47JofgJi2w6Hw0Zc1fWuu5wsnJ7HhEfT3t9+fiBDY8xLXKVdvfw+D75PH+kCT5t/IoZG6Kz17t8SQwMm5j9NjLNSu6jiaEHQ0oELseCi6TvtA9PC+lJoeW20jAqjw5EXGyVGq50pwESQAOg8E8PEzMTQnuPABxUmYrQEDBYLMcYB7UjB847ExCzEaG+kMc7DSAxqaayKULxeE1EiGm9YY1hjZmLAGAlBZ1UhYkyUOpiocSLGKiXBQ2RgGJgFGIcSjJrCJFSkKMHZmRcEqbxHy8AwMMueRHGSBRv1RAzQBoWAhRinaByAAyUGZg2UnJHkwuCsMAGc0RMupDUyxmgcCwwLzMIL+bkWoy4ujJUqehtCIUZjdmk0A8PALMB4JzEgTHE15WXAe1N4MdFJrwLHSMzL6vLGKEOAXD0iXoB8XOUpyp4zdy77vMCZOyZmJQYDuTBWLcQgooqFGINRWh05ccfArEES5jQMuClxZ60MRlGcVCTGU30LWWK4XL0WH6nESKqiisJQbQApLLJ2LT96w+VHVpjnpYEgjXJxipIsNcRgDIUX7RSVqympx1ESR0kLMBClQWv8vCUpm0PsMWsXpdeOgyTWl2dZO0sOTPSlvYGK00j+byxRtUbKAbvgkQWGBWYmhmrVgXoySz+MkQhK56zvCAy5w95T0YCBYWBmYKKifgavCjBUGFDUYzfyAl7agFZzEoZxmXExOeuSU7kLLt6OOTzihWrY0SrP6sK4zLhYJ52mmKi4uwSIn7u/NVhJ7XYa2X1hXmZesktLMZAbcfEgoyvZFwiGki/ArbwMywqL9uTrYpjEhRpijNN2CqaptoSEEadeWFoWWoB6FpRxcdYWoGL1/GYJNcAE2qeYF+Zl4UVR+APOTf0MHim1a+Y3kaKXoEBzw9T/FZdfn74AujSm0Xw7AAA="
@@ -350,8 +350,8 @@ for i=1,6,1 do
 	yield('/echo Starting Loop '..i..' of 6, checking to see if this loop is set to false.')
 	skipStatus = skipBoard[i]
 	if not skipStatus.status == true then
-		yield('/wait 0.5')
-		yield('/echo Skipping this board - we have opted not to hunt this target.)
+		yield('/wait 3')
+		yield('/echo Skipping this board - we have opted not to hunt this target.')
 	else 
 		yield('/wait 0.5')
 		yield('/echo Hunt Board '..i..' set to true, checking to see if we need to go to pick up the bill.')
@@ -367,9 +367,11 @@ for i=1,6,1 do
 		yield ("/wait 0.5")
 		yield ('/echo Checking for hunt string.')
 		hunt = ParseHuntChat()
+		yield ('/echo Hunt found. Hunt Name: '..hunt.name)
 		yield ("/wait 0.5")
-		for _,i in pairs(bRank) do
-			if i.name == hunt.name then 
+		for _,monsters in pairs(bRank) do
+			yield('/echo Mob name: '..monsters.name)
+			if monsters.name == hunt.name then 
 				huntLocation = i.location
 				huntPath = i.path
 				yield ('/echo Hunt located. Target: '..i.name..' located near aetheryte: '..huntLocation)
