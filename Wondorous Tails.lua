@@ -33,8 +33,8 @@ Alliance Raids/PVP/Treasure Maps/Palace of the Dead
 *                               Required Plugins                               *
 ********************************************************************************
 1. Autoduty
-2. Rotation Solver Reborn
-3. BossModReborn (BMR) or Veyn's BossMod (VBM)
+2. Wrath Combo
+3. Veyn's BossMod (VBM)
 
 ********************************************************************************
 *           Code: Don't touch this unless you know what you're doing           *
@@ -262,8 +262,7 @@ for i = 0, 12 do
             if duty.dutyId ~= nil then
                 yield("/echo Queuing duty TerritoryId#"..duty.dutyId.." for Wonderous Tails #"..(i+1))
                 yield("/autoduty run "..dutyMode.." "..duty.dutyId.." 1 true")
-                yield("/bmrai on")
-                yield("/rotation auto")
+                yield("/wrath auto on")
                 yield("/wait 10")
                 while GetCharacterCondition(34) or GetCharacterCondition(51) or GetCharacterCondition(56) do -- wait for duty to be finished
                     if GetCharacterCondition(2) and i > 4 then -- dead, not a dungeon
@@ -298,5 +297,5 @@ for i = 0, 12 do
     --     end
     -- end
 end
-
+yield("/wrath auto off")
 yield("/echo Completed all Wonderous Tails entries it is capable of.<se.3>")
