@@ -263,6 +263,7 @@ for i = 0, 12 do
                 yield("/echo Queuing duty TerritoryId#"..duty.dutyId.." for Wonderous Tails #"..(i+1))
                 yield("/autoduty run "..dutyMode.." "..duty.dutyId.." 1 true")
                 yield("/wrath auto on")
+                yield("/vbm ai on")
                 yield("/wait 10")
                 while GetCharacterCondition(34) or GetCharacterCondition(51) or GetCharacterCondition(56) do -- wait for duty to be finished
                     if GetCharacterCondition(2) and i > 4 then -- dead, not a dungeon
@@ -298,4 +299,5 @@ for i = 0, 12 do
     -- end
 end
 yield("/wrath auto off")
+yield("/vbm ai off")
 yield("/echo Completed all Wonderous Tails entries it is capable of.<se.3>")
