@@ -103,6 +103,22 @@ ItemIdArmoryTable =
     [19455] = 3201,
     [19467] = 3201,
     [19473] = 3201,
+ -- Sigmascape
+    [21583] = 3201,
+    [21577] = 3201,
+    [21571] = 3201,
+    [21589] = 3201,
+    [21595] = 3201,
+    [21601] = 3201,
+    [21607] = 3201,
+ -- Alphascape
+    [23656] = 3201,
+    [23650] = 3201,
+    [23644] = 3201,
+    [23662] = 3201,
+    [23668] = 3201,
+    [23674] = 3201,
+    [23680] = 3201,
  -- Gordian
     [11450] = 3201,
     [11449] = 3201,
@@ -137,6 +153,22 @@ ItemIdArmoryTable =
     [19438] = 3202,
     [19444] = 3202,
     [19450] = 3202,
+ -- Sigmascape
+    [21572] = 3202,
+    [21578] = 3202,
+    [21584] = 3202,
+    [21596] = 3202,
+    [21590] = 3202,
+    [21608] = 3202,
+    [21602] = 3202,
+ -- Alphascape
+    [23657] = 3202,
+    [23651] = 3202,
+    [23645] = 3202,
+    [23663] = 3202,
+    [23669] = 3202,
+    [23675] = 3202,
+    [23681] = 3202,
  -- Gordian
     [11461] = 3202,
     [11460] = 3202,
@@ -171,6 +203,22 @@ ItemIdArmoryTable =
     [19439] = 3203,
     [19445] = 3203,
     [19451] = 3203,
+ -- Sigmascape
+    [21585] = 3203,
+    [21579] = 3203,
+    [21573] = 3203,
+    [21591] = 3203,
+    [21597] = 3203,
+    [21603] = 3203,
+    [21609] = 3203,
+ -- Alphascape
+    [23658] = 3203,
+    [23652] = 3203,
+    [23646] = 3203,
+    [23664] = 3203,
+    [23670] = 3203,
+    [23676] = 3203,
+    [23682] = 3203,
  -- Gordian
     [11468] = 3203,
     [11467] = 3203,
@@ -205,6 +253,22 @@ ItemIdArmoryTable =
     [19440] = 3205,
     [19446] = 3205,
     [19452] = 3205,
+ -- Sigmascape
+    [21586] = 3205,
+    [21588] = 3205,
+    [21574] = 3205,
+    [21592] = 3205,
+    [21598] = 3205,
+    [21604] = 3205,
+    [21610] = 3205,
+ -- Alphascape
+    [23659] = 3205,
+    [23653] = 3205,
+    [23647] = 3205,
+    [23665] = 3205,
+    [23671] = 3205,
+    [23677] = 3205,
+    [23683] = 3205,
  -- Gordian
     [11482] = 3205,
     [11481] = 3205,
@@ -239,6 +303,22 @@ ItemIdArmoryTable =
     [19441] = 3206,
     [19447] = 3206,
     [19453] = 3206,
+ -- Sigmascape
+    [21587] = 3206,
+    [21581] = 3206,
+    [21575] = 3206,
+    [21593] = 3206,
+    [21599] = 3206,
+    [21605] = 3206,
+    [21611] = 3206,
+ -- Alphascape
+    [23660] = 3206,
+    [23654] = 3206,
+    [23648] = 3206,
+    [23666] = 3206,
+    [23672] = 3206,
+    [23678] = 3206,
+    [23684] = 3206,
  -- Gordian
     [11489] = 3206,
     [11488] = 3206,
@@ -271,6 +351,18 @@ ItemIdArmoryTable =
     [19481] = 3207,
     [19483] = 3207,
     [19482] = 3207,
+ -- Sigmascape
+    [21614] = 3207,
+    [21613] = 3207,
+    [21615] = 3207,
+    [21616] = 3207,
+    [21617] = 3207,
+ -- Alphascape
+    [23687] = 3207,
+    [23686] = 3207,
+    [23688] = 3207,
+    [23689] = 3207,
+    [23690] = 3207,
  -- Gordian
     [11490] = 3207,
     [11491] = 3207,
@@ -297,6 +389,18 @@ ItemIdArmoryTable =
     [19486] = 3208,
     [19488] = 3208,
     [19487] = 3208,
+ -- Sigmascape
+    [21618] = 3208,
+    [21619] = 3208,
+    [21620] = 3208,
+    [21621] = 3208,
+    [21622] = 3208,
+ -- Alphascape
+    [23691] = 3208,
+    [23692] = 3208,
+    [23693] = 3208,
+    [23694] = 3208,
+    [23695] = 3208,
  -- Gordian
     [11495] = 3208,
     [11496] = 3208,
@@ -323,6 +427,19 @@ ItemIdArmoryTable =
     [19491] = 3209,
     [19493] = 3209,
     [19492] = 3209,
+ -- Sigmascape
+    [21623] = 3209,
+    [21624] = 3209,
+    [21625] = 3209,
+    [21626] = 3209,
+    [21627] = 3209,
+    [21607] = 3209,
+ -- Alphascape
+    [23696] = 3209,
+    [23697] = 3209,
+    [23698] = 3209,
+    [23699] = 3209,
+    [23700] = 3209,
  -- Gordian
     [11500] = 3209,
     [11501] = 3209,
@@ -349,6 +466,18 @@ ItemIdArmoryTable =
     [19496] = 3300,
     [19498] = 3300,
     [19497] = 3300,
+ -- Sigmascape
+    [21628] = 3300,
+    [21629] = 3300,
+    [21630] = 3300,
+    [21631] = 3300,
+    [21632] = 3300,
+ -- Alphascape
+    [23701] = 3300,
+    [23702] = 3300,
+    [23703] = 3300,
+    [23704] = 3300,
+    [23705] = 3300,
  -- Gordian
     [11509] = 3300,
     [11508] = 3300,
@@ -1055,7 +1184,7 @@ function IsThereTradeItem()
         return true
     end
     
-    if GordianTurnInCount < 1 and MidanTurnInCount < 1 and AlexandrianTurnInCount < 1 and DeltascapeTurnInCount < 1 and SigmascapeTurnInCount < 1 and AlphascapeTurnInCount < 1then
+    if GordianTurnInCount < 1 and MidanTurnInCount < 1 and AlexandrianTurnInCount < 1 and DeltascapeTurnInCount < 1 and SigmascapeTurnInCount < 1 and AlphascapeTurnInCount < 1 then
         return false
     else
         return true
@@ -1376,7 +1505,7 @@ end
 
 while IsThereTradeItem() do
     yield("/wait 0.1")
-    if (GordianTurnInCount >= 1 or AlexandrianTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
+    if (GordianTurnInCount >= 1 or AlexandrianTurnInCount >= 1 or MidanTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
         TeleportToIdlishire()
         local DistanceToSabina = GetDistanceToPoint(-19.0, 211.0, -35.9)
         if DistanceToSabina > 2 then
@@ -1387,7 +1516,7 @@ while IsThereTradeItem() do
             TurnIn(SabinaTable,true)
         end
         TurnIn(SabinaTable,false)
-    elseif DeltascapeTurnInCount >= 1 then
+    elseif (DeltascapeTurnInCount >= 1 or SigmascapeTurnInCount >= 1 or AlphascapeTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
         TeleportToRhalgr()
         local DistanceToGelfradus = GetDistanceToPoint(125.0,0.7,40.8)
         if DistanceToGelfradus > 2 then
