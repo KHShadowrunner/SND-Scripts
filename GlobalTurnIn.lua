@@ -104,14 +104,21 @@ ItemIdArmoryTable =
     [19467] = 3201,
     [19473] = 3201,
  -- Gordian
-[11450] = 3201,
-[11449] = 3201,
-[11448] = 3201,
-[11451] = 3201,
-[11452] = 3201,
-[11453] = 3201,
-[11454] = 3201,
+    [11450] = 3201,
+    [11449] = 3201,
+    [11448] = 3201,
+    [11451] = 3201,
+    [11452] = 3201,
+    [11453] = 3201,
+    [11454] = 3201,
  -- MIDAN
+    [14514] = 3201,
+    [14513] = 3201,
+    [14512] = 3201,
+    [14516] = 3201,
+    [14515] = 3201,
+    [14518] = 3201,
+    [14517] = 3201,
  -- Alexandiran
     [16439] = 3201,
     [16433] = 3201,
@@ -139,6 +146,13 @@ ItemIdArmoryTable =
     [11456] = 3202,
     [11457] = 3202,
  -- MIDAN
+    [14519] = 3202,
+    [14520] = 3202,
+    [14521] = 3202,
+    [14523] = 3202,
+    [14522] = 3202,
+    [14525] = 3202,
+    [14524] = 3202,
  -- Alexandrian
     [16440] = 3202,
     [16434] = 3202,
@@ -166,6 +180,13 @@ ItemIdArmoryTable =
     [11463] = 3203,
     [11464] = 3203,
  -- MIDAN
+    [14526] = 3203,
+    [14527] = 3203,
+    [14528] = 3203,
+    [14530] = 3203,
+    [14529] = 3203,
+    [14531] = 3203,
+    [14532] = 3203,
  -- Alexandrian
     [16441] = 3203,
     [16435] = 3203,
@@ -193,6 +214,13 @@ ItemIdArmoryTable =
     [11477] = 3205,
     [11478] = 3205,
  -- MIDAN
+    [14540] = 3205,
+    [14541] = 3205,
+    [14542] = 3205,
+    [14543] = 3205,
+    [14544] = 3205,
+    [14546] = 3205,
+    [14545] = 3205,
  -- Alexandrian
     [16442] = 3205,
     [16436] = 3205,
@@ -220,6 +248,13 @@ ItemIdArmoryTable =
     [11484] = 3206,
     [11485] = 3206,
  -- MIDAN
+    [14547] = 3206,
+    [14548] = 3206,
+    [14549] = 3206,
+    [14550] = 3206,
+    [14551] = 3206,
+    [14552] = 3206,
+    [14553] = 3206,
  -- Alexandrian
     [16443] = 3206,
     [16437] = 3206,
@@ -243,6 +278,11 @@ ItemIdArmoryTable =
     [11494] = 3207,
     [11493] = 3207,
  -- MIDAN
+    [14554] = 3207,
+    [14555] = 3207,
+    [14556] = 3207,
+    [14558] = 3207,
+    [14557] = 3207,
  -- Alexandrian
     [16449] = 3207,
     [16448] = 3207,
@@ -264,6 +304,11 @@ ItemIdArmoryTable =
     [11499] = 3208,
     [11498] = 3208,
  -- MIDAN
+    [14559] = 3208,
+    [14560] = 3208,
+    [14561] = 3208,
+    [14563] = 3208,
+    [14562] = 3208,
  -- Alexandrian
     [16450] = 3208,
     [16451] = 3208,
@@ -285,6 +330,11 @@ ItemIdArmoryTable =
     [11504] = 3209,
     [11503] = 3209,
  -- MIDAN
+    [14564] = 3209,
+    [14565] = 3209,
+    [14566] = 3209,
+    [14568] = 3209,
+    [14567] = 3209,
  -- Alexandrian
     [16459] = 3209,
     [16458] = 3209,
@@ -306,6 +356,11 @@ ItemIdArmoryTable =
     [11505] = 3300,
     [11506] = 3300,
  -- MIDAN
+    [14569] = 3300,
+    [14570] = 3300,
+    [14571] = 3300,
+    [14573] = 3300,
+    [14572] = 3300,
  -- Alexandrian
     [16464] = 3300,
     [16463] = 3300,
@@ -392,8 +447,7 @@ GelfradusTable =
 {2, DeltascapeLensID, LensBuyAmount, 19467, 1,2},
 {2, DeltascapeLensID, LensBuyAmount, 19473, 0,2},
 }
-------------------------------------------------------------------------------
--- tarnished gordian item ids / tablolar ve idler
+-------------------------------------------------------------------------------- tarnished gordian item ids / tablolar ve idler
 GordianLensID = 12674
 GordianShaftID = 12675
 GordianCrankID = 12676
@@ -409,9 +463,22 @@ GordianSpringCount = GetItemCount(GordianSpringID)
 GordianPedalCount = GetItemCount(GordianPedalID)
 GordianBoltCount = GetItemCount(GordianBoltID)
 
-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------- tarnished midan item ids / tablolar ve idler
+MidanLensID = 14301
+MidanShaftID = 14302
+MidanCrankID = 14303
+MidanSpringID = 14304
+MidanPedalID = 14305
+MidanBoltID = 14307
 
---Alexandrian part ids 
+-- initialize item counts
+MidanLensCount = GetItemCount(MidanLensID)
+MidanShaftCount = GetItemCount(MidanShaftID)
+MidanCrankCount = GetItemCount(MidanCrankID)
+MidanSpringCount = GetItemCount(MidanSpringID)
+MidanPedalCount = GetItemCount(MidanPedalID)
+MidanBoltCount = GetItemCount(MidanBoltID)
+--------------------------------------------------------------------------------Alexandrian part ids 
 
 AlexandrianLensID = 16546
 AlexandrianShaftID = 16547
@@ -492,65 +559,123 @@ SabinaTable =
 {2, GordianLensID, LensBuyAmount, 11453, 1,0},
 {2, GordianLensID, LensBuyAmount, 11454, 0,0},
 ----------------------------   MIDAN   -------------------------------------------------
-
-----------------------------   Alexandrian   --------------------------------------------
-{0, AlexandrianBoltID, BoltBuyAmount, 16461, 22,2},
-{0, AlexandrianBoltID, BoltBuyAmount, 16460, 21,2},
-{0, AlexandrianBoltID, BoltBuyAmount, 16456, 20,2},
-{0, AlexandrianBoltID, BoltBuyAmount, 16455, 19,2},
-{0, AlexandrianBoltID, BoltBuyAmount, 16451, 18,2},
-{0, AlexandrianBoltID, BoltBuyAmount, 16450, 17,2},
-{0, AlexandrianBoltID, BoltBuyAmount, 16446, 16,2},
-{0, AlexandrianBoltID, BoltBuyAmount, 16445, 15,2},
-{0, AlexandrianPedalID, PedalBuyAmount, 16419, 14,2},
-{0, AlexandrianPedalID, PedalBuyAmount, 16413, 13,2},
-{0, AlexandrianPedalID, PedalBuyAmount, 16407, 12,2},
-{0, AlexandrianSpringID, SpringBuyAmount, 16418, 11,2},
-{0, AlexandrianSpringID, SpringBuyAmount, 16412, 10,2},
-{0, AlexandrianSpringID, SpringBuyAmount, 16406, 9,2},
-{0, AlexandrianCrankID, CrankBuyAmount, 16417, 8,2},
-{0, AlexandrianCrankID, CrankBuyAmount, 16411, 7,2},
-{0, AlexandrianCrankID, CrankBuyAmount, 16405, 6,2},
-{0, AlexandrianShaftID, ShaftBuyAmount, 16416, 5,2},
-{0, AlexandrianShaftID, ShaftBuyAmount, 16410, 4,2},
-{0, AlexandrianShaftID, ShaftBuyAmount, 16404, 3,2},
-{0, AlexandrianLensID,LensBuyAmount,16415,2,2},
-{0, AlexandrianLensID,LensBuyAmount,16409,1,2},
-{0, AlexandrianLensID,LensBuyAmount,16403,0,2},
+-- Shop 1 / DOW1
+{0, MidanBoltID, BoltBuyAmount, 14570, 22,2},
+{0, MidanBoltID, BoltBuyAmount, 14569, 21,2},
+{0, MidanBoltID, BoltBuyAmount, 14565, 20,2},
+{0, MidanBoltID, BoltBuyAmount, 14564, 19,2},
+{0, MidanBoltID, BoltBuyAmount, 14560, 18,2},
+{0, MidanBoltID, BoltBuyAmount, 14559, 17,2},
+{0, MidanBoltID, BoltBuyAmount, 14555, 16,2},
+{0, MidanBoltID, BoltBuyAmount, 14554, 15,2},
+{0, MidanPedalID, PedalBuyAmount, 14549, 14,2},
+{0, MidanPedalID, PedalBuyAmount, 14548, 13,2},
+{0, MidanPedalID, PedalBuyAmount, 14547, 12,2},
+{0, MidanSpringID, SpringBuyAmount, 14542, 11,2},
+{0, MidanSpringID, SpringBuyAmount, 14541, 10,2},
+{0, MidanSpringID, SpringBuyAmount, 14540, 9,2},
+{0, MidanCrankID, CrankBuyAmount, 14528, 8,2},
+{0, MidanCrankID, CrankBuyAmount, 14527, 7,2},
+{0, MidanCrankID, CrankBuyAmount, 14526, 6,2},
+{0, MidanShaftID, ShaftBuyAmount, 14521, 5,2},
+{0, MidanShaftID, ShaftBuyAmount, 14520, 4,2},
+{0, MidanShaftID, ShaftBuyAmount, 14519, 3,2},
+{0, MidanLensID,LensBuyAmount,14514,2,2},
+{0, MidanLensID,LensBuyAmount,14513,1,2},
+{0, MidanLensID,LensBuyAmount,14512,0,2},
 -- shop 2/dow2 
-{1, AlexandrianBoltID, BoltBuyAmount, 16462, 13,2},
-{1, AlexandrianBoltID, BoltBuyAmount, 16457, 12,2},
-{1, AlexandrianBoltID, BoltBuyAmount, 16452, 11,2},
-{1, AlexandrianBoltID, BoltBuyAmount, 16447, 10,2},
-{1, AlexandrianPedalID, PedalBuyAmount, 16425, 9,2},
-{1, AlexandrianPedalID, PedalBuyAmount, 16431, 8,2},
-{1, AlexandrianSpringID, SpringBuyAmount, 16424, 7,2},
-{1, AlexandrianSpringID, SpringBuyAmount, 16430, 6,2},
-{1, AlexandrianCrankID, CrankBuyAmount, 16423, 5,2},
-{1, AlexandrianCrankID, CrankBuyAmount, 16429, 4,2},
-{1, AlexandrianShaftID, ShaftBuyAmount, 16422, 3,2},
-{1, AlexandrianShaftID, ShaftBuyAmount, 16428, 2,2},
-{1, AlexandrianLensID, LensBuyAmount, 16421, 1,2},
-{1, AlexandrianLensID, LensBuyAmount, 16427, 0,2},
+{1, MidanBoltID, BoltBuyAmount, 14571, 13,2},
+{1, MidanBoltID, BoltBuyAmount, 14566, 12,2},
+{1, MidanBoltID, BoltBuyAmount, 14561, 11,2},
+{1, MidanBoltID, BoltBuyAmount, 14556, 10,2},
+{1, MidanPedalID, PedalBuyAmount, 14550, 9,2},
+{1, MidanPedalID, PedalBuyAmount, 14551, 8,2},
+{1, MidanSpringID, SpringBuyAmount, 14543, 7,2},
+{1, MidanSpringID, SpringBuyAmount, 14544, 6,2},
+{1, MidanCrankID, CrankBuyAmount, 14529, 5,2},
+{1, MidanCrankID, CrankBuyAmount, 14530, 4,2},
+{1, MidanShaftID, ShaftBuyAmount, 14522, 3,2},
+{1, MidanShaftID, ShaftBuyAmount, 14523, 2,2},
+{1, MidanLensID, LensBuyAmount, 14515, 1,2},
+{1, MidanLensID, LensBuyAmount, 14516, 0,2},
 -- shop 3/dom 
-{2, AlexandrianBoltID, BoltBuyAmount, 16463, 17,2},
-{2, AlexandrianBoltID, BoltBuyAmount, 16464, 16,2},
-{2, AlexandrianBoltID, BoltBuyAmount, 16458, 15,2},
-{2, AlexandrianBoltID, BoltBuyAmount, 16459, 14,2},
-{2, AlexandrianBoltID, BoltBuyAmount, 16453, 13,2},
-{2, AlexandrianBoltID, BoltBuyAmount, 16454, 12,2},
-{2, AlexandrianBoltID, BoltBuyAmount, 16448, 11,2},
-{2, AlexandrianBoltID, BoltBuyAmount, 16449, 10,2},
-{2, AlexandrianPedalID, PedalBuyAmount, 16437, 9,2},
-{2, AlexandrianPedalID, PedalBuyAmount, 16443, 8,2},
-{2, AlexandrianSpringID, SpringBuyAmount, 16436, 7,2},
-{2, AlexandrianSpringID, SpringBuyAmount, 16442, 6,2},
-{2, AlexandrianCrankID, CrankBuyAmount, 16435, 5,2},
-{2, AlexandrianCrankID, CrankBuyAmount, 16441, 4,2},
-{2, AlexandrianShaftID, ShaftBuyAmount, 16434, 3,2},
-{2, AlexandrianShaftID, ShaftBuyAmount, 16440, 2,2},
-{2, AlexandrianLensID, LensBuyAmount, 16433, 1,2},
-{2, AlexandrianLensID, LensBuyAmount, 16439, 0,2},
+{2, MidanBoltID, BoltBuyAmount, 14572, 17,2},
+{2, MidanBoltID, BoltBuyAmount, 14573, 16,2},
+{2, MidanBoltID, BoltBuyAmount, 14567, 15,2},
+{2, MidanBoltID, BoltBuyAmount, 14568, 14,2},
+{2, MidanBoltID, BoltBuyAmount, 14562, 13,2},
+{2, MidanBoltID, BoltBuyAmount, 14563, 12,2},
+{2, MidanBoltID, BoltBuyAmount, 14557, 11,2},
+{2, MidanBoltID, BoltBuyAmount, 14558, 10,2},
+{2, MidanPedalID, PedalBuyAmount, 14552, 9,2},
+{2, MidanPedalID, PedalBuyAmount, 14553, 8,2},
+{2, MidanSpringID, SpringBuyAmount, 14545, 7,2},
+{2, MidanSpringID, SpringBuyAmount, 14546, 6,2},
+{2, MidanCrankID, CrankBuyAmount, 14531, 5,2},
+{2, MidanCrankID, CrankBuyAmount, 14532, 4,2},
+{2, MidanShaftID, ShaftBuyAmount, 14524, 3,2},
+{2, MidanShaftID, ShaftBuyAmount, 14525, 2,2},
+{2, MidanLensID, LensBuyAmount, 14517, 1,2},
+{2, MidanLensID, LensBuyAmount, 14518, 0,2},
+    
+----------------------------   Alexandrian   --------------------------------------------
+{0, AlexandrianBoltID, BoltBuyAmount, 16461, 22,4},
+{0, AlexandrianBoltID, BoltBuyAmount, 16460, 21,4},
+{0, AlexandrianBoltID, BoltBuyAmount, 16456, 20,4},
+{0, AlexandrianBoltID, BoltBuyAmount, 16455, 19,4},
+{0, AlexandrianBoltID, BoltBuyAmount, 16451, 18,4},
+{0, AlexandrianBoltID, BoltBuyAmount, 16450, 17,4},
+{0, AlexandrianBoltID, BoltBuyAmount, 16446, 16,4},
+{0, AlexandrianBoltID, BoltBuyAmount, 16445, 15,4},
+{0, AlexandrianPedalID, PedalBuyAmount, 16419, 14,4},
+{0, AlexandrianPedalID, PedalBuyAmount, 16413, 13,4},
+{0, AlexandrianPedalID, PedalBuyAmount, 16407, 12,4},
+{0, AlexandrianSpringID, SpringBuyAmount, 16418, 11,4},
+{0, AlexandrianSpringID, SpringBuyAmount, 16412, 10,4},
+{0, AlexandrianSpringID, SpringBuyAmount, 16406, 9,4},
+{0, AlexandrianCrankID, CrankBuyAmount, 16417, 8,4},
+{0, AlexandrianCrankID, CrankBuyAmount, 16411, 7,4},
+{0, AlexandrianCrankID, CrankBuyAmount, 16405, 6,4},
+{0, AlexandrianShaftID, ShaftBuyAmount, 16416, 5,4},
+{0, AlexandrianShaftID, ShaftBuyAmount, 16410, 4,4},
+{0, AlexandrianShaftID, ShaftBuyAmount, 16404, 3,4},
+{0, AlexandrianLensID,LensBuyAmount,16415,2,4},
+{0, AlexandrianLensID,LensBuyAmount,16409,1,4},
+{0, AlexandrianLensID,LensBuyAmount,16403,0,4},
+-- shop 2/dow2 
+{1, AlexandrianBoltID, BoltBuyAmount, 16462, 13,4},
+{1, AlexandrianBoltID, BoltBuyAmount, 16457, 12,4},
+{1, AlexandrianBoltID, BoltBuyAmount, 16452, 11,4},
+{1, AlexandrianBoltID, BoltBuyAmount, 16447, 10,4},
+{1, AlexandrianPedalID, PedalBuyAmount, 16425, 9,4},
+{1, AlexandrianPedalID, PedalBuyAmount, 16431, 8,4},
+{1, AlexandrianSpringID, SpringBuyAmount, 16424, 7,4},
+{1, AlexandrianSpringID, SpringBuyAmount, 16430, 6,4},
+{1, AlexandrianCrankID, CrankBuyAmount, 16423, 5,4},
+{1, AlexandrianCrankID, CrankBuyAmount, 16429, 4,4},
+{1, AlexandrianShaftID, ShaftBuyAmount, 16422, 3,4},
+{1, AlexandrianShaftID, ShaftBuyAmount, 16428, 2,4},
+{1, AlexandrianLensID, LensBuyAmount, 16421, 1,4},
+{1, AlexandrianLensID, LensBuyAmount, 16427, 0,4},
+-- shop 3/dom 
+{2, AlexandrianBoltID, BoltBuyAmount, 16463, 17,4},
+{2, AlexandrianBoltID, BoltBuyAmount, 16464, 16,4},
+{2, AlexandrianBoltID, BoltBuyAmount, 16458, 15,4},
+{2, AlexandrianBoltID, BoltBuyAmount, 16459, 14,4},
+{2, AlexandrianBoltID, BoltBuyAmount, 16453, 13,4},
+{2, AlexandrianBoltID, BoltBuyAmount, 16454, 12,4},
+{2, AlexandrianBoltID, BoltBuyAmount, 16448, 11,4},
+{2, AlexandrianBoltID, BoltBuyAmount, 16449, 10,4},
+{2, AlexandrianPedalID, PedalBuyAmount, 16437, 9,4},
+{2, AlexandrianPedalID, PedalBuyAmount, 16443, 8,4},
+{2, AlexandrianSpringID, SpringBuyAmount, 16436, 7,4},
+{2, AlexandrianSpringID, SpringBuyAmount, 16442, 6,4},
+{2, AlexandrianCrankID, CrankBuyAmount, 16435, 5,4},
+{2, AlexandrianCrankID, CrankBuyAmount, 16441, 4,4},
+{2, AlexandrianShaftID, ShaftBuyAmount, 16434, 3,4},
+{2, AlexandrianShaftID, ShaftBuyAmount, 16440, 2,4},
+{2, AlexandrianLensID, LensBuyAmount, 16433, 1,4},
+{2, AlexandrianLensID, LensBuyAmount, 16439, 0,4},
 }
 
 
