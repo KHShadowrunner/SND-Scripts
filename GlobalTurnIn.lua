@@ -385,10 +385,40 @@ DeltascapeSpringCount = GetItemCount(DeltascapeSpringID)
 DeltascapePedalCount = GetItemCount(DeltascapePedalID)
 DeltascapeBoltCount = GetItemCount(DeltascapeBoltID)
 
+-- Sigmascape item ids / tables
+SigmascapeLensID = 21774
+SigmascapeShaftID = 21775
+SigmascapeCrankID = 21776
+SigmascapeSpringID = 21777
+SigmascapePedalID = 21778
+SigmascapeBoltID = 21780
+
+SigmascapeLensCount = GetItemCount(SigmascapeLensID)
+SigmascapeShaftCount = GetItemCount(SigmascapeShaftID)
+SigmascapeCrankCount = GetItemCount(SigmascapeCrankID)
+SigmascapeSpringCount = GetItemCount(SigmascapeSpringID)
+SigmascapePedalCount = GetItemCount(SigmascapePedalID)
+SigmascapeBoltCount = GetItemCount(SigmascapeBoltID)
+
+-- Alphascape item ids / tables
+AlphascapeLensID = 23963
+AlphascapeShaftID = 23964
+AlphascapeCrankID = 23965
+AlphascapeSpringID = 23966
+AlphascapePedalID = 23967
+AlphascapeBoltID = 23969
+
+AlphascapeLensCount = GetItemCount(AlphascapeLensID)
+AlphascapeShaftCount = GetItemCount(AlphascapeShaftID)
+AlphascapeCrankCount = GetItemCount(AlphascapeCrankID)
+AlphascapeSpringCount = GetItemCount(AlphascapeSpringID)
+AlphascapePedalCount = GetItemCount(AlphascapePedalID)
+AlphascapeBoltCount = GetItemCount(AlphascapeBoltID)
 ------------------------------------------------------------------------------
 
 GelfradusTable =
 {
+    -----------DELTASCAPE--------------------------
 {0, DeltascapeBoltID, BoltBuyAmount, 19495, 22,0},
 {0, DeltascapeBoltID, BoltBuyAmount, 19494, 21,0},
 {0, DeltascapeBoltID, BoltBuyAmount, 19490, 20,0},
@@ -409,43 +439,161 @@ GelfradusTable =
 {0, DeltascapeShaftID, ShaftBuyAmount, 19450, 5,0},
 {0, DeltascapeShaftID, ShaftBuyAmount, 19444, 4,0},
 {0, DeltascapeShaftID, ShaftBuyAmount, 19438, 3,0},
-{0,DeltascapeLensID,LensBuyAmount,19449,2,0},
-{0,DeltascapeLensID,LensBuyAmount,19443,1,0},
-{0,DeltascapeLensID,LensBuyAmount,19437,0,0},
+{0 ,DeltascapeLensID,LensBuyAmount,19449,2,0},
+{0 ,DeltascapeLensID,LensBuyAmount,19443,1,0},
+{0 ,DeltascapeLensID,LensBuyAmount,19437,0,0},
 -- shop 2/dow2 
-{1, DeltascapeBoltID, BoltBuyAmount, 19496, 13,1},
-{1, DeltascapeBoltID, BoltBuyAmount, 19491, 12,1},
-{1, DeltascapeBoltID, BoltBuyAmount, 19486, 11,1},
-{1, DeltascapeBoltID, BoltBuyAmount, 19481, 10,1},
-{1, DeltascapePedalID, PedalBuyAmount, 19459, 9,1},
-{1, DeltascapePedalID, PedalBuyAmount, 19465, 8,1},
-{1, DeltascapeSpringID, SpringBuyAmount, 19458, 7,1},
-{1, DeltascapeSpringID, SpringBuyAmount, 19464, 6,1},
-{1, DeltascapeCrankID, CrankBuyAmount, 19457, 5,1},
-{1, DeltascapeCrankID, CrankBuyAmount, 19463, 4,1},
-{1, DeltascapeShaftID, ShaftBuyAmount, 19456, 3,1},
-{1, DeltascapeShaftID, ShaftBuyAmount, 19462, 2,1},
-{1, DeltascapeLensID, LensBuyAmount, 19455, 1,1},
-{1, DeltascapeLensID, LensBuyAmount, 19461, 0,1},
+{1, DeltascapeBoltID, BoltBuyAmount, 19496, 13,0},
+{1, DeltascapeBoltID, BoltBuyAmount, 19491, 12,0},
+{1, DeltascapeBoltID, BoltBuyAmount, 19486, 11,0},
+{1, DeltascapeBoltID, BoltBuyAmount, 19481, 10,0},
+{1, DeltascapePedalID, PedalBuyAmount, 19459, 9,0},
+{1, DeltascapePedalID, PedalBuyAmount, 19465, 8,0},
+{1, DeltascapeSpringID, SpringBuyAmount, 19458, 7,0},
+{1, DeltascapeSpringID, SpringBuyAmount, 19464, 6,0},
+{1, DeltascapeCrankID, CrankBuyAmount, 19457, 5,0},
+{1, DeltascapeCrankID, CrankBuyAmount, 19463, 4,0},
+{1, DeltascapeShaftID, ShaftBuyAmount, 19456, 3,0},
+{1, DeltascapeShaftID, ShaftBuyAmount, 19462, 2,0},
+{1, DeltascapeLensID, LensBuyAmount, 19455, 1,0},
+{1, DeltascapeLensID, LensBuyAmount, 19461, 0,0},
 -- shop 3/dom 
-{2, DeltascapeBoltID, BoltBuyAmount, 19497, 17,2},
-{2, DeltascapeBoltID, BoltBuyAmount, 19498, 16,2},
-{2, DeltascapeBoltID, BoltBuyAmount, 19492, 15,2},
-{2, DeltascapeBoltID, BoltBuyAmount, 19493, 14,2},
-{2, DeltascapeBoltID, BoltBuyAmount, 19487, 13,2},
-{2, DeltascapeBoltID, BoltBuyAmount, 19488, 12,2},
-{2, DeltascapeBoltID, BoltBuyAmount, 19482, 11,2},
-{2, DeltascapeBoltID, BoltBuyAmount, 19483, 10,2},
-{2, DeltascapePedalID, PedalBuyAmount, 19471, 9,2},
-{2, DeltascapePedalID, PedalBuyAmount, 19477, 8,2},
-{2, DeltascapeSpringID, SpringBuyAmount, 19470, 7,2},
-{2, DeltascapeSpringID, SpringBuyAmount, 19476, 6,2},
-{2, DeltascapeCrankID, CrankBuyAmount, 19469, 5,2},
-{2, DeltascapeCrankID, CrankBuyAmount, 19475, 4,2},
-{2, DeltascapeShaftID, ShaftBuyAmount, 19468, 3,2},
-{2, DeltascapeShaftID, ShaftBuyAmount, 19474, 2,2},
-{2, DeltascapeLensID, LensBuyAmount, 19467, 1,2},
-{2, DeltascapeLensID, LensBuyAmount, 19473, 0,2},
+{2, DeltascapeBoltID, BoltBuyAmount, 19497, 17,0},
+{2, DeltascapeBoltID, BoltBuyAmount, 19498, 16,0},
+{2, DeltascapeBoltID, BoltBuyAmount, 19492, 15,0},
+{2, DeltascapeBoltID, BoltBuyAmount, 19493, 14,0},
+{2, DeltascapeBoltID, BoltBuyAmount, 19487, 13,0},
+{2, DeltascapeBoltID, BoltBuyAmount, 19488, 12,0},
+{2, DeltascapeBoltID, BoltBuyAmount, 19482, 11,0},
+{2, DeltascapeBoltID, BoltBuyAmount, 19483, 10,0},
+{2, DeltascapePedalID, PedalBuyAmount, 19471, 9,0},
+{2, DeltascapePedalID, PedalBuyAmount, 19477, 8,0},
+{2, DeltascapeSpringID, SpringBuyAmount, 19470, 7,0},
+{2, DeltascapeSpringID, SpringBuyAmount, 19476, 6,0},
+{2, DeltascapeCrankID, CrankBuyAmount, 19469, 5,0},
+{2, DeltascapeCrankID, CrankBuyAmount, 19475, 4,0},
+{2, DeltascapeShaftID, ShaftBuyAmount, 19468, 3,0},
+{2, DeltascapeShaftID, ShaftBuyAmount, 19474, 2,0},
+{2, DeltascapeLensID, LensBuyAmount, 19467, 1,0},
+{2, DeltascapeLensID, LensBuyAmount, 19473, 0,0},
+
+    -----------SigmaSCAPE--------------------------
+{0, SigmascapeBoltID, BoltBuyAmount, 21629, 22,2},
+{0, SigmascapeBoltID, BoltBuyAmount, 21628, 21,2},
+{0, SigmascapeBoltID, BoltBuyAmount, 21624, 20,2},
+{0, SigmascapeBoltID, BoltBuyAmount, 21623, 19,2},
+{0, SigmascapeBoltID, BoltBuyAmount, 21619, 18,2},
+{0, SigmascapeBoltID, BoltBuyAmount, 21618, 17,2},
+{0, SigmascapeBoltID, BoltBuyAmount, 21614, 16,2},
+{0, SigmascapeBoltID, BoltBuyAmount, 21613, 15,2},
+{0, SigmascapePedalID, PedalBuyAmount, 21587, 14,2},
+{0, SigmascapePedalID, PedalBuyAmount, 21581, 13,2},
+{0, SigmascapePedalID, PedalBuyAmount, 21575, 12,2},
+{0, SigmascapeSpringID, SpringBuyAmount, 21586, 11,2},
+{0, SigmascapeSpringID, SpringBuyAmount, 21580, 10,2},
+{0, SigmascapeSpringID, SpringBuyAmount, 21574, 9,2},
+{0, SigmascapeCrankID, CrankBuyAmount, 21585, 8,2},
+{0, SigmascapeCrankID, CrankBuyAmount, 21579, 7,2},
+{0, SigmascapeCrankID, CrankBuyAmount, 21573, 6,2},
+{0, SigmascapeShaftID, ShaftBuyAmount, 21584, 5,2},
+{0, SigmascapeShaftID, ShaftBuyAmount, 21578, 4,2},
+{0, SigmascapeShaftID, ShaftBuyAmount, 21572, 3,2},
+{0, SigmascapeLensID,LensBuyAmount,21583,2,2},
+{0, SigmascapeLensID,LensBuyAmount,21577,1,2},
+{0, SigmascapeLensID,LensBuyAmount,21571,0,2},
+-- shop 2/dow2 
+{1, SigmascapeBoltID, BoltBuyAmount, 21630, 13,2},
+{1, SigmascapeBoltID, BoltBuyAmount, 21625, 12,2},
+{1, SigmascapeBoltID, BoltBuyAmount, 21620, 11,2},
+{1, SigmascapeBoltID, BoltBuyAmount, 21615, 10,2},
+{1, SigmascapePedalID, PedalBuyAmount, 21593, 9,2},
+{1, SigmascapePedalID, PedalBuyAmount, 21599, 8,2},
+{1, SigmascapeSpringID, SpringBuyAmount, 21592, 7,2},
+{1, SigmascapeSpringID, SpringBuyAmount, 21598, 6,2},
+{1, SigmascapeCrankID, CrankBuyAmount, 21591, 5,2},
+{1, SigmascapeCrankID, CrankBuyAmount, 21597, 4,2},
+{1, SigmascapeShaftID, ShaftBuyAmount, 21590, 3,2},
+{1, SigmascapeShaftID, ShaftBuyAmount, 21596, 2,2},
+{1, SigmascapeLensID, LensBuyAmount, 21589, 1,2},
+{1, SigmascapeLensID, LensBuyAmount, 21595, 0,2},
+-- shop 3/dom 
+{2, SigmascapeBoltID, BoltBuyAmount, 21631, 17,2},
+{2, SigmascapeBoltID, BoltBuyAmount, 21632, 16,2},
+{2, SigmascapeBoltID, BoltBuyAmount, 21626, 15,2},
+{2, SigmascapeBoltID, BoltBuyAmount, 21627, 14,2},
+{2, SigmascapeBoltID, BoltBuyAmount, 21621, 13,2},
+{2, SigmascapeBoltID, BoltBuyAmount, 21622, 12,2},
+{2, SigmascapeBoltID, BoltBuyAmount, 21616, 11,2},
+{2, SigmascapeBoltID, BoltBuyAmount, 21617, 10,2},
+{2, SigmascapePedalID, PedalBuyAmount, 21605, 9,2},
+{2, SigmascapePedalID, PedalBuyAmount, 21611, 8,2},
+{2, SigmascapeSpringID, SpringBuyAmount, 21604, 7,2},
+{2, SigmascapeSpringID, SpringBuyAmount, 21610, 6,2},
+{2, SigmascapeCrankID, CrankBuyAmount, 21603, 5,2},
+{2, SigmascapeCrankID, CrankBuyAmount, 21609, 4,2},
+{2, SigmascapeShaftID, ShaftBuyAmount, 21602, 3,2},
+{2, SigmascapeShaftID, ShaftBuyAmount, 21608, 2,2},
+{2, SigmascapeLensID, LensBuyAmount, 21601, 1,2},
+{2, SigmascapeLensID, LensBuyAmount, 21607, 0,2},
+
+-----------ALPHASCAPE--------------------------
+{0, AlphascapeBoltID, BoltBuyAmount, 23702, 22,4},
+{0, AlphascapeBoltID, BoltBuyAmount, 23701, 21,4},
+{0, AlphascapeBoltID, BoltBuyAmount, 23697, 20,4},
+{0, AlphascapeBoltID, BoltBuyAmount, 23696, 19,4},
+{0, AlphascapeBoltID, BoltBuyAmount, 23692, 18,4},
+{0, AlphascapeBoltID, BoltBuyAmount, 23691, 17,4},
+{0, AlphascapeBoltID, BoltBuyAmount, 23687, 16,4},
+{0, AlphascapeBoltID, BoltBuyAmount, 23686, 15,4},
+{0, AlphascapePedalID, PedalBuyAmount, 23660, 14,4},
+{0, AlphascapePedalID, PedalBuyAmount, 23654, 13,4},
+{0, AlphascapePedalID, PedalBuyAmount, 23648, 12,4},
+{0, AlphascapeSpringID, SpringBuyAmount, 23659, 11,4},
+{0, AlphascapeSpringID, SpringBuyAmount, 23653, 10,4},
+{0, AlphascapeSpringID, SpringBuyAmount, 23647, 9,4},
+{0, AlphascapeCrankID, CrankBuyAmount, 23658, 8,4},
+{0, AlphascapeCrankID, CrankBuyAmount, 23652, 7,4},
+{0, AlphascapeCrankID, CrankBuyAmount, 23646, 6,4},
+{0, AlphascapeShaftID, ShaftBuyAmount, 23657, 5,4},
+{0, AlphascapeShaftID, ShaftBuyAmount, 23651, 4,4},
+{0, AlphascapeShaftID, ShaftBuyAmount, 23645, 3,4},
+{0, AlphascapeLensID,LensBuyAmount,23656,2,4},
+{0, AlphascapeLensID,LensBuyAmount,23650,1,4},
+{0, AlphascapeLensID,LensBuyAmount,23644,0,4},
+-- shop 2/dow2 
+{1, AlphascapeBoltID, BoltBuyAmount, 23703, 13,4},
+{1, AlphascapeBoltID, BoltBuyAmount, 23698, 12,4},
+{1, AlphascapeBoltID, BoltBuyAmount, 23693, 11,4},
+{1, AlphascapeBoltID, BoltBuyAmount, 23688, 10,4},
+{1, AlphascapePedalID, PedalBuyAmount, 23666, 9,4},
+{1, AlphascapePedalID, PedalBuyAmount, 23672, 8,4},
+{1, AlphascapeSpringID, SpringBuyAmount, 23665, 7,4},
+{1, AlphascapeSpringID, SpringBuyAmount, 23671, 6,4},
+{1, AlphascapeCrankID, CrankBuyAmount, 23664, 5,4},
+{1, AlphascapeCrankID, CrankBuyAmount, 23670, 4,4},
+{1, AlphascapeShaftID, ShaftBuyAmount, 23663, 3,4},
+{1, AlphascapeShaftID, ShaftBuyAmount, 23669, 2,4},
+{1, AlphascapeLensID, LensBuyAmount, 23662, 1,4},
+{1, AlphascapeLensID, LensBuyAmount, 23668, 0,4},
+-- shop 3/dom 
+{2, AlphascapeBoltID, BoltBuyAmount, 23704, 17,4},
+{2, AlphascapeBoltID, BoltBuyAmount, 23705, 16,4},
+{2, AlphascapeBoltID, BoltBuyAmount, 23699, 15,4},
+{2, AlphascapeBoltID, BoltBuyAmount, 23700, 14,4},
+{2, AlphascapeBoltID, BoltBuyAmount, 23694, 13,4},
+{2, AlphascapeBoltID, BoltBuyAmount, 23695, 12,4},
+{2, AlphascapeBoltID, BoltBuyAmount, 23689, 11,4},
+{2, AlphascapeBoltID, BoltBuyAmount, 23690, 10,4},
+{2, AlphascapePedalID, PedalBuyAmount, 23678, 9,4},
+{2, AlphascapePedalID, PedalBuyAmount, 23684, 8,4},
+{2, AlphascapeSpringID, SpringBuyAmount, 23677, 7,4},
+{2, AlphascapeSpringID, SpringBuyAmount, 23683, 6,4},
+{2, AlphascapeCrankID, CrankBuyAmount, 23676, 5,4},
+{2, AlphascapeCrankID, CrankBuyAmount, 23682, 4,4},
+{2, AlphascapeShaftID, ShaftBuyAmount, 23675, 3,4},
+{2, AlphascapeShaftID, ShaftBuyAmount, 23681, 2,4},
+{2, AlphascapeLensID, LensBuyAmount, 23674, 1,4},
+{2, AlphascapeLensID, LensBuyAmount, 23680, 0,4},
 }
 -------------------------------------------------------------------------------- tarnished gordian item ids / tablolar ve idler
 GordianLensID = 12674
@@ -679,6 +827,12 @@ SabinaTable =
 }
 
 
+
+DjoleTable =
+{
+-------------------ASPHODELOS-------------------------------
+}
+
 -- Fonksyonlar / Functions
 
 PandoraSetFeatureState("Auto-select Turn-ins", true) 
@@ -816,6 +970,22 @@ function IsThereTradeItem()
     math.floor(GordianPedalCount / PedalBuyAmount) +
     math.floor(GordianBoltCount / BoltBuyAmount)
 
+ ----------------------------   MIDAN   --------------------------------------------
+
+    MidanLensCount = GetItemCount(MidanLensID)
+    MidanShaftCount = GetItemCount(MidanShaftID)
+    MidanCrankCount = GetItemCount(MidanCrankID)
+    MidanSpringCount = GetItemCount(MidanSpringID)
+    MidanPedalCount = GetItemCount(MidanPedalID)
+    MidanBoltCount = GetItemCount(MidanBoltID)
+
+    MidanTurnInCount = math.floor(MidanLensCount / LensBuyAmount) +
+    math.floor(MidanShaftCount / ShaftBuyAmount) +
+    math.floor(MidanCrankCount / CrankBuyAmount) +
+    math.floor(MidanSpringCount / SpringBuyAmount) +
+    math.floor(MidanPedalCount / PedalBuyAmount) +
+    math.floor(MidanBoltCount / BoltBuyAmount)
+
  ----------------------------   Alexandrian   --------------------------------------------
 
     AlexandrianLensCount = GetItemCount(AlexandrianLensID)
@@ -848,12 +1018,44 @@ function IsThereTradeItem()
     math.floor(DeltascapePedalCount / PedalBuyAmount) +
     math.floor(DeltascapeBoltCount / BoltBuyAmount)
 
+------------------------------  Sigmascape  ----------------------------------------------
+
+    SigmascapeLensCount = GetItemCount(SigmascapeLensID)
+    SigmascapeShaftCount = GetItemCount(SigmascapeShaftID)
+    SigmascapeCrankCount = GetItemCount(SigmascapeCrankID)
+    SigmascapeSpringCount = GetItemCount(SigmascapeSpringID)
+    SigmascapePedalCount = GetItemCount(SigmascapePedalID)
+    SigmascapeBoltCount = GetItemCount(SigmascapeBoltID)
+
+    SigmascapeTurnInCount = math.floor(SigmascapeLensCount / LensBuyAmount) +
+    math.floor(SigmascapeShaftCount / ShaftBuyAmount) +
+    math.floor(SigmascapeCrankCount / CrankBuyAmount) +
+    math.floor(SigmascapeSpringCount / SpringBuyAmount) +
+    math.floor(SigmascapePedalCount / PedalBuyAmount) +
+    math.floor(SigmascapeBoltCount / BoltBuyAmount)
+
+------------------------------  Alphascape  ----------------------------------------------
+
+    AlphascapeLensCount = GetItemCount(AlphascapeLensID)
+    AlphascapeShaftCount = GetItemCount(AlphascapeShaftID)
+    AlphascapeCrankCount = GetItemCount(AlphascapeCrankID)
+    AlphascapeSpringCount = GetItemCount(AlphascapeSpringID)
+    AlphascapePedalCount = GetItemCount(AlphascapePedalID)
+    AlphascapeBoltCount = GetItemCount(AlphascapeBoltID)
+
+    AlphascapeTurnInCount = math.floor(AlphascapeLensCount / LensBuyAmount) +
+    math.floor(AlphascapeShaftCount / ShaftBuyAmount) +
+    math.floor(AlphascapeCrankCount / CrankBuyAmount) +
+    math.floor(AlphascapeSpringCount / SpringBuyAmount) +
+    math.floor(AlphascapePedalCount / PedalBuyAmount) +
+    math.floor(AlphascapeBoltCount / BoltBuyAmount)
+
 
     if TotalExchangeItem > 0 then
         return true
     end
     
-    if GordianTurnInCount < 1 and DeltascapeTurnInCount < 1 and AlexandrianTurnInCount < 1 then
+    if GordianTurnInCount < 1 and MidanTurnInCount < 1 and AlexandrianTurnInCount < 1 and DeltascapeTurnInCount < 1 and SigmascapeTurnInCount < 1 and AlphascapeTurnInCount < 1then
         return false
     else
         return true
