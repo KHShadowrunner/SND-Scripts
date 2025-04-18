@@ -85,12 +85,12 @@ TeleportToFC = false
 ]]
 
 -- ItemBuyAmounts
-LensBuyAmount = 2
-ShaftBuyAmount = 4
-CrankBuyAmount = 2
-SpringBuyAmount = 4
-PedalBuyAmount = 2
-BoltBuyAmount = 1
+HelmBuyAmount = 2
+ChestBuyAmount = 4
+HandsBuyAmount = 2
+LegsBuyAmount = 4
+FeetBuyAmount = 2
+AccessoryBuyAmount = 1
 
 ItemIdArmoryTable =
 {
@@ -548,181 +548,181 @@ AlphascapeBoltCount = GetItemCount(AlphascapeBoltID)
 GelfradusTable =
 {
     -----------DELTASCAPE--------------------------
-{0, DeltascapeBoltID, BoltBuyAmount, 19495, 22,0},
-{0, DeltascapeBoltID, BoltBuyAmount, 19494, 21,0},
-{0, DeltascapeBoltID, BoltBuyAmount, 19490, 20,0},
-{0, DeltascapeBoltID, BoltBuyAmount, 19489, 19,0},
-{0, DeltascapeBoltID, BoltBuyAmount, 19485, 18,0},
-{0, DeltascapeBoltID, BoltBuyAmount, 19484, 17,0},
-{0, DeltascapeBoltID, BoltBuyAmount, 19480, 16,0},
-{0, DeltascapeBoltID, BoltBuyAmount, 19479, 15,0},
-{0, DeltascapePedalID, PedalBuyAmount, 19453, 14,0},
-{0, DeltascapePedalID, PedalBuyAmount, 19447, 13,0},
-{0, DeltascapePedalID, PedalBuyAmount, 19441, 12,0},
-{0, DeltascapeSpringID, SpringBuyAmount, 19452, 11,0},
-{0, DeltascapeSpringID, SpringBuyAmount, 19446, 10,0},
-{0, DeltascapeSpringID, SpringBuyAmount, 19440, 9,0},
-{0, DeltascapeCrankID, CrankBuyAmount, 19451, 8,0},
-{0, DeltascapeCrankID, CrankBuyAmount, 19445, 7,0},
-{0, DeltascapeCrankID, CrankBuyAmount, 19439, 6,0},
-{0, DeltascapeShaftID, ShaftBuyAmount, 19450, 5,0},
-{0, DeltascapeShaftID, ShaftBuyAmount, 19444, 4,0},
-{0, DeltascapeShaftID, ShaftBuyAmount, 19438, 3,0},
-{0 ,DeltascapeLensID,LensBuyAmount,19449,2,0},
-{0 ,DeltascapeLensID,LensBuyAmount,19443,1,0},
-{0 ,DeltascapeLensID,LensBuyAmount,19437,0,0},
+{0, DeltascapeBoltID, AccessoryBuyAmount, 19495, 22,0},
+{0, DeltascapeBoltID, AccessoryBuyAmount, 19494, 21,0},
+{0, DeltascapeBoltID, AccessoryBuyAmount, 19490, 20,0},
+{0, DeltascapeBoltID, AccessoryBuyAmount, 19489, 19,0},
+{0, DeltascapeBoltID, AccessoryBuyAmount, 19485, 18,0},
+{0, DeltascapeBoltID, AccessoryBuyAmount, 19484, 17,0},
+{0, DeltascapeBoltID, AccessoryBuyAmount, 19480, 16,0},
+{0, DeltascapeBoltID, AccessoryBuyAmount, 19479, 15,0},
+{0, DeltascapePedalID, FeetBuyAmount, 19453, 14,0},
+{0, DeltascapePedalID, FeetBuyAmount, 19447, 13,0},
+{0, DeltascapePedalID, FeetBuyAmount, 19441, 12,0},
+{0, DeltascapeSpringID, LegsBuyAmount, 19452, 11,0},
+{0, DeltascapeSpringID, LegsBuyAmount, 19446, 10,0},
+{0, DeltascapeSpringID, LegsBuyAmount, 19440, 9,0},
+{0, DeltascapeCrankID, HandsBuyAmount, 19451, 8,0},
+{0, DeltascapeCrankID, HandsBuyAmount, 19445, 7,0},
+{0, DeltascapeCrankID, HandsBuyAmount, 19439, 6,0},
+{0, DeltascapeShaftID, ChestBuyAmount, 19450, 5,0},
+{0, DeltascapeShaftID, ChestBuyAmount, 19444, 4,0},
+{0, DeltascapeShaftID, ChestBuyAmount, 19438, 3,0},
+{0 ,DeltascapeLensID,HelmBuyAmount,19449,2,0},
+{0 ,DeltascapeLensID,HelmBuyAmount,19443,1,0},
+{0 ,DeltascapeLensID,HelmBuyAmount,19437,0,0},
 -- shop 2/dow2 
-{1, DeltascapeBoltID, BoltBuyAmount, 19496, 13,0},
-{1, DeltascapeBoltID, BoltBuyAmount, 19491, 12,0},
-{1, DeltascapeBoltID, BoltBuyAmount, 19486, 11,0},
-{1, DeltascapeBoltID, BoltBuyAmount, 19481, 10,0},
-{1, DeltascapePedalID, PedalBuyAmount, 19459, 9,0},
-{1, DeltascapePedalID, PedalBuyAmount, 19465, 8,0},
-{1, DeltascapeSpringID, SpringBuyAmount, 19458, 7,0},
-{1, DeltascapeSpringID, SpringBuyAmount, 19464, 6,0},
-{1, DeltascapeCrankID, CrankBuyAmount, 19457, 5,0},
-{1, DeltascapeCrankID, CrankBuyAmount, 19463, 4,0},
-{1, DeltascapeShaftID, ShaftBuyAmount, 19456, 3,0},
-{1, DeltascapeShaftID, ShaftBuyAmount, 19462, 2,0},
-{1, DeltascapeLensID, LensBuyAmount, 19455, 1,0},
-{1, DeltascapeLensID, LensBuyAmount, 19461, 0,0},
+{1, DeltascapeBoltID, AccessoryBuyAmount, 19496, 13,0},
+{1, DeltascapeBoltID, AccessoryBuyAmount, 19491, 12,0},
+{1, DeltascapeBoltID, AccessoryBuyAmount, 19486, 11,0},
+{1, DeltascapeBoltID, AccessoryBuyAmount, 19481, 10,0},
+{1, DeltascapePedalID, FeetBuyAmount, 19459, 9,0},
+{1, DeltascapePedalID, FeetBuyAmount, 19465, 8,0},
+{1, DeltascapeSpringID, LegsBuyAmount, 19458, 7,0},
+{1, DeltascapeSpringID, LegsBuyAmount, 19464, 6,0},
+{1, DeltascapeCrankID, HandsBuyAmount, 19457, 5,0},
+{1, DeltascapeCrankID, HandsBuyAmount, 19463, 4,0},
+{1, DeltascapeShaftID, ChestBuyAmount, 19456, 3,0},
+{1, DeltascapeShaftID, ChestBuyAmount, 19462, 2,0},
+{1, DeltascapeLensID, HelmBuyAmount, 19455, 1,0},
+{1, DeltascapeLensID, HelmBuyAmount, 19461, 0,0},
 -- shop 3/dom 
-{2, DeltascapeBoltID, BoltBuyAmount, 19497, 17,0},
-{2, DeltascapeBoltID, BoltBuyAmount, 19498, 16,0},
-{2, DeltascapeBoltID, BoltBuyAmount, 19492, 15,0},
-{2, DeltascapeBoltID, BoltBuyAmount, 19493, 14,0},
-{2, DeltascapeBoltID, BoltBuyAmount, 19487, 13,0},
-{2, DeltascapeBoltID, BoltBuyAmount, 19488, 12,0},
-{2, DeltascapeBoltID, BoltBuyAmount, 19482, 11,0},
-{2, DeltascapeBoltID, BoltBuyAmount, 19483, 10,0},
-{2, DeltascapePedalID, PedalBuyAmount, 19471, 9,0},
-{2, DeltascapePedalID, PedalBuyAmount, 19477, 8,0},
-{2, DeltascapeSpringID, SpringBuyAmount, 19470, 7,0},
-{2, DeltascapeSpringID, SpringBuyAmount, 19476, 6,0},
-{2, DeltascapeCrankID, CrankBuyAmount, 19469, 5,0},
-{2, DeltascapeCrankID, CrankBuyAmount, 19475, 4,0},
-{2, DeltascapeShaftID, ShaftBuyAmount, 19468, 3,0},
-{2, DeltascapeShaftID, ShaftBuyAmount, 19474, 2,0},
-{2, DeltascapeLensID, LensBuyAmount, 19467, 1,0},
-{2, DeltascapeLensID, LensBuyAmount, 19473, 0,0},
+{2, DeltascapeBoltID, AccessoryBuyAmount, 19497, 17,0},
+{2, DeltascapeBoltID, AccessoryBuyAmount, 19498, 16,0},
+{2, DeltascapeBoltID, AccessoryBuyAmount, 19492, 15,0},
+{2, DeltascapeBoltID, AccessoryBuyAmount, 19493, 14,0},
+{2, DeltascapeBoltID, AccessoryBuyAmount, 19487, 13,0},
+{2, DeltascapeBoltID, AccessoryBuyAmount, 19488, 12,0},
+{2, DeltascapeBoltID, AccessoryBuyAmount, 19482, 11,0},
+{2, DeltascapeBoltID, AccessoryBuyAmount, 19483, 10,0},
+{2, DeltascapePedalID, FeetBuyAmount, 19471, 9,0},
+{2, DeltascapePedalID, FeetBuyAmount, 19477, 8,0},
+{2, DeltascapeSpringID, LegsBuyAmount, 19470, 7,0},
+{2, DeltascapeSpringID, LegsBuyAmount, 19476, 6,0},
+{2, DeltascapeCrankID, HandsBuyAmount, 19469, 5,0},
+{2, DeltascapeCrankID, HandsBuyAmount, 19475, 4,0},
+{2, DeltascapeShaftID, ChestBuyAmount, 19468, 3,0},
+{2, DeltascapeShaftID, ChestBuyAmount, 19474, 2,0},
+{2, DeltascapeLensID, HelmBuyAmount, 19467, 1,0},
+{2, DeltascapeLensID, HelmBuyAmount, 19473, 0,0},
 
     -----------SigmaSCAPE--------------------------
-{0, SigmascapeBoltID, BoltBuyAmount, 21629, 22,2},
-{0, SigmascapeBoltID, BoltBuyAmount, 21628, 21,2},
-{0, SigmascapeBoltID, BoltBuyAmount, 21624, 20,2},
-{0, SigmascapeBoltID, BoltBuyAmount, 21623, 19,2},
-{0, SigmascapeBoltID, BoltBuyAmount, 21619, 18,2},
-{0, SigmascapeBoltID, BoltBuyAmount, 21618, 17,2},
-{0, SigmascapeBoltID, BoltBuyAmount, 21614, 16,2},
-{0, SigmascapeBoltID, BoltBuyAmount, 21613, 15,2},
-{0, SigmascapePedalID, PedalBuyAmount, 21587, 14,2},
-{0, SigmascapePedalID, PedalBuyAmount, 21581, 13,2},
-{0, SigmascapePedalID, PedalBuyAmount, 21575, 12,2},
-{0, SigmascapeSpringID, SpringBuyAmount, 21586, 11,2},
-{0, SigmascapeSpringID, SpringBuyAmount, 21580, 10,2},
-{0, SigmascapeSpringID, SpringBuyAmount, 21574, 9,2},
-{0, SigmascapeCrankID, CrankBuyAmount, 21585, 8,2},
-{0, SigmascapeCrankID, CrankBuyAmount, 21579, 7,2},
-{0, SigmascapeCrankID, CrankBuyAmount, 21573, 6,2},
-{0, SigmascapeShaftID, ShaftBuyAmount, 21584, 5,2},
-{0, SigmascapeShaftID, ShaftBuyAmount, 21578, 4,2},
-{0, SigmascapeShaftID, ShaftBuyAmount, 21572, 3,2},
-{0, SigmascapeLensID,LensBuyAmount,21583,2,2},
-{0, SigmascapeLensID,LensBuyAmount,21577,1,2},
-{0, SigmascapeLensID,LensBuyAmount,21571,0,2},
+{0, SigmascapeBoltID, AccessoryBuyAmount, 21629, 22,2},
+{0, SigmascapeBoltID, AccessoryBuyAmount, 21628, 21,2},
+{0, SigmascapeBoltID, AccessoryBuyAmount, 21624, 20,2},
+{0, SigmascapeBoltID, AccessoryBuyAmount, 21623, 19,2},
+{0, SigmascapeBoltID, AccessoryBuyAmount, 21619, 18,2},
+{0, SigmascapeBoltID, AccessoryBuyAmount, 21618, 17,2},
+{0, SigmascapeBoltID, AccessoryBuyAmount, 21614, 16,2},
+{0, SigmascapeBoltID, AccessoryBuyAmount, 21613, 15,2},
+{0, SigmascapePedalID, FeetBuyAmount, 21587, 14,2},
+{0, SigmascapePedalID, FeetBuyAmount, 21581, 13,2},
+{0, SigmascapePedalID, FeetBuyAmount, 21575, 12,2},
+{0, SigmascapeSpringID, LegsBuyAmount, 21586, 11,2},
+{0, SigmascapeSpringID, LegsBuyAmount, 21580, 10,2},
+{0, SigmascapeSpringID, LegsBuyAmount, 21574, 9,2},
+{0, SigmascapeCrankID, HandsBuyAmount, 21585, 8,2},
+{0, SigmascapeCrankID, HandsBuyAmount, 21579, 7,2},
+{0, SigmascapeCrankID, HandsBuyAmount, 21573, 6,2},
+{0, SigmascapeShaftID, ChestBuyAmount, 21584, 5,2},
+{0, SigmascapeShaftID, ChestBuyAmount, 21578, 4,2},
+{0, SigmascapeShaftID, ChestBuyAmount, 21572, 3,2},
+{0, SigmascapeLensID,HelmBuyAmount,21583,2,2},
+{0, SigmascapeLensID,HelmBuyAmount,21577,1,2},
+{0, SigmascapeLensID,HelmBuyAmount,21571,0,2},
 -- shop 2/dow2 
-{1, SigmascapeBoltID, BoltBuyAmount, 21630, 13,2},
-{1, SigmascapeBoltID, BoltBuyAmount, 21625, 12,2},
-{1, SigmascapeBoltID, BoltBuyAmount, 21620, 11,2},
-{1, SigmascapeBoltID, BoltBuyAmount, 21615, 10,2},
-{1, SigmascapePedalID, PedalBuyAmount, 21593, 9,2},
-{1, SigmascapePedalID, PedalBuyAmount, 21599, 8,2},
-{1, SigmascapeSpringID, SpringBuyAmount, 21592, 7,2},
-{1, SigmascapeSpringID, SpringBuyAmount, 21598, 6,2},
-{1, SigmascapeCrankID, CrankBuyAmount, 21591, 5,2},
-{1, SigmascapeCrankID, CrankBuyAmount, 21597, 4,2},
-{1, SigmascapeShaftID, ShaftBuyAmount, 21590, 3,2},
-{1, SigmascapeShaftID, ShaftBuyAmount, 21596, 2,2},
-{1, SigmascapeLensID, LensBuyAmount, 21589, 1,2},
-{1, SigmascapeLensID, LensBuyAmount, 21595, 0,2},
+{1, SigmascapeBoltID, AccessoryBuyAmount, 21630, 13,2},
+{1, SigmascapeBoltID, AccessoryBuyAmount, 21625, 12,2},
+{1, SigmascapeBoltID, AccessoryBuyAmount, 21620, 11,2},
+{1, SigmascapeBoltID, AccessoryBuyAmount, 21615, 10,2},
+{1, SigmascapePedalID, FeetBuyAmount, 21593, 9,2},
+{1, SigmascapePedalID, FeetBuyAmount, 21599, 8,2},
+{1, SigmascapeSpringID, LegsBuyAmount, 21592, 7,2},
+{1, SigmascapeSpringID, LegsBuyAmount, 21598, 6,2},
+{1, SigmascapeCrankID, HandsBuyAmount, 21591, 5,2},
+{1, SigmascapeCrankID, HandsBuyAmount, 21597, 4,2},
+{1, SigmascapeShaftID, ChestBuyAmount, 21590, 3,2},
+{1, SigmascapeShaftID, ChestBuyAmount, 21596, 2,2},
+{1, SigmascapeLensID, HelmBuyAmount, 21589, 1,2},
+{1, SigmascapeLensID, HelmBuyAmount, 21595, 0,2},
 -- shop 3/dom 
-{2, SigmascapeBoltID, BoltBuyAmount, 21631, 17,2},
-{2, SigmascapeBoltID, BoltBuyAmount, 21632, 16,2},
-{2, SigmascapeBoltID, BoltBuyAmount, 21626, 15,2},
-{2, SigmascapeBoltID, BoltBuyAmount, 21627, 14,2},
-{2, SigmascapeBoltID, BoltBuyAmount, 21621, 13,2},
-{2, SigmascapeBoltID, BoltBuyAmount, 21622, 12,2},
-{2, SigmascapeBoltID, BoltBuyAmount, 21616, 11,2},
-{2, SigmascapeBoltID, BoltBuyAmount, 21617, 10,2},
-{2, SigmascapePedalID, PedalBuyAmount, 21605, 9,2},
-{2, SigmascapePedalID, PedalBuyAmount, 21611, 8,2},
-{2, SigmascapeSpringID, SpringBuyAmount, 21604, 7,2},
-{2, SigmascapeSpringID, SpringBuyAmount, 21610, 6,2},
-{2, SigmascapeCrankID, CrankBuyAmount, 21603, 5,2},
-{2, SigmascapeCrankID, CrankBuyAmount, 21609, 4,2},
-{2, SigmascapeShaftID, ShaftBuyAmount, 21602, 3,2},
-{2, SigmascapeShaftID, ShaftBuyAmount, 21608, 2,2},
-{2, SigmascapeLensID, LensBuyAmount, 21601, 1,2},
-{2, SigmascapeLensID, LensBuyAmount, 21607, 0,2},
+{2, SigmascapeBoltID, AccessoryBuyAmount, 21631, 17,2},
+{2, SigmascapeBoltID, AccessoryBuyAmount, 21632, 16,2},
+{2, SigmascapeBoltID, AccessoryBuyAmount, 21626, 15,2},
+{2, SigmascapeBoltID, AccessoryBuyAmount, 21627, 14,2},
+{2, SigmascapeBoltID, AccessoryBuyAmount, 21621, 13,2},
+{2, SigmascapeBoltID, AccessoryBuyAmount, 21622, 12,2},
+{2, SigmascapeBoltID, AccessoryBuyAmount, 21616, 11,2},
+{2, SigmascapeBoltID, AccessoryBuyAmount, 21617, 10,2},
+{2, SigmascapePedalID, FeetBuyAmount, 21605, 9,2},
+{2, SigmascapePedalID, FeetBuyAmount, 21611, 8,2},
+{2, SigmascapeSpringID, LegsBuyAmount, 21604, 7,2},
+{2, SigmascapeSpringID, LegsBuyAmount, 21610, 6,2},
+{2, SigmascapeCrankID, HandsBuyAmount, 21603, 5,2},
+{2, SigmascapeCrankID, HandsBuyAmount, 21609, 4,2},
+{2, SigmascapeShaftID, ChestBuyAmount, 21602, 3,2},
+{2, SigmascapeShaftID, ChestBuyAmount, 21608, 2,2},
+{2, SigmascapeLensID, HelmBuyAmount, 21601, 1,2},
+{2, SigmascapeLensID, HelmBuyAmount, 21607, 0,2},
 
 -----------ALPHASCAPE--------------------------
-{0, AlphascapeBoltID, BoltBuyAmount, 23702, 22,4},
-{0, AlphascapeBoltID, BoltBuyAmount, 23701, 21,4},
-{0, AlphascapeBoltID, BoltBuyAmount, 23697, 20,4},
-{0, AlphascapeBoltID, BoltBuyAmount, 23696, 19,4},
-{0, AlphascapeBoltID, BoltBuyAmount, 23692, 18,4},
-{0, AlphascapeBoltID, BoltBuyAmount, 23691, 17,4},
-{0, AlphascapeBoltID, BoltBuyAmount, 23687, 16,4},
-{0, AlphascapeBoltID, BoltBuyAmount, 23686, 15,4},
-{0, AlphascapePedalID, PedalBuyAmount, 23660, 14,4},
-{0, AlphascapePedalID, PedalBuyAmount, 23654, 13,4},
-{0, AlphascapePedalID, PedalBuyAmount, 23648, 12,4},
-{0, AlphascapeSpringID, SpringBuyAmount, 23659, 11,4},
-{0, AlphascapeSpringID, SpringBuyAmount, 23653, 10,4},
-{0, AlphascapeSpringID, SpringBuyAmount, 23647, 9,4},
-{0, AlphascapeCrankID, CrankBuyAmount, 23658, 8,4},
-{0, AlphascapeCrankID, CrankBuyAmount, 23652, 7,4},
-{0, AlphascapeCrankID, CrankBuyAmount, 23646, 6,4},
-{0, AlphascapeShaftID, ShaftBuyAmount, 23657, 5,4},
-{0, AlphascapeShaftID, ShaftBuyAmount, 23651, 4,4},
-{0, AlphascapeShaftID, ShaftBuyAmount, 23645, 3,4},
-{0, AlphascapeLensID,LensBuyAmount,23656,2,4},
-{0, AlphascapeLensID,LensBuyAmount,23650,1,4},
-{0, AlphascapeLensID,LensBuyAmount,23644,0,4},
+{0, AlphascapeBoltID, AccessoryBuyAmount, 23702, 22,4},
+{0, AlphascapeBoltID, AccessoryBuyAmount, 23701, 21,4},
+{0, AlphascapeBoltID, AccessoryBuyAmount, 23697, 20,4},
+{0, AlphascapeBoltID, AccessoryBuyAmount, 23696, 19,4},
+{0, AlphascapeBoltID, AccessoryBuyAmount, 23692, 18,4},
+{0, AlphascapeBoltID, AccessoryBuyAmount, 23691, 17,4},
+{0, AlphascapeBoltID, AccessoryBuyAmount, 23687, 16,4},
+{0, AlphascapeBoltID, AccessoryBuyAmount, 23686, 15,4},
+{0, AlphascapePedalID, FeetBuyAmount, 23660, 14,4},
+{0, AlphascapePedalID, FeetBuyAmount, 23654, 13,4},
+{0, AlphascapePedalID, FeetBuyAmount, 23648, 12,4},
+{0, AlphascapeSpringID, LegsBuyAmount, 23659, 11,4},
+{0, AlphascapeSpringID, LegsBuyAmount, 23653, 10,4},
+{0, AlphascapeSpringID, LegsBuyAmount, 23647, 9,4},
+{0, AlphascapeCrankID, HandsBuyAmount, 23658, 8,4},
+{0, AlphascapeCrankID, HandsBuyAmount, 23652, 7,4},
+{0, AlphascapeCrankID, HandsBuyAmount, 23646, 6,4},
+{0, AlphascapeShaftID, ChestBuyAmount, 23657, 5,4},
+{0, AlphascapeShaftID, ChestBuyAmount, 23651, 4,4},
+{0, AlphascapeShaftID, ChestBuyAmount, 23645, 3,4},
+{0, AlphascapeLensID,HelmBuyAmount,23656,2,4},
+{0, AlphascapeLensID,HelmBuyAmount,23650,1,4},
+{0, AlphascapeLensID,HelmBuyAmount,23644,0,4},
 -- shop 2/dow2 
-{1, AlphascapeBoltID, BoltBuyAmount, 23703, 13,4},
-{1, AlphascapeBoltID, BoltBuyAmount, 23698, 12,4},
-{1, AlphascapeBoltID, BoltBuyAmount, 23693, 11,4},
-{1, AlphascapeBoltID, BoltBuyAmount, 23688, 10,4},
-{1, AlphascapePedalID, PedalBuyAmount, 23666, 9,4},
-{1, AlphascapePedalID, PedalBuyAmount, 23672, 8,4},
-{1, AlphascapeSpringID, SpringBuyAmount, 23665, 7,4},
-{1, AlphascapeSpringID, SpringBuyAmount, 23671, 6,4},
-{1, AlphascapeCrankID, CrankBuyAmount, 23664, 5,4},
-{1, AlphascapeCrankID, CrankBuyAmount, 23670, 4,4},
-{1, AlphascapeShaftID, ShaftBuyAmount, 23663, 3,4},
-{1, AlphascapeShaftID, ShaftBuyAmount, 23669, 2,4},
-{1, AlphascapeLensID, LensBuyAmount, 23662, 1,4},
-{1, AlphascapeLensID, LensBuyAmount, 23668, 0,4},
+{1, AlphascapeBoltID, AccessoryBuyAmount, 23703, 13,4},
+{1, AlphascapeBoltID, AccessoryBuyAmount, 23698, 12,4},
+{1, AlphascapeBoltID, AccessoryBuyAmount, 23693, 11,4},
+{1, AlphascapeBoltID, AccessoryBuyAmount, 23688, 10,4},
+{1, AlphascapePedalID, FeetBuyAmount, 23666, 9,4},
+{1, AlphascapePedalID, FeetBuyAmount, 23672, 8,4},
+{1, AlphascapeSpringID, LegsBuyAmount, 23665, 7,4},
+{1, AlphascapeSpringID, LegsBuyAmount, 23671, 6,4},
+{1, AlphascapeCrankID, HandsBuyAmount, 23664, 5,4},
+{1, AlphascapeCrankID, HandsBuyAmount, 23670, 4,4},
+{1, AlphascapeShaftID, ChestBuyAmount, 23663, 3,4},
+{1, AlphascapeShaftID, ChestBuyAmount, 23669, 2,4},
+{1, AlphascapeLensID, HelmBuyAmount, 23662, 1,4},
+{1, AlphascapeLensID, HelmBuyAmount, 23668, 0,4},
 -- shop 3/dom 
-{2, AlphascapeBoltID, BoltBuyAmount, 23704, 17,4},
-{2, AlphascapeBoltID, BoltBuyAmount, 23705, 16,4},
-{2, AlphascapeBoltID, BoltBuyAmount, 23699, 15,4},
-{2, AlphascapeBoltID, BoltBuyAmount, 23700, 14,4},
-{2, AlphascapeBoltID, BoltBuyAmount, 23694, 13,4},
-{2, AlphascapeBoltID, BoltBuyAmount, 23695, 12,4},
-{2, AlphascapeBoltID, BoltBuyAmount, 23689, 11,4},
-{2, AlphascapeBoltID, BoltBuyAmount, 23690, 10,4},
-{2, AlphascapePedalID, PedalBuyAmount, 23678, 9,4},
-{2, AlphascapePedalID, PedalBuyAmount, 23684, 8,4},
-{2, AlphascapeSpringID, SpringBuyAmount, 23677, 7,4},
-{2, AlphascapeSpringID, SpringBuyAmount, 23683, 6,4},
-{2, AlphascapeCrankID, CrankBuyAmount, 23676, 5,4},
-{2, AlphascapeCrankID, CrankBuyAmount, 23682, 4,4},
-{2, AlphascapeShaftID, ShaftBuyAmount, 23675, 3,4},
-{2, AlphascapeShaftID, ShaftBuyAmount, 23681, 2,4},
-{2, AlphascapeLensID, LensBuyAmount, 23674, 1,4},
-{2, AlphascapeLensID, LensBuyAmount, 23680, 0,4},
+{2, AlphascapeBoltID, AccessoryBuyAmount, 23704, 17,4},
+{2, AlphascapeBoltID, AccessoryBuyAmount, 23705, 16,4},
+{2, AlphascapeBoltID, AccessoryBuyAmount, 23699, 15,4},
+{2, AlphascapeBoltID, AccessoryBuyAmount, 23700, 14,4},
+{2, AlphascapeBoltID, AccessoryBuyAmount, 23694, 13,4},
+{2, AlphascapeBoltID, AccessoryBuyAmount, 23695, 12,4},
+{2, AlphascapeBoltID, AccessoryBuyAmount, 23689, 11,4},
+{2, AlphascapeBoltID, AccessoryBuyAmount, 23690, 10,4},
+{2, AlphascapePedalID, FeetBuyAmount, 23678, 9,4},
+{2, AlphascapePedalID, FeetBuyAmount, 23684, 8,4},
+{2, AlphascapeSpringID, LegsBuyAmount, 23677, 7,4},
+{2, AlphascapeSpringID, LegsBuyAmount, 23683, 6,4},
+{2, AlphascapeCrankID, HandsBuyAmount, 23676, 5,4},
+{2, AlphascapeCrankID, HandsBuyAmount, 23682, 4,4},
+{2, AlphascapeShaftID, ChestBuyAmount, 23675, 3,4},
+{2, AlphascapeShaftID, ChestBuyAmount, 23681, 2,4},
+{2, AlphascapeLensID, HelmBuyAmount, 23674, 1,4},
+{2, AlphascapeLensID, HelmBuyAmount, 23680, 0,4},
 }
 -------------------------------------------------------------------------------- tarnished gordian item ids / tablolar ve idler
 GordianLensID = 12674
@@ -778,188 +778,412 @@ SabinaTable =
 {
 ----------------------------   GORDIAN   --------------------------------------------
 -- shop 1/dow1
-{0, GordianBoltID, BoltBuyAmount, 11506, 22,0},
-{0, GordianBoltID, BoltBuyAmount, 11505, 21,0},
-{0, GordianBoltID, BoltBuyAmount, 11501, 20,0},
-{0, GordianBoltID, BoltBuyAmount, 11500, 19,0},
-{0, GordianBoltID, BoltBuyAmount, 11496, 18,0},
-{0, GordianBoltID, BoltBuyAmount, 11495, 17,0},
-{0, GordianBoltID, BoltBuyAmount, 11491, 16,0},
-{0, GordianBoltID, BoltBuyAmount, 11490, 15,0},
-{0, GordianPedalID, PedalBuyAmount, 11485, 14,0},
-{0, GordianPedalID, PedalBuyAmount, 11484, 13,0},
-{0, GordianPedalID, PedalBuyAmount, 11483, 12,0},
-{0, GordianSpringID, SpringBuyAmount, 11478, 11,0},
-{0, GordianSpringID, SpringBuyAmount, 11477, 10,0},
-{0, GordianSpringID, SpringBuyAmount, 11476, 9,0},
-{0, GordianCrankID, CrankBuyAmount, 11464, 8,0},
-{0, GordianCrankID, CrankBuyAmount, 11463, 7,0},
-{0, GordianCrankID, CrankBuyAmount, 11462, 6,0},
-{0, GordianShaftID, ShaftBuyAmount, 11457, 5,0},
-{0, GordianShaftID, ShaftBuyAmount, 11456, 4,0},
-{0, GordianShaftID, ShaftBuyAmount, 11455, 3,0},
-{0, GordianLensID, LensBuyAmount, 11450, 2,0},
-{0, GordianLensID, LensBuyAmount, 11449, 1,0},
-{0, GordianLensID, LensBuyAmount, 11448, 0,0},
+{0, GordianBoltID, AccessoryBuyAmount, 11506, 22,0},
+{0, GordianBoltID, AccessoryBuyAmount, 11505, 21,0},
+{0, GordianBoltID, AccessoryBuyAmount, 11501, 20,0},
+{0, GordianBoltID, AccessoryBuyAmount, 11500, 19,0},
+{0, GordianBoltID, AccessoryBuyAmount, 11496, 18,0},
+{0, GordianBoltID, AccessoryBuyAmount, 11495, 17,0},
+{0, GordianBoltID, AccessoryBuyAmount, 11491, 16,0},
+{0, GordianBoltID, AccessoryBuyAmount, 11490, 15,0},
+{0, GordianPedalID, FeetBuyAmount, 11485, 14,0},
+{0, GordianPedalID, FeetBuyAmount, 11484, 13,0},
+{0, GordianPedalID, FeetBuyAmount, 11483, 12,0},
+{0, GordianSpringID, LegsBuyAmount, 11478, 11,0},
+{0, GordianSpringID, LegsBuyAmount, 11477, 10,0},
+{0, GordianSpringID, LegsBuyAmount, 11476, 9,0},
+{0, GordianCrankID, HandsBuyAmount, 11464, 8,0},
+{0, GordianCrankID, HandsBuyAmount, 11463, 7,0},
+{0, GordianCrankID, HandsBuyAmount, 11462, 6,0},
+{0, GordianShaftID, ChestBuyAmount, 11457, 5,0},
+{0, GordianShaftID, ChestBuyAmount, 11456, 4,0},
+{0, GordianShaftID, ChestBuyAmount, 11455, 3,0},
+{0, GordianLensID, HelmBuyAmount, 11450, 2,0},
+{0, GordianLensID, HelmBuyAmount, 11449, 1,0},
+{0, GordianLensID, HelmBuyAmount, 11448, 0,0},
 -- shop 2/dow2 
-{1, GordianBoltID, BoltBuyAmount, 11507, 13,0},
-{1, GordianBoltID, BoltBuyAmount, 11502, 12,0},
-{1, GordianBoltID, BoltBuyAmount, 11497, 11,0},
-{1, GordianBoltID, BoltBuyAmount, 11492, 10,0},
-{1, GordianPedalID, PedalBuyAmount, 11486, 9,0},
-{1, GordianPedalID, PedalBuyAmount, 11487, 8,0},
-{1, GordianSpringID, SpringBuyAmount, 11479, 7,0},
-{1, GordianSpringID, SpringBuyAmount, 11480, 6,0},
-{1, GordianCrankID, CrankBuyAmount, 11465, 5,0},
-{1, GordianCrankID, CrankBuyAmount, 11466, 4,0},
-{1, GordianShaftID, ShaftBuyAmount, 11458, 3,0},
-{1, GordianShaftID, ShaftBuyAmount, 11459, 2,0},
-{1, GordianLensID, LensBuyAmount, 11451, 1,0},
-{1, GordianLensID, LensBuyAmount, 11452, 0,0},
+{1, GordianBoltID, AccessoryBuyAmount, 11507, 13,0},
+{1, GordianBoltID, AccessoryBuyAmount, 11502, 12,0},
+{1, GordianBoltID, AccessoryBuyAmount, 11497, 11,0},
+{1, GordianBoltID, AccessoryBuyAmount, 11492, 10,0},
+{1, GordianPedalID, FeetBuyAmount, 11486, 9,0},
+{1, GordianPedalID, FeetBuyAmount, 11487, 8,0},
+{1, GordianSpringID, LegsBuyAmount, 11479, 7,0},
+{1, GordianSpringID, LegsBuyAmount, 11480, 6,0},
+{1, GordianCrankID, HandsBuyAmount, 11465, 5,0},
+{1, GordianCrankID, HandsBuyAmount, 11466, 4,0},
+{1, GordianShaftID, ChestBuyAmount, 11458, 3,0},
+{1, GordianShaftID, ChestBuyAmount, 11459, 2,0},
+{1, GordianLensID, HelmBuyAmount, 11451, 1,0},
+{1, GordianLensID, HelmBuyAmount, 11452, 0,0},
 -- shop 3/dom 
-{2, GordianBoltID, BoltBuyAmount, 11508, 17,0},
-{2, GordianBoltID, BoltBuyAmount, 11509, 16,0},
-{2, GordianBoltID, BoltBuyAmount, 11503, 15,0},
-{2, GordianBoltID, BoltBuyAmount, 11504, 14,0},
-{2, GordianBoltID, BoltBuyAmount, 11498, 13,0},
-{2, GordianBoltID, BoltBuyAmount, 11499, 12,0},
-{2, GordianBoltID, BoltBuyAmount, 11493, 11,0},
-{2, GordianBoltID, BoltBuyAmount, 11494, 10,0},
-{2, GordianPedalID, PedalBuyAmount, 11488, 9,0},
-{2, GordianPedalID, PedalBuyAmount, 11489, 8,0},
-{2, GordianSpringID, SpringBuyAmount, 11481, 7,0},
-{2, GordianSpringID, SpringBuyAmount, 11482, 6,0},
-{2, GordianCrankID, CrankBuyAmount, 11467, 5,0},
-{2, GordianCrankID, CrankBuyAmount, 11468, 4,0},
-{2, GordianShaftID, ShaftBuyAmount, 11460, 3,0},
-{2, GordianShaftID, ShaftBuyAmount, 11461, 2,0},
-{2, GordianLensID, LensBuyAmount, 11453, 1,0},
-{2, GordianLensID, LensBuyAmount, 11454, 0,0},
+{2, GordianBoltID, AccessoryBuyAmount, 11508, 17,0},
+{2, GordianBoltID, AccessoryBuyAmount, 11509, 16,0},
+{2, GordianBoltID, AccessoryBuyAmount, 11503, 15,0},
+{2, GordianBoltID, AccessoryBuyAmount, 11504, 14,0},
+{2, GordianBoltID, AccessoryBuyAmount, 11498, 13,0},
+{2, GordianBoltID, AccessoryBuyAmount, 11499, 12,0},
+{2, GordianBoltID, AccessoryBuyAmount, 11493, 11,0},
+{2, GordianBoltID, AccessoryBuyAmount, 11494, 10,0},
+{2, GordianPedalID, FeetBuyAmount, 11488, 9,0},
+{2, GordianPedalID, FeetBuyAmount, 11489, 8,0},
+{2, GordianSpringID, LegsBuyAmount, 11481, 7,0},
+{2, GordianSpringID, LegsBuyAmount, 11482, 6,0},
+{2, GordianCrankID, HandsBuyAmount, 11467, 5,0},
+{2, GordianCrankID, HandsBuyAmount, 11468, 4,0},
+{2, GordianShaftID, ChestBuyAmount, 11460, 3,0},
+{2, GordianShaftID, ChestBuyAmount, 11461, 2,0},
+{2, GordianLensID, HelmBuyAmount, 11453, 1,0},
+{2, GordianLensID, HelmBuyAmount, 11454, 0,0},
 ----------------------------   MIDAN   -------------------------------------------------
 -- Shop 1 / DOW1
-{0, MidanBoltID, BoltBuyAmount, 14570, 22,2},
-{0, MidanBoltID, BoltBuyAmount, 14569, 21,2},
-{0, MidanBoltID, BoltBuyAmount, 14565, 20,2},
-{0, MidanBoltID, BoltBuyAmount, 14564, 19,2},
-{0, MidanBoltID, BoltBuyAmount, 14560, 18,2},
-{0, MidanBoltID, BoltBuyAmount, 14559, 17,2},
-{0, MidanBoltID, BoltBuyAmount, 14555, 16,2},
-{0, MidanBoltID, BoltBuyAmount, 14554, 15,2},
-{0, MidanPedalID, PedalBuyAmount, 14549, 14,2},
-{0, MidanPedalID, PedalBuyAmount, 14548, 13,2},
-{0, MidanPedalID, PedalBuyAmount, 14547, 12,2},
-{0, MidanSpringID, SpringBuyAmount, 14542, 11,2},
-{0, MidanSpringID, SpringBuyAmount, 14541, 10,2},
-{0, MidanSpringID, SpringBuyAmount, 14540, 9,2},
-{0, MidanCrankID, CrankBuyAmount, 14528, 8,2},
-{0, MidanCrankID, CrankBuyAmount, 14527, 7,2},
-{0, MidanCrankID, CrankBuyAmount, 14526, 6,2},
-{0, MidanShaftID, ShaftBuyAmount, 14521, 5,2},
-{0, MidanShaftID, ShaftBuyAmount, 14520, 4,2},
-{0, MidanShaftID, ShaftBuyAmount, 14519, 3,2},
-{0, MidanLensID,LensBuyAmount,14514,2,2},
-{0, MidanLensID,LensBuyAmount,14513,1,2},
-{0, MidanLensID,LensBuyAmount,14512,0,2},
+{0, MidanBoltID, AccessoryBuyAmount, 14570, 22,2},
+{0, MidanBoltID, AccessoryBuyAmount, 14569, 21,2},
+{0, MidanBoltID, AccessoryBuyAmount, 14565, 20,2},
+{0, MidanBoltID, AccessoryBuyAmount, 14564, 19,2},
+{0, MidanBoltID, AccessoryBuyAmount, 14560, 18,2},
+{0, MidanBoltID, AccessoryBuyAmount, 14559, 17,2},
+{0, MidanBoltID, AccessoryBuyAmount, 14555, 16,2},
+{0, MidanBoltID, AccessoryBuyAmount, 14554, 15,2},
+{0, MidanPedalID, FeetBuyAmount, 14549, 14,2},
+{0, MidanPedalID, FeetBuyAmount, 14548, 13,2},
+{0, MidanPedalID, FeetBuyAmount, 14547, 12,2},
+{0, MidanSpringID, LegsBuyAmount, 14542, 11,2},
+{0, MidanSpringID, LegsBuyAmount, 14541, 10,2},
+{0, MidanSpringID, LegsBuyAmount, 14540, 9,2},
+{0, MidanCrankID, HandsBuyAmount, 14528, 8,2},
+{0, MidanCrankID, HandsBuyAmount, 14527, 7,2},
+{0, MidanCrankID, HandsBuyAmount, 14526, 6,2},
+{0, MidanShaftID, ChestBuyAmount, 14521, 5,2},
+{0, MidanShaftID, ChestBuyAmount, 14520, 4,2},
+{0, MidanShaftID, ChestBuyAmount, 14519, 3,2},
+{0, MidanLensID,HelmBuyAmount,14514,2,2},
+{0, MidanLensID,HelmBuyAmount,14513,1,2},
+{0, MidanLensID,HelmBuyAmount,14512,0,2},
 -- shop 2/dow2 
-{1, MidanBoltID, BoltBuyAmount, 14571, 13,2},
-{1, MidanBoltID, BoltBuyAmount, 14566, 12,2},
-{1, MidanBoltID, BoltBuyAmount, 14561, 11,2},
-{1, MidanBoltID, BoltBuyAmount, 14556, 10,2},
-{1, MidanPedalID, PedalBuyAmount, 14550, 9,2},
-{1, MidanPedalID, PedalBuyAmount, 14551, 8,2},
-{1, MidanSpringID, SpringBuyAmount, 14543, 7,2},
-{1, MidanSpringID, SpringBuyAmount, 14544, 6,2},
-{1, MidanCrankID, CrankBuyAmount, 14529, 5,2},
-{1, MidanCrankID, CrankBuyAmount, 14530, 4,2},
-{1, MidanShaftID, ShaftBuyAmount, 14522, 3,2},
-{1, MidanShaftID, ShaftBuyAmount, 14523, 2,2},
-{1, MidanLensID, LensBuyAmount, 14515, 1,2},
-{1, MidanLensID, LensBuyAmount, 14516, 0,2},
+{1, MidanBoltID, AccessoryBuyAmount, 14571, 13,2},
+{1, MidanBoltID, AccessoryBuyAmount, 14566, 12,2},
+{1, MidanBoltID, AccessoryBuyAmount, 14561, 11,2},
+{1, MidanBoltID, AccessoryBuyAmount, 14556, 10,2},
+{1, MidanPedalID, FeetBuyAmount, 14550, 9,2},
+{1, MidanPedalID, FeetBuyAmount, 14551, 8,2},
+{1, MidanSpringID, LegsBuyAmount, 14543, 7,2},
+{1, MidanSpringID, LegsBuyAmount, 14544, 6,2},
+{1, MidanCrankID, HandsBuyAmount, 14529, 5,2},
+{1, MidanCrankID, HandsBuyAmount, 14530, 4,2},
+{1, MidanShaftID, ChestBuyAmount, 14522, 3,2},
+{1, MidanShaftID, ChestBuyAmount, 14523, 2,2},
+{1, MidanLensID, HelmBuyAmount, 14515, 1,2},
+{1, MidanLensID, HelmBuyAmount, 14516, 0,2},
 -- shop 3/dom 
-{2, MidanBoltID, BoltBuyAmount, 14572, 17,2},
-{2, MidanBoltID, BoltBuyAmount, 14573, 16,2},
-{2, MidanBoltID, BoltBuyAmount, 14567, 15,2},
-{2, MidanBoltID, BoltBuyAmount, 14568, 14,2},
-{2, MidanBoltID, BoltBuyAmount, 14562, 13,2},
-{2, MidanBoltID, BoltBuyAmount, 14563, 12,2},
-{2, MidanBoltID, BoltBuyAmount, 14557, 11,2},
-{2, MidanBoltID, BoltBuyAmount, 14558, 10,2},
-{2, MidanPedalID, PedalBuyAmount, 14552, 9,2},
-{2, MidanPedalID, PedalBuyAmount, 14553, 8,2},
-{2, MidanSpringID, SpringBuyAmount, 14545, 7,2},
-{2, MidanSpringID, SpringBuyAmount, 14546, 6,2},
-{2, MidanCrankID, CrankBuyAmount, 14531, 5,2},
-{2, MidanCrankID, CrankBuyAmount, 14532, 4,2},
-{2, MidanShaftID, ShaftBuyAmount, 14524, 3,2},
-{2, MidanShaftID, ShaftBuyAmount, 14525, 2,2},
-{2, MidanLensID, LensBuyAmount, 14517, 1,2},
-{2, MidanLensID, LensBuyAmount, 14518, 0,2},
+{2, MidanBoltID, AccessoryBuyAmount, 14572, 17,2},
+{2, MidanBoltID, AccessoryBuyAmount, 14573, 16,2},
+{2, MidanBoltID, AccessoryBuyAmount, 14567, 15,2},
+{2, MidanBoltID, AccessoryBuyAmount, 14568, 14,2},
+{2, MidanBoltID, AccessoryBuyAmount, 14562, 13,2},
+{2, MidanBoltID, AccessoryBuyAmount, 14563, 12,2},
+{2, MidanBoltID, AccessoryBuyAmount, 14557, 11,2},
+{2, MidanBoltID, AccessoryBuyAmount, 14558, 10,2},
+{2, MidanPedalID, FeetBuyAmount, 14552, 9,2},
+{2, MidanPedalID, FeetBuyAmount, 14553, 8,2},
+{2, MidanSpringID, LegsBuyAmount, 14545, 7,2},
+{2, MidanSpringID, LegsBuyAmount, 14546, 6,2},
+{2, MidanCrankID, HandsBuyAmount, 14531, 5,2},
+{2, MidanCrankID, HandsBuyAmount, 14532, 4,2},
+{2, MidanShaftID, ChestBuyAmount, 14524, 3,2},
+{2, MidanShaftID, ChestBuyAmount, 14525, 2,2},
+{2, MidanLensID, HelmBuyAmount, 14517, 1,2},
+{2, MidanLensID, HelmBuyAmount, 14518, 0,2},
     
 ----------------------------   Alexandrian   --------------------------------------------
-{0, AlexandrianBoltID, BoltBuyAmount, 16461, 22,4},
-{0, AlexandrianBoltID, BoltBuyAmount, 16460, 21,4},
-{0, AlexandrianBoltID, BoltBuyAmount, 16456, 20,4},
-{0, AlexandrianBoltID, BoltBuyAmount, 16455, 19,4},
-{0, AlexandrianBoltID, BoltBuyAmount, 16451, 18,4},
-{0, AlexandrianBoltID, BoltBuyAmount, 16450, 17,4},
-{0, AlexandrianBoltID, BoltBuyAmount, 16446, 16,4},
-{0, AlexandrianBoltID, BoltBuyAmount, 16445, 15,4},
-{0, AlexandrianPedalID, PedalBuyAmount, 16419, 14,4},
-{0, AlexandrianPedalID, PedalBuyAmount, 16413, 13,4},
-{0, AlexandrianPedalID, PedalBuyAmount, 16407, 12,4},
-{0, AlexandrianSpringID, SpringBuyAmount, 16418, 11,4},
-{0, AlexandrianSpringID, SpringBuyAmount, 16412, 10,4},
-{0, AlexandrianSpringID, SpringBuyAmount, 16406, 9,4},
-{0, AlexandrianCrankID, CrankBuyAmount, 16417, 8,4},
-{0, AlexandrianCrankID, CrankBuyAmount, 16411, 7,4},
-{0, AlexandrianCrankID, CrankBuyAmount, 16405, 6,4},
-{0, AlexandrianShaftID, ShaftBuyAmount, 16416, 5,4},
-{0, AlexandrianShaftID, ShaftBuyAmount, 16410, 4,4},
-{0, AlexandrianShaftID, ShaftBuyAmount, 16404, 3,4},
-{0, AlexandrianLensID,LensBuyAmount,16415,2,4},
-{0, AlexandrianLensID,LensBuyAmount,16409,1,4},
-{0, AlexandrianLensID,LensBuyAmount,16403,0,4},
+{0, AlexandrianBoltID, AccessoryBuyAmount, 16461, 22,4},
+{0, AlexandrianBoltID, AccessoryBuyAmount, 16460, 21,4},
+{0, AlexandrianBoltID, AccessoryBuyAmount, 16456, 20,4},
+{0, AlexandrianBoltID, AccessoryBuyAmount, 16455, 19,4},
+{0, AlexandrianBoltID, AccessoryBuyAmount, 16451, 18,4},
+{0, AlexandrianBoltID, AccessoryBuyAmount, 16450, 17,4},
+{0, AlexandrianBoltID, AccessoryBuyAmount, 16446, 16,4},
+{0, AlexandrianBoltID, AccessoryBuyAmount, 16445, 15,4},
+{0, AlexandrianPedalID, FeetBuyAmount, 16419, 14,4},
+{0, AlexandrianPedalID, FeetBuyAmount, 16413, 13,4},
+{0, AlexandrianPedalID, FeetBuyAmount, 16407, 12,4},
+{0, AlexandrianSpringID, LegsBuyAmount, 16418, 11,4},
+{0, AlexandrianSpringID, LegsBuyAmount, 16412, 10,4},
+{0, AlexandrianSpringID, LegsBuyAmount, 16406, 9,4},
+{0, AlexandrianCrankID, HandsBuyAmount, 16417, 8,4},
+{0, AlexandrianCrankID, HandsBuyAmount, 16411, 7,4},
+{0, AlexandrianCrankID, HandsBuyAmount, 16405, 6,4},
+{0, AlexandrianShaftID, ChestBuyAmount, 16416, 5,4},
+{0, AlexandrianShaftID, ChestBuyAmount, 16410, 4,4},
+{0, AlexandrianShaftID, ChestBuyAmount, 16404, 3,4},
+{0, AlexandrianLensID,HelmBuyAmount,16415,2,4},
+{0, AlexandrianLensID,HelmBuyAmount,16409,1,4},
+{0, AlexandrianLensID,HelmBuyAmount,16403,0,4},
 -- shop 2/dow2 
-{1, AlexandrianBoltID, BoltBuyAmount, 16462, 13,4},
-{1, AlexandrianBoltID, BoltBuyAmount, 16457, 12,4},
-{1, AlexandrianBoltID, BoltBuyAmount, 16452, 11,4},
-{1, AlexandrianBoltID, BoltBuyAmount, 16447, 10,4},
-{1, AlexandrianPedalID, PedalBuyAmount, 16425, 9,4},
-{1, AlexandrianPedalID, PedalBuyAmount, 16431, 8,4},
-{1, AlexandrianSpringID, SpringBuyAmount, 16424, 7,4},
-{1, AlexandrianSpringID, SpringBuyAmount, 16430, 6,4},
-{1, AlexandrianCrankID, CrankBuyAmount, 16423, 5,4},
-{1, AlexandrianCrankID, CrankBuyAmount, 16429, 4,4},
-{1, AlexandrianShaftID, ShaftBuyAmount, 16422, 3,4},
-{1, AlexandrianShaftID, ShaftBuyAmount, 16428, 2,4},
-{1, AlexandrianLensID, LensBuyAmount, 16421, 1,4},
-{1, AlexandrianLensID, LensBuyAmount, 16427, 0,4},
+{1, AlexandrianBoltID, AccessoryBuyAmount, 16462, 13,4},
+{1, AlexandrianBoltID, AccessoryBuyAmount, 16457, 12,4},
+{1, AlexandrianBoltID, AccessoryBuyAmount, 16452, 11,4},
+{1, AlexandrianBoltID, AccessoryBuyAmount, 16447, 10,4},
+{1, AlexandrianPedalID, FeetBuyAmount, 16425, 9,4},
+{1, AlexandrianPedalID, FeetBuyAmount, 16431, 8,4},
+{1, AlexandrianSpringID, LegsBuyAmount, 16424, 7,4},
+{1, AlexandrianSpringID, LegsBuyAmount, 16430, 6,4},
+{1, AlexandrianCrankID, HandsBuyAmount, 16423, 5,4},
+{1, AlexandrianCrankID, HandsBuyAmount, 16429, 4,4},
+{1, AlexandrianShaftID, ChestBuyAmount, 16422, 3,4},
+{1, AlexandrianShaftID, ChestBuyAmount, 16428, 2,4},
+{1, AlexandrianLensID, HelmBuyAmount, 16421, 1,4},
+{1, AlexandrianLensID, HelmBuyAmount, 16427, 0,4},
 -- shop 3/dom 
-{2, AlexandrianBoltID, BoltBuyAmount, 16463, 17,4},
-{2, AlexandrianBoltID, BoltBuyAmount, 16464, 16,4},
-{2, AlexandrianBoltID, BoltBuyAmount, 16458, 15,4},
-{2, AlexandrianBoltID, BoltBuyAmount, 16459, 14,4},
-{2, AlexandrianBoltID, BoltBuyAmount, 16453, 13,4},
-{2, AlexandrianBoltID, BoltBuyAmount, 16454, 12,4},
-{2, AlexandrianBoltID, BoltBuyAmount, 16448, 11,4},
-{2, AlexandrianBoltID, BoltBuyAmount, 16449, 10,4},
-{2, AlexandrianPedalID, PedalBuyAmount, 16437, 9,4},
-{2, AlexandrianPedalID, PedalBuyAmount, 16443, 8,4},
-{2, AlexandrianSpringID, SpringBuyAmount, 16436, 7,4},
-{2, AlexandrianSpringID, SpringBuyAmount, 16442, 6,4},
-{2, AlexandrianCrankID, CrankBuyAmount, 16435, 5,4},
-{2, AlexandrianCrankID, CrankBuyAmount, 16441, 4,4},
-{2, AlexandrianShaftID, ShaftBuyAmount, 16434, 3,4},
-{2, AlexandrianShaftID, ShaftBuyAmount, 16440, 2,4},
-{2, AlexandrianLensID, LensBuyAmount, 16433, 1,4},
-{2, AlexandrianLensID, LensBuyAmount, 16439, 0,4},
+{2, AlexandrianBoltID, AccessoryBuyAmount, 16463, 17,4},
+{2, AlexandrianBoltID, AccessoryBuyAmount, 16464, 16,4},
+{2, AlexandrianBoltID, AccessoryBuyAmount, 16458, 15,4},
+{2, AlexandrianBoltID, AccessoryBuyAmount, 16459, 14,4},
+{2, AlexandrianBoltID, AccessoryBuyAmount, 16453, 13,4},
+{2, AlexandrianBoltID, AccessoryBuyAmount, 16454, 12,4},
+{2, AlexandrianBoltID, AccessoryBuyAmount, 16448, 11,4},
+{2, AlexandrianBoltID, AccessoryBuyAmount, 16449, 10,4},
+{2, AlexandrianPedalID, FeetBuyAmount, 16437, 9,4},
+{2, AlexandrianPedalID, FeetBuyAmount, 16443, 8,4},
+{2, AlexandrianSpringID, LegsBuyAmount, 16436, 7,4},
+{2, AlexandrianSpringID, LegsBuyAmount, 16442, 6,4},
+{2, AlexandrianCrankID, HandsBuyAmount, 16435, 5,4},
+{2, AlexandrianCrankID, HandsBuyAmount, 16441, 4,4},
+{2, AlexandrianShaftID, ChestBuyAmount, 16434, 3,4},
+{2, AlexandrianShaftID, ChestBuyAmount, 16440, 2,4},
+{2, AlexandrianLensID, HelmBuyAmount, 16433, 1,4},
+{2, AlexandrianLensID, HelmBuyAmount, 16439, 0,4},
 }
 
+-------------------------------------------------------------------------------- early antiquity item ids /
+EarlyHelmID = 27393
+EarlyArmorID = 27394
+EarlyGauntletID = 27395
+EarlyChaussesID = 27396
+EarlyGreavesID = 27397
+EarlyAccessoryID = 27399
 
+-- initialize item counts
+EarlyHelmCount = GetItemCount(EarlyHelmID)
+EarlyArmorCount = GetItemCount(EarlyArmorID)
+EarlyGauntletCount = GetItemCount(EarlyGauntletID)
+EarlyChaussesCount = GetItemCount(EarlyChaussesID)
+EarlyGreavesCount = GetItemCount(EarlyGreavesID)
+EarlyAccessoryCount = GetItemCount(EarlyAccessoryID)
 
-DjoleTable =
+-------------------------------------------------------------------------------- golden antiquity item ids
+GoldenHelmID = 29020
+GoldenArmorID = 29021
+GoldenGauntletID = 29022
+GoldenChaussesID = 29023
+GoldenGreavesID = 29024
+GoldenAccessoryID = 29026
+
+-- initialize item counts
+GoldenHelmCount = GetItemCount(GoldenHelmID)
+GoldenArmorCount = GetItemCount(GoldenArmorID)
+GoldenGauntletCount = GetItemCount(GoldenGauntletID)
+GoldenChaussesCount = GetItemCount(GoldenChaussesID)
+GoldenGreavesCount = GetItemCount(GoldenGreavesID)
+GoldenAccessoryCount = GetItemCount(GoldenAccessoryID)
+--------------------------------------------------------------------------------lost antiquity item ids 
+
+LostHelmID = 32133
+LostArmorID = 32134
+LostGauntletID = 32135
+LostChaussesID = 32136
+LostGreavesID = 32137
+LostAccessoryID = 32139
+
+-- initialize item counts
+LostHelmCount = GetItemCount(LostHelmID)
+LostArmorCount = GetItemCount(LostArmorID)
+LostGauntletCount = GetItemCount(LostGauntletID)
+LostChaussesCount = GetItemCount(LostChaussesID)
+LostGreavesCount = GetItemCount(LostGreavesID)
+LostAccessoryCount = GetItemCount(LostAccessoryID)
+
+------------------------------------------------------------------------------
+
+YhalTable =
 {
--------------------ASPHODELOS-------------------------------
+----------------------------   EDENGATE   --------------------------------------------
+-- shop 1/dow1
+{0, EarlyAccessoryID, AccessoryBuyAmount, 27073, 22,0},
+{0, EarlyAccessoryID, AccessoryBuyAmount, 27072, 21,0},
+{0, EarlyAccessoryID, AccessoryBuyAmount, 27068, 20,0},
+{0, EarlyAccessoryID, AccessoryBuyAmount, 27067, 19,0},
+{0, EarlyAccessoryID, AccessoryBuyAmount, 27063, 18,0},
+{0, EarlyAccessoryID, AccessoryBuyAmount, 27062, 17,0},
+{0, EarlyAccessoryID, AccessoryBuyAmount, 27058, 16,0},
+{0, EarlyAccessoryID, AccessoryBuyAmount, 27057, 15,0},
+{0, EarlyGreavesID, FeetBuyAmount, 27031, 14,0},
+{0, EarlyGreavesID, FeetBuyAmount, 27025, 13,0},
+{0, EarlyGreavesID, FeetBuyAmount, 27019, 12,0},
+{0, EarlyChaussesID, LegsBuyAmount, 27030, 11,0},
+{0, EarlyChaussesID, LegsBuyAmount, 27024, 10,0},
+{0, EarlyChaussesID, LegsBuyAmount, 27018, 9,0},
+{0, EarlyGauntletID, HandsBuyAmount, 27029, 8,0},
+{0, EarlyGauntletID, HandsBuyAmount, 27023, 7,0},
+{0, EarlyGauntletID, HandsBuyAmount, 27017, 6,0},
+{0, EarlyArmorID, ChestBuyAmount, 27028, 5,0},
+{0, EarlyArmorID, ChestBuyAmount, 27022, 4,0},
+{0, EarlyArmorID, ChestBuyAmount, 27016, 3,0},
+{0, EarlyHelmID, HelmBuyAmount, 27027, 2,0},
+{0, EarlyHelmID, HelmBuyAmount, 27021, 1,0},
+{0, EarlyHelmID, HelmBuyAmount, 27015, 0,0},
+-- shop 2/dow2 
+{1, EarlyAccessoryID, AccessoryBuyAmount, 27074, 13,0},
+{1, EarlyAccessoryID, AccessoryBuyAmount, 27069, 12,0},
+{1, EarlyAccessoryID, AccessoryBuyAmount, 27064, 11,0},
+{1, EarlyAccessoryID, AccessoryBuyAmount, 27059, 10,0},
+{1, EarlyGreavesID, FeetBuyAmount, 27037, 9,0},
+{1, EarlyGreavesID, FeetBuyAmount, 27043, 8,0},
+{1, EarlyChaussesID, LegsBuyAmount, 27036, 7,0},
+{1, EarlyChaussesID, LegsBuyAmount, 27042, 6,0},
+{1, EarlyGauntletID, HandsBuyAmount, 27035, 5,0},
+{1, EarlyGauntletID, HandsBuyAmount, 27041, 4,0},
+{1, EarlyArmorID, ChestBuyAmount, 27034, 3,0},
+{1, EarlyArmorID, ChestBuyAmount, 27040, 2,0},
+{1, EarlyHelmID, HelmBuyAmount, 27033, 1,0},
+{1, EarlyHelmID, HelmBuyAmount, 27039, 0,0},
+-- shop 3/dom 
+{2, EarlyAccessoryID, AccessoryBuyAmount, 27075, 17,0},
+{2, EarlyAccessoryID, AccessoryBuyAmount, 27076, 16,0},
+{2, EarlyAccessoryID, AccessoryBuyAmount, 27070, 15,0},
+{2, EarlyAccessoryID, AccessoryBuyAmount, 27071, 14,0},
+{2, EarlyAccessoryID, AccessoryBuyAmount, 27065, 13,0},
+{2, EarlyAccessoryID, AccessoryBuyAmount, 27066, 12,0},
+{2, EarlyAccessoryID, AccessoryBuyAmount, 27060, 11,0},
+{2, EarlyAccessoryID, AccessoryBuyAmount, 27061, 10,0},
+{2, EarlyGreavesID, FeetBuyAmount, 27049, 9,0},
+{2, EarlyGreavesID, FeetBuyAmount, 27055, 8,0},
+{2, EarlyChaussesID, LegsBuyAmount, 27048, 7,0},
+{2, EarlyChaussesID, LegsBuyAmount, 27054, 6,0},
+{2, EarlyGauntletID, HandsBuyAmount, 27047, 5,0},
+{2, EarlyGauntletID, HandsBuyAmount, 27053, 4,0},
+{2, EarlyArmorID, ChestBuyAmount, 27046, 3,0},
+{2, EarlyArmorID, ChestBuyAmount, 27052, 2,0},
+{2, EarlyHelmID, HelmBuyAmount, 27045, 1,0},
+{2, EarlyHelmID, HelmBuyAmount, 27051, 0,0},
+----------------------------   EDENVERSE   -------------------------------------------------
+-- Shop 1 / DOW1
+{0, GoldenAccessoryID, AccessoryBuyAmount, 29175, 22,2},
+{0, GoldenAccessoryID, AccessoryBuyAmount, 29174, 21,2},
+{0, GoldenAccessoryID, AccessoryBuyAmount, 29170, 20,2},
+{0, GoldenAccessoryID, AccessoryBuyAmount, 29169, 19,2},
+{0, GoldenAccessoryID, AccessoryBuyAmount, 29165, 18,2},
+{0, GoldenAccessoryID, AccessoryBuyAmount, 29164, 17,2},
+{0, GoldenAccessoryID, AccessoryBuyAmount, 29160, 16,2},
+{0, GoldenAccessoryID, AccessoryBuyAmount, 29159, 15,2},
+{0, GoldenGreavesID, FeetBuyAmount, 29133, 14,2},
+{0, GoldenGreavesID, FeetBuyAmount, 29127, 13,2},
+{0, GoldenGreavesID, FeetBuyAmount, 29121, 12,2},
+{0, GoldenChaussesID, LegsBuyAmount, 29132, 11,2},
+{0, GoldenChaussesID, LegsBuyAmount, 29126, 10,2},
+{0, GoldenChaussesID, LegsBuyAmount, 29120, 9,2},
+{0, GoldenGaountletID, HandsBuyAmount, 29131, 8,2},
+{0, GoldenGaountletID, HandsBuyAmount, 29125, 7,2},
+{0, GoldenGaountletID, HandsBuyAmount, 29119, 6,2},
+{0, GoldenArmorID, ChestBuyAmount, 29130, 5,2},
+{0, GoldenArmorID, ChestBuyAmount, 29124, 4,2},
+{0, GoldenArmorID, ChestBuyAmount, 29118, 3,2},
+{0, GoldenHelmID,HelmBuyAmount,29129,2,2},
+{0, GoldenHelmID,HelmBuyAmount,29123,1,2},
+{0, GoldenHelmID,HelmBuyAmount,29117,0,2},
+-- shop 2/dow2 
+{1, GoldenAccessoryID, AccessoryBuyAmount, 29176, 13,2},
+{1, GoldenAccessoryID, AccessoryBuyAmount, 29171, 12,2},
+{1, GoldenAccessoryID, AccessoryBuyAmount, 29166, 11,2},
+{1, GoldenAccessoryID, AccessoryBuyAmount, 29161, 10,2},
+{1, GoldenGreavesID, FeetBuyAmount, 29139, 9,2},
+{1, GoldenGreavesID, FeetBuyAmount, 29145, 8,2},
+{1, GoldenChaussesID, LegsBuyAmount, 29138, 7,2},
+{1, GoldenChaussesID, LegsBuyAmount, 29144, 6,2},
+{1, GoldenGaountletID, HandsBuyAmount, 29137, 5,2},
+{1, GoldenGaountletID, HandsBuyAmount, 29143, 4,2},
+{1, GoldenArmorID, ChestBuyAmount, 29136, 3,2},
+{1, GoldenArmorID, ChestBuyAmount, 29142, 2,2},
+{1, GoldenHelmID, HelmBuyAmount, 29135, 1,2},
+{1, GoldenHelmID, HelmBuyAmount, 29141, 0,2},
+-- shop 3/dom 
+{2, GoldenAccessoryID, AccessoryBuyAmount, 29177, 17,2},
+{2, GoldenAccessoryID, AccessoryBuyAmount, 29178, 16,2},
+{2, GoldenAccessoryID, AccessoryBuyAmount, 29172, 15,2},
+{2, GoldenAccessoryID, AccessoryBuyAmount, 29173, 14,2},
+{2, GoldenAccessoryID, AccessoryBuyAmount, 291567, 13,2},
+{2, GoldenAccessoryID, AccessoryBuyAmount, 29168, 12,2},
+{2, GoldenAccessoryID, AccessoryBuyAmount, 29162, 11,2},
+{2, GoldenAccessoryID, AccessoryBuyAmount, 29163, 10,2},
+{2, GoldenGreavesID, FeetBuyAmount, 29151, 9,2},
+{2, GoldenGreavesID, FeetBuyAmount, 29157, 8,2},
+{2, GoldenChaussesID, LegsBuyAmount, 29150, 7,2},
+{2, GoldenChaussesID, LegsBuyAmount, 29156, 6,2},
+{2, GoldenGaountletID, HandsBuyAmount, 29149, 5,2},
+{2, GoldenGaountletID, HandsBuyAmount, 29155, 4,2},
+{2, GoldenArmorID, ChestBuyAmount, 29148, 3,2},
+{2, GoldenArmorID, ChestBuyAmount, 29154, 2,2},
+{2, GoldenHelmID, HelmBuyAmount, 29147, 1,2},
+{2, GoldenHelmID, HelmBuyAmount, 29153, 0,2},
+    
+----------------------------   EDENPROMISE   --------------------------------------------
+{0, LostAccessoryID, AccessoryBuyAmount, 32414, 22,4},
+{0, LostAccessoryID, AccessoryBuyAmount, 32413, 21,4},
+{0, LostAccessoryID, AccessoryBuyAmount, 32409, 20,4},
+{0, LostAccessoryID, AccessoryBuyAmount, 32408, 19,4},
+{0, LostAccessoryID, AccessoryBuyAmount, 32404, 18,4},
+{0, LostAccessoryID, AccessoryBuyAmount, 32403, 17,4},
+{0, LostAccessoryID, AccessoryBuyAmount, 32399, 16,4},
+{0, LostAccessoryID, AccessoryBuyAmount, 32398, 15,4},
+{0, LostGreavesID, FeetBuyAmount, 32372, 14,4},
+{0, LostGreavesID, FeetBuyAmount, 32366, 13,4},
+{0, LostGreavesID, FeetBuyAmount, 32360, 12,4},
+{0, LostChaussesID, LegsBuyAmount, 32371, 11,4},
+{0, LostChaussesID, LegsBuyAmount, 32365, 10,4},
+{0, LostChaussesID, LegsBuyAmount, 32359, 9,4},
+{0, LostGauntletID, HandsBuyAmount, 32370, 8,4},
+{0, LostGauntletID, HandsBuyAmount, 32364, 7,4},
+{0, LostGauntletID, HandsBuyAmount, 32358, 6,4},
+{0, LostArmorID, ChestBuyAmount, 32369, 5,4},
+{0, LostArmorID, ChestBuyAmount, 32363, 4,4},
+{0, LostArmorID, ChestBuyAmount, 32357, 3,4},
+{0, LostHelmID,HelmBuyAmount,32368,2,4},
+{0, LostHelmID,HelmBuyAmount,32362,1,4},
+{0, LostHelmID,HelmBuyAmount,32356,0,4},
+-- shop 2/dow2 
+{1, LostAccessoryID, AccessoryBuyAmount, 32415, 13,4},
+{1, LostAccessoryID, AccessoryBuyAmount, 32410, 12,4},
+{1, LostAccessoryID, AccessoryBuyAmount, 32405, 11,4},
+{1, LostAccessoryID, AccessoryBuyAmount, 32400, 10,4},
+{1, LostGreavesID, FeetBuyAmount, 32378, 9,4},
+{1, LostGreavesID, FeetBuyAmount, 32384, 8,4},
+{1, LostChaussesID, LegsBuyAmount, 32377, 7,4},
+{1, LostChaussesID, LegsBuyAmount, 32383, 6,4},
+{1, LostGauntletID, HandsBuyAmount, 32376, 5,4},
+{1, LostGauntletID, HandsBuyAmount, 32382, 4,4},
+{1, LostArmorID, ChestBuyAmount, 32375, 3,4},
+{1, LostArmorID, ChestBuyAmount, 32381, 2,4},
+{1, LostHelmID, HelmBuyAmount, 32374, 1,4},
+{1, LostHelmID, HelmBuyAmount, 32380, 0,4},
+-- shop 3/dom 
+{2, LostAccessoryID, AccessoryBuyAmount, 32416, 17,4},
+{2, LostAccessoryID, AccessoryBuyAmount, 32417, 16,4},
+{2, LostAccessoryID, AccessoryBuyAmount, 32411, 15,4},
+{2, LostAccessoryID, AccessoryBuyAmount, 32412, 14,4},
+{2, LostAccessoryID, AccessoryBuyAmount, 32406, 13,4},
+{2, LostAccessoryID, AccessoryBuyAmount, 32407, 12,4},
+{2, LostAccessoryID, AccessoryBuyAmount, 32401, 11,4},
+{2, LostAccessoryID, AccessoryBuyAmount, 32402, 10,4},
+{2, LostGreavesID, FeetBuyAmount, 32390, 9,4},
+{2, LostGreavesID, FeetBuyAmount, 32396, 8,4},
+{2, LostChaussesID, LegsBuyAmount, 32389, 7,4},
+{2, LostChaussesID, LegsBuyAmount, 32395, 6,4},
+{2, LostGauntletID, HandsBuyAmount, 32388, 5,4},
+{2, LostGauntletID, HandsBuyAmount, 32394, 4,4},
+{2, LostArmorID, ChestBuyAmount, 32387, 3,4},
+{2, LostArmorID, ChestBuyAmount, 32393, 2,4},
+{2, LostHelmID, HelmBuyAmount, 32386, 1,4},
+{2, LostHelmID, HelmBuyAmount, 32392, 0,4},
 }
 
 -- Fonksyonlar / Functions
@@ -1046,6 +1270,23 @@ function TeleportToRhalgr()
     PlayerTest()
 end
 
+function TeleportToEulmore()
+    if IsInZone(820) then
+        LogInfo("[Debug]Tried Teleporting but already at zone: 820(Eulmore)")
+    else
+        while GetZoneID() ~= 820 do
+            yield("/wait 0.13")
+            if GetCharacterCondition(27) then
+                yield("/wait 2")
+            else
+                yield("/tp Eulmore")
+                yield("/wait 2") 
+            end
+        end
+    end
+    PlayerTest()
+end
+
 function TeleportGC()
     while GetZoneID() == 478 or GetZoneID() == 635 do
         yield("/wait 0.15")
@@ -1081,6 +1322,11 @@ function IsThereTradeItem()
         local count = GetItemCount(itemID)
         TotalExchangeItem = TotalExchangeItem + count
     end
+        for _, entry in ipairs(YhalTable) do
+        local itemID = entry[4]
+        local count = GetItemCount(itemID)
+        TotalExchangeItem = TotalExchangeItem + count
+    end
 
 
  ----------------------------   GORDIAN   --------------------------------------------
@@ -1092,12 +1338,12 @@ function IsThereTradeItem()
     GordianPedalCount = GetItemCount(GordianPedalID)
     GordianBoltCount = GetItemCount(GordianBoltID)
 
-    GordianTurnInCount = math.floor(GordianLensCount / LensBuyAmount) +
-    math.floor(GordianShaftCount / ShaftBuyAmount) +
-    math.floor(GordianCrankCount / CrankBuyAmount) +
-    math.floor(GordianSpringCount / SpringBuyAmount) +
-    math.floor(GordianPedalCount / PedalBuyAmount) +
-    math.floor(GordianBoltCount / BoltBuyAmount)
+    GordianTurnInCount = math.floor(GordianLensCount / HelmBuyAmount) +
+    math.floor(GordianShaftCount / ChestBuyAmount) +
+    math.floor(GordianCrankCount / HandsBuyAmount) +
+    math.floor(GordianSpringCount / LegsBuyAmount) +
+    math.floor(GordianPedalCount / FeetBuyAmount) +
+    math.floor(GordianBoltCount / AccessoryBuyAmount)
 
  ----------------------------   MIDAN   --------------------------------------------
 
@@ -1108,12 +1354,12 @@ function IsThereTradeItem()
     MidanPedalCount = GetItemCount(MidanPedalID)
     MidanBoltCount = GetItemCount(MidanBoltID)
 
-    MidanTurnInCount = math.floor(MidanLensCount / LensBuyAmount) +
-    math.floor(MidanShaftCount / ShaftBuyAmount) +
-    math.floor(MidanCrankCount / CrankBuyAmount) +
-    math.floor(MidanSpringCount / SpringBuyAmount) +
-    math.floor(MidanPedalCount / PedalBuyAmount) +
-    math.floor(MidanBoltCount / BoltBuyAmount)
+    MidanTurnInCount = math.floor(MidanLensCount / HelmBuyAmount) +
+    math.floor(MidanShaftCount / ChestBuyAmount) +
+    math.floor(MidanCrankCount / HandsBuyAmount) +
+    math.floor(MidanSpringCount / LegsBuyAmount) +
+    math.floor(MidanPedalCount / FeetBuyAmount) +
+    math.floor(MidanBoltCount / AccessoryBuyAmount)
 
  ----------------------------   Alexandrian   --------------------------------------------
 
@@ -1124,12 +1370,12 @@ function IsThereTradeItem()
     AlexandrianPedalCount = GetItemCount(AlexandrianPedalID)
     AlexandrianBoltCount = GetItemCount(AlexandrianBoltID)
 
-    AlexandrianTurnInCount = math.floor(AlexandrianLensCount / LensBuyAmount) +
-    math.floor(AlexandrianShaftCount / ShaftBuyAmount) +
-    math.floor(AlexandrianCrankCount / CrankBuyAmount) +
-    math.floor(AlexandrianSpringCount / SpringBuyAmount) +
-    math.floor(AlexandrianPedalCount / PedalBuyAmount) +
-    math.floor(AlexandrianBoltCount / BoltBuyAmount)
+    AlexandrianTurnInCount = math.floor(AlexandrianLensCount / HelmBuyAmount) +
+    math.floor(AlexandrianShaftCount / ChestBuyAmount) +
+    math.floor(AlexandrianCrankCount / HandsBuyAmount) +
+    math.floor(AlexandrianSpringCount / LegsBuyAmount) +
+    math.floor(AlexandrianPedalCount / FeetBuyAmount) +
+    math.floor(AlexandrianBoltCount / AccessoryBuyAmount)
 
  ------------------------------  Deltascape  ----------------------------------------------
 
@@ -1140,12 +1386,12 @@ function IsThereTradeItem()
     DeltascapePedalCount = GetItemCount(DeltascapePedalID)
     DeltascapeBoltCount = GetItemCount(DeltascapeBoltID)
 
-    DeltascapeTurnInCount = math.floor(DeltascapeLensCount / LensBuyAmount) +
-    math.floor(DeltascapeShaftCount / ShaftBuyAmount) +
-    math.floor(DeltascapeCrankCount / CrankBuyAmount) +
-    math.floor(DeltascapeSpringCount / SpringBuyAmount) +
-    math.floor(DeltascapePedalCount / PedalBuyAmount) +
-    math.floor(DeltascapeBoltCount / BoltBuyAmount)
+    DeltascapeTurnInCount = math.floor(DeltascapeLensCount / HelmBuyAmount) +
+    math.floor(DeltascapeShaftCount / ChestBuyAmount) +
+    math.floor(DeltascapeCrankCount / HandsBuyAmount) +
+    math.floor(DeltascapeSpringCount / LegsBuyAmount) +
+    math.floor(DeltascapePedalCount / FeetBuyAmount) +
+    math.floor(DeltascapeBoltCount / AccessoryBuyAmount)
 
 ------------------------------  Sigmascape  ----------------------------------------------
 
@@ -1156,12 +1402,12 @@ function IsThereTradeItem()
     SigmascapePedalCount = GetItemCount(SigmascapePedalID)
     SigmascapeBoltCount = GetItemCount(SigmascapeBoltID)
 
-    SigmascapeTurnInCount = math.floor(SigmascapeLensCount / LensBuyAmount) +
-    math.floor(SigmascapeShaftCount / ShaftBuyAmount) +
-    math.floor(SigmascapeCrankCount / CrankBuyAmount) +
-    math.floor(SigmascapeSpringCount / SpringBuyAmount) +
-    math.floor(SigmascapePedalCount / PedalBuyAmount) +
-    math.floor(SigmascapeBoltCount / BoltBuyAmount)
+    SigmascapeTurnInCount = math.floor(SigmascapeLensCount / HelmBuyAmount) +
+    math.floor(SigmascapeShaftCount / ChestBuyAmount) +
+    math.floor(SigmascapeCrankCount / HandsBuyAmount) +
+    math.floor(SigmascapeSpringCount / LegsBuyAmount) +
+    math.floor(SigmascapePedalCount / FeetBuyAmount) +
+    math.floor(SigmascapeBoltCount / AccessoryBuyAmount)
 
 ------------------------------  Alphascape  ----------------------------------------------
 
@@ -1172,19 +1418,67 @@ function IsThereTradeItem()
     AlphascapePedalCount = GetItemCount(AlphascapePedalID)
     AlphascapeBoltCount = GetItemCount(AlphascapeBoltID)
 
-    AlphascapeTurnInCount = math.floor(AlphascapeLensCount / LensBuyAmount) +
-    math.floor(AlphascapeShaftCount / ShaftBuyAmount) +
-    math.floor(AlphascapeCrankCount / CrankBuyAmount) +
-    math.floor(AlphascapeSpringCount / SpringBuyAmount) +
-    math.floor(AlphascapePedalCount / PedalBuyAmount) +
-    math.floor(AlphascapeBoltCount / BoltBuyAmount)
+    AlphascapeTurnInCount = math.floor(AlphascapeLensCount / HelmBuyAmount) +
+    math.floor(AlphascapeShaftCount / ChestBuyAmount) +
+    math.floor(AlphascapeCrankCount / HandsBuyAmount) +
+    math.floor(AlphascapeSpringCount / LegsBuyAmount) +
+    math.floor(AlphascapePedalCount / FeetBuyAmount) +
+    math.floor(AlphascapeBoltCount / AccessoryBuyAmount)
+
+    ------------------------------  Edengate  ----------------------------------------------
+
+    EarlyHelmCount = GetItemCount(EarlyHelmID)
+    EarlyArmorCount = GetItemCount(EarlyArmorID)
+    EarlyGauntletCount = GetItemCount(EarlyGauntletID)
+    EarlyChaussesCount = GetItemCount(EarlyChaussesID)
+    EarlyGreavesCount = GetItemCount(EarlyGreavesID)
+    EarlyAccessoryCount = GetItemCount(EarlyAccessoryID)
+
+    EdengateTurnInCount = math.floor(EarlyHelmCount / HelmBuyAmount) +
+    math.floor(EarlyArmorCount / ChestBuyAmount) +
+    math.floor(EarlyGauntletCount / HandsBuyAmount) +
+    math.floor(EarlyChaussesCount / LegsBuyAmount) +
+    math.floor(EarlyGreavesCount / FeetBuyAmount) +
+    math.floor(EarlyAccessoryCount / AccessoryBuyAmount)
+
+        ------------------------------  Edenverse  ----------------------------------------------
+
+    GoldenHelmCount = GetItemCount(GoldenHelmID)
+    GoldenArmorCount = GetItemCount(GoldenArmorID)
+    GoldenGauntletCount = GetItemCount(GoldenGauntletID)
+    GoldenChaussesCount = GetItemCount(GoldenChaussesID)
+    GoldenGreavesCount = GetItemCount(GoldenGreavesID)
+    GoldenAccessoryCount = GetItemCount(GoldenAccessoryID)
+
+    EdenverseTurnInCount = math.floor(GoldenHelmCount / HelmBuyAmount) +
+    math.floor(GoldenArmorCount / ChestBuyAmount) +
+    math.floor(GoldenGauntletCount / HandsBuyAmount) +
+    math.floor(GoldenChaussesCount / LegsBuyAmount) +
+    math.floor(GoldenGreavesCount / FeetBuyAmount) +
+    math.floor(GoldenAccessoryCount / AccessoryBuyAmount)
+
+        ------------------------------  Edenpromise  ----------------------------------------------
+
+    LostHelmCount = GetItemCount(LostHelmID)
+    LostArmorCount = GetItemCount(LostArmorID)
+    LostGauntletCount = GetItemCount(LostGauntletID)
+    LostChaussesCount = GetItemCount(LostChaussesID)
+    LostGreavesCount = GetItemCount(LostGreavesID)
+    LostAccessoryCount = GetItemCount(LostAccessoryID)
+
+    EdenpromiseTurnInCount = math.floor(LostHelmCount / HelmBuyAmount) +
+    math.floor(LostArmorCount / ChestBuyAmount) +
+    math.floor(LostGauntletCount / HandsBuyAmount) +
+    math.floor(LostChaussesCount / LegsBuyAmount) +
+    math.floor(LostGreavesCount / FeetBuyAmount) +
+    math.floor(LostAccessoryCount / AccessoryBuyAmount)
 
 
     if TotalExchangeItem > 0 then
         return true
     end
     
-    if GordianTurnInCount < 1 and MidanTurnInCount < 1 and AlexandrianTurnInCount < 1 and DeltascapeTurnInCount < 1 and SigmascapeTurnInCount < 1 and AlphascapeTurnInCount < 1 then
+    if GordianTurnInCount < 1 and MidanTurnInCount < 1 and AlexandrianTurnInCount < 1 and DeltascapeTurnInCount < 1 and SigmascapeTurnInCount < 1 and AlphascapeTurnInCount < 1 and EdengateTurnInCount < 1 and EdenverseTurnInCount < 1 and EdenpromiseTurnInCount < 1 then
         return false
     else
         return true
@@ -1266,6 +1560,8 @@ function TurnIn(TableName,MaxArmoryValue)
         NpcName = "Sabina"
     elseif TableName == GelfradusTable then
         NpcName = "Gelfradus"
+    elseif TableName == YhalTable then
+        npcName = "Yhal Yal"
     end
         
 
@@ -1518,7 +1814,7 @@ while IsThereTradeItem() do
         TurnIn(SabinaTable,false)
     elseif (DeltascapeTurnInCount >= 1 or SigmascapeTurnInCount >= 1 or AlphascapeTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
         TeleportToRhalgr()
-        local DistanceToGelfradus = GetDistanceToPoint(125.0,0.7,40.8)
+        local DistanceToYhal = GetDistanceToPoint(125.0,0.7,40.8)
         if DistanceToGelfradus > 2 then
             MountUp()
             WalkTo(125.0,0.7,40.8, 1)
@@ -1527,6 +1823,18 @@ while IsThereTradeItem() do
             TurnIn(GelfradusTable,true)
         end
         TurnIn(GelfradusTable,false)
+    end
+    elseif (EdengateTurnInCount >= 1 or EdenverseTurnInCount >= 1 or EdenpromiseTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
+        TeleportToEulmore()
+        local DistanceToYhal = GetDistanceToPoint(-55.854,84.194,14.951)
+        if DistanceToYhal > 2 then
+            MountUp()
+            WalkTo(-55.854,84.194,14.951, 1)
+        end
+        if MaxArmory then
+            TurnIn(YhalTable,true)
+        end
+        TurnIn(YhalTable,false)
     end
         
     if TotalExchangeItem > 0 then
@@ -1539,6 +1847,8 @@ while IsThereTradeItem() do
                     WalkTo(-1.6, 206.5, 50.1, 1)
                 elseif IsInZone(635) then
                     WalkTo(-55.6,0.0,51.4, 1)
+                elseif IsInZone(820) then
+                    WalkTo(6.766,82.134,30.170, 1)
                 end
                 SummoningBellSell()
             end
