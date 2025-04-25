@@ -2238,7 +2238,6 @@ while IsThereTradeItem() do
             TurnIn(GelfradusTable,true)
         end
         TurnIn(GelfradusTable,false)
-    end
     elseif (EdengateTurnInCount >= 1 or EdenverseTurnInCount >= 1 or EdenpromiseTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
         TeleportToEulmore()
         local DistanceToYhal = GetDistanceToPoint(-55.854,84.194,14.951)
