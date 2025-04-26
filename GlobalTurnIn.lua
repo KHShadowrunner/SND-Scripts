@@ -31,7 +31,6 @@
     -> 1.0.0  : Looks like it's working! :D
     -> 0.0.1  : Initial testing.
 
-
     ***************
     * Description *
     ***************
@@ -143,30 +142,6 @@ ItemIdArmoryTable =
     [16403] = 3201,
     [16421] = 3201,
     [16427] = 3201,
--- Asphodelos
-[34965] = 3201,
-[34971] = 3201,
-[34977] = 3201,
-[34983] = 3201,
-[34989] = 3201,
-[34995] = 3201,
-[35001] = 3201,
--- Abyssos
-[37876] = 3201,
-[37882] = 3201,
-[37888] = 3201,
-[37894] = 3201,
-[37900] = 3201,
-[37906] = 3201,
-[37912] = 3201,
--- Anabaseios
-[39960] = 3201,
-[39966] = 3201,
-[39972] = 3201,
-[39978] = 3201,
-[39984] = 3201,
-[39990] = 3201,
-[39996] = 3201,
 -- Edensgate
 [27015] = 3201,
 [27021] = 3201,
@@ -191,6 +166,30 @@ ItemIdArmoryTable =
 [32380] = 3201,
 [32386] = 3201,
 [32392] = 3201,
+-- Asphodelos
+[34965] = 3201,
+[34970] = 3201,
+[34975] = 3201,
+[34980] = 3201,
+[34985] = 3201,
+[34990] = 3201,
+[34995] = 3201,
+-- Abyssos
+[37876] = 3201,
+[37881] = 3201,
+[37886] = 3201,
+[37891] = 3201,
+[37896] = 3201,
+[37901] = 3201,
+[37906] = 3201,
+-- Anabaseios
+[39960] = 3201,
+[39965] = 3201,
+[39970] = 3201,
+[39975] = 3201,
+[39980] = 3201,
+[39985] = 3201,
+[39990] = 3201,
 
  -- ArmoryBody = 3202
  -- Deltascape
@@ -241,31 +240,7 @@ ItemIdArmoryTable =
     [16404] = 3202,
     [16410] = 3202,
     [16416] = 3202,
--- Asphodelos
-[34966] = 3202,
-[34972] = 3202,
-[34978] = 3202,
-[34994] = 3202,
-[34990] = 3202,
-[34996] = 3202,
-[35002] = 3202,
--- Abyssos
-[37877] = 3202,
-[37883] = 3202,
-[37889] = 3202,
-[37905] = 3202,
-[37901] = 3202,
-[37907] = 3202,
-[37913] = 3202,
--- Anabaseios
-[39961] = 3202,
-[39967] = 3202,
-[39973] = 3202,
-[39989] = 3202,
-[39985] = 3202,
-[39991] = 3202,
-[39997] = 3202,
--- Edensgate
+    -- Edensgate
 [27016] = 3202,
 [27022] = 3202,
 [27028] = 3202,
@@ -289,6 +264,30 @@ ItemIdArmoryTable =
 [32381] = 3202,
 [32387] = 3202,
 [32393] = 3202,
+-- Asphodelos
+[34966] = 3202,
+[34971] = 3202,
+[34976] = 3202,
+[34981] = 3202,
+[34986] = 3202,
+[34991] = 3202,
+[34996] = 3202,
+-- Abyssos
+[37877] = 3202,
+[37882] = 3202,
+[37887] = 3202,
+[37892] = 3202,
+[37897] = 3202,
+[37902] = 3202,
+[37907] = 3202,
+-- Anabaseios
+[39961] = 3202,
+[39966] = 3202,
+[39971] = 3202,
+[39976] = 3202,
+[39981] = 3202,
+[39986] = 3202,
+[39991] = 3202,
 
  --ArmoryHands = 3203
  -- Deltascape
@@ -339,30 +338,6 @@ ItemIdArmoryTable =
     [16405] = 3203,
     [16411] = 3203,
     [16417] = 3203,
--- Asphodelos
-[34967] = 3203,
-[34973] = 3203,
-[34979] = 3203,
-[34995] = 3203,
-[34991] = 3203,
-[34997] = 3203,
-[35003] = 3203,
--- Abyssos
-[37878] = 3203,
-[37884] = 3203,
-[37890] = 3203,
-[37906] = 3203,
-[37902] = 3203,
-[37908] = 3203,
-[37914] = 3203,
--- Anabaseios
-[39962] = 3203,
-[39968] = 3203,
-[39974] = 3203,
-[39990] = 3203,
-[39986] = 3203,
-[39992] = 3203,
-[39998] = 3203,
 -- Edensgate
 [27017] = 3203,
 [27023] = 3203,
@@ -387,7 +362,30 @@ ItemIdArmoryTable =
 [32382] = 3203,
 [32388] = 3203,
 [32394] = 3203,
-
+-- Asphodelos
+[34967] = 3203,
+[34972] = 3203,
+[34977] = 3203,
+[34982] = 3203,
+[34987] = 3203,
+[34992] = 3203,
+[34997] = 3203,
+-- Abyssos
+[37878] = 3203,
+[37883] = 3203,
+[37888] = 3203,
+[37893] = 3203,
+[37898] = 3203,
+[37903] = 3203,
+[37908] = 3203,
+-- Anabaseios
+[39962] = 3203,
+[39967] = 3203,
+[39972] = 3203,
+[39977] = 3203,
+[39982] = 3203,
+[39987] = 3203,
+[39992] = 3203,
  --ArmoryLegs = 3205
  -- Deltascape
     [19476] = 3205,
@@ -437,30 +435,6 @@ ItemIdArmoryTable =
     [16406] = 3205,
     [16412] = 3205,
     [16418] = 3205,
--- Asphodelos
-[34968] = 3205,
-[34974] = 3205,
-[34980] = 3205,
-[34996] = 3205,
-[34992] = 3205,
-[34998] = 3205,
-[35004] = 3205,
--- Abyssos
-[37879] = 3205,
-[37885] = 3205,
-[37891] = 3205,
-[37907] = 3205,
-[37903] = 3205,
-[37909] = 3205,
-[37915] = 3205,
--- Anabaseios
-[39963] = 3205,
-[39969] = 3205,
-[39975] = 3205,
-[39991] = 3205,
-[39987] = 3205,
-[39993] = 3205,
-[39999] = 3205,
 -- Edensgate
 [27018] = 3205,
 [27024] = 3205,
@@ -485,7 +459,30 @@ ItemIdArmoryTable =
 [32383] = 3205,
 [32389] = 3205,
 [32395] = 3205,
-
+-- Asphodelos
+[34968] = 3205,
+[34973] = 3205,
+[34978] = 3205,
+[34983] = 3205,
+[34988] = 3205,
+[34993] = 3205,
+[34998] = 3205,
+-- Abyssos
+[37879] = 3205,
+[37884] = 3205,
+[37889] = 3205,
+[37894] = 3205,
+[37899] = 3205,
+[37904] = 3205,
+[37909] = 3205,
+-- Anabaseios
+[39963] = 3205,
+[39968] = 3205,
+[39973] = 3205,
+[39978] = 3205,
+[39983] = 3205,
+[39988] = 3205,
+[39993] = 3205,
  --ArmoryFeets = 3206
  -- Deltascape
     [19477] = 3206,
@@ -535,30 +532,6 @@ ItemIdArmoryTable =
     [16407] = 3206,
     [16413] = 3206,
     [16419] = 3206,
--- Asphodelos
-    [34969] = 3206,
-    [34975] = 3206,
-    [34981] = 3206,
-    [34997] = 3206,
-    [34993] = 3206,
-    [34999] = 3206,
-    [35005] = 3206,
--- Abyssos
-    [37880] = 3206,
-    [37886] = 3206,
-    [37892] = 3206,
-    [37908] = 3206,
-    [37904] = 3206,
-    [37910] = 3206,
-    [37916] = 3206,
--- Anabaseios
-    [39964] = 3206,
-    [39970] = 3206,
-    [39976] = 3206,
-    [39992] = 3206,
-    [39988] = 3206,
-    [39994] = 3206,
-    [40000] = 3206,
 -- Edensgate
 [27019] = 3206,
 [27025] = 3206,
@@ -583,6 +556,30 @@ ItemIdArmoryTable =
 [32384] = 3206,
 [32390] = 3206,
 [32396] = 3206,
+-- Asphodelos
+[34969] = 3206,
+[34974] = 3206,
+[34979] = 3206,
+[34984] = 3206,
+[34989] = 3206,
+[34994] = 3206,
+[34999] = 3206,
+-- Abyssos
+[37880] = 3206,
+[37885] = 3206,
+[37890] = 3206,
+[37895] = 3206,
+[37900] = 3206,
+[37905] = 3206,
+[37910] = 3206,
+-- Anabaseios
+[39964] = 3206,
+[39969] = 3206,
+[39974] = 3206,
+[39979] = 3206,
+[39984] = 3206,
+[39989] = 3206,
+[39994] = 3206,
 
  -- ArmoryEar = 3207
  -- Deltascape
@@ -621,24 +618,6 @@ ItemIdArmoryTable =
     [16447] = 3207,
     [16445] = 3207,
     [16446] = 3207,
--- Asphodelos
-[35007] = 3207,
-[35008] = 3207,
-[35009] = 3207,
-[35010] = 3207,
-[35011] = 3207,
--- Abyssos
-[37918] = 3207,
-[37919] = 3207,
-[37920] = 3207,
-[37921] = 3207,
-[37922] = 3207,
--- Anabaseios
-[40002] = 3207,
-[40003] = 3207,
-[40004] = 3207,
-[40005] = 3207,
-[40006] = 3207,
 -- Edensgate
 [27057] = 3207,
 [27058] = 3207,
@@ -657,6 +636,24 @@ ItemIdArmoryTable =
 [32400] = 3207,
 [32401] = 3207,
 [32402] = 3207,
+-- Asphodelos
+[35000] = 3207,
+[35001] = 3207,
+[35002] = 3207,
+[35003] = 3207,
+[35004] = 3207,
+-- Abyssos
+[37911] = 3207,
+[37912] = 3207,
+[37913] = 3207,
+[37914] = 3207,
+[37915] = 3207,
+-- Anabaseios
+[39995] = 3207,
+[39996] = 3207,
+[39997] = 3207,
+[39998] = 3207,
+[39999] = 3207,
 
  --ArmoryNeck = 3208
  -- Deltascape
@@ -695,24 +692,6 @@ ItemIdArmoryTable =
     [16452] = 3208,
     [16454] = 3208,
     [16453] = 3208,
--- Asphodelos
-[35012] = 3208,
-[35013] = 3208,
-[35014] = 3208,
-[35015] = 3208,
-[35016] = 3208,
--- Abyssos
-[37923] = 3208,
-[37924] = 3208,
-[37925] = 3208,
-[37926] = 3208,
-[37927] = 3208,
--- Anabaseios
-[40007] = 3208,
-[40008] = 3208,
-[40009] = 3208,
-[40010] = 3208,
-[40011] = 3208,
 -- Edensgate
 [27062] = 3208,
 [27063] = 3208,
@@ -731,6 +710,24 @@ ItemIdArmoryTable =
 [32405] = 3208,
 [32406] = 3208,
 [32407] = 3208,
+-- Asphodelos
+[35005] = 3208,
+[35006] = 3208,
+[35007] = 3208,
+[35008] = 3208,
+[35009] = 3208,
+-- Abyssos
+[37916] = 3208,
+[37917] = 3208,
+[37918] = 3208,
+[37919] = 3208,
+[37920] = 3208,
+-- Anabaseios
+[40000] = 3208,
+[40001] = 3208,
+[40002] = 3208,
+[40003] = 3208,
+[40004] = 3208,
 
  --ArmoryWrist = 3209
  -- Deltascape
@@ -770,24 +767,6 @@ ItemIdArmoryTable =
     [16457] = 3209,
     [16455] = 3209,
     [16456] = 3209,
--- Asphodelos
-[35017] = 3209,
-[35018] = 3209,
-[35019] = 3209,
-[35020] = 3209,
-[35021] = 3209,
--- Abyssos
-[37928] = 3209,
-[37929] = 3209,
-[37930] = 3209,
-[37931] = 3209,
-[37932] = 3209,
--- Anabaseios
-[40012] = 3209,
-[40013] = 3209,
-[40014] = 3209,
-[40015] = 3209,
-[40016] = 3209,
 -- Edensgate
 [27067] = 3209,
 [27068] = 3209,
@@ -806,6 +785,24 @@ ItemIdArmoryTable =
 [32410] = 3209,
 [32411] = 3209,
 [32412] = 3209,
+-- Asphodelos
+[35010] = 3209,
+[35011] = 3209,
+[35012] = 3209,
+[35013] = 3209,
+[35014] = 3209,
+-- Abyssos
+[37921] = 3209,
+[37922] = 3209,
+[37923] = 3209,
+[37924] = 3209,
+[37925] = 3209,
+-- Anabaseios
+[40005] = 3209,
+[40006] = 3209,
+[40007] = 3209,
+[40008] = 3209,
+[40009] = 3209,
 
  --ArmoryRings = 3300
  -- Deltascape
@@ -844,24 +841,6 @@ ItemIdArmoryTable =
     [16462] = 3300,
     [16460] = 3300,
     [16461] = 3300,
--- Asphodelos
-[35022] = 3210,
-[35023] = 3210,
-[35024] = 3210,
-[35025] = 3210,
-[35026] = 3210,
--- Abyssos
-[37933] = 3210,
-[37934] = 3210,
-[37935] = 3210,
-[37936] = 3210,
-[37937] = 3210,
--- Anabaseios
-[40017] = 3210,
-[40018] = 3210,
-[40019] = 3210,
-[40020] = 3210,
-[40021] = 3210,
 -- Edensgate
 [27072] = 3210,
 [27073] = 3210,
@@ -880,6 +859,24 @@ ItemIdArmoryTable =
 [32415] = 3210,
 [32416] = 3210,
 [32417] = 3210,
+-- Asphodelos
+[35015] = 3210,
+[35016] = 3210,
+[35017] = 3210,
+[35018] = 3210,
+[35019] = 3210,
+-- Abyssos
+[37926] = 3210,
+[37927] = 3210,
+[37928] = 3210,
+[37929] = 3210,
+[37930] = 3210,
+-- Anabaseios
+[40010] = 3210,
+[40011] = 3210,
+[40012] = 3210,
+[40013] = 3210,
+[40014] = 3210,
 }
 
 ------------------------------------------------------------------------------
@@ -1576,7 +1573,7 @@ AsphodelosArmorID = 35818
 AsphodelosGauntletID = 35819
 AsphodelosChaussesID = 35820
 AsphodelosGreavesID = 35821
-AsphodelosAccessoryID = 35823
+AsphodelosAccessoryID = 35822
 
 -- initialize item counts
 AsphodelosHelmCount = GetItemCount(AsphodelosHelmID)
@@ -1592,7 +1589,7 @@ AbyssosArmorID = 38376
 AbyssosGauntletID = 38377
 AbyssosChaussesID = 38378
 AbyssosGreavesID = 38379
-AbyssosAccessoryID = 38381
+AbyssosAccessoryID = 38380
 
 -- initialize item counts
 AbyssosHelmCount = GetItemCount(AbyssosHelmID)
@@ -1608,7 +1605,7 @@ AnabaseiosArmorID = 40298
 AnabaseiosGauntletID = 40299
 AnabaseiosChaussesID = 40300
 AnabaseiosGreavesID = 40301
-AnabaseiosAccessoryID = 40303
+AnabaseiosAccessoryID = 40302
 
 -- initialize item counts
 AnabaseiosHelmCount = GetItemCount(AnabaseiosHelmID)
@@ -1627,170 +1624,170 @@ DjoleTable =
 {0, AsphodelosGauntletID, HandsBuyAmount, 34967, 6,0},
 {0, AsphodelosChaussesID, LegsBuyAmount, 34968, 9,0},
 {0, AsphodelosGreavesID, FeetBuyAmount, 34969, 12,0},
-{0, AsphodelosHelmID, HelmBuyAmount, 34971, 1,0},
-{0, AsphodelosArmorID, ChestBuyAmount, 34972, 4,0},
-{0, AsphodelosGauntletID, HandsBuyAmount, 34973, 7,0},
-{0, AsphodelosChaussesID, LegsBuyAmount, 34974, 10,0},
-{0, AsphodelosGreavesID, FeetBuyAmount, 34975, 13,0},
-{0, AsphodelosHelmID, HelmBuyAmount, 34977, 2,0},
-{0, AsphodelosArmorID, ChestBuyAmount, 34978, 5,0},
-{0, AsphodelosGauntletID, HandsBuyAmount, 34979, 8,0},
-{0, AsphodelosChaussesID, LegsBuyAmount, 34980, 11,0},
-{0, AsphodelosGreavesID, FeetBuyAmount, 34981, 14,0},
-{1, AsphodelosHelmID, HelmBuyAmount, 34983, 1,0},
-{1, AsphodelosArmorID, ChestBuyAmount, 34984, 3,0},
-{1, AsphodelosGauntletID, HandsBuyAmount, 34985, 5,0},
-{1, AsphodelosChaussesID, LegsBuyAmount, 34986, 7,0},
-{1, AsphodelosGreavesID, FeetBuyAmount, 34987, 9,0},
-{1, AsphodelosHelmID, HelmBuyAmount, 34989, 0,0},
-{1, AsphodelosArmorID, ChestBuyAmount, 34990, 2,0},
-{1, AsphodelosGauntletID, HandsBuyAmount, 34991, 4,0},
-{1, AsphodelosChaussesID, LegsBuyAmount, 34992, 6,0},
-{1, AsphodelosGreavesID, FeetBuyAmount, 34993, 8,0},
-{2, AsphodelosHelmID, HelmBuyAmount, 34995, 1,0},
-{2, AsphodelosArmorID, ChestBuyAmount, 34996, 3,0},
-{2, AsphodelosGauntletID, HandsBuyAmount, 34997, 5,0},
-{2, AsphodelosChaussesID, LegsBuyAmount, 34998, 7,0},
-{2, AsphodelosGreavesID, FeetBuyAmount, 34999, 9,0},
-{2, AsphodelosHelmID, HelmBuyAmount, 35001, 0,0},
-{2, AsphodelosArmorID, ChestBuyAmount, 35002, 2,0},
-{2, AsphodelosGauntletID, HandsBuyAmount, 35003, 4,0},
-{2, AsphodelosChaussesID, LegsBuyAmount, 35004, 6,0},
-{2, AsphodelosGreavesID, FeetBuyAmount, 35005, 8,0},
-{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35007, 15,0},
-{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35008, 16,0},
-{1, AsphodelosAccessoryID, AccessoryBuyAmount, 35009, 10,0},
-{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35010, 11,0},
-{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35011, 10,0},
-{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35012, 17,0},
-{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35013, 18,0},
-{1, AsphodelosAccessoryID, AccessoryBuyAmount, 35014, 11,0},
-{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35015, 13,0},
-{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35016, 12,0},
-{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35017, 19,0},
-{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35018, 20,0},
-{1, AsphodelosAccessoryID, AccessoryBuyAmount, 35019, 12,0},
-{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35020, 15,0},
-{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35021, 14,0},
-{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35022, 21,0},
-{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35023, 22,0},
-{1, AsphodelosAccessoryID, AccessoryBuyAmount, 35024, 13,0},
-{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35025, 17,0},
-{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35026, 16,0},
+{0, AsphodelosHelmID, HelmBuyAmount, 34970, 1,0},
+{0, AsphodelosArmorID, ChestBuyAmount, 34971, 4,0},
+{0, AsphodelosGauntletID, HandsBuyAmount, 34972, 7,0},
+{0, AsphodelosChaussesID, LegsBuyAmount, 34973, 10,0},
+{0, AsphodelosGreavesID, FeetBuyAmount, 34974, 13,0},
+{0, AsphodelosHelmID, HelmBuyAmount, 34975, 2,0},
+{0, AsphodelosArmorID, ChestBuyAmount, 34976, 5,0},
+{0, AsphodelosGauntletID, HandsBuyAmount, 34977, 8,0},
+{0, AsphodelosChaussesID, LegsBuyAmount, 34978, 11,0},
+{0, AsphodelosGreavesID, FeetBuyAmount, 34979, 14,0},
+{1, AsphodelosHelmID, HelmBuyAmount, 34980, 1,0},
+{1, AsphodelosArmorID, ChestBuyAmount, 34981, 3,0},
+{1, AsphodelosGauntletID, HandsBuyAmount, 34982, 5,0},
+{1, AsphodelosChaussesID, LegsBuyAmount, 34983, 7,0},
+{1, AsphodelosGreavesID, FeetBuyAmount, 34984, 9,0},
+{1, AsphodelosHelmID, HelmBuyAmount, 34985, 0,0},
+{1, AsphodelosArmorID, ChestBuyAmount, 34986, 2,0},
+{1, AsphodelosGauntletID, HandsBuyAmount, 34987, 4,0},
+{1, AsphodelosChaussesID, LegsBuyAmount, 34988, 6,0},
+{1, AsphodelosGreavesID, FeetBuyAmount, 34989, 8,0},
+{2, AsphodelosHelmID, HelmBuyAmount, 34990, 1,0},
+{2, AsphodelosArmorID, ChestBuyAmount, 34991, 3,0},
+{2, AsphodelosGauntletID, HandsBuyAmount, 34992, 5,0},
+{2, AsphodelosChaussesID, LegsBuyAmount, 34993, 7,0},
+{2, AsphodelosGreavesID, FeetBuyAmount, 34994, 9,0},
+{2, AsphodelosHelmID, HelmBuyAmount, 34995, 0,0},
+{2, AsphodelosArmorID, ChestBuyAmount, 34996, 2,0},
+{2, AsphodelosGauntletID, HandsBuyAmount, 34997, 4,0},
+{2, AsphodelosChaussesID, LegsBuyAmount, 34998, 6,0},
+{2, AsphodelosGreavesID, FeetBuyAmount, 34999, 8,0},
+{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35000, 15,0},
+{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35001, 16,0},
+{1, AsphodelosAccessoryID, AccessoryBuyAmount, 35002, 10,0},
+{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35003, 11,0},
+{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35004, 10,0},
+{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35005, 17,0},
+{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35006, 18,0},
+{1, AsphodelosAccessoryID, AccessoryBuyAmount, 35007, 11,0},
+{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35008, 13,0},
+{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35009, 12,0},
+{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35010, 19,0},
+{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35011, 20,0},
+{1, AsphodelosAccessoryID, AccessoryBuyAmount, 35012, 12,0},
+{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35013, 15,0},
+{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35014, 14,0},
+{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35015, 21,0},
+{0, AsphodelosAccessoryID, AccessoryBuyAmount, 35016, 22,0},
+{1, AsphodelosAccessoryID, AccessoryBuyAmount, 35017, 13,0},
+{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35018, 17,0},
+{2, AsphodelosAccessoryID, AccessoryBuyAmount, 35019, 16,0},
 
 --------------------- Abyssos --------------------------------
-{0, AbyssosHelmID, HelmBuyAmount, 37876, 0,0},
-{0, AbyssosArmorID, ChestBuyAmount, 37877, 3,0},
-{0, AbyssosGauntletID, HandsBuyAmount, 37878, 6,0},
-{0, AbyssosChaussesID, LegsBuyAmount, 37879, 9,0},
-{0, AbyssosGreavesID, FeetBuyAmount, 37880, 12,0},
-{0, AbyssosHelmID, HelmBuyAmount, 37882, 1,0},
-{0, AbyssosArmorID, ChestBuyAmount, 37883, 4,0},
-{0, AbyssosGauntletID, HandsBuyAmount, 37884, 7,0},
-{0, AbyssosChaussesID, LegsBuyAmount, 37885, 10,0},
-{0, AbyssosGreavesID, FeetBuyAmount, 37886, 13,0},
-{0, AbyssosHelmID, HelmBuyAmount, 37888, 2,0},
-{0, AbyssosArmorID, ChestBuyAmount, 37889, 5,0},
-{0, AbyssosGauntletID, HandsBuyAmount, 37890, 8,0},
-{0, AbyssosChaussesID, LegsBuyAmount, 37891, 11,0},
-{0, AbyssosGreavesID, FeetBuyAmount, 37892, 14,0},
-{1, AbyssosHelmID, HelmBuyAmount, 37894, 1,0},
-{1, AbyssosArmorID, ChestBuyAmount, 37895, 3,0},
-{1, AbyssosGauntletID, HandsBuyAmount, 37896, 5,0},
-{1, AbyssosChaussesID, LegsBuyAmount, 37897, 7,0},
-{1, AbyssosGreavesID, FeetBuyAmount, 37898, 9,0},
-{1, AbyssosHelmID, HelmBuyAmount, 37900, 0,0},
-{1, AbyssosArmorID, ChestBuyAmount, 37901, 2,0},
-{1, AbyssosGauntletID, HandsBuyAmount, 37902, 4,0},
-{1, AbyssosChaussesID, LegsBuyAmount, 37903, 6,0},
-{1, AbyssosGreavesID, FeetBuyAmount, 37904, 8,0},
-{2, AbyssosHelmID, HelmBuyAmount, 37906, 1,0},
-{2, AbyssosArmorID, ChestBuyAmount, 37907, 3,0},
-{2, AbyssosGauntletID, HandsBuyAmount, 37908, 5,0},
-{2, AbyssosChaussesID, LegsBuyAmount, 37909, 7,0},
-{2, AbyssosGreavesID, FeetBuyAmount, 37910, 9,0},
-{2, AbyssosHelmID, HelmBuyAmount, 37912, 0,0},
-{2, AbyssosArmorID, ChestBuyAmount, 37913, 2,0},
-{2, AbyssosGauntletID, HandsBuyAmount, 37914, 4,0},
-{2, AbyssosChaussesID, LegsBuyAmount, 37915, 6,0},
-{2, AbyssosGreavesID, FeetBuyAmount, 37916, 8,0},
-{0, AbyssosAccessoryID, AccessoryBuyAmount, 37918, 15,0},
-{0, AbyssosAccessoryID, AccessoryBuyAmount, 37919, 16,0},
-{1, AbyssosAccessoryID, AccessoryBuyAmount, 37920, 10,0},
-{2, AbyssosAccessoryID, AccessoryBuyAmount, 37921, 11,0},
-{2, AbyssosAccessoryID, AccessoryBuyAmount, 37922, 10,0},
-{0, AbyssosAccessoryID, AccessoryBuyAmount, 37923, 17,0},
-{0, AbyssosAccessoryID, AccessoryBuyAmount, 37924, 18,0},
-{1, AbyssosAccessoryID, AccessoryBuyAmount, 37925, 11,0},
-{2, AbyssosAccessoryID, AccessoryBuyAmount, 37926, 13,0},
-{2, AbyssosAccessoryID, AccessoryBuyAmount, 37927, 12,0},
-{0, AbyssosAccessoryID, AccessoryBuyAmount, 37928, 19,0},
-{0, AbyssosAccessoryID, AccessoryBuyAmount, 37929, 20,0},
-{1, AbyssosAccessoryID, AccessoryBuyAmount, 37930, 12,0},
-{2, AbyssosAccessoryID, AccessoryBuyAmount, 37931, 15,0},
-{2, AbyssosAccessoryID, AccessoryBuyAmount, 37932, 14,0},
-{0, AbyssosAccessoryID, AccessoryBuyAmount, 37933, 21,0},
-{0, AbyssosAccessoryID, AccessoryBuyAmount, 37934, 22,0},
-{1, AbyssosAccessoryID, AccessoryBuyAmount, 37935, 13,0},
-{2, AbyssosAccessoryID, AccessoryBuyAmount, 37936, 17,0},
-{2, AbyssosAccessoryID, AccessoryBuyAmount, 37937, 16,0},
+{0, AbyssosHelmID, HelmBuyAmount, 37876, 0,2},
+{0, AbyssosArmorID, ChestBuyAmount, 37877, 3,2},
+{0, AbyssosGauntletID, HandsBuyAmount, 37878, 6,2},
+{0, AbyssosChaussesID, LegsBuyAmount, 37879, 9,2},
+{0, AbyssosGreavesID, FeetBuyAmount, 37880, 12,2},
+{0, AbyssosHelmID, HelmBuyAmount, 37881, 1,2},
+{0, AbyssosArmorID, ChestBuyAmount, 37882, 4,2},
+{0, AbyssosGauntletID, HandsBuyAmount, 37883, 7,2},
+{0, AbyssosChaussesID, LegsBuyAmount, 37884, 10,2},
+{0, AbyssosGreavesID, FeetBuyAmount, 37885, 13,2},
+{0, AbyssosHelmID, HelmBuyAmount, 37886, 2,2},
+{0, AbyssosArmorID, ChestBuyAmount, 37887, 5,2},
+{0, AbyssosGauntletID, HandsBuyAmount, 37888, 8,2},
+{0, AbyssosChaussesID, LegsBuyAmount, 37889, 11,2},
+{0, AbyssosGreavesID, FeetBuyAmount, 37890, 14,2},
+{1, AbyssosHelmID, HelmBuyAmount, 37891, 1,2},
+{1, AbyssosArmorID, ChestBuyAmount, 37892, 3,2},
+{1, AbyssosGauntletID, HandsBuyAmount, 37893, 5,2},
+{1, AbyssosChaussesID, LegsBuyAmount, 37894, 7,2},
+{1, AbyssosGreavesID, FeetBuyAmount, 37895, 9,2},
+{1, AbyssosHelmID, HelmBuyAmount, 37896, 0,2},
+{1, AbyssosArmorID, ChestBuyAmount, 37897, 2,2},
+{1, AbyssosGauntletID, HandsBuyAmount, 37898, 4,2},
+{1, AbyssosChaussesID, LegsBuyAmount, 37899, 6,2},
+{1, AbyssosGreavesID, FeetBuyAmount, 37900, 8,2},
+{2, AbyssosHelmID, HelmBuyAmount, 37901, 1,2},
+{2, AbyssosArmorID, ChestBuyAmount, 37902, 3,2},
+{2, AbyssosGauntletID, HandsBuyAmount, 37903, 5,2},
+{2, AbyssosChaussesID, LegsBuyAmount, 37904, 7,2},
+{2, AbyssosGreavesID, FeetBuyAmount, 37905, 9,2},
+{2, AbyssosHelmID, HelmBuyAmount, 37906, 0,2},
+{2, AbyssosArmorID, ChestBuyAmount, 37907, 2,2},
+{2, AbyssosGauntletID, HandsBuyAmount, 37908, 4,2},
+{2, AbyssosChaussesID, LegsBuyAmount, 37909, 6,2},
+{2, AbyssosGreavesID, FeetBuyAmount, 37910, 8,2},
+{0, AbyssosAccessoryID, AccessoryBuyAmount, 37911, 15,2},
+{0, AbyssosAccessoryID, AccessoryBuyAmount, 37912, 16,2},
+{1, AbyssosAccessoryID, AccessoryBuyAmount, 37913, 10,2},
+{2, AbyssosAccessoryID, AccessoryBuyAmount, 37914, 11,2},
+{2, AbyssosAccessoryID, AccessoryBuyAmount, 37915, 10,2},
+{0, AbyssosAccessoryID, AccessoryBuyAmount, 37916, 17,2},
+{0, AbyssosAccessoryID, AccessoryBuyAmount, 37917, 18,2},
+{1, AbyssosAccessoryID, AccessoryBuyAmount, 37918, 11,2},
+{2, AbyssosAccessoryID, AccessoryBuyAmount, 37919, 13,2},
+{2, AbyssosAccessoryID, AccessoryBuyAmount, 37920, 12,2},
+{0, AbyssosAccessoryID, AccessoryBuyAmount, 37921, 19,2},
+{0, AbyssosAccessoryID, AccessoryBuyAmount, 37922, 20,2},
+{1, AbyssosAccessoryID, AccessoryBuyAmount, 37923, 12,2},
+{2, AbyssosAccessoryID, AccessoryBuyAmount, 37924, 15,2},
+{2, AbyssosAccessoryID, AccessoryBuyAmount, 37925, 14,2},
+{0, AbyssosAccessoryID, AccessoryBuyAmount, 37926, 21,2},
+{0, AbyssosAccessoryID, AccessoryBuyAmount, 37927, 22,2},
+{1, AbyssosAccessoryID, AccessoryBuyAmount, 37928, 13,2},
+{2, AbyssosAccessoryID, AccessoryBuyAmount, 37929, 17,2},
+{2, AbyssosAccessoryID, AccessoryBuyAmount, 37930, 16,2},
 
 --------------------- Anabaseios --------------------------------
-{0, AnabaseiosHelmID, HelmBuyAmount, 39960, 0,0},
-{0, AnabaseiosArmorID, ChestBuyAmount, 39961, 3,0},
-{0, AnabaseiosGauntletID, HandsBuyAmount, 39962, 6,0},
-{0, AnabaseiosChaussesID, LegsBuyAmount, 39963, 9,0},
-{0, AnabaseiosGreavesID, FeetBuyAmount, 39964, 12,0},
-{0, AnabaseiosHelmID, HelmBuyAmount, 39966, 1,0},
-{0, AnabaseiosArmorID, ChestBuyAmount, 39967, 4,0},
-{0, AnabaseiosGauntletID, HandsBuyAmount, 39968, 7,0},
-{0, AnabaseiosChaussesID, LegsBuyAmount, 39969, 10,0},
-{0, AnabaseiosGreavesID, FeetBuyAmount, 39970, 13,0},
-{0, AnabaseiosHelmID, HelmBuyAmount, 39972, 2,0},
-{0, AnabaseiosArmorID, ChestBuyAmount, 39973, 5,0},
-{0, AnabaseiosGauntletID, HandsBuyAmount, 39974, 8,0},
-{0, AnabaseiosChaussesID, LegsBuyAmount, 39975, 11,0},
-{0, AnabaseiosGreavesID, FeetBuyAmount, 39976, 14,0},
-{1, AnabaseiosHelmID, HelmBuyAmount, 39978, 1,0},
-{1, AnabaseiosArmorID, ChestBuyAmount, 39979, 3,0},
-{1, AnabaseiosGauntletID, HandsBuyAmount, 39980, 5,0},
-{1, AnabaseiosChaussesID, LegsBuyAmount, 39981, 7,0},
-{1, AnabaseiosGreavesID, FeetBuyAmount, 39982, 9,0},
-{1, AnabaseiosHelmID, HelmBuyAmount, 39984, 0,0},
-{1, AnabaseiosArmorID, ChestBuyAmount, 39985, 2,0},
-{1, AnabaseiosGauntletID, HandsBuyAmount, 39986, 4,0},
-{1, AnabaseiosChaussesID, LegsBuyAmount, 39987, 6,0},
-{1, AnabaseiosGreavesID, FeetBuyAmount, 39988, 8,0},
-{2, AnabaseiosHelmID, HelmBuyAmount, 39990, 1,0},
-{2, AnabaseiosArmorID, ChestBuyAmount, 39991, 3,0},
-{2, AnabaseiosGauntletID, HandsBuyAmount, 39992, 5,0},
-{2, AnabaseiosChaussesID, LegsBuyAmount, 39993, 7,0},
-{2, AnabaseiosGreavesID, FeetBuyAmount, 39994, 9,0},
-{2, AnabaseiosHelmID, HelmBuyAmount, 39996, 0,0},
-{2, AnabaseiosArmorID, ChestBuyAmount, 39997, 2,0},
-{2, AnabaseiosGauntletID, HandsBuyAmount, 39998, 4,0},
-{2, AnabaseiosChaussesID, LegsBuyAmount, 39999, 6,0},
-{2, AnabaseiosGreavesID, FeetBuyAmount, 40000, 8,0},
-{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 40002, 15,0},
-{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 40003, 16,0},
-{1, AnabaseiosAccessoryID, AccessoryBuyAmount, 40004, 10,0},
-{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 40005, 11,0},
-{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 40006, 10,0},
-{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 40007, 17,0},
-{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 40008, 18,0},
-{1, AnabaseiosAccessoryID, AccessoryBuyAmount, 40009, 11,0},
-{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 40010, 13,0},
-{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 40011, 12,0},
-{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 40012, 19,0},
-{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 40013, 20,0},
-{1, AnabaseiosAccessoryID, AccessoryBuyAmount, 40014, 12,0},
-{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 40015, 15,0},
-{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 40016, 14,0},
-{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 40017, 21,0},
-{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 40018, 22,0},
-{1, AnabaseiosAccessoryID, AccessoryBuyAmount, 40019, 13,0},
-{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 40020, 17,0},
-{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 40021, 16,0},
+{0, AnabaseiosHelmID, HelmBuyAmount, 39960, 0,4},
+{0, AnabaseiosArmorID, ChestBuyAmount, 39961, 3,4},
+{0, AnabaseiosGauntletID, HandsBuyAmount, 39962, 6,4},
+{0, AnabaseiosChaussesID, LegsBuyAmount, 39963, 9,4},
+{0, AnabaseiosGreavesID, FeetBuyAmount, 39964, 12,4},
+{0, AnabaseiosHelmID, HelmBuyAmount, 39965, 1,4},
+{0, AnabaseiosArmorID, ChestBuyAmount, 39966, 4,4},
+{0, AnabaseiosGauntletID, HandsBuyAmount, 39967, 7,4},
+{0, AnabaseiosChaussesID, LegsBuyAmount, 39968, 10,4},
+{0, AnabaseiosGreavesID, FeetBuyAmount, 39969, 13,4},
+{0, AnabaseiosHelmID, HelmBuyAmount, 39970, 2,4},
+{0, AnabaseiosArmorID, ChestBuyAmount, 39971, 5,4},
+{0, AnabaseiosGauntletID, HandsBuyAmount, 39972, 8,4},
+{0, AnabaseiosChaussesID, LegsBuyAmount, 39973, 11,4},
+{0, AnabaseiosGreavesID, FeetBuyAmount, 39974, 14,4},
+{1, AnabaseiosHelmID, HelmBuyAmount, 39975, 1,4},
+{1, AnabaseiosArmorID, ChestBuyAmount, 39976, 3,4},
+{1, AnabaseiosGauntletID, HandsBuyAmount, 39977, 5,4},
+{1, AnabaseiosChaussesID, LegsBuyAmount, 39978, 7,4},
+{1, AnabaseiosGreavesID, FeetBuyAmount, 39979, 9,4},
+{1, AnabaseiosHelmID, HelmBuyAmount, 39980, 0,4},
+{1, AnabaseiosArmorID, ChestBuyAmount, 39981, 2,4},
+{1, AnabaseiosGauntletID, HandsBuyAmount, 39982, 4,4},
+{1, AnabaseiosChaussesID, LegsBuyAmount, 39983, 6,4},
+{1, AnabaseiosGreavesID, FeetBuyAmount, 39984, 8,4},
+{2, AnabaseiosHelmID, HelmBuyAmount, 39985, 1,4},
+{2, AnabaseiosArmorID, ChestBuyAmount, 39986, 3,4},
+{2, AnabaseiosGauntletID, HandsBuyAmount, 39987, 5,4},
+{2, AnabaseiosChaussesID, LegsBuyAmount, 39988, 7,4},
+{2, AnabaseiosGreavesID, FeetBuyAmount, 39989, 9,4},
+{2, AnabaseiosHelmID, HelmBuyAmount, 39990, 0,4},
+{2, AnabaseiosArmorID, ChestBuyAmount, 39991, 2,4},
+{2, AnabaseiosGauntletID, HandsBuyAmount, 39992, 4,4},
+{2, AnabaseiosChaussesID, LegsBuyAmount, 39993, 6,4},
+{2, AnabaseiosGreavesID, FeetBuyAmount, 39994, 8,4},
+{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 39995, 15,4},
+{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 39996, 16,4},
+{1, AnabaseiosAccessoryID, AccessoryBuyAmount, 39997, 10,4},
+{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 39998, 11,4},
+{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 39999, 10,4},
+{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 40000, 17,4},
+{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 40001, 18,4},
+{1, AnabaseiosAccessoryID, AccessoryBuyAmount, 40002, 11,4},
+{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 40003, 13,4},
+{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 40004, 12,4},
+{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 40005, 19,4},
+{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 40006, 20,4},
+{1, AnabaseiosAccessoryID, AccessoryBuyAmount, 40007, 12,4},
+{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 40008, 15,4},
+{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 40009, 14,4},
+{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 40010, 21,4},
+{0, AnabaseiosAccessoryID, AccessoryBuyAmount, 40011, 22,4},
+{1, AnabaseiosAccessoryID, AccessoryBuyAmount, 40012, 13,4},
+{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 40013, 17,4},
+{2, AnabaseiosAccessoryID, AccessoryBuyAmount, 40014, 16,4},
 }
 
 -- Fonksyonlar / Functions
@@ -1912,7 +1909,7 @@ function TeleportToRadz()
 end
 
 function TeleportGC()
-    while GetZoneID() == 478 or GetZoneID() == 635 or GetZoneID() == 820 or GetZoneId() == 963 do
+    while GetZoneID() == 478 or GetZoneID() == 635 or GetZoneID() == 820 or GetZoneID() == 963 do
         yield("/wait 0.15")
         if GetCharacterCondition(27) then
             yield("/wait 2")
@@ -2223,6 +2220,7 @@ function WhichArmoryItem(ItemToBuy)
 end
 
 function TurnIn(TableName,MaxArmoryValue)
+    yield("/echo Enabling TurnIn Function.")
     if HasPlugin("Automaton") then
         yield("/inventory")
         yield("/wait 0.1")
@@ -2242,7 +2240,6 @@ function TurnIn(TableName,MaxArmoryValue)
     elseif TableName == DjoleTable then
         NpcName = "Djole"
     end
-        
 
     local function OpenShopMenu(SelectIconString,SelectString,Npc)
         while IsAddonVisible("ShopExchangeItem") do
@@ -2265,9 +2262,10 @@ function TurnIn(TableName,MaxArmoryValue)
         LogInfo("[ShopMenu]Should open SelectString "..SelectString)
         LogInfo("[ShopMenu]Should open SelectIconString "..SelectIconString)
     end
-
+    
     local function Exchange(ItemID, List, Amount)
         local ItemCount = GetItemCount(ItemID)
+         
         local ExpectedItemCount
         local brakepoint = 0
         if MaxArmory then
@@ -2279,11 +2277,11 @@ function TurnIn(TableName,MaxArmoryValue)
                 ExpectedItemCount = ItemCount + Amount
             end
         end
-
         
         while true do
             yield("/wait 0.12")
             ItemCount = GetItemCount(ItemID)
+            yield("/echo Itemcount: "..ItemCount.." / ItemID: "..ItemID)
             if IsAddonVisible("SelectYesno") then
                 yield("/pcall SelectYesno true 0")
             elseif IsAddonVisible("Request") then
@@ -2310,7 +2308,9 @@ function TurnIn(TableName,MaxArmoryValue)
         yield("/wait 0.1") 
         LogInfo("[Exchange] Finished exchange for item ID " .. ItemID)
     end
+    yield("/echo Do We Get Here?")
     for i = 1, #TableName do
+        
         local entry = TableName[i]
         local shopType = entry[1]
         local itemType = entry[2]
@@ -2324,6 +2324,7 @@ function TurnIn(TableName,MaxArmoryValue)
         local SlotINV = GetInventoryFreeSlotCount()
         local ArmoryType = WhichArmoryItem(gearItem)
         local SlotArmoryINV = GetFreeSlotsInContainer(ArmoryType)
+        yield("/echo gearItme: "..gearItem.." / ItemAmount: "..ItemAmount)
         if MaxArmory then
             SlotINV = SlotINV - MaxArmoryFreeSlot
         end
@@ -2477,6 +2478,9 @@ end
 while IsThereTradeItem() do
     yield("/wait 0.1")
     if (GordianTurnInCount >= 1 or AlexandrianTurnInCount >= 1 or MidanTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
+        yield("/echo Gordiasscape Count: "..GordiasTurnInCount)
+        yield("/echo Midan Count: "..MidanTurnInCount)
+        yield("/echo Alexandrian: "..AlexandrianTurnInCount)
         TeleportToIdlishire()
         local DistanceToSabina = GetDistanceToPoint(-19.0, 211.0, -35.9)
         if DistanceToSabina > 2 then
@@ -2515,10 +2519,10 @@ while IsThereTradeItem() do
             TurnIn(YhalTable,true)
         end
         TurnIn(YhalTable,false)
-        elseif (AsphodelosTurnInCount >= 1 or AbyssosTurnInCount >= 1 or EdenpromiseTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
-        yield("/echo Edengate Count: "..EdengateTurnInCount)
-        yield("/echo Edenverse Count: "..EdenverseTurnInCount)
-        yield("/echo Edenpromise Count: "..EdenpromiseTurnInCount)
+    elseif (AsphodelosTurnInCount >= 1 or AbyssosTurnInCount >= 1 or AnabaseiosTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
+        yield("/echo Asphodelos Count: "..AsphodelosTurnInCount)
+        yield("/echo Abyssos Count: "..AbyssosTurnInCount)
+        yield("/echo Anabaseios Count: "..AnabaseiosTurnInCount)
         TeleportToRadz()
         local DistanceToDjole = GetDistanceToPoint(-42.701,0.920,-77.701)
         if DistanceToDjole > 2 then
