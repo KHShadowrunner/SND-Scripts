@@ -2220,7 +2220,7 @@ function WhichArmoryItem(ItemToBuy)
 end
 
 function TurnIn(TableName,MaxArmoryValue)
-    yield("/echo Enabling TurnIn Function.")
+    --yield("/echo Enabling TurnIn Function.")
     if HasPlugin("Automaton") then
         yield("/inventory")
         yield("/wait 0.1")
@@ -2281,7 +2281,7 @@ function TurnIn(TableName,MaxArmoryValue)
         while true do
             yield("/wait 0.12")
             ItemCount = GetItemCount(ItemID)
-            yield("/echo Itemcount: "..ItemCount.." / ItemID: "..ItemID)
+            --yield("/echo Itemcount: "..ItemCount.." / ItemID: "..ItemID)
             if IsAddonVisible("SelectYesno") then
                 yield("/pcall SelectYesno true 0")
             elseif IsAddonVisible("Request") then
