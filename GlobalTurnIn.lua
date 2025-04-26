@@ -143,30 +143,54 @@ ItemIdArmoryTable =
     [16403] = 3201,
     [16421] = 3201,
     [16427] = 3201,
--- Edengate
-    [11450] = 3201,
-    [11449] = 3201,
-    [11448] = 3201,
-    [11451] = 3201,
-    [11452] = 3201,
-    [11453] = 3201,
-    [11454] = 3201,
- -- Edenverse
-    [14514] = 3201,
-    [14513] = 3201,
-    [14512] = 3201,
-    [14516] = 3201,
-    [14515] = 3201,
-    [14518] = 3201,
-    [14517] = 3201,
- -- Edenpromise
-    [16439] = 3201,
-    [16433] = 3201,
-    [16415] = 3201,
-    [16409] = 3201,
-    [16403] = 3201,
-    [16421] = 3201,
-    [16427] = 3201,
+-- Asphodelos
+[34965] = 3201,
+[34971] = 3201,
+[34977] = 3201,
+[34983] = 3201,
+[34989] = 3201,
+[34995] = 3201,
+[35001] = 3201,
+-- Abyssos
+[37876] = 3201,
+[37882] = 3201,
+[37888] = 3201,
+[37894] = 3201,
+[37900] = 3201,
+[37906] = 3201,
+[37912] = 3201,
+-- Anabaseios
+[39960] = 3201,
+[39966] = 3201,
+[39972] = 3201,
+[39978] = 3201,
+[39984] = 3201,
+[39990] = 3201,
+[39996] = 3201,
+-- Edensgate
+[27015] = 3201,
+[27021] = 3201,
+[27027] = 3201,
+[27033] = 3201,
+[27039] = 3201,
+[27045] = 3201,
+[27051] = 3201,
+-- Edensverse
+[29117] = 3201,
+[29123] = 3201,
+[29129] = 3201,
+[29135] = 3201,
+[29141] = 3201,
+[29147] = 3201,
+[29153] = 3201,
+-- Edenspromise
+[32356] = 3201,
+[32362] = 3201,
+[32368] = 3201,
+[32374] = 3201,
+[32380] = 3201,
+[32386] = 3201,
+[32392] = 3201,
 
  -- ArmoryBody = 3202
  -- Deltascape
@@ -217,30 +241,54 @@ ItemIdArmoryTable =
     [16404] = 3202,
     [16410] = 3202,
     [16416] = 3202,
--- Edengate
-    [11450] = 3202,
-    [11449] = 3202,
-    [11448] = 3202,
-    [11451] = 3202,
-    [11452] = 3202,
-    [11453] = 3202,
-    [11454] = 3202,
- -- Edenverse
-    [14514] = 3202,
-    [14513] = 3202,
-    [14512] = 3202,
-    [14516] = 3202,
-    [14515] = 3202,
-    [14518] = 3202,
-    [14517] = 3202,
- -- Edenpromise
-    [16439] = 3202,
-    [16433] = 3202,
-    [16415] = 3202,
-    [16409] = 3202,
-    [16403] = 3202,
-    [16421] = 3202,
-    [16427] = 3202,
+-- Asphodelos
+[34966] = 3202,
+[34972] = 3202,
+[34978] = 3202,
+[34994] = 3202,
+[34990] = 3202,
+[34996] = 3202,
+[35002] = 3202,
+-- Abyssos
+[37877] = 3202,
+[37883] = 3202,
+[37889] = 3202,
+[37905] = 3202,
+[37901] = 3202,
+[37907] = 3202,
+[37913] = 3202,
+-- Anabaseios
+[39961] = 3202,
+[39967] = 3202,
+[39973] = 3202,
+[39989] = 3202,
+[39985] = 3202,
+[39991] = 3202,
+[39997] = 3202,
+-- Edensgate
+[27016] = 3202,
+[27022] = 3202,
+[27028] = 3202,
+[27044] = 3202,
+[27040] = 3202,
+[27046] = 3202,
+[27052] = 3202,
+-- Edensverse
+[29118] = 3202,
+[29124] = 3202,
+[29130] = 3202,
+[29146] = 3202,
+[29142] = 3202,
+[29148] = 3202,
+[29154] = 3202,
+-- Edenspromise
+[32357] = 3202,
+[32363] = 3202,
+[32369] = 3202,
+[32385] = 3202,
+[32381] = 3202,
+[32387] = 3202,
+[32393] = 3202,
 
  --ArmoryHands = 3203
  -- Deltascape
@@ -291,30 +339,54 @@ ItemIdArmoryTable =
     [16405] = 3203,
     [16411] = 3203,
     [16417] = 3203,
--- Edengate
-    [11450] = 3203,
-    [11449] = 3203,
-    [11448] = 3203,
-    [11451] = 3203,
-    [11452] = 3203,
-    [11453] = 3203,
-    [11454] = 3203,
- -- Edenverse
-    [14514] = 3203,
-    [14513] = 3203,
-    [14512] = 3203,
-    [14516] = 3203,
-    [14515] = 3203,
-    [14518] = 3203,
-    [14517] = 3203,
- -- Edenpromise
-    [16439] = 3203,
-    [16433] = 3203,
-    [16415] = 3203,
-    [16409] = 3203,
-    [16403] = 3203,
-    [16421] = 3203,
-    [16427] = 3203,
+-- Asphodelos
+[34967] = 3203,
+[34973] = 3203,
+[34979] = 3203,
+[34995] = 3203,
+[34991] = 3203,
+[34997] = 3203,
+[35003] = 3203,
+-- Abyssos
+[37878] = 3203,
+[37884] = 3203,
+[37890] = 3203,
+[37906] = 3203,
+[37902] = 3203,
+[37908] = 3203,
+[37914] = 3203,
+-- Anabaseios
+[39962] = 3203,
+[39968] = 3203,
+[39974] = 3203,
+[39990] = 3203,
+[39986] = 3203,
+[39992] = 3203,
+[39998] = 3203,
+-- Edensgate
+[27017] = 3203,
+[27023] = 3203,
+[27029] = 3203,
+[27045] = 3203,
+[27041] = 3203,
+[27047] = 3203,
+[27053] = 3203,
+-- Edensverse
+[29119] = 3203,
+[29125] = 3203,
+[29131] = 3203,
+[29147] = 3203,
+[29143] = 3203,
+[29149] = 3203,
+[29155] = 3203,
+-- Edenspromise
+[32358] = 3203,
+[32364] = 3203,
+[32370] = 3203,
+[32386] = 3203,
+[32382] = 3203,
+[32388] = 3203,
+[32394] = 3203,
 
  --ArmoryLegs = 3205
  -- Deltascape
@@ -365,31 +437,55 @@ ItemIdArmoryTable =
     [16406] = 3205,
     [16412] = 3205,
     [16418] = 3205,
--- Edengate
-    [11450] = 3205,
-    [11449] = 3205,
-    [11448] = 3205,
-    [11451] = 3205,
-    [11452] = 3205,
-    [11453] = 3205,
-    [11454] = 3205,
- -- Edenverse
-    [14514] = 3205,
-    [14513] = 3205,
-    [14512] = 3205,
-    [14516] = 3205,
-    [14515] = 3205,
-    [14518] = 3205,
-    [14517] = 3205,
- -- Edenpromise
-    [16439] = 3205,
-    [16433] = 3205,
-    [16415] = 3205,
-    [16409] = 3205,
-    [16403] = 3205,
-    [16421] = 3205,
-    [16427] = 3205,
-    
+-- Asphodelos
+[34968] = 3205,
+[34974] = 3205,
+[34980] = 3205,
+[34996] = 3205,
+[34992] = 3205,
+[34998] = 3205,
+[35004] = 3205,
+-- Abyssos
+[37879] = 3205,
+[37885] = 3205,
+[37891] = 3205,
+[37907] = 3205,
+[37903] = 3205,
+[37909] = 3205,
+[37915] = 3205,
+-- Anabaseios
+[39963] = 3205,
+[39969] = 3205,
+[39975] = 3205,
+[39991] = 3205,
+[39987] = 3205,
+[39993] = 3205,
+[39999] = 3205,
+-- Edensgate
+[27018] = 3205,
+[27024] = 3205,
+[27030] = 3205,
+[27046] = 3205,
+[27042] = 3205,
+[27048] = 3205,
+[27054] = 3205,
+-- Edensverse
+[29120] = 3205,
+[29126] = 3205,
+[29132] = 3205,
+[29148] = 3205,
+[29144] = 3205,
+[29150] = 3205,
+[29156] = 3205,
+-- Edenspromise
+[32359] = 3205,
+[32365] = 3205,
+[32371] = 3205,
+[32387] = 3205,
+[32383] = 3205,
+[32389] = 3205,
+[32395] = 3205,
+
  --ArmoryFeets = 3206
  -- Deltascape
     [19477] = 3206,
@@ -439,30 +535,54 @@ ItemIdArmoryTable =
     [16407] = 3206,
     [16413] = 3206,
     [16419] = 3206,
--- Edengate
-    [11450] = 3206,
-    [11449] = 3206,
-    [11448] = 3206,
-    [11451] = 3206,
-    [11452] = 3206,
-    [11453] = 3206,
-    [11454] = 3206,
- -- Edenverse
-    [14514] = 3206,
-    [14513] = 3206,
-    [14512] = 3206,
-    [14516] = 3206,
-    [14515] = 3206,
-    [14518] = 3206,
-    [14517] = 3206,
- -- Edenpromise
-    [16439] = 3206,
-    [16433] = 3206,
-    [16415] = 3206,
-    [16409] = 3206,
-    [16403] = 3206,
-    [16421] = 3206,
-    [16427] = 3206,
+-- Asphodelos
+    [34969] = 3206,
+    [34975] = 3206,
+    [34981] = 3206,
+    [34997] = 3206,
+    [34993] = 3206,
+    [34999] = 3206,
+    [35005] = 3206,
+-- Abyssos
+    [37880] = 3206,
+    [37886] = 3206,
+    [37892] = 3206,
+    [37908] = 3206,
+    [37904] = 3206,
+    [37910] = 3206,
+    [37916] = 3206,
+-- Anabaseios
+    [39964] = 3206,
+    [39970] = 3206,
+    [39976] = 3206,
+    [39992] = 3206,
+    [39988] = 3206,
+    [39994] = 3206,
+    [40000] = 3206,
+-- Edensgate
+[27019] = 3206,
+[27025] = 3206,
+[27031] = 3206,
+[27047] = 3206,
+[27043] = 3206,
+[27049] = 3206,
+[27055] = 3206,
+-- Edensverse
+[29121] = 3206,
+[29127] = 3206,
+[29133] = 3206,
+[29149] = 3206,
+[29145] = 3206,
+[29151] = 3206,
+[29157] = 3206,
+-- Edenspromise
+[32360] = 3206,
+[32366] = 3206,
+[32372] = 3206,
+[32388] = 3206,
+[32384] = 3206,
+[32390] = 3206,
+[32396] = 3206,
 
  -- ArmoryEar = 3207
  -- Deltascape
@@ -501,24 +621,42 @@ ItemIdArmoryTable =
     [16447] = 3207,
     [16445] = 3207,
     [16446] = 3207,
--- Edengate
-    [27061] = 3207,
-    [27060] = 3207,
-    [27059] = 3207,
-    [27058] = 3207,
-    [27057] = 3207,
- -- Edenverse
-    [29163] = 3207,
-    [29162] = 3207,
-    [29161] = 3207,
-    [29160] = 3207,
-    [29159] = 3207,
- -- Edenpromise
-    [32398] = 3207,
-    [32399] = 3207,
-    [32400] = 3207,
-    [32401] = 3207,
-    [32402] = 3207,
+-- Asphodelos
+[35007] = 3207,
+[35008] = 3207,
+[35009] = 3207,
+[35010] = 3207,
+[35011] = 3207,
+-- Abyssos
+[37918] = 3207,
+[37919] = 3207,
+[37920] = 3207,
+[37921] = 3207,
+[37922] = 3207,
+-- Anabaseios
+[40002] = 3207,
+[40003] = 3207,
+[40004] = 3207,
+[40005] = 3207,
+[40006] = 3207,
+-- Edensgate
+[27057] = 3207,
+[27058] = 3207,
+[27059] = 3207,
+[27060] = 3207,
+[27061] = 3207,
+-- Edensverse
+[29159] = 3207,
+[29160] = 3207,
+[29161] = 3207,
+[29162] = 3207,
+[29163] = 3207,
+-- Edenspromise
+[32398] = 3207,
+[32399] = 3207,
+[32400] = 3207,
+[32401] = 3207,
+[32402] = 3207,
 
  --ArmoryNeck = 3208
  -- Deltascape
@@ -557,24 +695,42 @@ ItemIdArmoryTable =
     [16452] = 3208,
     [16454] = 3208,
     [16453] = 3208,
--- Edengate
-    [27066] = 3208,
-    [27065] = 3208,
-    [27064] = 3208,
-    [27063] = 3208,
-    [27062] = 3208,
- -- Edenverse
-    [29164] = 3208,
-    [29165] = 3208,
-    [29166] = 3208,
-    [29167] = 3208,
-    [29168] = 3208,
- -- Edenpromise
-    [32403] = 3208,
-    [32404] = 3208,
-    [32405] = 3208,
-    [32406] = 3208,
-    [32407] = 3208,
+-- Asphodelos
+[35012] = 3208,
+[35013] = 3208,
+[35014] = 3208,
+[35015] = 3208,
+[35016] = 3208,
+-- Abyssos
+[37923] = 3208,
+[37924] = 3208,
+[37925] = 3208,
+[37926] = 3208,
+[37927] = 3208,
+-- Anabaseios
+[40007] = 3208,
+[40008] = 3208,
+[40009] = 3208,
+[40010] = 3208,
+[40011] = 3208,
+-- Edensgate
+[27062] = 3208,
+[27063] = 3208,
+[27064] = 3208,
+[27065] = 3208,
+[27066] = 3208,
+-- Edensverse
+[29164] = 3208,
+[29165] = 3208,
+[29166] = 3208,
+[29167] = 3208,
+[29168] = 3208,
+-- Edenspromise
+[32403] = 3208,
+[32404] = 3208,
+[32405] = 3208,
+[32406] = 3208,
+[32407] = 3208,
 
  --ArmoryWrist = 3209
  -- Deltascape
@@ -614,24 +770,42 @@ ItemIdArmoryTable =
     [16457] = 3209,
     [16455] = 3209,
     [16456] = 3209,
--- Edengate
-    [27071] = 3209,
-    [27070] = 3209,
-    [27069] = 3209,
-    [27068] = 3209,
-    [27067] = 3209,
- -- Edenverse
-    [29169] = 3209,
-    [29170] = 3209,
-    [29171] = 3209,
-    [29172] = 3209,
-    [29173] = 3209,
- -- Edenpromise
-    [32408] = 3209,
-    [32409] = 3209,
-    [32410] = 3209,
-    [32411] = 3209,
-    [32412] = 3209,
+-- Asphodelos
+[35017] = 3209,
+[35018] = 3209,
+[35019] = 3209,
+[35020] = 3209,
+[35021] = 3209,
+-- Abyssos
+[37928] = 3209,
+[37929] = 3209,
+[37930] = 3209,
+[37931] = 3209,
+[37932] = 3209,
+-- Anabaseios
+[40012] = 3209,
+[40013] = 3209,
+[40014] = 3209,
+[40015] = 3209,
+[40016] = 3209,
+-- Edensgate
+[27067] = 3209,
+[27068] = 3209,
+[27069] = 3209,
+[27070] = 3209,
+[27071] = 3209,
+-- Edensverse
+[29169] = 3209,
+[29170] = 3209,
+[29171] = 3209,
+[29172] = 3209,
+[29173] = 3209,
+-- Edenspromise
+[32408] = 3209,
+[32409] = 3209,
+[32410] = 3209,
+[32411] = 3209,
+[32412] = 3209,
 
  --ArmoryRings = 3300
  -- Deltascape
@@ -670,24 +844,42 @@ ItemIdArmoryTable =
     [16462] = 3300,
     [16460] = 3300,
     [16461] = 3300,
--- Edengate
-    [27073] = 3300,
-    [27072] = 3300,
-    [27074] = 3300,
-    [27075] = 3300,
-    [27076] = 3300,
- -- Edenverse
-    [29175] = 3300,
-    [29174] = 3300,
-    [29176] = 3300,
-    [29177] = 3300,
-    [29178] = 3300,
- -- Edenpromise
-    [32414] = 3300,
-    [32413] = 3300,
-    [32415] = 3300,
-    [32416] = 3300,
-    [32417] = 3300,
+-- Asphodelos
+[35022] = 3210,
+[35023] = 3210,
+[35024] = 3210,
+[35025] = 3210,
+[35026] = 3210,
+-- Abyssos
+[37933] = 3210,
+[37934] = 3210,
+[37935] = 3210,
+[37936] = 3210,
+[37937] = 3210,
+-- Anabaseios
+[40017] = 3210,
+[40018] = 3210,
+[40019] = 3210,
+[40020] = 3210,
+[40021] = 3210,
+-- Edensgate
+[27072] = 3210,
+[27073] = 3210,
+[27074] = 3210,
+[27075] = 3210,
+[27076] = 3210,
+-- Edensverse
+[29174] = 3210,
+[29175] = 3210,
+[29176] = 3210,
+[29177] = 3210,
+[29178] = 3210,
+-- Edenspromise
+[32413] = 3210,
+[32414] = 3210,
+[32415] = 3210,
+[32416] = 3210,
+[32417] = 3210,
 }
 
 ------------------------------------------------------------------------------
@@ -1303,7 +1495,7 @@ YhalTable =
 {2, GoldenAccessoryID, AccessoryBuyAmount, 29178, 16,2},
 {2, GoldenAccessoryID, AccessoryBuyAmount, 29172, 15,2},
 {2, GoldenAccessoryID, AccessoryBuyAmount, 29173, 14,2},
-{2, GoldenAccessoryID, AccessoryBuyAmount, 291567, 13,2},
+{2, GoldenAccessoryID, AccessoryBuyAmount, 29167, 13,2},
 {2, GoldenAccessoryID, AccessoryBuyAmount, 29168, 12,2},
 {2, GoldenAccessoryID, AccessoryBuyAmount, 29162, 11,2},
 {2, GoldenAccessoryID, AccessoryBuyAmount, 29163, 10,2},
@@ -1429,7 +1621,7 @@ AnabaseiosAccessoryCount = GetItemCount(AnabaseiosAccessoryID)
 -------------------------------------------------------------
 DjoleTable = 
 {
---------------------- Name 1 --------------------------------
+--------------------- Asphodelos --------------------------------
 {0, AsphodelosHelmID, HelmBuyAmount, 34965, 0,0},
 {0, AsphodelosArmorID, ChestBuyAmount, 34966, 3,0},
 {0, AsphodelosGauntletID, HandsBuyAmount, 34967, 6,0},
@@ -1486,7 +1678,7 @@ DjoleTable =
 {2, AsphodelosAccessoryID, AccessoryBuyAmount, 35025, 17,0},
 {2, AsphodelosAccessoryID, AccessoryBuyAmount, 35026, 16,0},
 
---------------------- Name 2 --------------------------------
+--------------------- Abyssos --------------------------------
 {0, AbyssosHelmID, HelmBuyAmount, 37876, 0,0},
 {0, AbyssosArmorID, ChestBuyAmount, 37877, 3,0},
 {0, AbyssosGauntletID, HandsBuyAmount, 37878, 6,0},
@@ -1543,7 +1735,7 @@ DjoleTable =
 {2, AbyssosAccessoryID, AccessoryBuyAmount, 37936, 17,0},
 {2, AbyssosAccessoryID, AccessoryBuyAmount, 37937, 16,0},
 
---------------------- Name 3 --------------------------------
+--------------------- Anabaseios --------------------------------
 {0, AnabaseiosHelmID, HelmBuyAmount, 39960, 0,0},
 {0, AnabaseiosArmorID, ChestBuyAmount, 39961, 3,0},
 {0, AnabaseiosGauntletID, HandsBuyAmount, 39962, 6,0},
@@ -1702,8 +1894,25 @@ function TeleportToEulmore()
     PlayerTest()
 end
 
+function TeleportToRadz()
+    if IsInZone(963) then
+        LogInfo("[Debug]Tried Teleporting but already at zone: 963(Radz-at-Han)")
+    else
+        while GetZoneID() ~= 963 do
+            yield("/wait 0.13")
+            if GetCharacterCondition(27) then
+                yield("/wait 2")
+            else
+                yield("/tp Radz-at-Han")
+                yield("/wait 2") 
+            end
+        end
+    end
+    PlayerTest()
+end
+
 function TeleportGC()
-    while GetZoneID() == 478 or GetZoneID() == 635 do
+    while GetZoneID() == 478 or GetZoneID() == 635 or GetZoneID() == 820 or GetZoneId() == 963 do
         yield("/wait 0.15")
         if GetCharacterCondition(27) then
             yield("/wait 2")
@@ -1738,6 +1947,11 @@ function IsThereTradeItem()
         TotalExchangeItem = TotalExchangeItem + count
     end
         for _, entry in ipairs(YhalTable) do
+        local itemID = entry[4]
+        local count = GetItemCount(itemID)
+        TotalExchangeItem = TotalExchangeItem + count
+    end
+        for _, entry in ipairs(DjoleTable) do
         local itemID = entry[4]
         local count = GetItemCount(itemID)
         TotalExchangeItem = TotalExchangeItem + count
@@ -1888,12 +2102,60 @@ function IsThereTradeItem()
     math.floor(LostGreavesCount / FeetBuyAmount) +
     math.floor(LostAccessoryCount / AccessoryBuyAmount)
 
+            ------------------------------  Asphodelos  ----------------------------------------------
+
+    AsphodelosHelmCount = GetItemCount(AsphodelosHelmID)
+    AsphodelosArmorCount = GetItemCount(AsphodelosArmorID)
+    AsphodelosGauntletCount = GetItemCount(AsphodelosGauntletID)
+    AsphodelosChaussesCount = GetItemCount(AsphodelosChaussesID)
+    AsphodelosGreavesCount = GetItemCount(AsphodelosGreavesID)
+    AsphodelosAccessoryCount = GetItemCount(AsphodelosAccessoryID)
+
+    AsphodelosTurnInCount = math.floor(AsphodelosHelmCount / HelmBuyAmount) +
+    math.floor(AsphodelosArmorCount / ChestBuyAmount) +
+    math.floor(AsphodelosGauntletCount / HandsBuyAmount) +
+    math.floor(AsphodelosChaussesCount / LegsBuyAmount) +
+    math.floor(AsphodelosGreavesCount / FeetBuyAmount) +
+    math.floor(AsphodelosAccessoryCount / AccessoryBuyAmount)
+
+            ------------------------------  Abyssos  ----------------------------------------------
+
+    AbyssosHelmCount = GetItemCount(AbyssosHelmID)
+    AbyssosArmorCount = GetItemCount(AbyssosArmorID)
+    AbyssosGauntletCount = GetItemCount(AbyssosGauntletID)
+    AbyssosChaussesCount = GetItemCount(AbyssosChaussesID)
+    AbyssosGreavesCount = GetItemCount(AbyssosGreavesID)
+    AbyssosAccessoryCount = GetItemCount(AbyssosAccessoryID)
+
+    AbyssosTurnInCount = math.floor(AbyssosHelmCount / HelmBuyAmount) +
+    math.floor(AbyssosArmorCount / ChestBuyAmount) +
+    math.floor(AbyssosGauntletCount / HandsBuyAmount) +
+    math.floor(AbyssosChaussesCount / LegsBuyAmount) +
+    math.floor(AbyssosGreavesCount / FeetBuyAmount) +
+    math.floor(AbyssosAccessoryCount / AccessoryBuyAmount)
+
+        ------------------------------  Anabaseios  ----------------------------------------------
+
+    AnabaseiosHelmCount = GetItemCount(AnabaseiosHelmID)
+    AnabaseiosArmorCount = GetItemCount(AnabaseiosArmorID)
+    AnabaseiosGauntletCount = GetItemCount(AnabaseiosGauntletID)
+    AnabaseiosChaussesCount = GetItemCount(AnabaseiosChaussesID)
+    AnabaseiosGreavesCount = GetItemCount(AnabaseiosGreavesID)
+    AnabaseiosAccessoryCount = GetItemCount(AnabaseiosAccessoryID)
+
+    AnabaseiosTurnInCount = math.floor(AnabaseiosHelmCount / HelmBuyAmount) +
+    math.floor(AnabaseiosArmorCount / ChestBuyAmount) +
+    math.floor(AnabaseiosGauntletCount / HandsBuyAmount) +
+    math.floor(AnabaseiosChaussesCount / LegsBuyAmount) +
+    math.floor(AnabaseiosGreavesCount / FeetBuyAmount) +
+    math.floor(AnabaseiosAccessoryCount / AccessoryBuyAmount)
+
 
     if TotalExchangeItem > 0 then
         return true
     end
     
-    if GordianTurnInCount < 1 and MidanTurnInCount < 1 and AlexandrianTurnInCount < 1 and DeltascapeTurnInCount < 1 and SigmascapeTurnInCount < 1 and AlphascapeTurnInCount < 1 and EdengateTurnInCount < 1 and EdenverseTurnInCount < 1 and EdenpromiseTurnInCount < 1 then
+    if GordianTurnInCount < 1 and MidanTurnInCount < 1 and AlexandrianTurnInCount < 1 and DeltascapeTurnInCount < 1 and SigmascapeTurnInCount < 1 and AlphascapeTurnInCount < 1 and EdengateTurnInCount < 1 and EdenverseTurnInCount < 1 and EdenpromiseTurnInCount < 1 and AsphodelosTurnInCount < 1 and AbyssosTurnInCount < 1 and AnabaseiosTurnInCount < 1 then
         return false
     else
         return true
@@ -1976,7 +2238,9 @@ function TurnIn(TableName,MaxArmoryValue)
     elseif TableName == GelfradusTable then
         NpcName = "Gelfradus"
     elseif TableName == YhalTable then
-        npcName = "Yhal Yal"
+        NpcName = "Yhal Yal"
+    elseif TableName == DjoleTable then
+        NpcName = "Djole"
     end
         
 
@@ -2016,11 +2280,10 @@ function TurnIn(TableName,MaxArmoryValue)
             end
         end
 
-
+        
         while true do
             yield("/wait 0.12")
             ItemCount = GetItemCount(ItemID)
-
             if IsAddonVisible("SelectYesno") then
                 yield("/pcall SelectYesno true 0")
             elseif IsAddonVisible("Request") then
@@ -2047,8 +2310,6 @@ function TurnIn(TableName,MaxArmoryValue)
         yield("/wait 0.1") 
         LogInfo("[Exchange] Finished exchange for item ID " .. ItemID)
     end
-    
-
     for i = 1, #TableName do
         local entry = TableName[i]
         local shopType = entry[1]
@@ -2066,7 +2327,6 @@ function TurnIn(TableName,MaxArmoryValue)
         if MaxArmory then
             SlotINV = SlotINV - MaxArmoryFreeSlot
         end
-
         if CanExchange > 0 and GearAmount < 1 and SlotINV > 0 then
             LogInfo("Exchange start ...................")
             LogInfo("SlotINV: "..SlotINV)
@@ -2228,8 +2488,11 @@ while IsThereTradeItem() do
         end
         TurnIn(SabinaTable,false)
     elseif (DeltascapeTurnInCount >= 1 or SigmascapeTurnInCount >= 1 or AlphascapeTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
+        yield("/echo Deltascape Count: "..DeltascapeTurnInCount)
+        yield("/echo Sigmascape Count: "..SigmascapeTurnInCount)
+        yield("/echo Alphascape Count: "..AlphascapeTurnInCount)
         TeleportToRhalgr()
-        local DistanceToYhal = GetDistanceToPoint(125.0,0.7,40.8)
+        local DistanceToGelfradus = GetDistanceToPoint(125.0,0.7,40.8)
         if DistanceToGelfradus > 2 then
             MountUp()
             WalkTo(125.0,0.7,40.8, 1)
@@ -2239,6 +2502,9 @@ while IsThereTradeItem() do
         end
         TurnIn(GelfradusTable,false)
     elseif (EdengateTurnInCount >= 1 or EdenverseTurnInCount >= 1 or EdenpromiseTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
+        yield("/echo Edengate Count: "..EdengateTurnInCount)
+        yield("/echo Edenverse Count: "..EdenverseTurnInCount)
+        yield("/echo Edenpromise Count: "..EdenpromiseTurnInCount)
         TeleportToEulmore()
         local DistanceToYhal = GetDistanceToPoint(-55.854,84.194,14.951)
         if DistanceToYhal > 2 then
@@ -2249,8 +2515,22 @@ while IsThereTradeItem() do
             TurnIn(YhalTable,true)
         end
         TurnIn(YhalTable,false)
+        elseif (AsphodelosTurnInCount >= 1 or AbyssosTurnInCount >= 1 or EdenpromiseTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
+        yield("/echo Edengate Count: "..EdengateTurnInCount)
+        yield("/echo Edenverse Count: "..EdenverseTurnInCount)
+        yield("/echo Edenpromise Count: "..EdenpromiseTurnInCount)
+        TeleportToRadz()
+        local DistanceToDjole = GetDistanceToPoint(-42.701,0.920,-77.701)
+        if DistanceToDjole > 2 then
+            MountUp()
+            WalkTo(-42.701,0.920,-77.701, 1)
+        end
+        if MaxArmory then
+            TurnIn(DjoleTable,true)
+        end
+        TurnIn(DjoleTable,false)
     end
-        
+    yield("/echo TotalExchangeItem: ".. TotalExchangeItem)
     if TotalExchangeItem > 0 then
         if VendorTurnIn then
             if TeleportToFC then
@@ -2263,6 +2543,8 @@ while IsThereTradeItem() do
                     WalkTo(-55.6,0.0,51.4, 1)
                 elseif IsInZone(820) then
                     WalkTo(6.766,82.134,30.170, 1)
+                elseif IsInZone(963) then
+                    WalkTo(25.797,0,-52.367, 1)
                 end
                 SummoningBellSell()
             end
