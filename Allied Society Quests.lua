@@ -92,10 +92,10 @@ AlliedSocietiesTable =
     ixal =
     {
         alliedSocietyName = "Ixal",
-        questGiver = "Ehcatl Nine Manciple",
-        x = 173.21,
-        y = -5.37,
-        z = 81.85,
+        questGiver = "Jezul Ahuatan the Second",
+        x = 163.227,
+        y = -22.534,
+        z = 111.728,
         zoneId = 154,
         aetheryteName = "Fallgourd Float"
     },
