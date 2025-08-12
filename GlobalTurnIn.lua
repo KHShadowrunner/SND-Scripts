@@ -2226,7 +2226,7 @@ end
 
 function TurnIn(TableName,MaxArmoryValue)
     --yield("/echo Enabling TurnIn Function.")
-    if HasPlugin("Automaton") then
+    if IPC.IsInstalled("Automaton") then
         yield("/inventory")
         yield("/wait 0.1")
         yield("/inventory")
