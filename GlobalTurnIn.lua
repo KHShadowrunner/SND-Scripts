@@ -2446,12 +2446,12 @@ if MaxItem == false and MaxArmory then
     Dalamud.Log("Wrong Option reverting MaxArmory.")
 end
 if MaxArmory then
-    if IsAddonReady("ConfigCharacter") then
+    if Addons.GetAddon("ConfigCharacter").Ready then
     else
     yield("/characterconfig")
     end
 
-    while not IsAddonReady("ConfigCharacter") do
+    while not Addons.GetAddon("ConfigCharacter").Ready do
         yield("/wait 0.9")
     end
     yield("/pcall ConfigCharacter true 10 0 20")
@@ -2460,12 +2460,12 @@ if MaxArmory then
     yield("/pcall ConfigCharacter true 0")
     yield("/pcall ConfigCharacter true -1")
 else
-    if IsAddonReady("ConfigCharacter") then
+    if Addons.GetAddon("ConfigCharacter").Ready then
     else
     yield("/characterconfig")
     end
 
-    while not IsAddonReady("ConfigCharacter") do
+    while not Addons.GetAddon("ConfigCharacter").Ready do
         yield("/wait 0.9")
     end
     yield("/pcall ConfigCharacter true 10 0 20")
