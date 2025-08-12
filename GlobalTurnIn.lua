@@ -1846,7 +1846,7 @@ function TeleportToIdlishire()
     else
         while Svc.ClientState.TerritoryType ~= 478 do
             yield("/wait 0.14")
-            if GetCharacterCondition(27) then
+            if Svc.Condition[27] then
                 yield("/wait 2")
             else
                 yield("/tp Idyllshire")
@@ -1863,7 +1863,7 @@ function TeleportToRhalgr()
     else
         while Svc.ClientState.TerritoryType ~= 635 do
             yield("/wait 0.13")
-            if GetCharacterCondition(27) then
+            if Svc.Condition[27] then
                 yield("/wait 2")
             else
                 yield("/tp Rhalgr")
@@ -1880,7 +1880,7 @@ function TeleportToEulmore()
     else
         while Svc.ClientState.TerritoryType ~= 820 do
             yield("/wait 0.13")
-            if GetCharacterCondition(27) then
+            if Svc.Condition[27] then
                 yield("/wait 2")
             else
                 yield("/tp Eulmore")
@@ -1897,7 +1897,7 @@ function TeleportToRadz()
     else
         while Svc.ClientState.TerritoryType ~= 963 do
             yield("/wait 0.13")
-            if GetCharacterCondition(27) then
+            if Svc.Condition[27] then
                 yield("/wait 2")
             else
                 yield("/tp Radz-at-Han")
@@ -1911,7 +1911,7 @@ end
 function TeleportGC()
     while Svc.ClientState.TerritoryType == 478 or Svc.ClientState.TerritoryType == 635 or Svc.ClientState.TerritoryType == 820 or Svc.ClientState.TerritoryType == 963 do
         yield("/wait 0.15")
-        if GetCharacterCondition(27) then
+        if Svc.Condition[27] then
             yield("/wait 2")
         else
             if UseTicket then
@@ -2192,7 +2192,7 @@ function FcAndSell()
     PlayerTest()
     local YardId = Svc.ClientState.TerritoryType
     while YardId == Svc.ClientState.TerritoryType do
-        if GetCharacterCondition(45) then
+        if Svc.Condition[45] then
             yield("/wait 1")
         else
             if GetTargetName() ~= "Entrance" then
@@ -2415,9 +2415,9 @@ end
 
 function MountUp()
     if Svc.ClientState.TerritoryType == 478 or Svc.ClientState.TerritoryType == 635 then
-        while GetCharacterCondition(4, false) do
+        while Svc.Condition[4] == false do
             yield("/wait 0.1")
-            if GetCharacterCondition(27) then
+            if Svc.Condition[27] then
                 yield("/wait 2")
             else
                 yield('/gaction "mount roulette"')
@@ -2478,7 +2478,7 @@ end
 while IsThereTradeItem() do
     yield("/wait 0.1")
     if (GordianTurnInCount >= 1 or AlexandrianTurnInCount >= 1 or MidanTurnInCount >= 1) and Inventory.GetFreeInventorySlots() ~= 0 then
-        yield("/echo Gordiasscape Count: "..GordianTurnInCount)
+        yield("/echo Gordian Count: "..GordianTurnInCount)
         yield("/echo Midan Count: "..MidanTurnInCount)
         yield("/echo Alexandrian: "..AlexandrianTurnInCount)
         TeleportToIdlishire()
