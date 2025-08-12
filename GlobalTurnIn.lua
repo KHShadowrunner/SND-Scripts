@@ -1792,7 +1792,7 @@ DjoleTable =
 
 -- Fonksyonlar / Functions
 
-PandoraSetFeatureState("Auto-select Turn-ins", true) 
+IPC.PandorasBox.SetFeatureEnabled("Auto-select Turn-ins", true) 
 PandoraSetFeatureConfigState("Auto-select Turn-ins", "AutoConfirm", true)
 
 function PlayerTest()
