@@ -2321,7 +2321,7 @@ function TurnIn(TableName,MaxArmoryValue)
         local ItemAmount = Inventory.GetItemCount(itemType)
         local GearAmount = Inventory.GetItemCount(gearItem)
         local CanExchange = math.floor(ItemAmount / itemTypeBuy)
-        local SlotINV = GetInventoryFreeSlotCount()
+        local SlotINV = Inventory.GetFreeInventorySlots()
         local ArmoryType = WhichArmoryItem(gearItem)
         local SlotArmoryINV = GetFreeSlotsInContainer(ArmoryType)
         yield("/echo gearItme: "..gearItem.." / ItemAmount: "..ItemAmount)
@@ -2477,7 +2477,7 @@ end
 
 while IsThereTradeItem() do
     yield("/wait 0.1")
-    if (GordianTurnInCount >= 1 or AlexandrianTurnInCount >= 1 or MidanTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
+    if (GordianTurnInCount >= 1 or AlexandrianTurnInCount >= 1 or MidanTurnInCount >= 1) and Inventory.GetFreeInventorySlots() ~= 0 then
         yield("/echo Gordiasscape Count: "..GordiasTurnInCount)
         yield("/echo Midan Count: "..MidanTurnInCount)
         yield("/echo Alexandrian: "..AlexandrianTurnInCount)
@@ -2491,7 +2491,7 @@ while IsThereTradeItem() do
             TurnIn(SabinaTable,true)
         end
         TurnIn(SabinaTable,false)
-    elseif (DeltascapeTurnInCount >= 1 or SigmascapeTurnInCount >= 1 or AlphascapeTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
+    elseif (DeltascapeTurnInCount >= 1 or SigmascapeTurnInCount >= 1 or AlphascapeTurnInCount >= 1) and Inventory.GetFreeInventorySlots() ~= 0 then
         yield("/echo Deltascape Count: "..DeltascapeTurnInCount)
         yield("/echo Sigmascape Count: "..SigmascapeTurnInCount)
         yield("/echo Alphascape Count: "..AlphascapeTurnInCount)
@@ -2505,7 +2505,7 @@ while IsThereTradeItem() do
             TurnIn(GelfradusTable,true)
         end
         TurnIn(GelfradusTable,false)
-    elseif (EdengateTurnInCount >= 1 or EdenverseTurnInCount >= 1 or EdenpromiseTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
+    elseif (EdengateTurnInCount >= 1 or EdenverseTurnInCount >= 1 or EdenpromiseTurnInCount >= 1) and Inventory.GetFreeInventorySlots() ~= 0 then
         yield("/echo Edengate Count: "..EdengateTurnInCount)
         yield("/echo Edenverse Count: "..EdenverseTurnInCount)
         yield("/echo Edenpromise Count: "..EdenpromiseTurnInCount)
@@ -2519,7 +2519,7 @@ while IsThereTradeItem() do
             TurnIn(YhalTable,true)
         end
         TurnIn(YhalTable,false)
-    elseif (AsphodelosTurnInCount >= 1 or AbyssosTurnInCount >= 1 or AnabaseiosTurnInCount >= 1) and GetInventoryFreeSlotCount() ~= 0 then
+    elseif (AsphodelosTurnInCount >= 1 or AbyssosTurnInCount >= 1 or AnabaseiosTurnInCount >= 1) and Inventory.GetFreeInventorySlots() ~= 0 then
         yield("/echo Asphodelos Count: "..AsphodelosTurnInCount)
         yield("/echo Abyssos Count: "..AbyssosTurnInCount)
         yield("/echo Anabaseios Count: "..AnabaseiosTurnInCount)
