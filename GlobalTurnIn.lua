@@ -888,12 +888,12 @@ DeltascapeSpringID = 19114
 DeltascapePedalID = 19115
 DeltascapeBoltID = 19117
 
-DeltascapeLensCount = GetItemCount(DeltascapeLensID)
-DeltascapeShaftCount = GetItemCount(DeltascapeShaftID)
-DeltascapeCrankCount = GetItemCount(DeltascapeCrankID)
-DeltascapeSpringCount = GetItemCount(DeltascapeSpringID)
-DeltascapePedalCount = GetItemCount(DeltascapePedalID)
-DeltascapeBoltCount = GetItemCount(DeltascapeBoltID)
+DeltascapeLensCount = Inventory.GetItemCount(DeltascapeLensID)
+DeltascapeShaftCount = Inventory.GetItemCount(DeltascapeShaftID)
+DeltascapeCrankCount = Inventory.GetItemCount(DeltascapeCrankID)
+DeltascapeSpringCount = Inventory.GetItemCount(DeltascapeSpringID)
+DeltascapePedalCount = Inventory.GetItemCount(DeltascapePedalID)
+DeltascapeBoltCount = Inventory.GetItemCount(DeltascapeBoltID)
 
 -- Sigmascape item ids / tables
 SigmascapeLensID = 21774
@@ -903,12 +903,12 @@ SigmascapeSpringID = 21777
 SigmascapePedalID = 21778
 SigmascapeBoltID = 21780
 
-SigmascapeLensCount = GetItemCount(SigmascapeLensID)
-SigmascapeShaftCount = GetItemCount(SigmascapeShaftID)
-SigmascapeCrankCount = GetItemCount(SigmascapeCrankID)
-SigmascapeSpringCount = GetItemCount(SigmascapeSpringID)
-SigmascapePedalCount = GetItemCount(SigmascapePedalID)
-SigmascapeBoltCount = GetItemCount(SigmascapeBoltID)
+SigmascapeLensCount = Inventory.GetItemCount(SigmascapeLensID)
+SigmascapeShaftCount = Inventory.GetItemCount(SigmascapeShaftID)
+SigmascapeCrankCount = Inventory.GetItemCount(SigmascapeCrankID)
+SigmascapeSpringCount = Inventory.GetItemCount(SigmascapeSpringID)
+SigmascapePedalCount = Inventory.GetItemCount(SigmascapePedalID)
+SigmascapeBoltCount = Inventory.GetItemCount(SigmascapeBoltID)
 
 -- Alphascape item ids / tables
 AlphascapeLensID = 23963
@@ -918,12 +918,12 @@ AlphascapeSpringID = 23966
 AlphascapePedalID = 23967
 AlphascapeBoltID = 23969
 
-AlphascapeLensCount = GetItemCount(AlphascapeLensID)
-AlphascapeShaftCount = GetItemCount(AlphascapeShaftID)
-AlphascapeCrankCount = GetItemCount(AlphascapeCrankID)
-AlphascapeSpringCount = GetItemCount(AlphascapeSpringID)
-AlphascapePedalCount = GetItemCount(AlphascapePedalID)
-AlphascapeBoltCount = GetItemCount(AlphascapeBoltID)
+AlphascapeLensCount = Inventory.GetItemCount(AlphascapeLensID)
+AlphascapeShaftCount = Inventory.GetItemCount(AlphascapeShaftID)
+AlphascapeCrankCount = Inventory.GetItemCount(AlphascapeCrankID)
+AlphascapeSpringCount = Inventory.GetItemCount(AlphascapeSpringID)
+AlphascapePedalCount = Inventory.GetItemCount(AlphascapePedalID)
+AlphascapeBoltCount = Inventory.GetItemCount(AlphascapeBoltID)
 ------------------------------------------------------------------------------
 
 GelfradusTable =
@@ -1114,12 +1114,12 @@ GordianPedalID = 12678
 GordianBoltID = 12680
 
 -- initialize item counts
-GordianLensCount = GetItemCount(GordianLensID)
-GordianShaftCount = GetItemCount(GordianShaftID)
-GordianCrankCount = GetItemCount(GordianCrankID)
-GordianSpringCount = GetItemCount(GordianSpringID)
-GordianPedalCount = GetItemCount(GordianPedalID)
-GordianBoltCount = GetItemCount(GordianBoltID)
+GordianLensCount = Inventory.GetItemCount(GordianLensID)
+GordianShaftCount = Inventory.GetItemCount(GordianShaftID)
+GordianCrankCount = Inventory.GetItemCount(GordianCrankID)
+GordianSpringCount = Inventory.GetItemCount(GordianSpringID)
+GordianPedalCount = Inventory.GetItemCount(GordianPedalID)
+GordianBoltCount = Inventory.GetItemCount(GordianBoltID)
 
 -------------------------------------------------------------------------------- tarnished midan item ids / tablolar ve idler
 MidanLensID = 14301
@@ -1130,12 +1130,12 @@ MidanPedalID = 14305
 MidanBoltID = 14307
 
 -- initialize item counts
-MidanLensCount = GetItemCount(MidanLensID)
-MidanShaftCount = GetItemCount(MidanShaftID)
-MidanCrankCount = GetItemCount(MidanCrankID)
-MidanSpringCount = GetItemCount(MidanSpringID)
-MidanPedalCount = GetItemCount(MidanPedalID)
-MidanBoltCount = GetItemCount(MidanBoltID)
+MidanLensCount = Inventory.GetItemCount(MidanLensID)
+MidanShaftCount = Inventory.GetItemCount(MidanShaftID)
+MidanCrankCount = Inventory.GetItemCount(MidanCrankID)
+MidanSpringCount = Inventory.GetItemCount(MidanSpringID)
+MidanPedalCount = Inventory.GetItemCount(MidanPedalID)
+MidanBoltCount = Inventory.GetItemCount(MidanBoltID)
 --------------------------------------------------------------------------------Alexandrian part ids 
 
 AlexandrianLensID = 16546
@@ -1146,12 +1146,12 @@ AlexandrianPedalID = 16550
 AlexandrianBoltID = 16552
 
 -- initialize item counts
-AlexandrianLensCount = GetItemCount(AlexandrianLensID)
-AlexandrianShaftCount = GetItemCount(AlexandrianShaftID)
-AlexandrianCrankCount = GetItemCount(AlexandrianCrankID)
-AlexandrianSpringCount = GetItemCount(AlexandrianSpringID)
-AlexandrianPedalCount = GetItemCount(AlexandrianPedalID)
-AlexandrianBoltCount = GetItemCount(AlexandrianBoltID)
+AlexandrianLensCount = Inventory.GetItemCount(AlexandrianLensID)
+AlexandrianShaftCount = Inventory.GetItemCount(AlexandrianShaftID)
+AlexandrianCrankCount = Inventory.GetItemCount(AlexandrianCrankID)
+AlexandrianSpringCount = Inventory.GetItemCount(AlexandrianSpringID)
+AlexandrianPedalCount = Inventory.GetItemCount(AlexandrianPedalID)
+AlexandrianBoltCount = Inventory.GetItemCount(AlexandrianBoltID)
 
 ------------------------------------------------------------------------------
 
@@ -1345,12 +1345,12 @@ EarlyGreavesID = 27397
 EarlyAccessoryID = 27399
 
 -- initialize item counts
-EarlyHelmCount = GetItemCount(EarlyHelmID)
-EarlyArmorCount = GetItemCount(EarlyArmorID)
-EarlyGauntletCount = GetItemCount(EarlyGauntletID)
-EarlyChaussesCount = GetItemCount(EarlyChaussesID)
-EarlyGreavesCount = GetItemCount(EarlyGreavesID)
-EarlyAccessoryCount = GetItemCount(EarlyAccessoryID)
+EarlyHelmCount = Inventory.GetItemCount(EarlyHelmID)
+EarlyArmorCount = Inventory.GetItemCount(EarlyArmorID)
+EarlyGauntletCount = Inventory.GetItemCount(EarlyGauntletID)
+EarlyChaussesCount = Inventory.GetItemCount(EarlyChaussesID)
+EarlyGreavesCount = Inventory.GetItemCount(EarlyGreavesID)
+EarlyAccessoryCount = Inventory.GetItemCount(EarlyAccessoryID)
 
 -------------------------------------------------------------------------------- golden antiquity item ids
 GoldenHelmID = 29020
@@ -1361,12 +1361,12 @@ GoldenGreavesID = 29024
 GoldenAccessoryID = 29026
 
 -- initialize item counts
-GoldenHelmCount = GetItemCount(GoldenHelmID)
-GoldenArmorCount = GetItemCount(GoldenArmorID)
-GoldenGauntletCount = GetItemCount(GoldenGauntletID)
-GoldenChaussesCount = GetItemCount(GoldenChaussesID)
-GoldenGreavesCount = GetItemCount(GoldenGreavesID)
-GoldenAccessoryCount = GetItemCount(GoldenAccessoryID)
+GoldenHelmCount = Inventory.GetItemCount(GoldenHelmID)
+GoldenArmorCount = Inventory.GetItemCount(GoldenArmorID)
+GoldenGauntletCount = Inventory.GetItemCount(GoldenGauntletID)
+GoldenChaussesCount = Inventory.GetItemCount(GoldenChaussesID)
+GoldenGreavesCount = Inventory.GetItemCount(GoldenGreavesID)
+GoldenAccessoryCount = Inventory.GetItemCount(GoldenAccessoryID)
 --------------------------------------------------------------------------------lost antiquity item ids 
 
 LostHelmID = 32133
@@ -1377,12 +1377,12 @@ LostGreavesID = 32137
 LostAccessoryID = 32139
 
 -- initialize item counts
-LostHelmCount = GetItemCount(LostHelmID)
-LostArmorCount = GetItemCount(LostArmorID)
-LostGauntletCount = GetItemCount(LostGauntletID)
-LostChaussesCount = GetItemCount(LostChaussesID)
-LostGreavesCount = GetItemCount(LostGreavesID)
-LostAccessoryCount = GetItemCount(LostAccessoryID)
+LostHelmCount = Inventory.GetItemCount(LostHelmID)
+LostArmorCount = Inventory.GetItemCount(LostArmorID)
+LostGauntletCount = Inventory.GetItemCount(LostGauntletID)
+LostChaussesCount = Inventory.GetItemCount(LostChaussesID)
+LostGreavesCount = Inventory.GetItemCount(LostGreavesID)
+LostAccessoryCount = Inventory.GetItemCount(LostAccessoryID)
 
 ------------------------------------------------------------------------------
 
@@ -1576,12 +1576,12 @@ AsphodelosGreavesID = 35821
 AsphodelosAccessoryID = 35822
 
 -- initialize item counts
-AsphodelosHelmCount = GetItemCount(AsphodelosHelmID)
-AsphodelosArmorCount = GetItemCount(AsphodelosArmorID)
-AsphodelosGauntletCount = GetItemCount(AsphodelosGauntletID)
-AsphodelosChaussesCount = GetItemCount(AsphodelosChaussesID)
-AsphodelosGreavesCount = GetItemCount(AsphodelosGreavesID)
-AsphodelosAccessoryCount = GetItemCount(AsphodelosAccessoryID)
+AsphodelosHelmCount = Inventory.GetItemCount(AsphodelosHelmID)
+AsphodelosArmorCount = Inventory.GetItemCount(AsphodelosArmorID)
+AsphodelosGauntletCount = Inventory.GetItemCount(AsphodelosGauntletID)
+AsphodelosChaussesCount = Inventory.GetItemCount(AsphodelosChaussesID)
+AsphodelosGreavesCount = Inventory.GetItemCount(AsphodelosGreavesID)
+AsphodelosAccessoryCount = Inventory.GetItemCount(AsphodelosAccessoryID)
 
 --------------------------------------------------------------Abyssos item ids
 AbyssosHelmID = 38375
@@ -1592,12 +1592,12 @@ AbyssosGreavesID = 38379
 AbyssosAccessoryID = 38380
 
 -- initialize item counts
-AbyssosHelmCount = GetItemCount(AbyssosHelmID)
-AbyssosArmorCount = GetItemCount(AbyssosArmorID)
-AbyssosGauntletCount = GetItemCount(AbyssosGauntletID)
-AbyssosChaussesCount = GetItemCount(AbyssosChaussesID)
-AbyssosGreavesCount = GetItemCount(AbyssosGreavesID)
-AbyssosAccessoryCount = GetItemCount(AbyssosAccessoryID)
+AbyssosHelmCount = Inventory.GetItemCount(AbyssosHelmID)
+AbyssosArmorCount = Inventory.GetItemCount(AbyssosArmorID)
+AbyssosGauntletCount = Inventory.GetItemCount(AbyssosGauntletID)
+AbyssosChaussesCount = Inventory.GetItemCount(AbyssosChaussesID)
+AbyssosGreavesCount = Inventory.GetItemCount(AbyssosGreavesID)
+AbyssosAccessoryCount = Inventory.GetItemCount(AbyssosAccessoryID)
 
 --------------------------------------------------------------Anabaseios item ids
 AnabaseiosHelmID = 40297
@@ -1608,12 +1608,12 @@ AnabaseiosGreavesID = 40301
 AnabaseiosAccessoryID = 40302
 
 -- initialize item counts
-AnabaseiosHelmCount = GetItemCount(AnabaseiosHelmID)
-AnabaseiosArmorCount = GetItemCount(AnabaseiosArmorID)
-AnabaseiosGauntletCount = GetItemCount(AnabaseiosGauntletID)
-AnabaseiosChaussesCount = GetItemCount(AnabaseiosChaussesID)
-AnabaseiosGreavesCount = GetItemCount(AnabaseiosGreavesID)
-AnabaseiosAccessoryCount = GetItemCount(AnabaseiosAccessoryID)
+AnabaseiosHelmCount = Inventory.GetItemCount(AnabaseiosHelmID)
+AnabaseiosArmorCount = Inventory.GetItemCount(AnabaseiosArmorID)
+AnabaseiosGauntletCount = Inventory.GetItemCount(AnabaseiosGauntletID)
+AnabaseiosChaussesCount = Inventory.GetItemCount(AnabaseiosChaussesID)
+AnabaseiosGreavesCount = Inventory.GetItemCount(AnabaseiosGreavesID)
+AnabaseiosAccessoryCount = Inventory.GetItemCount(AnabaseiosAccessoryID)
 
 -------------------------------------------------------------
 DjoleTable = 
@@ -1935,34 +1935,34 @@ function IsThereTradeItem()
     TotalExchangeItem = 0 
     for _, entry in ipairs(SabinaTable) do
         local itemID = entry[4]
-        local count = GetItemCount(itemID)
+        local count = Inventory.GetItemCount(itemID)
         TotalExchangeItem = TotalExchangeItem + count
     end
     for _, entry in ipairs(GelfradusTable) do
         local itemID = entry[4]
-        local count = GetItemCount(itemID)
+        local count = Inventory.GetItemCount(itemID)
         TotalExchangeItem = TotalExchangeItem + count
     end
         for _, entry in ipairs(YhalTable) do
         local itemID = entry[4]
-        local count = GetItemCount(itemID)
+        local count = Inventory.GetItemCount(itemID)
         TotalExchangeItem = TotalExchangeItem + count
     end
         for _, entry in ipairs(DjoleTable) do
         local itemID = entry[4]
-        local count = GetItemCount(itemID)
+        local count = Inventory.GetItemCount(itemID)
         TotalExchangeItem = TotalExchangeItem + count
     end
 
 
  ----------------------------   GORDIAN   --------------------------------------------
 
-    GordianLensCount = GetItemCount(GordianLensID)
-    GordianShaftCount = GetItemCount(GordianShaftID)
-    GordianCrankCount = GetItemCount(GordianCrankID)
-    GordianSpringCount = GetItemCount(GordianSpringID)
-    GordianPedalCount = GetItemCount(GordianPedalID)
-    GordianBoltCount = GetItemCount(GordianBoltID)
+    GordianLensCount = Inventory.GetItemCount(GordianLensID)
+    GordianShaftCount = Inventory.GetItemCount(GordianShaftID)
+    GordianCrankCount = Inventory.GetItemCount(GordianCrankID)
+    GordianSpringCount = Inventory.GetItemCount(GordianSpringID)
+    GordianPedalCount = Inventory.GetItemCount(GordianPedalID)
+    GordianBoltCount = Inventory.GetItemCount(GordianBoltID)
 
     GordianTurnInCount = math.floor(GordianLensCount / HelmBuyAmount) +
     math.floor(GordianShaftCount / ChestBuyAmount) +
@@ -1973,12 +1973,12 @@ function IsThereTradeItem()
 
  ----------------------------   MIDAN   --------------------------------------------
 
-    MidanLensCount = GetItemCount(MidanLensID)
-    MidanShaftCount = GetItemCount(MidanShaftID)
-    MidanCrankCount = GetItemCount(MidanCrankID)
-    MidanSpringCount = GetItemCount(MidanSpringID)
-    MidanPedalCount = GetItemCount(MidanPedalID)
-    MidanBoltCount = GetItemCount(MidanBoltID)
+    MidanLensCount = Inventory.GetItemCount(MidanLensID)
+    MidanShaftCount = Inventory.GetItemCount(MidanShaftID)
+    MidanCrankCount = Inventory.GetItemCount(MidanCrankID)
+    MidanSpringCount = Inventory.GetItemCount(MidanSpringID)
+    MidanPedalCount = Inventory.GetItemCount(MidanPedalID)
+    MidanBoltCount = Inventory.GetItemCount(MidanBoltID)
 
     MidanTurnInCount = math.floor(MidanLensCount / HelmBuyAmount) +
     math.floor(MidanShaftCount / ChestBuyAmount) +
@@ -1989,12 +1989,12 @@ function IsThereTradeItem()
 
  ----------------------------   Alexandrian   --------------------------------------------
 
-    AlexandrianLensCount = GetItemCount(AlexandrianLensID)
-    AlexandrianShaftCount = GetItemCount(AlexandrianShaftID)
-    AlexandrianCrankCount = GetItemCount(AlexandrianCrankID)
-    AlexandrianSpringCount = GetItemCount(AlexandrianSpringID)
-    AlexandrianPedalCount = GetItemCount(AlexandrianPedalID)
-    AlexandrianBoltCount = GetItemCount(AlexandrianBoltID)
+    AlexandrianLensCount = Inventory.GetItemCount(AlexandrianLensID)
+    AlexandrianShaftCount = Inventory.GetItemCount(AlexandrianShaftID)
+    AlexandrianCrankCount = Inventory.GetItemCount(AlexandrianCrankID)
+    AlexandrianSpringCount = Inventory.GetItemCount(AlexandrianSpringID)
+    AlexandrianPedalCount = Inventory.GetItemCount(AlexandrianPedalID)
+    AlexandrianBoltCount = Inventory.GetItemCount(AlexandrianBoltID)
 
     AlexandrianTurnInCount = math.floor(AlexandrianLensCount / HelmBuyAmount) +
     math.floor(AlexandrianShaftCount / ChestBuyAmount) +
@@ -2005,12 +2005,12 @@ function IsThereTradeItem()
 
  ------------------------------  Deltascape  ----------------------------------------------
 
-    DeltascapeLensCount = GetItemCount(DeltascapeLensID)
-    DeltascapeShaftCount = GetItemCount(DeltascapeShaftID)
-    DeltascapeCrankCount = GetItemCount(DeltascapeCrankID)
-    DeltascapeSpringCount = GetItemCount(DeltascapeSpringID)
-    DeltascapePedalCount = GetItemCount(DeltascapePedalID)
-    DeltascapeBoltCount = GetItemCount(DeltascapeBoltID)
+    DeltascapeLensCount = Inventory.GetItemCount(DeltascapeLensID)
+    DeltascapeShaftCount = Inventory.GetItemCount(DeltascapeShaftID)
+    DeltascapeCrankCount = Inventory.GetItemCount(DeltascapeCrankID)
+    DeltascapeSpringCount = Inventory.GetItemCount(DeltascapeSpringID)
+    DeltascapePedalCount = Inventory.GetItemCount(DeltascapePedalID)
+    DeltascapeBoltCount = Inventory.GetItemCount(DeltascapeBoltID)
 
     DeltascapeTurnInCount = math.floor(DeltascapeLensCount / HelmBuyAmount) +
     math.floor(DeltascapeShaftCount / ChestBuyAmount) +
@@ -2021,12 +2021,12 @@ function IsThereTradeItem()
 
 ------------------------------  Sigmascape  ----------------------------------------------
 
-    SigmascapeLensCount = GetItemCount(SigmascapeLensID)
-    SigmascapeShaftCount = GetItemCount(SigmascapeShaftID)
-    SigmascapeCrankCount = GetItemCount(SigmascapeCrankID)
-    SigmascapeSpringCount = GetItemCount(SigmascapeSpringID)
-    SigmascapePedalCount = GetItemCount(SigmascapePedalID)
-    SigmascapeBoltCount = GetItemCount(SigmascapeBoltID)
+    SigmascapeLensCount = Inventory.GetItemCount(SigmascapeLensID)
+    SigmascapeShaftCount = Inventory.GetItemCount(SigmascapeShaftID)
+    SigmascapeCrankCount = Inventory.GetItemCount(SigmascapeCrankID)
+    SigmascapeSpringCount = Inventory.GetItemCount(SigmascapeSpringID)
+    SigmascapePedalCount = Inventory.GetItemCount(SigmascapePedalID)
+    SigmascapeBoltCount = Inventory.GetItemCount(SigmascapeBoltID)
 
     SigmascapeTurnInCount = math.floor(SigmascapeLensCount / HelmBuyAmount) +
     math.floor(SigmascapeShaftCount / ChestBuyAmount) +
@@ -2037,12 +2037,12 @@ function IsThereTradeItem()
 
 ------------------------------  Alphascape  ----------------------------------------------
 
-    AlphascapeLensCount = GetItemCount(AlphascapeLensID)
-    AlphascapeShaftCount = GetItemCount(AlphascapeShaftID)
-    AlphascapeCrankCount = GetItemCount(AlphascapeCrankID)
-    AlphascapeSpringCount = GetItemCount(AlphascapeSpringID)
-    AlphascapePedalCount = GetItemCount(AlphascapePedalID)
-    AlphascapeBoltCount = GetItemCount(AlphascapeBoltID)
+    AlphascapeLensCount = Inventory.GetItemCount(AlphascapeLensID)
+    AlphascapeShaftCount = Inventory.GetItemCount(AlphascapeShaftID)
+    AlphascapeCrankCount = Inventory.GetItemCount(AlphascapeCrankID)
+    AlphascapeSpringCount = Inventory.GetItemCount(AlphascapeSpringID)
+    AlphascapePedalCount = Inventory.GetItemCount(AlphascapePedalID)
+    AlphascapeBoltCount = Inventory.GetItemCount(AlphascapeBoltID)
 
     AlphascapeTurnInCount = math.floor(AlphascapeLensCount / HelmBuyAmount) +
     math.floor(AlphascapeShaftCount / ChestBuyAmount) +
@@ -2053,12 +2053,12 @@ function IsThereTradeItem()
 
     ------------------------------  Edengate  ----------------------------------------------
 
-    EarlyHelmCount = GetItemCount(EarlyHelmID)
-    EarlyArmorCount = GetItemCount(EarlyArmorID)
-    EarlyGauntletCount = GetItemCount(EarlyGauntletID)
-    EarlyChaussesCount = GetItemCount(EarlyChaussesID)
-    EarlyGreavesCount = GetItemCount(EarlyGreavesID)
-    EarlyAccessoryCount = GetItemCount(EarlyAccessoryID)
+    EarlyHelmCount = Inventory.GetItemCount(EarlyHelmID)
+    EarlyArmorCount = Inventory.GetItemCount(EarlyArmorID)
+    EarlyGauntletCount = Inventory.GetItemCount(EarlyGauntletID)
+    EarlyChaussesCount = Inventory.GetItemCount(EarlyChaussesID)
+    EarlyGreavesCount = Inventory.GetItemCount(EarlyGreavesID)
+    EarlyAccessoryCount = Inventory.GetItemCount(EarlyAccessoryID)
 
     EdengateTurnInCount = math.floor(EarlyHelmCount / HelmBuyAmount) +
     math.floor(EarlyArmorCount / ChestBuyAmount) +
@@ -2069,12 +2069,12 @@ function IsThereTradeItem()
 
         ------------------------------  Edenverse  ----------------------------------------------
 
-    GoldenHelmCount = GetItemCount(GoldenHelmID)
-    GoldenArmorCount = GetItemCount(GoldenArmorID)
-    GoldenGauntletCount = GetItemCount(GoldenGauntletID)
-    GoldenChaussesCount = GetItemCount(GoldenChaussesID)
-    GoldenGreavesCount = GetItemCount(GoldenGreavesID)
-    GoldenAccessoryCount = GetItemCount(GoldenAccessoryID)
+    GoldenHelmCount = Inventory.GetItemCount(GoldenHelmID)
+    GoldenArmorCount = Inventory.GetItemCount(GoldenArmorID)
+    GoldenGauntletCount = Inventory.GetItemCount(GoldenGauntletID)
+    GoldenChaussesCount = Inventory.GetItemCount(GoldenChaussesID)
+    GoldenGreavesCount = Inventory.GetItemCount(GoldenGreavesID)
+    GoldenAccessoryCount = Inventory.GetItemCount(GoldenAccessoryID)
 
     EdenverseTurnInCount = math.floor(GoldenHelmCount / HelmBuyAmount) +
     math.floor(GoldenArmorCount / ChestBuyAmount) +
@@ -2085,12 +2085,12 @@ function IsThereTradeItem()
 
         ------------------------------  Edenpromise  ----------------------------------------------
 
-    LostHelmCount = GetItemCount(LostHelmID)
-    LostArmorCount = GetItemCount(LostArmorID)
-    LostGauntletCount = GetItemCount(LostGauntletID)
-    LostChaussesCount = GetItemCount(LostChaussesID)
-    LostGreavesCount = GetItemCount(LostGreavesID)
-    LostAccessoryCount = GetItemCount(LostAccessoryID)
+    LostHelmCount = Inventory.GetItemCount(LostHelmID)
+    LostArmorCount = Inventory.GetItemCount(LostArmorID)
+    LostGauntletCount = Inventory.GetItemCount(LostGauntletID)
+    LostChaussesCount = Inventory.GetItemCount(LostChaussesID)
+    LostGreavesCount = Inventory.GetItemCount(LostGreavesID)
+    LostAccessoryCount = Inventory.GetItemCount(LostAccessoryID)
 
     EdenpromiseTurnInCount = math.floor(LostHelmCount / HelmBuyAmount) +
     math.floor(LostArmorCount / ChestBuyAmount) +
@@ -2101,12 +2101,12 @@ function IsThereTradeItem()
 
             ------------------------------  Asphodelos  ----------------------------------------------
 
-    AsphodelosHelmCount = GetItemCount(AsphodelosHelmID)
-    AsphodelosArmorCount = GetItemCount(AsphodelosArmorID)
-    AsphodelosGauntletCount = GetItemCount(AsphodelosGauntletID)
-    AsphodelosChaussesCount = GetItemCount(AsphodelosChaussesID)
-    AsphodelosGreavesCount = GetItemCount(AsphodelosGreavesID)
-    AsphodelosAccessoryCount = GetItemCount(AsphodelosAccessoryID)
+    AsphodelosHelmCount = Inventory.GetItemCount(AsphodelosHelmID)
+    AsphodelosArmorCount = Inventory.GetItemCount(AsphodelosArmorID)
+    AsphodelosGauntletCount = Inventory.GetItemCount(AsphodelosGauntletID)
+    AsphodelosChaussesCount = Inventory.GetItemCount(AsphodelosChaussesID)
+    AsphodelosGreavesCount = Inventory.GetItemCount(AsphodelosGreavesID)
+    AsphodelosAccessoryCount = Inventory.GetItemCount(AsphodelosAccessoryID)
 
     AsphodelosTurnInCount = math.floor(AsphodelosHelmCount / HelmBuyAmount) +
     math.floor(AsphodelosArmorCount / ChestBuyAmount) +
@@ -2117,12 +2117,12 @@ function IsThereTradeItem()
 
             ------------------------------  Abyssos  ----------------------------------------------
 
-    AbyssosHelmCount = GetItemCount(AbyssosHelmID)
-    AbyssosArmorCount = GetItemCount(AbyssosArmorID)
-    AbyssosGauntletCount = GetItemCount(AbyssosGauntletID)
-    AbyssosChaussesCount = GetItemCount(AbyssosChaussesID)
-    AbyssosGreavesCount = GetItemCount(AbyssosGreavesID)
-    AbyssosAccessoryCount = GetItemCount(AbyssosAccessoryID)
+    AbyssosHelmCount = Inventory.GetItemCount(AbyssosHelmID)
+    AbyssosArmorCount = Inventory.GetItemCount(AbyssosArmorID)
+    AbyssosGauntletCount = Inventory.GetItemCount(AbyssosGauntletID)
+    AbyssosChaussesCount = Inventory.GetItemCount(AbyssosChaussesID)
+    AbyssosGreavesCount = Inventory.GetItemCount(AbyssosGreavesID)
+    AbyssosAccessoryCount = Inventory.GetItemCount(AbyssosAccessoryID)
 
     AbyssosTurnInCount = math.floor(AbyssosHelmCount / HelmBuyAmount) +
     math.floor(AbyssosArmorCount / ChestBuyAmount) +
@@ -2133,12 +2133,12 @@ function IsThereTradeItem()
 
         ------------------------------  Anabaseios  ----------------------------------------------
 
-    AnabaseiosHelmCount = GetItemCount(AnabaseiosHelmID)
-    AnabaseiosArmorCount = GetItemCount(AnabaseiosArmorID)
-    AnabaseiosGauntletCount = GetItemCount(AnabaseiosGauntletID)
-    AnabaseiosChaussesCount = GetItemCount(AnabaseiosChaussesID)
-    AnabaseiosGreavesCount = GetItemCount(AnabaseiosGreavesID)
-    AnabaseiosAccessoryCount = GetItemCount(AnabaseiosAccessoryID)
+    AnabaseiosHelmCount = Inventory.GetItemCount(AnabaseiosHelmID)
+    AnabaseiosArmorCount = Inventory.GetItemCount(AnabaseiosArmorID)
+    AnabaseiosGauntletCount = Inventory.GetItemCount(AnabaseiosGauntletID)
+    AnabaseiosChaussesCount = Inventory.GetItemCount(AnabaseiosChaussesID)
+    AnabaseiosGreavesCount = Inventory.GetItemCount(AnabaseiosGreavesID)
+    AnabaseiosAccessoryCount = Inventory.GetItemCount(AnabaseiosAccessoryID)
 
     AnabaseiosTurnInCount = math.floor(AnabaseiosHelmCount / HelmBuyAmount) +
     math.floor(AnabaseiosArmorCount / ChestBuyAmount) +
@@ -2264,7 +2264,7 @@ function TurnIn(TableName,MaxArmoryValue)
     end
     
     local function Exchange(ItemID, List, Amount)
-        local ItemCount = GetItemCount(ItemID)
+        local ItemCount = Inventory.GetItemCount(ItemID)
          
         local ExpectedItemCount
         local brakepoint = 0
@@ -2280,7 +2280,7 @@ function TurnIn(TableName,MaxArmoryValue)
         
         while true do
             yield("/wait 0.12")
-            ItemCount = GetItemCount(ItemID)
+            ItemCount = Inventory.GetItemCount(ItemID)
             --yield("/echo Itemcount: "..ItemCount.." / ItemID: "..ItemID)
             if IsAddonVisible("SelectYesno") then
                 yield("/pcall SelectYesno true 0")
@@ -2294,7 +2294,7 @@ function TurnIn(TableName,MaxArmoryValue)
                 yield("/pcall ShopExchangeItem true 0 " .. List .. " " .. Amount)
                 yield("/wait 0.6")
             end
-            if MaxItem and ItemCount == GetItemCount(ItemID) and brakepoint > 5 then
+            if MaxItem and ItemCount == Inventory.GetItemCount(ItemID) and brakepoint > 5 then
                 local newAmount = math.max(1, math.floor(Amount / 2))
                 Amount = newAmount
                 ExpectedItemCount = ItemCount + Amount
@@ -2318,8 +2318,8 @@ function TurnIn(TableName,MaxArmoryValue)
         local gearItem = entry[4]
         local pcallValue = entry[5]
         local iconShopType = entry[6]
-        local ItemAmount = GetItemCount(itemType)
-        local GearAmount = GetItemCount(gearItem)
+        local ItemAmount = Inventory.GetItemCount(itemType)
+        local GearAmount = Inventory.GetItemCount(gearItem)
         local CanExchange = math.floor(ItemAmount / itemTypeBuy)
         local SlotINV = GetInventoryFreeSlotCount()
         local ArmoryType = WhichArmoryItem(gearItem)
