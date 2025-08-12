@@ -1818,15 +1818,15 @@ function MeshCheck()
     local was_ready = NavIsReady()
     if not NavIsReady() then
         while not NavIsReady() do
-            LogInfo("[Debug]Building navmesh, currently at " .. Truncate1Dp(NavBuildProgress() * 100) .. "%")
+            Dalamud.Log("[Debug]Building navmesh, currently at " .. Truncate1Dp(NavBuildProgress() * 100) .. "%")
             yield("/wait 1")
             local was_ready = NavIsReady()
             if was_ready then
-                LogInfo("[Debug]Navmesh ready!")
+                Dalamud.Log("[Debug]Navmesh ready!")
             end
         end
     else
-        LogInfo("[Debug]Navmesh ready!")
+        Dalamud.Log("[Debug]Navmesh ready!")
     end
 end
 
@@ -1837,12 +1837,12 @@ function WalkTo(valuex, valuey, valuez, stopdistance)
         yield("/wait 0.3")
     end
     PathStop()
-    LogInfo("[WalkTo] Completed")
+    Dalamud.Log("[WalkTo] Completed")
 end
 
 function TeleportToIdlishire()
     if IsInZone(478) then
-        LogInfo("[Debug]Tried Teleporting but already at zone: 478(Idlishire)")
+        Dalamud.Log("[Debug]Tried Teleporting but already at zone: 478(Idlishire)")
     else
         while GetZoneID() ~= 478 do
             yield("/wait 0.14")
@@ -1859,7 +1859,7 @@ end
 
 function TeleportToRhalgr()
     if IsInZone(635) then
-        LogInfo("[Debug]Tried Teleporting but already at zone: 635(Rhalgr)")
+        Dalamud.Log("[Debug]Tried Teleporting but already at zone: 635(Rhalgr)")
     else
         while GetZoneID() ~= 635 do
             yield("/wait 0.13")
@@ -1876,7 +1876,7 @@ end
 
 function TeleportToEulmore()
     if IsInZone(820) then
-        LogInfo("[Debug]Tried Teleporting but already at zone: 820(Eulmore)")
+        Dalamud.Log("[Debug]Tried Teleporting but already at zone: 820(Eulmore)")
     else
         while GetZoneID() ~= 820 do
             yield("/wait 0.13")
@@ -1893,7 +1893,7 @@ end
 
 function TeleportToRadz()
     if IsInZone(963) then
-        LogInfo("[Debug]Tried Teleporting but already at zone: 963(Radz-at-Han)")
+        Dalamud.Log("[Debug]Tried Teleporting but already at zone: 963(Radz-at-Han)")
     else
         while GetZoneID() ~= 963 do
             yield("/wait 0.13")
@@ -2259,8 +2259,8 @@ function TurnIn(TableName,MaxArmoryValue)
             end
         end
         yield("/wait 0.1")
-        LogInfo("[ShopMenu]Should open SelectString "..SelectString)
-        LogInfo("[ShopMenu]Should open SelectIconString "..SelectIconString)
+        Dalamud.Log("[ShopMenu]Should open SelectString "..SelectString)
+        Dalamud.Log("[ShopMenu]Should open SelectIconString "..SelectIconString)
     end
     
     local function Exchange(ItemID, List, Amount)
@@ -2301,12 +2301,12 @@ function TurnIn(TableName,MaxArmoryValue)
                 if IsAddonVisible("Request") then
                     yield("/pcall Request true -1")
                 end
-                LogInfo("[Exchange] Adjusting amount to " .. Amount .. " for item ID " .. ItemID)
+                Dalamud.Log("[Exchange] Adjusting amount to " .. Amount .. " for item ID " .. ItemID)
             end
             brakepoint = brakepoint + 1
         end
         yield("/wait 0.1") 
-        LogInfo("[Exchange] Finished exchange for item ID " .. ItemID)
+        Dalamud.Log("[Exchange] Finished exchange for item ID " .. ItemID)
     end
     yield("/echo Do We Get Here?")
     for i = 1, #TableName do
@@ -2329,11 +2329,11 @@ function TurnIn(TableName,MaxArmoryValue)
             SlotINV = SlotINV - MaxArmoryFreeSlot
         end
         if CanExchange > 0 and GearAmount < 1 and SlotINV > 0 then
-            LogInfo("Exchange start ...................")
-            LogInfo("SlotINV: "..SlotINV)
-            LogInfo("SlotArmoryINV: "..SlotArmoryINV)
-            LogInfo("CanExchange: "..CanExchange)
-            LogInfo("GearAmount: "..GearAmount)
+            Dalamud.Log("Exchange start ...................")
+            Dalamud.Log("SlotINV: "..SlotINV)
+            Dalamud.Log("SlotArmoryINV: "..SlotArmoryINV)
+            Dalamud.Log("CanExchange: "..CanExchange)
+            Dalamud.Log("GearAmount: "..GearAmount)
             if shopType ~= lastShopType then
                 OpenShopMenu(iconShopType,shopType,NpcName)
                 lastShopType = shopType
@@ -2362,7 +2362,7 @@ function TurnIn(TableName,MaxArmoryValue)
                 GetOUT()
             end
             iconShopType = LastIconShopType
-            LogInfo("Exchange END ...................")
+            Dalamud.Log("Exchange END ...................")
         end
     end
     yield("/wait 0.1")
@@ -2380,7 +2380,7 @@ function GcDelivero()
     while DeliverooIsTurnInRunning() == false do
         yield("/wait 0.1")
         if IsInZone(129) then -- Limsa Lower
-            LogInfo("[IdyllshireTurnin] Currently in Limsa Lower!")
+            Dalamud.Log("[IdyllshireTurnin] Currently in Limsa Lower!")
             yield("/target Aetheryte")
             yield("/wait 0.1")
             AetheryteX = GetTargetRawXPos()
@@ -2388,22 +2388,22 @@ function GcDelivero()
             AetheryteZ = GetTargetRawZPos()
             WalkTo(AetheryteX, AetheryteY, AetheryteZ, 7)
             yield("/li The Aftcastle")
-            LogInfo("[IdyllshireTurnin] Heading to the Aftcastle")
+            Dalamud.Log("[IdyllshireTurnin] Heading to the Aftcastle")
             ZoneTransition()
         elseif IsInZone(128) then -- Limsa Upper
-            LogInfo("[IdyllshireTurnin] Heading to the Limsa Upper GC")
+            Dalamud.Log("[IdyllshireTurnin] Heading to the Limsa Upper GC")
             WalkTo(93.9, 40.175 , 75.409, 1)
-            LogInfo("[IdyllshireTurnin] Limsa Upper GC has been reached!")
+            Dalamud.Log("[IdyllshireTurnin] Limsa Upper GC has been reached!")
             DeliverooEnable()
         elseif IsInZone(130) then -- Ul'dah's GC
-            LogInfo("[IdyllshireTurnin] Heading to Ul'Dah's GC")
+            Dalamud.Log("[IdyllshireTurnin] Heading to Ul'Dah's GC")
             WalkTo(-142.361,4.1,-106.919, 1) 
-            LogInfo("[IdyllshireTurnin] Ul'Dah's GC has been reached!")
+            Dalamud.Log("[IdyllshireTurnin] Ul'Dah's GC has been reached!")
             DeliverooEnable()
         elseif IsInZone(132) then -- Grdiania's GC
-            LogInfo("[IdyllshireTurnin] Heading to Gridania's GC")
+            Dalamud.Log("[IdyllshireTurnin] Heading to Gridania's GC")
             WalkTo(-67.757, -0.501, -8.393, 1) 
-            LogInfo("[IdyllshireTurnin] Gridania's GC has been reached!")
+            Dalamud.Log("[IdyllshireTurnin] Gridania's GC has been reached!")
             DeliverooEnable()
         end
     end
@@ -2424,7 +2424,7 @@ function MountUp()
             end
         end
     else
-        LogInfo("[Debug]Tried Mounting up but not at zone: 478(Idlishire)")
+        Dalamud.Log("[Debug]Tried Mounting up but not at zone: 478(Idlishire)")
     end
 end
 
@@ -2439,11 +2439,11 @@ end
 
 -- Main code that runs it all
 
-LogInfo("Script has started")
+Dalamud.Log("Script has started")
 
 if MaxItem == false and MaxArmory then
     MaxArmory = false
-    LogInfo("Wrong Option reverting MaxArmory.")
+    Dalamud.Log("Wrong Option reverting MaxArmory.")
 end
 if MaxArmory then
     if IsAddonReady("ConfigCharacter") then
@@ -2560,4 +2560,4 @@ while IsThereTradeItem() do
 end
 
 yield("TurnIn Finished.")
-LogInfo("Script has completed it's use")
+Dalamud.Log("Script has completed it's use")
