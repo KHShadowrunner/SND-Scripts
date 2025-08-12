@@ -1844,7 +1844,7 @@ function TeleportToIdlishire()
     if Svc.ClientState.TerritoryType == 478 then
         Dalamud.Log("[Debug]Tried Teleporting but already at zone: 478(Idlishire)")
     else
-        while GetZoneID() ~= 478 do
+        while Svc.ClientState.TerritoryType ~= 478 do
             yield("/wait 0.14")
             if GetCharacterCondition(27) then
                 yield("/wait 2")
@@ -1861,7 +1861,7 @@ function TeleportToRhalgr()
     if Svc.ClientState.TerritoryType == 635 then
         Dalamud.Log("[Debug]Tried Teleporting but already at zone: 635(Rhalgr)")
     else
-        while GetZoneID() ~= 635 do
+        while Svc.ClientState.TerritoryType ~= 635 do
             yield("/wait 0.13")
             if GetCharacterCondition(27) then
                 yield("/wait 2")
@@ -1878,7 +1878,7 @@ function TeleportToEulmore()
     if Svc.ClientState.TerritoryType == 820 then
         Dalamud.Log("[Debug]Tried Teleporting but already at zone: 820(Eulmore)")
     else
-        while GetZoneID() ~= 820 do
+        while Svc.ClientState.TerritoryType ~= 820 do
             yield("/wait 0.13")
             if GetCharacterCondition(27) then
                 yield("/wait 2")
@@ -1895,7 +1895,7 @@ function TeleportToRadz()
     if Svc.ClientState.TerritoryType == 963 then
         Dalamud.Log("[Debug]Tried Teleporting but already at zone: 963(Radz-at-Han)")
     else
-        while GetZoneID() ~= 963 do
+        while Svc.ClientState.TerritoryType ~= 963 do
             yield("/wait 0.13")
             if GetCharacterCondition(27) then
                 yield("/wait 2")
@@ -1909,7 +1909,7 @@ function TeleportToRadz()
 end
 
 function TeleportGC()
-    while GetZoneID() == 478 or GetZoneID() == 635 or GetZoneID() == 820 or GetZoneID() == 963 do
+    while Svc.ClientState.TerritoryType == 478 or Svc.ClientState.TerritoryType == 635 or Svc.ClientState.TerritoryType == 820 or Svc.ClientState.TerritoryType == 963 do
         yield("/wait 0.15")
         if GetCharacterCondition(27) then
             yield("/wait 2")
@@ -2184,14 +2184,14 @@ function GetOUT()
 end
 
 function FcAndSell()
-    local WhereToComeBack = GetZoneID()
+    local WhereToComeBack = Svc.ClientState.TerritoryType
     yield("/li fc")
-    while WhereToComeBack == GetZoneID() do
+    while WhereToComeBack == Svc.ClientState.TerritoryType do
         yield("/wait 2")
     end
     PlayerTest()
-    local YardId = GetZoneID()
-    while YardId == GetZoneID() do
+    local YardId = Svc.ClientState.TerritoryType
+    while YardId == Svc.ClientState.TerritoryType do
         if GetCharacterCondition(45) then
             yield("/wait 1")
         else
