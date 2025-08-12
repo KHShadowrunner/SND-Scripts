@@ -2478,7 +2478,7 @@ end
 while IsThereTradeItem() do
     yield("/wait 0.1")
     if (GordianTurnInCount >= 1 or AlexandrianTurnInCount >= 1 or MidanTurnInCount >= 1) and Inventory.GetFreeInventorySlots() ~= 0 then
-        yield("/echo Gordiasscape Count: "..GordiasTurnInCount)
+        yield("/echo Gordiasscape Count: "..GordianTurnInCount)
         yield("/echo Midan Count: "..MidanTurnInCount)
         yield("/echo Alexandrian: "..AlexandrianTurnInCount)
         TeleportToIdlishire()
