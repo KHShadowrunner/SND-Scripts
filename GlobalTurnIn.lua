@@ -2328,7 +2328,7 @@ function TurnIn(TableName,MaxArmoryValue)
         local CanExchange = math.floor(ItemAmount / itemTypeBuy)
         local SlotINV = Inventory.GetFreeInventorySlots()
         local ArmoryType = WhichArmoryItem(gearItem)
-        local SlotArmoryINV = GetFreeSlotsInContainer(ArmoryType)
+        local SlotArmoryINV = Inventory.GetInventoryContainer(ArmoryType).FreeSlots
         yield("/echo gearItme: "..gearItem.." / ItemAmount: "..ItemAmount)
         if MaxArmory then
             SlotINV = SlotINV - MaxArmoryFreeSlot
