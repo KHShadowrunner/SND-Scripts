@@ -1841,7 +1841,7 @@ function WalkTo(valuex, valuey, valuez, stopdistance)
 end
 
 function TeleportToIdlishire()
-    if IsInZone(478) then
+    if Svc.ClientState.TerritoryType == 478 then
         Dalamud.Log("[Debug]Tried Teleporting but already at zone: 478(Idlishire)")
     else
         while GetZoneID() ~= 478 do
@@ -1858,7 +1858,7 @@ function TeleportToIdlishire()
 end
 
 function TeleportToRhalgr()
-    if IsInZone(635) then
+    if Svc.ClientState.TerritoryType == 635 then
         Dalamud.Log("[Debug]Tried Teleporting but already at zone: 635(Rhalgr)")
     else
         while GetZoneID() ~= 635 do
@@ -1875,7 +1875,7 @@ function TeleportToRhalgr()
 end
 
 function TeleportToEulmore()
-    if IsInZone(820) then
+    if Svc.ClientState.TerritoryType == 820 then
         Dalamud.Log("[Debug]Tried Teleporting but already at zone: 820(Eulmore)")
     else
         while GetZoneID() ~= 820 do
@@ -1892,7 +1892,7 @@ function TeleportToEulmore()
 end
 
 function TeleportToRadz()
-    if IsInZone(963) then
+    if Svc.ClientState.TerritoryType == 963 then
         Dalamud.Log("[Debug]Tried Teleporting but already at zone: 963(Radz-at-Han)")
     else
         while GetZoneID() ~= 963 do
@@ -2379,7 +2379,7 @@ end
 function GcDelivero()
     while DeliverooIsTurnInRunning() == false do
         yield("/wait 0.1")
-        if IsInZone(129) then -- Limsa Lower
+        if Svc.ClientState.TerritoryType == 129 then -- Limsa Lower
             Dalamud.Log("[IdyllshireTurnin] Currently in Limsa Lower!")
             yield("/target Aetheryte")
             yield("/wait 0.1")
@@ -2390,17 +2390,17 @@ function GcDelivero()
             yield("/li The Aftcastle")
             Dalamud.Log("[IdyllshireTurnin] Heading to the Aftcastle")
             ZoneTransition()
-        elseif IsInZone(128) then -- Limsa Upper
+        elseif Svc.ClientState.TerritoryType == 128 then -- Limsa Upper
             Dalamud.Log("[IdyllshireTurnin] Heading to the Limsa Upper GC")
             WalkTo(93.9, 40.175 , 75.409, 1)
             Dalamud.Log("[IdyllshireTurnin] Limsa Upper GC has been reached!")
             DeliverooEnable()
-        elseif IsInZone(130) then -- Ul'dah's GC
+        elseif Svc.ClientState.TerritoryType == 130 then -- Ul'dah's GC
             Dalamud.Log("[IdyllshireTurnin] Heading to Ul'Dah's GC")
             WalkTo(-142.361,4.1,-106.919, 1) 
             Dalamud.Log("[IdyllshireTurnin] Ul'Dah's GC has been reached!")
             DeliverooEnable()
-        elseif IsInZone(132) then -- Grdiania's GC
+        elseif Svc.ClientState.TerritoryType == 132 then -- Grdiania's GC
             Dalamud.Log("[IdyllshireTurnin] Heading to Gridania's GC")
             WalkTo(-67.757, -0.501, -8.393, 1) 
             Dalamud.Log("[IdyllshireTurnin] Gridania's GC has been reached!")
@@ -2414,7 +2414,7 @@ function GcDelivero()
 end
 
 function MountUp()
-    if IsInZone(478) or IsInZone(635) then
+    if Svc.ClientState.TerritoryType == 478 or Svc.ClientState.TerritoryType == 635 then
         while GetCharacterCondition(4, false) do
             yield("/wait 0.1")
             if GetCharacterCondition(27) then
@@ -2478,7 +2478,7 @@ end
 while IsThereTradeItem() do
     yield("/wait 0.1")
     if (GordianTurnInCount >= 1 or AlexandrianTurnInCount >= 1 or MidanTurnInCount >= 1) and Inventory.GetFreeInventorySlots() ~= 0 then
-        yield("/echo Gordiasscape Count: "..GordianTurnInCount)
+        yield("/echo Gordiasscape Count: "..GordiasTurnInCount)
         yield("/echo Midan Count: "..MidanTurnInCount)
         yield("/echo Alexandrian: "..AlexandrianTurnInCount)
         TeleportToIdlishire()
@@ -2541,13 +2541,13 @@ while IsThereTradeItem() do
                 FcAndSell()
             else
                 MountUp()
-                if IsInZone(478) then
+                if Svc.ClientState.TerritoryType == 478 then
                     WalkTo(-1.6, 206.5, 50.1, 1)
-                elseif IsInZone(635) then
+                elseif Svc.ClientState.TerritoryType == 635 then
                     WalkTo(-55.6,0.0,51.4, 1)
-                elseif IsInZone(820) then
+                elseif Svc.ClientState.TerritoryType == 820 then
                     WalkTo(6.766,82.134,30.170, 1)
-                elseif IsInZone(963) then
+                elseif Svc.ClientState.TerritoryType == 963 then
                     WalkTo(25.797,0,-52.367, 1)
                 end
                 SummoningBellSell()
