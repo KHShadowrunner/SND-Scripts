@@ -1798,16 +1798,16 @@ IPC.PandorasBox.SetConfigEnabled("Auto-select Turn-ins", "AutoConfirm", true)
 function PlayerTest()
     repeat
         yield("/wait 0.1")
-    until IsPlayerAvailable()
+    until Player.Available
 end
 
 function ZoneTransition()
     repeat 
         yield("/wait 0.5")
-    until not IsPlayerAvailable()
+    until not Player.Available
     repeat 
         yield("/wait 0.5")
-    until IsPlayerAvailable()
+    until Player.Available
 end
 
 function Truncate1Dp(num)
@@ -2180,7 +2180,7 @@ function GetOUT()
         if IsAddonVisible("InventoryRetainer") then
             yield("/pcall InventoryRetainer true -1")
         end
-    until IsPlayerAvailable()
+    until Player.Available
 end
 
 function FcAndSell()
