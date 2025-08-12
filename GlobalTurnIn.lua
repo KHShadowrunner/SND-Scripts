@@ -55,6 +55,8 @@
     **************
 ]] 
 
+import("System.Numerics")
+
 UseTicket = false
 -- do you want to use tickets to teleport.
 
@@ -82,6 +84,8 @@ TeleportToFC = false
 **************
 
 ]]
+
+import("System.Numerics")
 
 -- ItemBuyAmounts
 HelmBuyAmount = 2
@@ -1815,12 +1819,12 @@ function Truncate1Dp(num)
 end
 
 function MeshCheck()
-    local was_ready = NavIsReady()
-    if not NavIsReady() then
-        while not NavIsReady() do
+    local was_ready = IPC.vnavmesh.IsReady()
+    if not IPC.vnavmesh.IsReady() then
+        while not IPC.vnavmesh.IsReady() do
             Dalamud.Log("[Debug]Building navmesh, currently at " .. Truncate1Dp(NavBuildProgress() * 100) .. "%")
             yield("/wait 1")
-            local was_ready = NavIsReady()
+            local was_ready = IPC.vnavmesh.IsReady()
             if was_ready then
                 Dalamud.Log("[Debug]Navmesh ready!")
             end
@@ -2482,7 +2486,8 @@ while IsThereTradeItem() do
         yield("/echo Midan Count: "..MidanTurnInCount)
         yield("/echo Alexandrian: "..AlexandrianTurnInCount)
         TeleportToIdlishire()
-        local DistanceToSabina = GetDistanceToPoint(-19.0, 211.0, -35.9)
+		local NPCTarget = Vector3(-19.0, 211.0, -35.9)
+        local DistanceToSabina = Vector3.Distance(Entity.Player.Position, NPCTarget)
         if DistanceToSabina > 2 then
             MountUp()
             WalkTo(-19.0, 211.0, -35.9, 1)
