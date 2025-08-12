@@ -1836,11 +1836,12 @@ end
 
 function WalkTo(valuex, valuey, valuez, stopdistance)
     MeshCheck()
-    PathfindAndMoveTo(valuex, valuey, valuez, false)
-    while ((PathIsRunning() or PathfindInProgress()) and GetDistanceToPoint(valuex, valuey, valuez) > stopdistance) do
+	local dest = Vector3(valuex, valuey, valuez)
+    IPC.vnavmesh.PathfindAndMoveTo(dest, false)
+    while ((IPC.vnavmesh.IsRunning() or IPC.vnavmesh.PathfindInProgress()) and Vector3.Distance(Entity.Player.Position, dest) > stopdistance) do
         yield("/wait 0.3")
     end
-    PathStop()
+    IPC.vnavmesh.Stop()
     Dalamud.Log("[WalkTo] Completed")
 end
 
