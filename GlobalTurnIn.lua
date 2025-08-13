@@ -60,15 +60,9 @@ import("System.Numerics")
 UseTicket = false
 -- do you want to use tickets to teleport.
 
-
-MaxItem = false 
--- do you want your maximize the inventory you have and buy one of a single item? 
--- true = buy one single item to fill up the inventory
--- false = buy 1 of each item (Technically safer, but if you're already farming A4N... >.>
-
 MaxArmory = false
 MaxArmoryFreeSlot = 2
--- do you want to fill your armory, MaxItem should be true to use this option.
+-- do you want to fill your armory
 -- how many empty slots you want.
 
 VendorTurnIn = false
@@ -1922,11 +1916,11 @@ function TeleportGC()
             if UseTicket then
                 TeleportToGCTown(UseTicket)
                 else
-                if GetPlayerGC() == 1 then
+                if Player.GrandCompany == 1 then
                     yield("/tp Limsa")
-                elseif GetPlayerGC() == 2 then
+                elseif Player.GrandCompany == 2 then
                     yield("/tp Gridania")
-                elseif GetPlayerGC() == 3 then
+                elseif Player.GrandCompany == 3 then
                     yield("/tp Ul")
                 end
                 yield("/wait 2")
@@ -2302,11 +2296,7 @@ end
         if MaxArmory then
             ExpectedItemCount = ItemCount + Amount
         else
-            if MaxItem then
-                ExpectedItemCount = ItemCount + math.max(1, math.floor(Amount / 2))
-            else
-                ExpectedItemCount = ItemCount + Amount
-            end
+            ExpectedItemCount = ItemCount + Amount
         end
         
         while true do
@@ -2324,15 +2314,6 @@ end
             elseif Addons.GetAddon("ShopExchangeItem").Exists then
                 yield("/pcall ShopExchangeItem true 0 " .. List .. " " .. Amount)
                 yield("/wait 0.6")
-            end
-            if MaxItem and ItemCount == Inventory.GetItemCount(ItemID) and brakepoint > 5 then
-                local newAmount = math.max(1, math.floor(Amount / 2))
-                Amount = newAmount
-                ExpectedItemCount = ItemCount + Amount
-                if Addons.GetAddon("Request").Exists then
-                    yield("/pcall Request true -1")
-                end
-                Dalamud.Log("[Exchange] Adjusting amount to " .. Amount .. " for item ID " .. ItemID)
             end
             brakepoint = brakepoint + 1
         end
@@ -2379,15 +2360,7 @@ end
                     end
                 end
             else
-                if MaxItem then
-                    if CanExchange < SlotINV then
-                        Exchange(gearItem, pcallValue, CanExchange)
-                    else
-                        Exchange(gearItem, pcallValue, SlotINV)
-                    end
-                else
-                    Exchange(gearItem, pcallValue, 1)
-                end
+                Exchange(gearItem, pcallValue, 1)
             end    
             if LastIconShopType ~= nil and iconShopType ~= LastIconShopType then
                 GetOUT()
@@ -2436,7 +2409,7 @@ end
 
 Dalamud.Log("Script has started")
 
-if MaxItem == false and MaxArmory then
+if  MaxArmory then
     MaxArmory = false
     Dalamud.Log("Wrong Option reverting MaxArmory.")
 end
