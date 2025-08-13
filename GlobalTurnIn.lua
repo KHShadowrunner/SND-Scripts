@@ -846,41 +846,41 @@ ItemIdArmoryTable =
     [16460] = 3300,
     [16461] = 3300,
 -- Edensgate
-[27072] = 3210,
-[27073] = 3210,
-[27074] = 3210,
-[27075] = 3210,
-[27076] = 3210,
+[27072] = 3300,
+[27073] = 3300,
+[27074] = 3300,
+[27075] = 3300,
+[27076] = 3300,
 -- Edensverse
-[29174] = 3210,
-[29175] = 3210,
-[29176] = 3210,
-[29177] = 3210,
-[29178] = 3210,
+[29174] = 3300,
+[29175] = 3300,
+[29176] = 3300,
+[29177] = 3300,
+[29178] = 3300,
 -- Edenspromise
-[32413] = 3210,
-[32414] = 3210,
-[32415] = 3210,
-[32416] = 3210,
-[32417] = 3210,
+[32413] = 3300,
+[32414] = 3300,
+[32415] = 3300,
+[32416] = 3300,
+[32417] = 3300,
 -- Asphodelos
-[35015] = 3210,
-[35016] = 3210,
-[35017] = 3210,
-[35018] = 3210,
-[35019] = 3210,
+[35015] = 3300,
+[35016] = 3300,
+[35017] = 3300,
+[35018] = 3300,
+[35019] = 3300,
 -- Abyssos
-[37926] = 3210,
-[37927] = 3210,
-[37928] = 3210,
-[37929] = 3210,
-[37930] = 3210,
+[37926] = 3300,
+[37927] = 3300,
+[37928] = 3300,
+[37929] = 3300,
+[37930] = 3300,
 -- Anabaseios
-[40010] = 3210,
-[40011] = 3210,
-[40012] = 3210,
-[40013] = 3210,
-[40014] = 3210,
+[40010] = 3300,
+[40011] = 3300,
+[40012] = 3300,
+[40013] = 3300,
+[40014] = 3300,
 }
 
 ------------------------------------------------------------------------------
@@ -2167,22 +2167,22 @@ end
 function GetOUT()
     repeat
         yield("/wait 0.1")
-        if IsAddonVisible("SelectYesno") then
+        if Addons.GetAddon("SelectYesno").Exists then
             yield("/pcall SelectYesno true 0")
         end
-        if IsAddonVisible("SelectIconString") then
+        if Addons.GetAddon("SelectIconString").Exists then
             yield("/pcall SelectIconString true -1")
         end
-        if IsAddonVisible("SelectString") then
+        if Addons.GetAddon("SelectString").Exists then
             yield("/pcall SelectString true -1")
         end
-        if IsAddonVisible("ShopExchangeItem") then
+        if Addons.GetAddon("ShopExchangeItem").Exists then
             yield("/pcall ShopExchangeItem true -1")
         end
-        if IsAddonVisible("RetainerList") then
+        if Addons.GetAddon("RetainerList").Exists then
             yield("/pcall RetainerList true -1")
         end
-        if IsAddonVisible("InventoryRetainer") then
+        if Addons.GetAddon("InventoryRetainer").Exists then
             yield("/pcall InventoryRetainer true -1")
         end
     until Player.Available
@@ -2202,7 +2202,7 @@ function FcAndSell()
         else
             if GetTargetName() ~= "Entrance" then
                 yield("/target Entrance")
-            elseif IsAddonVisible("SelectYesno") then
+            elseif Addons.GetAddon("SelectYesno").Exists then
                 yield("/pcall SelectYesno true 0")
             elseif GetDistanceToTarget() > 4  then
                 local X = GetTargetRawXPos()
@@ -2221,7 +2221,25 @@ end
 
 function WhichArmoryItem(ItemToBuy)
     local ArmoryId = ItemIdArmoryTable[ItemToBuy]
-    return ArmoryId
+	if ArmoryId == 3201 then 
+	return Inventory.GetInventoryContainer(InventoryType.ArmoryHead)
+	elseif ArmoryId == 3202 then 
+	return Inventory.GetInventoryContainer(InventoryType.ArmoryBody)
+	elseif ArmoryId == 3203 then 
+	return Inventory.GetInventoryContainer(InventoryType.ArmoryHands)
+	elseif ArmoryId == 3205 then 
+	return Inventory.GetInventoryContainer(InventoryType.ArmoryLegs)
+	elseif ArmoryId == 3206 then 
+	return Inventory.GetInventoryContainer(InventoryType.ArmoryFeets)
+	elseif ArmoryId == 3207 then 
+	return Inventory.GetInventoryContainer(InventoryType.ArmoryEar)
+	elseif ArmoryId == 3208 then 
+	return Inventory.GetInventoryContainer(InventoryType.ArmoryNeck)
+	elseif ArmoryId == 3209 then 
+	return Inventory.GetInventoryContainer(InventoryType.ArmoryWrist)
+	elseif ArmoryId == 3300 then 
+	return Inventory.GetInventoryContainer(InventoryType.ArmoryRings)
+	end
 end
 
 function TurnIn(TableName,MaxArmoryValue)
@@ -2247,17 +2265,17 @@ function TurnIn(TableName,MaxArmoryValue)
     end
 
     local function OpenShopMenu(SelectIconString,SelectString,Npc)
-        while IsAddonVisible("ShopExchangeItem") do
+        while Addons.GetAddon("ShopExchangeItem").Exists do
             yield("/pcall ShopExchangeItem true -1")
             yield("/wait 0.1")
         end
-        while not IsAddonVisible("ShopExchangeItem") do
+        while not Addons.GetAddon("ShopExchangeItem").Exists do
             yield("/wait 0.11")
             if GetTargetName() ~= Npc then
                 yield("/target "..Npc)
-            elseif IsAddonVisible("SelectIconString") then
+            elseif Addons.GetAddon("SelectIconString").Exists then
                 yield("/pcall SelectIconString true "..SelectIconString)
-            elseif IsAddonVisible("SelectString") then
+            elseif Addons.GetAddon("SelectString").Exists then
                 yield("/pcall SelectString true " .. SelectString)
             else
                 yield("/interact")
@@ -2287,15 +2305,15 @@ function TurnIn(TableName,MaxArmoryValue)
             yield("/wait 0.12")
             ItemCount = Inventory.GetItemCount(ItemID)
             --yield("/echo Itemcount: "..ItemCount.." / ItemID: "..ItemID)
-            if IsAddonVisible("SelectYesno") then
+            if Addons.GetAddon("SelectYesno").Exists then
                 yield("/pcall SelectYesno true 0")
-            elseif IsAddonVisible("Request") then
+            elseif Addons.GetAddon("Request").Exists then
                 yield("/wait 0.3")
-            elseif IsAddonVisible("ShopExchangeItemDialog") then
+            elseif Addons.GetAddon("ShopExchangeItemDialog").Exists then
                 yield("/pcall ShopExchangeItemDialog true 0")
             elseif ItemCount >= ExpectedItemCount or ItemCount > 1 or brakepoint > 10 then 
                 break
-            elseif IsAddonVisible("ShopExchangeItem") then
+            elseif Addons.GetAddon("ShopExchangeItem").Exists then
                 yield("/pcall ShopExchangeItem true 0 " .. List .. " " .. Amount)
                 yield("/wait 0.6")
             end
@@ -2303,7 +2321,7 @@ function TurnIn(TableName,MaxArmoryValue)
                 local newAmount = math.max(1, math.floor(Amount / 2))
                 Amount = newAmount
                 ExpectedItemCount = ItemCount + Amount
-                if IsAddonVisible("Request") then
+                if Addons.GetAddon("Request").Exists then
                     yield("/pcall Request true -1")
                 end
                 Dalamud.Log("[Exchange] Adjusting amount to " .. Amount .. " for item ID " .. ItemID)
@@ -2313,7 +2331,7 @@ function TurnIn(TableName,MaxArmoryValue)
         yield("/wait 0.1") 
         Dalamud.Log("[Exchange] Finished exchange for item ID " .. ItemID)
     end
-    yield("/echo Do We Get Here?")
+    
     for i = 1, #TableName do
         
         local entry = TableName[i]
@@ -2328,8 +2346,9 @@ function TurnIn(TableName,MaxArmoryValue)
         local CanExchange = math.floor(ItemAmount / itemTypeBuy)
         local SlotINV = Inventory.GetFreeInventorySlots()
         local ArmoryType = WhichArmoryItem(gearItem)
-        local SlotArmoryINV = Inventory.GetInventoryContainer(ArmoryType).FreeSlots
-        yield("/echo gearItme: "..gearItem.." / ItemAmount: "..ItemAmount)
+				yield("/echo Do We Get Here?")
+        local SlotArmoryINV = ArmoryType.FreeSlots
+				yield("/echo Do We Get Here?")
         if MaxArmory then
             SlotINV = SlotINV - MaxArmoryFreeSlot
         end
