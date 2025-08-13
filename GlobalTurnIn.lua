@@ -2555,5 +2555,5 @@ while IsThereTradeItem() do
     end
 end
 
-yield(/echo "TurnIn Finished.")
+yield("/echo TurnIn Finished.")
 Dalamud.Log("Script has completed it's use")
