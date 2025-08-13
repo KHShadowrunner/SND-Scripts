@@ -1922,11 +1922,11 @@ function TeleportGC()
             if UseTicket then
                 TeleportToGCTown(UseTicket)
                 else
-                if Player.GrandCompany == 1 then
+                if GetPlayerGC() == 1 then
                     yield("/tp Limsa")
-                elseif Player.GrandCompany == 2 then
+                elseif GetPlayerGC() == 2 then
                     yield("/tp Gridania")
-                elseif Player.GrandCompany == 3 then
+                elseif GetPlayerGC() == 3 then
                     yield("/tp Ul")
                 end
                 yield("/wait 2")
@@ -2400,48 +2400,12 @@ end
     GetOUT()
 end
 
-function DeliverooEnable()
-    if DeliverooIsTurnInRunning() == false then
-        yield("/wait 1")
-        yield("/deliveroo enable")
-    end
-end
-
 function GcDelivero()
-    while DeliverooIsTurnInRunning() == false do
-        yield("/wait 0.1")
-        if Svc.ClientState.TerritoryType == 129 then -- Limsa Lower
-            Dalamud.Log("[IdyllshireTurnin] Currently in Limsa Lower!")
-            yield("/target Aetheryte")
-            yield("/wait 0.1")
-            AetheryteX = GetTargetRawXPos()
-            AetheryteY = GetTargetRawYPos()
-            AetheryteZ = GetTargetRawZPos()
-            WalkTo(AetheryteX, AetheryteY, AetheryteZ, 7)
-            yield("/li The Aftcastle")
-            Dalamud.Log("[IdyllshireTurnin] Heading to the Aftcastle")
-            ZoneTransition()
-        elseif Svc.ClientState.TerritoryType == 128 then -- Limsa Upper
-            Dalamud.Log("[IdyllshireTurnin] Heading to the Limsa Upper GC")
-            WalkTo(93.9, 40.175 , 75.409, 1)
-            Dalamud.Log("[IdyllshireTurnin] Limsa Upper GC has been reached!")
-            DeliverooEnable()
-        elseif Svc.ClientState.TerritoryType == 130 then -- Ul'dah's GC
-            Dalamud.Log("[IdyllshireTurnin] Heading to Ul'Dah's GC")
-            WalkTo(-142.361,4.1,-106.919, 1) 
-            Dalamud.Log("[IdyllshireTurnin] Ul'Dah's GC has been reached!")
-            DeliverooEnable()
-        elseif Svc.ClientState.TerritoryType == 132 then -- Grdiania's GC
-            Dalamud.Log("[IdyllshireTurnin] Heading to Gridania's GC")
-            WalkTo(-67.757, -0.501, -8.393, 1) 
-            Dalamud.Log("[IdyllshireTurnin] Gridania's GC has been reached!")
-            DeliverooEnable()
-        end
-    end
-
-    while DeliverooIsTurnInRunning() do
-        yield("/wait 2")
-    end
+    yield("/ays deliver")
+	while (IPC.AutoRetainer.IsBusy() do
+		yield("/wait 1")
+	end
+	PlayerTest()
 end
 
 function MountUp()
@@ -2591,5 +2555,5 @@ while IsThereTradeItem() do
     end
 end
 
-yield("TurnIn Finished.")
+yield(/echo "TurnIn Finished.")
 Dalamud.Log("Script has completed it's use")
