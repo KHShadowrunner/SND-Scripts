@@ -1917,10 +1917,13 @@ function TeleportGC()
                 TeleportToGCTown(UseTicket)
                 else
                 if Player.GrandCompany == 1 then
+					yield("/pcall SelectString true -1")
                     yield("/tp Limsa")
                 elseif Player.GrandCompany == 2 then
+					yield("/pcall SelectString true -1")
                     yield("/tp Gridania")
                 elseif Player.GrandCompany == 3 then
+					yield("/pcall SelectString true -1")
                     yield("/tp Ul")
                 end
                 yield("/wait 2")
