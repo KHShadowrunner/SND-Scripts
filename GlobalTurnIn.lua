@@ -1922,11 +1922,11 @@ function TeleportGC()
             if UseTicket then
                 TeleportToGCTown(UseTicket)
                 else
-                if GetPlayerGC() == 1 then
+                if Player.GrandCompany == 1 then
                     yield("/tp Limsa")
-                elseif GetPlayerGC() == 2 then
+                elseif Player.GrandCompany == 2 then
                     yield("/tp Gridania")
-                elseif GetPlayerGC() == 3 then
+                elseif Player.GrandCompany == 3 then
                     yield("/tp Ul")
                 end
                 yield("/wait 2")
@@ -2263,6 +2263,14 @@ function TurnIn(TableName,MaxArmoryValue)
     elseif TableName == DjoleTable then
         NpcName = "Djole"
     end
+	
+function GetTargetName()
+  if (Entity.Target) then
+    return Entity.Target.Name
+  else
+    return ""
+  end
+end
 
     local function OpenShopMenu(SelectIconString,SelectString,Npc)
         while Addons.GetAddon("ShopExchangeItem").Exists do
@@ -2346,9 +2354,8 @@ function TurnIn(TableName,MaxArmoryValue)
         local CanExchange = math.floor(ItemAmount / itemTypeBuy)
         local SlotINV = Inventory.GetFreeInventorySlots()
         local ArmoryType = WhichArmoryItem(gearItem)
-				yield("/echo Do We Get Here?")
+		--yield("/echo Do We Get Here?")
         local SlotArmoryINV = ArmoryType.FreeSlots
-				yield("/echo Do We Get Here?")
         if MaxArmory then
             SlotINV = SlotINV - MaxArmoryFreeSlot
         end
