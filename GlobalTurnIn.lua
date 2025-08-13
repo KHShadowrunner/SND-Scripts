@@ -2402,7 +2402,7 @@ end
 
 function GcDelivero()
     yield("/ays deliver")
-	while (IPC.AutoRetainer.IsBusy()) do
+	while (IPC.AutoRetainer.IsBusy() do
 		yield("/wait 1")
 	end
 	PlayerTest()
@@ -2492,7 +2492,8 @@ while IsThereTradeItem() do
         yield("/echo Sigmascape Count: "..SigmascapeTurnInCount)
         yield("/echo Alphascape Count: "..AlphascapeTurnInCount)
         TeleportToRhalgr()
-        local DistanceToGelfradus = GetDistanceToPoint(125.0,0.7,40.8)
+		local NPCTarget = Vector3(125.0, 0.7, 40.8)
+        local DistanceToGelfradus = Vector3.Distance(Entity.Player.Position, NPCTarget)
         if DistanceToGelfradus > 2 then
             MountUp()
             WalkTo(125.0,0.7,40.8, 1)
@@ -2506,7 +2507,8 @@ while IsThereTradeItem() do
         yield("/echo Edenverse Count: "..EdenverseTurnInCount)
         yield("/echo Edenpromise Count: "..EdenpromiseTurnInCount)
         TeleportToEulmore()
-        local DistanceToYhal = GetDistanceToPoint(-55.854,84.194,14.951)
+		local NPCTarget = Vector3(-55.854, 84.194, 14.951)
+        local DistanceToYhal = Vector3.Distance(Entity.Player.Position, NPCTarget)
         if DistanceToYhal > 2 then
             MountUp()
             WalkTo(-55.854,84.194,14.951, 1)
@@ -2520,7 +2522,8 @@ while IsThereTradeItem() do
         yield("/echo Abyssos Count: "..AbyssosTurnInCount)
         yield("/echo Anabaseios Count: "..AnabaseiosTurnInCount)
         TeleportToRadz()
-        local DistanceToDjole = GetDistanceToPoint(-42.701,0.920,-77.701)
+		local NPCTarget = Vector3(-42.701,0.920,-77.701)
+        local DistanceToDjole = Vector3.Distance(Entity.Player.Position, NPCTarget)
         if DistanceToDjole > 2 then
             MountUp()
             WalkTo(-42.701,0.920,-77.701, 1)
@@ -2555,5 +2558,5 @@ while IsThereTradeItem() do
     end
 end
 
-yield("/echo TurnIn Finished.")
+yield("/echo "TurnIn Finished.")
 Dalamud.Log("Script has completed it's use")
