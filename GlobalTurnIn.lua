@@ -2161,22 +2161,22 @@ end
 function GetOUT()
     repeat
         yield("/wait 0.1")
-        if Addons.GetAddon("SelectYesno").Exists then
+        if Addons.GetAddon("SelectYesno").Ready then
             yield("/pcall SelectYesno true 0")
         end
-        if Addons.GetAddon("SelectIconString").Exists then
+        if Addons.GetAddon("SelectIconString").Ready then
             yield("/pcall SelectIconString true -1")
         end
-        if Addons.GetAddon("SelectString").Exists then
+        if Addons.GetAddon("SelectString").Ready then
             yield("/pcall SelectString true -1")
         end
-        if Addons.GetAddon("ShopExchangeItem").Exists then
+        if Addons.GetAddon("ShopExchangeItem").Ready then
             yield("/pcall ShopExchangeItem true -1")
         end
-        if Addons.GetAddon("RetainerList").Exists then
+        if Addons.GetAddon("RetainerList").Ready then
             yield("/pcall RetainerList true -1")
         end
-        if Addons.GetAddon("InventoryRetainer").Exists then
+        if Addons.GetAddon("InventoryRetainer").Ready then
             yield("/pcall InventoryRetainer true -1")
         end
     until Player.Available
@@ -2196,7 +2196,7 @@ function FcAndSell()
         else
             if GetTargetName() ~= "Entrance" then
                 yield("/target Entrance")
-            elseif Addons.GetAddon("SelectYesno").Exists then
+            elseif Addons.GetAddon("SelectYesno").Ready then
                 yield("/pcall SelectYesno true 0")
             elseif GetDistanceToTarget() > 4  then
                 local X = GetTargetRawXPos()
@@ -2267,17 +2267,17 @@ function GetTargetName()
 end
 
     local function OpenShopMenu(SelectIconString,SelectString,Npc)
-        while Addons.GetAddon("ShopExchangeItem").Exists do
+        while Addons.GetAddon("ShopExchangeItem").Ready do
             yield("/pcall ShopExchangeItem true -1")
             yield("/wait 0.1")
         end
-        while not Addons.GetAddon("ShopExchangeItem").Exists do
+        while not Addons.GetAddon("ShopExchangeItem").Ready do
             yield("/wait 0.11")
             if GetTargetName() ~= Npc then
                 yield("/target "..Npc)
-            elseif Addons.GetAddon("SelectIconString").Exists then
+            elseif Addons.GetAddon("SelectIconString").Ready then
                 yield("/pcall SelectIconString true "..SelectIconString)
-            elseif Addons.GetAddon("SelectString").Exists then
+            elseif Addons.GetAddon("SelectString").Ready then
                 yield("/pcall SelectString true " .. SelectString)
             else
                 yield("/interact")
@@ -2303,15 +2303,15 @@ end
             yield("/wait 0.12")
             ItemCount = Inventory.GetItemCount(ItemID)
             --yield("/echo Itemcount: "..ItemCount.." / ItemID: "..ItemID)
-            if Addons.GetAddon("SelectYesno").Exists then
+            if Addons.GetAddon("SelectYesno").Ready then
                 yield("/pcall SelectYesno true 0")
-            elseif Addons.GetAddon("Request").Exists then
+            elseif Addons.GetAddon("Request").Ready then
                 yield("/wait 0.3")
-            elseif Addons.GetAddon("ShopExchangeItemDialog").Exists then
+            elseif Addons.GetAddon("ShopExchangeItemDialog").Ready then
                 yield("/pcall ShopExchangeItemDialog true 0")
             elseif ItemCount >= ExpectedItemCount or ItemCount > 1 or brakepoint > 10 then 
                 break
-            elseif Addons.GetAddon("ShopExchangeItem").Exists then
+            elseif Addons.GetAddon("ShopExchangeItem").Ready then
                 yield("/pcall ShopExchangeItem true 0 " .. List .. " " .. Amount)
                 yield("/wait 0.6")
             end
