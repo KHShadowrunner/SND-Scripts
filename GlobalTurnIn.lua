@@ -2375,7 +2375,7 @@ end
 
 function GcDelivero()
     yield("/ays deliver")
-	while (IPC.AutoRetainer.IsBusy() do
+	while (IPC.AutoRetainer.IsBusy()) do
 		yield("/wait 1")
 	end
 	PlayerTest()
@@ -2531,5 +2531,5 @@ while IsThereTradeItem() do
     end
 end
 
-yield("/echo "TurnIn Finished.")
+yield("/echo TurnIn Finished.")
 Dalamud.Log("Script has completed it's use")
