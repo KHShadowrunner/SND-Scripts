@@ -2402,7 +2402,7 @@ end
 
 function GcDelivero()
     yield("/ays deliver")
-	while (IPC.AutoRetainer.IsBusy() do
+	while (IPC.AutoRetainer.IsBusy()) do
 		yield("/wait 1")
 	end
 	PlayerTest()
