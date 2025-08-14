@@ -15,7 +15,7 @@ configs:
 totalruns  = Config.Get("NumberOfRacesToRun")
 yield("/echo Starting")
 racenum = 0
-for loops = totalruns, 0, -1 do    
+for loops = totalruns, 1, -1 do    
     
     yield("/wait 1")
     racenum = racenum+1
@@ -57,7 +57,7 @@ for loops = totalruns, 0, -1 do
         yield("/wait 2")
     until Addons.GetAddon("RaceChocoboResult").Ready
     yield("/release W")
-    yield("/wait 7")
+    yield("/wait 5")
     yield("/pcall RaceChocoboResult true 1 1")
     repeat
         zone = Svc.ClientState.TerritoryType
@@ -65,4 +65,5 @@ for loops = totalruns, 0, -1 do
     until zone ~= 390
 end
 yield("/echo Chocobo Racing Complete.")
+
 
