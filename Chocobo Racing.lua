@@ -57,7 +57,7 @@ for loops = totalruns, 0, -1 do
         yield("/wait 2")
     until Addons.GetAddon("RaceChocoboResult").Ready
     yield("/release W")
-    yield("/wait 9")
+    yield("/wait 7")
     yield("/pcall RaceChocoboResult true 1 1")
     repeat
         zone = Svc.ClientState.TerritoryType
@@ -65,3 +65,4 @@ for loops = totalruns, 0, -1 do
     until zone ~= 390
 end
 yield("/echo Chocobo Racing Complete.")
+
