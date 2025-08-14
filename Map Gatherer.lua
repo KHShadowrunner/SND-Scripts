@@ -105,15 +105,15 @@ function GetMapInfo()
 end
 
 function HasMapAllowance()
-    if not IsAddonVisible("ContentsInfo") then
+    if not Addons.GetAddon("ContentsInfo").Ready then
         yield("/timers")
         yield ("/wait 1")
     end
 
     for i = 1, 15 do
-        local timerName = GetNodeText("ContentsInfo", 8, i, 5)
+        local timerName = GetNodeText("ContentsInfo", 1, 4, 41002+i,7)
         if timerName == "Next Map Allowance" then
-            return GetNodeText("ContentsInfo", 8, i, 4) == "Available Now"
+            return GetNodeText("ContentsInfo", 1, 4, 41002+i, 6) == "Available Now"
         end
     end
     return false
@@ -121,11 +121,11 @@ end
 
 function Gather()
     yield("/echo gathering")
-    if LifestreamIsBusy() then
+    if IPC.Lifestream.IsBusy() then
         return
     end
 
-    if GetItemCount(MapInfo.itemId) > 0 then
+    if Inventory.GetItemCount(MapInfo.itemId) > 0 then
         yield("/echo Acquired map.")
         State = CharacterState.ready
         return
@@ -139,26 +139,27 @@ function Gather()
     yield("/wait 10")
 end
 
+--[[
 function MailMap()
-    if LifestreamIsBusy() then
+    if IPC.Lifestream.IsBusy() then
         return
     end
 
     yield("/echo mailing")
-    if GetItemCount(MapInfo.itemId) == 0 then
-        if IsAddonVisible("LetterList") then
+    if Inventory.GetItemCount(MapInfo.itemId) == 0 then
+        if Addons.GetAddon("LetterList").Ready then
             yield("/callback LetterList true -1")
         end
         State = CharacterState.ready
         return
     end
 
-    if IsAddonVisible("SelectYesno") then
+    if Addons.GetAddon("SelectYesno").Ready then
         yield("/callback SelectYesno true 0")
         return
     end
 
-    if IsAddonVisible("LetterEditor") then
+    if Addons.GetAddon("LetterEditor").Ready then
         if MapAttached then
             --local dateString = os.date("%B %d, %Y", os.time(os.date("*t")))
             yield('/callback LetterEditor true 0 0 "'..RecipientName..'" "sending you a map" 0 0')
@@ -203,7 +204,7 @@ function MailMap()
         yield(MailboxTeleportCommand)
         return
     end
-end
+end--]]
 
 function SwapCharacters()
     yield("/echo swapping")
@@ -220,12 +221,12 @@ if Characters[i].visited == nil then
 Characters[i].visited = true
 local nextCharacterName = Characters[i].characterName.."@"..Characters[i].worldName
             yield("/echo "..nextCharacterName)
-if GetCharacterName(true) ~= nextCharacterName then
+if Entity.Player.Name ~= nextCharacterName then
 yield("/ays relog "..nextCharacterName)
 -- yield("/wait 3")
                 repeat
                     yield("/wait 1")
-                until GetCharacterName(true) == nextCharacterName
+                until Entity.Player.Name == nextCharacterName
                 -- yield("/waitaddon _ActionBar <maxwait.600><wait.5>")
                 yield("/waitaddon _ActionBar")
                 State = CharacterState.ready
@@ -238,7 +239,7 @@ end
 
 function Ready()
     yield("/echo ready")
-    if IsAddonVisible("Gathering") then
+    if Addons.GetAddon("Gathering").Ready then
         yield("/callback Gathering true -1")
         return
     end
@@ -247,11 +248,11 @@ function Ready()
         return
     end
 
-    if GetItemCount(MapInfo.itemId) > 0 then
-        if Mail and RecipientName ~= GetCharacterName(false) then
+    if Inventory.GetItemCount(MapInfo.itemId) > 0 then
+        --[[if Mail and RecipientName ~= GetCharacterName(false) then
             MapAttached = false
             State = CharacterState.mailing
-        end
+        end --]]
     elseif not HasMapAllowance() then
         yield("/echo No map allowance left for today.")
         if Multimode then
@@ -266,7 +267,7 @@ CharacterState =
 {
     ready = Ready,
     gathering = Gather,
-    mailing = MailMap,
+    --mailing = MailMap,
     swapping = SwapCharacters
 }
 
@@ -280,6 +281,6 @@ else
     repeat
         State()
         yield("/wait 1")
-    until not Multimode and (not HasMapAllowance() or (GetItemCount(MapInfo.itemId) > 0 and not Mail))
+    until not Multimode and (not HasMapAllowance() or (Inventory.GetItemCount(MapInfo.itemId) > 0 and not Mail))
 yield("/xldisableplugin Questionable")
 end
