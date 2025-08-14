@@ -1,25 +1,40 @@
+--[=====[
+[[SND Metadata]]
+author: 'Still Working On It'
+version: 1.0.0
+description: Chocobo Racing Runs x20 for Challenge Log Entries
+configs:
+  NumberOfRacesToRun:
+    description: The number of races you want to run.
+    type: interger
+    minimum: 1
+    required: true
+
+[[End Metadata]]
+--]=====]
+totalruns  = Config.Get("NumberOfRacesToRun")
 yield("/echo Starting")
 racenum = 0
-for loops = 20, 1, -1 do    
+for loops = totalruns, 0, -1 do    
     
     yield("/wait 1")
     racenum = racenum+1
     yield("/echo Queueing for Race Number:"..racenum)
 
-    zone = GetZoneID()
+    zone = Svc.ClientState.TerritoryType 
 
-    if IsAddonVisible("JournalDetail")==false then yield("/dutyfinder") end
+    if not Addons.GetAddon("JournalDetail").Ready then yield("/dutyfinder") end
     yield("/waitaddon JournalDetail")
     yield("/pcall ContentsFinder true 1 9")
     yield("/pcall ContentsFinder true 12 1")
     yield("/pcall ContentsFinder true 3 15")
     yield("/pcall ContentsFinder true 12 0 <wait.1>")
     yield("/waitaddon ContentsFinderConfirm")
-    if IsAddonVisible("ContentsFinderConfirm") then yield("/click ContentsFinderConfirm Commence") end
+    if Addons.GetAddon("ContentsFinderConfirm").Ready then yield("/click ContentsFinderConfirm Commence") end
 
     repeat
         yield("/wait 1")
-    zone = GetZoneID()
+    zone = Svc.ClientState.TerritoryType 
     until zone == 390
     yield("/wait 7")
     yield("/hold A")
@@ -40,12 +55,13 @@ for loops = 20, 1, -1 do
         yield("/send KEY_1")
         yield("/send KEY_2")
         yield("/wait 2")
-    until IsAddonVisible("RaceChocoboResult")==true
+    until Addons.GetAddon("RaceChocoboResult").Ready
     yield("/release W")
     yield("/wait 9")
     yield("/pcall RaceChocoboResult true 1 1")
     repeat
-        zone = GetZoneID()
+        zone = Svc.ClientState.TerritoryType
         yield("/wait 1")
     until zone ~= 390
 end
+yield("/echo Chocobo Racing Complete.")
