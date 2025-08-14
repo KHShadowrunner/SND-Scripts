@@ -244,7 +244,7 @@ function Ready()
         return
     end
 
-    if IsPlayerOccupied() then -- wait for player to be available
+    if not Player.Available then -- wait for player to be available
         return
     end
 
