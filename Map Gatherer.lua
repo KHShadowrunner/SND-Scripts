@@ -1,4 +1,4 @@
----[[
+--[[
 
 ********************************************************************************
 *                               Map Gathering                                  * 
@@ -43,7 +43,7 @@ and relogs as the next character.
 ]]
 yield("/xlenableplugin Gatherbuddy Reborn")
 yield("/wait 5")
-MapName = "Timeworn Br'aaxskin Map" -- must match the map on your GBR list
+MapName = "Timeworn Gargantuaskin Map" -- must match the map on your GBR list
 
 Multimode = false
 Characters =
@@ -94,6 +94,7 @@ TimewornMapIds = {
     -- Dawntrail Maps
     {itemId=43556, itemName="Timeworn Loboskin Map"},
     {itemId=43557, itemName="Timeworn Br'aaxskin Map"}
+    {itemId=46185, itemName="Timeworn Gargantuaskin Map")
 }
 
 function GetMapInfo()
