@@ -1,4 +1,4 @@
---[[
+---[[
 
 ********************************************************************************
 *                               Map Gathering                                  * 
@@ -109,13 +109,17 @@ function HasMapAllowance()
         yield("/timers")
         yield ("/wait 1")
     end
-
-    for i = 1, 15 do
-        local timerName = GetNodeText("ContentsInfo", 1, 4, 41002+i,7)
+    for i = 41000, 41015 do
+      local timerName =  Addons.GetAddon("ContentsInfo"):GetNode(1, 4, i, 6, 7).Text
+      if timerName == nil then
+      else
         if timerName == "Next Map Allowance" then
-            return GetNodeText("ContentsInfo", 1, 4, 41002+i, 6) == "Available Now"
+            yield("/echo Map Allowance is available!")
+            return Addons.GetAddon("ContentsInfo"):GetNode(1, 4, i, 6, 8).Text == "Available Now"
         end
+	  end
     end
+    yield("/echo No record found...")
     return false
 end
 
@@ -204,7 +208,8 @@ function MailMap()
         yield(MailboxTeleportCommand)
         return
     end
-end--]]
+end
+--]]
 
 function SwapCharacters()
     yield("/echo swapping")
@@ -244,21 +249,24 @@ function Ready()
         return
     end
 
-    if not Player.Available then -- wait for player to be available
+    if Player.IsBusy then -- wait for player to be available
         return
     end
 
     if Inventory.GetItemCount(MapInfo.itemId) > 0 then
+      yield("/echo You already have a map in Inventory...")
         --[[if Mail and RecipientName ~= GetCharacterName(false) then
             MapAttached = false
             State = CharacterState.mailing
-        end --]]
+        end
+        --]]
     elseif not HasMapAllowance() then
-        yield("/echo No map allowance left for today.")
+        yield("Do I get here?")
         if Multimode then
             State = CharacterState.swapping
         end
     else
+        yield("/echo Let's go gathering!")
         State = CharacterState.gathering
     end
 end
@@ -282,5 +290,5 @@ else
         State()
         yield("/wait 1")
     until not Multimode and (not HasMapAllowance() or (Inventory.GetItemCount(MapInfo.itemId) > 0 and not Mail))
-yield("/xldisableplugin Questionable")
+yield("/xldisableplugin Gatherbuddy Reborn")
 end
