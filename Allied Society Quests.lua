@@ -12,7 +12,7 @@ configs:
   FirstAlliedSociety:
     description: The first allied society from which to accept quests.
     type: list
-    choices: [,"Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja"]
+    choices: ["Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja"]
     is_choice: true
     required: true
   FirstClass:
