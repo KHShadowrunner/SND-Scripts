@@ -18,7 +18,7 @@ configs:
   FirstClass:
     description: Class to assign for first allied society.
     type: list
-    choices: ["Paladin", "Warrior", "Dark Knight", "Gunbreaker", "Monk", "Dragoon", "Ninja", "Samurai", "Reaper, "Viper", "White Mage", "Scholar", "Astrologian", "Sage", "Bard", "Machinist", "Dancer", "Black Mage", "Summoner", "Red Mage", "Pictomancer", "Blue Mage", "Carpenter", "Blacksmith", "Armorer", "Goldsmith", "Leatherworker", "Weaver", "Alchemist", "Culinarian", "Miner", "Botanist", "Fisher"]
+    choices: ["Paladin", "Warrior", "Dark Knight", "Gunbreaker", "Monk", "Dragoon", "Ninja", "Samurai", "Reaper", "Viper", "White Mage", "Scholar", "Astrologian", "Sage", "Bard", "Machinist", "Dancer", "Black Mage", "Summoner", "Red Mage", "Pictomancer", "Blue Mage", "Carpenter", "Blacksmith", "Armorer", "Goldsmith", "Leatherworker", "Weaver", "Alchemist", "Culinarian", "Miner", "Botanist", "Fisher"]
     is_choice: true
     required: true
   SecondAlliedSociety:
@@ -29,7 +29,7 @@ configs:
   SecondClass:
     description: Class to assign for second allied society.
     type: list
-    choices: [" ", "Paladin", "Warrior", "Dark Knight", "Gunbreaker", "Monk", "Dragoon", "Ninja", "Samurai", "Reaper, "Viper", "White Mage", "Scholar", "Astrologian", "Sage", "Bard", "Machinist", "Dancer", "Black Mage", "Summoner", "Red Mage", "Pictomancer", "Blue Mage", "Carpenter", "Blacksmith", "Armorer", "Goldsmith", "Leatherworker", "Weaver", "Alchemist", "Culinarian", "Miner", "Botanist", "Fisher"]
+    choices: [" ", "Paladin", "Warrior", "Dark Knight", "Gunbreaker", "Monk", "Dragoon", "Ninja", "Samurai", "Reaper", "Viper", "White Mage", "Scholar", "Astrologian", "Sage", "Bard", "Machinist", "Dancer", "Black Mage", "Summoner", "Red Mage", "Pictomancer", "Blue Mage", "Carpenter", "Blacksmith", "Armorer", "Goldsmith", "Leatherworker", "Weaver", "Alchemist", "Culinarian", "Miner", "Botanist", "Fisher"]
     is_choice: true
   ThirdAlliedSociety:
     description: The third allied society from which to accept quests.
@@ -39,7 +39,7 @@ configs:
   ThirdClass:
     description: Class to assign for third allied society.
     type: list
-    choices: [" ", "Paladin", "Warrior", "Dark Knight", "Gunbreaker", "Monk", "Dragoon", "Ninja", "Samurai", "Reaper, "Viper", "White Mage", "Scholar", "Astrologian", "Sage", "Bard", "Machinist", "Dancer", "Black Mage", "Summoner", "Red Mage", "Pictomancer", "Blue Mage", "Carpenter", "Blacksmith", "Armorer", "Goldsmith", "Leatherworker", "Weaver", "Alchemist", "Culinarian", "Miner", "Botanist", "Fisher"]
+    choices: [" ", "Paladin", "Warrior", "Dark Knight", "Gunbreaker", "Monk", "Dragoon", "Ninja", "Samurai", "Reaper", "Viper", "White Mage", "Scholar", "Astrologian", "Sage", "Bard", "Machinist", "Dancer", "Black Mage", "Summoner", "Red Mage", "Pictomancer", "Blue Mage", "Carpenter", "Blacksmith", "Armorer", "Goldsmith", "Leatherworker", "Weaver", "Alchemist", "Culinarian", "Miner", "Botanist", "Fisher"]
     is_choice: true
   FourthAlliedSociety:
     description: The fourth allied society from which to accept quests.
@@ -49,7 +49,7 @@ configs:
   FourthClass:
     description: Class to assign for fourth allied society.
     type: list
-    choices: [" ", "Paladin", "Warrior", "Dark Knight", "Gunbreaker", "Monk", "Dragoon", "Ninja", "Samurai", "Reaper, "Viper", "White Mage", "Scholar", "Astrologian", "Sage", "Bard", "Machinist", "Dancer", "Black Mage", "Summoner", "Red Mage", "Pictomancer", "Blue Mage", "Carpenter", "Blacksmith", "Armorer", "Goldsmith", "Leatherworker", "Weaver", "Alchemist", "Culinarian", "Miner", "Botanist", "Fisher"]
+    choices: [" ", "Paladin", "Warrior", "Dark Knight", "Gunbreaker", "Monk", "Dragoon", "Ninja", "Samurai", "Reaper", "Viper", "White Mage", "Scholar", "Astrologian", "Sage", "Bard", "Machinist", "Dancer", "Black Mage", "Summoner", "Red Mage", "Pictomancer", "Blue Mage", "Carpenter", "Blacksmith", "Armorer", "Goldsmith", "Leatherworker", "Weaver", "Alchemist", "Culinarian", "Miner", "Botanist", "Fisher"]
     is_choice: true
 
 [[End Metadata]]
