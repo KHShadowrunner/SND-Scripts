@@ -1,3 +1,28 @@
+--[=====[
+[[SND Metadata]]
+author: 'Still Working On It'
+version: 1.0.0
+description: Turn in macro for as many token-based gear drops I can find.
+configs:
+  AetheriteTickets:
+    default: false
+    description: Do you want to use Aetherite Tickets for teleporting?
+  FillArmory:
+	default: false
+	description: Do you wish to use (and turn in) items from the armory chest?
+  FillArmoryAmount:
+	default: 1
+	description: How many slots do you wish to keep free before turning in items?
+  VendorTurnIn:
+	default: false
+	description: Do you want to sell the traded gear to your retainer, or trade to the Grand Company for points? False = GC, True = Vendor
+  TeleportToFC:
+	default: false
+	description: Do you want to sell to your retainers in your Free Company house?
+					
+[[End Metadata]]
+--]=====]
+
 --[[
     
     **********************************
@@ -49,35 +74,13 @@
     -> vnavmesh : https://puni.sh/api/repository/veyn
     -> Pandora's Box : https://love.puni.sh/ment.json
     -> Automaton : https://puni.sh/api/repository/croizat (you will need to enable auto merge.)
-    
-    **************
-    *  SETTINGS  *
-    **************
 ]] 
 
-import("System.Numerics")
-
-UseTicket = false
--- do you want to use tickets to teleport.
-
-MaxArmory = false
-MaxArmoryFreeSlot = 2
--- do you want to fill your armory
--- how many empty slots you want.
-
-VendorTurnIn = false
-TeleportToFC = false
--- If you DON'T want FC points, and wanna stay off the marketboard
--- use this to sell to your retainer, you'll lose some gil profit in the end, but you'll also stay more off the radar..
-
---[[
-
-**************
-*  Start of  * 
-*   Script   *
-**************
-
-]]
+UseTicket = Config.Get("AetheriteTickets")
+MaxArmory = Config.Get("FillArmory")
+MaxArmoryFreeSlot = Config.Get("FillArmoryAmount")
+VendorTurnIn = Config.Get("VendorTurnIn")
+TeleportToFC = Config.Get("TeleportToFC")
 
 import("System.Numerics")
 
