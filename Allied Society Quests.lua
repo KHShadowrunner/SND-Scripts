@@ -99,13 +99,13 @@ ToDoList = {}
 local societyConfigKeys = {
     { societyKey = Config.Get("FirstAlliedSociety"),  classKey = Config.Get("FirstClass")  },
     { societyKey = Config.Get("SecondAlliedSociety"), classKey = Config.Get("SecondClass") },
-    { societyKey = Config.Get("ThirdAlliedSociety"),  classKey = Config.Get("ThirdClass")  },
+    { societyKey = Config.Get("ThirdAlliedSociety"),  classKey = Config.Get("ThirdClass") },
     { societyKey = Config.Get("FourthAlliedSociety"), classKey = Config.Get("FourthClass") }
 }
 
 for _, entry in ipairs(societyConfigKeys) do
-    local society = Config.Get(entry.societyKey)
-    local class   = Config.Get(entry.classKey)
+    local society = entry.societyKey
+    local class   = entry.classKey
 
     if society and class and society ~= "" and class ~= "" then
         table.insert(ToDoList, { alliedSocietyName = society, class = class })
