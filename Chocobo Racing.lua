@@ -5,13 +5,14 @@ version: 1.0.0
 description: Chocobo Racing Runs x20 for Challenge Log Entries
 configs:
   NumberOfRacesToRun:
+    default: 20
     description: The number of races you want to run.
-    type: interger
-    minimum: 1
+    min: 1
     required: true
 
 [[End Metadata]]
 --]=====]
+
 totalruns  = Config.Get("NumberOfRacesToRun")
 yield("/echo Starting")
 racenum = 0
@@ -65,5 +66,6 @@ for loops = totalruns, 1, -1 do
     until zone ~= 390
 end
 yield("/echo Chocobo Racing Complete.")
+
 
 
