@@ -1,3 +1,21 @@
+--[=====[
+[[SND Metadata]]
+author: 'pot0to (https://ko-fi.com/pot0to) || Updated by: Minnu'
+version: 2.0.0
+description: Short script to enable GBR and gather a map. Allows for multi-character gathering but will have to be manually edited to support.
+plugin_dependencies:
+- Gatherbuddy Reborn (And its dependencies) 
+configs:
+  MapName:
+    description: The name of the map to be gathered (MUST MATCH THE MAP SET IN GBR)
+    type: list
+    choices: ["Timeworn Leather Map", "Timeworn Goatskin Map", "Timeworn Toadskin Map", "Timeworn Boarskin Map", "Timeworn Peisteskin Map", "Timeworn Archaeoskin Map", "Timeworn Wyvernskin Map", "Timeworn Dragonskin Map", "Timeworn Gaganaskin Map", "Timeworn Gazelleskin Map", "Timeworn Gliderskin Map", "Timeworn Zonureskin Map", "Timeworn Saigaskin Map", "Timeworn Kumbhiraskin Map", "Timeworn Ophiotauroskin Map", "Timeworn Loboskin Map", "Timeworn Br'aaxskin Map", "Timeworn Gargantuaskin Map"]
+    is_choice: true
+    required: true
+
+[[End Metadata]]
+--]=====]
+
 --[[
 
 ********************************************************************************
@@ -43,7 +61,7 @@ and relogs as the next character.
 ]]
 yield("/xlenableplugin Gatherbuddy Reborn")
 yield("/wait 5")
-MapName = "Timeworn Gargantuaskin Map" -- must match the map on your GBR list
+MapName = GetConfig("MapName") -- must match the map on your GBR list
 
 Multimode = false
 Characters =
@@ -293,3 +311,4 @@ else
     until not Multimode and (not HasMapAllowance() or (Inventory.GetItemCount(MapInfo.itemId) > 0 and not Mail))
 yield("/xldisableplugin Gatherbuddy Reborn")
 end
+
