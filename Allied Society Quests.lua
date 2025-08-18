@@ -97,10 +97,10 @@ import("System.Numerics")
 ToDoList = {}
 
 local societyConfigKeys = {
-    { societyKey = "FirstAlliedSociety",  classKey = "FirstClass"  },
-    { societyKey = "SecondAlliedSociety", classKey = "SecondClass" },
-    { societyKey = "ThirdAlliedSociety",  classKey = "ThirdClass"  },
-    { societyKey = "FourthAlliedSociety", classKey = "FourthClass" }
+    { societyKey = Config.Get("FirstAlliedSociety"),  classKey = Config.Get("FirstClass")  },
+    { societyKey = Config.Get("SecondAlliedSociety"), classKey = Config.Get("SecondClass") },
+    { societyKey = Config.Get("ThirdAlliedSociety"),  classKey = Config.Get("ThirdClass")  },
+    { societyKey = Config.Get("FourthAlliedSociety"), classKey = Config.Get("FourthClass") }
 }
 
 for _, entry in ipairs(societyConfigKeys) do
