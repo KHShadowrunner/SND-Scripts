@@ -24,32 +24,32 @@ configs:
   SecondAlliedSociety:
     description: The second allied society from which to accept quests.
     type: list
-    choices: ["", "Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja"]
+    choices: [" ", "Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja"]
     is_choice: true
   SecondClass:
     description: Class to assign for second allied society.
     type: list
-    choices: ["", "Paladin", "Warrior", "Dark Knight", "Gunbreaker", "Monk", "Dragoon", "Ninja", "Samurai", "Viper", "White Mage", "Scholar", "Astrologian", "Sage", "Bard", "Machinist", "Dancer", "Black Mage", "Summoner", "Red Mage", "Pictomancer", "Blue Mage", "Carpenter", "Blacksmith", "Armorer", "Goldsmith", "Leatherworker", "Weaver", "Alchemist", "Culinarian", "Miner", "Botanist", "Fisher"]
+    choices: [" ", "Paladin", "Warrior", "Dark Knight", "Gunbreaker", "Monk", "Dragoon", "Ninja", "Samurai", "Viper", "White Mage", "Scholar", "Astrologian", "Sage", "Bard", "Machinist", "Dancer", "Black Mage", "Summoner", "Red Mage", "Pictomancer", "Blue Mage", "Carpenter", "Blacksmith", "Armorer", "Goldsmith", "Leatherworker", "Weaver", "Alchemist", "Culinarian", "Miner", "Botanist", "Fisher"]
     is_choice: true
   ThirdAlliedSociety:
     description: The third allied society from which to accept quests.
     type: list
-    choices: ["", "Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja"]
+    choices: [" ", "Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja"]
     is_choice: true
   ThirdClass:
     description: Class to assign for third allied society.
     type: list
-    choices: ["", "Paladin", "Warrior", "Dark Knight", "Gunbreaker", "Monk", "Dragoon", "Ninja", "Samurai", "Viper", "White Mage", "Scholar", "Astrologian", "Sage", "Bard", "Machinist", "Dancer", "Black Mage", "Summoner", "Red Mage", "Pictomancer", "Blue Mage", "Carpenter", "Blacksmith", "Armorer", "Goldsmith", "Leatherworker", "Weaver", "Alchemist", "Culinarian", "Miner", "Botanist", "Fisher"]
+    choices: [" ", "Paladin", "Warrior", "Dark Knight", "Gunbreaker", "Monk", "Dragoon", "Ninja", "Samurai", "Viper", "White Mage", "Scholar", "Astrologian", "Sage", "Bard", "Machinist", "Dancer", "Black Mage", "Summoner", "Red Mage", "Pictomancer", "Blue Mage", "Carpenter", "Blacksmith", "Armorer", "Goldsmith", "Leatherworker", "Weaver", "Alchemist", "Culinarian", "Miner", "Botanist", "Fisher"]
     is_choice: true
   FourthAlliedSociety:
     description: The fourth allied society from which to accept quests.
     type: list
-    choices: ["", "Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja"]
+    choices: [" ", "Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja"]
     is_choice: true
   FourthClass:
     description: Class to assign for fourth allied society.
     type: list
-    choices: ["", "Paladin", "Warrior", "Dark Knight", "Gunbreaker", "Monk", "Dragoon", "Ninja", "Samurai", "Viper", "White Mage", "Scholar", "Astrologian", "Sage", "Bard", "Machinist", "Dancer", "Black Mage", "Summoner", "Red Mage", "Pictomancer", "Blue Mage", "Carpenter", "Blacksmith", "Armorer", "Goldsmith", "Leatherworker", "Weaver", "Alchemist", "Culinarian", "Miner", "Botanist", "Fisher"]
+    choices: [" ", "Paladin", "Warrior", "Dark Knight", "Gunbreaker", "Monk", "Dragoon", "Ninja", "Samurai", "Viper", "White Mage", "Scholar", "Astrologian", "Sage", "Bard", "Machinist", "Dancer", "Black Mage", "Summoner", "Red Mage", "Pictomancer", "Blue Mage", "Carpenter", "Blacksmith", "Armorer", "Goldsmith", "Leatherworker", "Weaver", "Alchemist", "Culinarian", "Miner", "Botanist", "Fisher"]
     is_choice: true
 
 [[End Metadata]]
