@@ -1,3 +1,12 @@
+--[[
+//////////////////////////////////////////////////////////////////////////////////////////////
+//                                   WARNING                                                //
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+This LUA script is designed specifically for my chocobo stats. It will likely not win often - if at all. You are almost entirely on your own if you wish to try
+to use it. There are surely MUCH more optimal ways to do this. But this is mine. And it works for me.
+--]]
+
 --[=====[
 [[SND Metadata]]
 author: 'Still Working On It'
@@ -66,6 +75,7 @@ for loops = totalruns, 1, -1 do
     until zone ~= 390
 end
 yield("/echo Chocobo Racing Complete.")
+
 
 
 
