@@ -1943,7 +1943,7 @@ function MeshCheck()
     local was_ready = IPC.vnavmesh.IsReady()
     if not IPC.vnavmesh.IsReady() then
         while not IPC.vnavmesh.IsReady() do
-            Dalamud.Log("[Debug]Building navmesh, currently at " .. Truncate1Dp(NavBuildProgress() * 100) .. "%")
+            Dalamud.Log("[Debug]Building navmesh, currently at " .. Truncate1Dp(IPC.vnavmesh.BuildProgress() * 100) .. "%")
             yield("/wait 1")
             local was_ready = IPC.vnavmesh.IsReady()
             if was_ready then
