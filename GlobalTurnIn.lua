@@ -2106,7 +2106,7 @@ function IsThereTradeItem()
 
  ----------------------------   VINTAGE   --------------------------------------------
 	
-	VintageTurnInCount = math.floor((AntiqueHelmCount / AntiqueBuyAmount) +
+	VintageTurnInCount = math.floor(AntiqueHelmCount / AntiqueBuyAmount) +
     math.floor(AntiqueMailCount / AntiqueBuyAmount) +
     math.floor(AntiqueGauntletsCount / AntiqueBuyAmount) +
     math.floor(AntiqueBreechesCount / AntiqueBuyAmount) +
