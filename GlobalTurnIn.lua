@@ -91,7 +91,7 @@ HandsBuyAmount = 2
 LegsBuyAmount = 4
 FeetBuyAmount = 2
 AccessoryBuyAmount = 1
-AnitqueBuyAmount = 1
+AntiqueBuyAmount = 1
 
 ItemIdArmoryTable =
 {
