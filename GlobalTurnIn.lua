@@ -4,22 +4,21 @@ author: 'Still Working On It'
 version: 1.0.0
 description: Turn in macro for as many token-based gear drops I can find.
 configs:
-  AetheriteTickets:
-    default: false
-    description: "Do you want to use Aetherite Tickets for teleporting?"
-  FillArmory:
-	default: false
-	description: "Do you wish to use (and turn in) items from the armory chest?"
-  FillArmoryAmount:
-	default: 1
-	description: How many slots do you wish to keep free before turning in items?
-  VendorTurnIn:
-	default: false
-	description: "Do you want to sell the traded gear to your retainer, or trade to the Grand Company for points? False = GC, True = Vendor"
-  TeleportToFC:
-	default: false
-	description: "Do you want to sell to your retainers in your Free Company house?"
-					
+    AetheriteTickets:
+        default: false
+        description: "Do you want to use Aetherite Tickets for teleporting?"
+    FillArmory:
+        default: false
+        description: "Do you wish to use (and turn in) items from the armory chest?"
+    FillArmoryAmount:
+        default: 1
+        description: How many slots do you wish to keep free before turning in items?
+    VendorTurnIn:
+        default: false
+        description: "Do you want to sell the traded gear to your retainer, or trade to the Grand Company for points? False = GC, True = Vendor"
+    TeleportToFC:
+        default: false
+        description: "Do you want to sell to your retainers in your Free Company house?"
 [[End Metadata]]
 --]=====]
 
