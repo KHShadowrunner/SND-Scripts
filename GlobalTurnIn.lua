@@ -2273,11 +2273,8 @@ function FcAndSell()
                 yield("/target Entrance")
             elseif Addons.GetAddon("SelectYesno").Ready then
                 yield("/pcall SelectYesno true 0")
-            elseif GetDistanceToTarget() > 4  then
-                local X = GetTargetRawXPos()
-                local Y = GetTargetRawYPos()
-                local Z = GetTargetRawZPos()
-                WalkTo(X,Y,Z,4)
+            elseif Vector3.Distance(Entity.Player.Position, Entity.Target.Position) > 4  then
+                PathfindAndMoveTo(Entity.Target.Position, false)
             else
                 yield("/interact")
             end
@@ -2584,7 +2581,7 @@ while IsThereTradeItem() do
         TurnIn(DjoleTable,false)
 	elseif VintageTurnInCount >= 1 and Inventory.GetFreeInventorySlots() ~= 0 then
         yield("/echo Vintage Count: "..VintageTurnInCount)
-        TeleportToRadz()
+        TeleportToMor()
 		local NPCTarget = Vector3(38.292,29,-796.534)
         local DistanceToKakalan = Vector3.Distance(Entity.Player.Position, NPCTarget)
         if DistanceToKakalan > 2 then
