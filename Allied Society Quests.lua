@@ -440,9 +440,11 @@ for _, alliedSociety in ipairs(ToDoList) do
                         yield("/qst reload")
                         timeout = os.time()
                     end
-                    yield("/wait 0.5")
+                    yield("/wait 0.3")
                 until Quests.IsQuestAccepted(questId)
-
+                if Player.Entity and Player.Entity.IsCasting then
+                    yield('/send ESCAPE')
+                end
                 timeout = os.time()
                 yield("/qst stop")
             end
