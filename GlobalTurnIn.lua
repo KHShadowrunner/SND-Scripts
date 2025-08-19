@@ -949,7 +949,8 @@ AntiqueGauntletsCount = Inventory.GetItemCount(AntiqueGauntletsID)
 AntiqueBreechesCount = Inventory.GetItemCount(AntiqueBreechesID)
 AntiqueSolleretsCount = Inventory.GetItemCount(AntiqueSolleretsID)
 
-KakalanTable {
+KakalanTable =
+{
 ----------- DOW Item IDs
 {2, AntiqueHelmID, AnitqueBuyAmount, 6049, 0,2},
 {2, AntiqueHelmID, AnitqueBuyAmount, 6054, 1,2},
