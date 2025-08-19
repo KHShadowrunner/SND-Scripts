@@ -980,7 +980,7 @@ KakalanTable =
 {2, AntiqueSolleretsID, AntiqueBuyAmount, 6058, 25,2},
 {2, AntiqueSolleretsID, AntiqueBuyAmount, 6068, 26,2},
 {2, AntiqueSolleretsID, AntiqueBuyAmount, 6063, 27,2},
-{2, AntiqueSolleretsID, AntiqueBuyAmount, 6957, 28,2},
+{2, AntiqueSolleretsID, AntiqueBuyAmount, 7957, 28,2},
 {2, AntiqueSolleretsID, AntiqueBuyAmount, 6073	, 29,2},
 ------------ DOM  Item IDs
 {3, AntiqueHelmID, AntiqueBuyAmount, 6079, 0,3},
