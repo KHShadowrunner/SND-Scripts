@@ -91,10 +91,22 @@ HandsBuyAmount = 2
 LegsBuyAmount = 4
 FeetBuyAmount = 2
 AccessoryBuyAmount = 1
+AnitqueBuyAmount = 1
 
 ItemIdArmoryTable =
 {
  -- ArmoryHead = 3201
+ -- Vintage
+	[6049] = 3201,
+	[6054] = 3201,
+	[6064] = 3201,
+	[6059] = 3201,
+	[7953] = 3201,
+	[6069] = 3201,
+	[6079] = 3201,
+	[6084] = 3201,
+	[6074] = 3201,
+	[6089] = 3201,
  -- Deltascape
     [19437] = 3201,
     [19443] = 3201,
@@ -193,6 +205,17 @@ ItemIdArmoryTable =
 [39990] = 3201,
 
  -- ArmoryBody = 3202
+ -- Vintage
+	[6050] = 3202,
+	[6055] = 3202,
+	[6060] = 3202,
+	[6065] = 3202,
+	[7954] = 3202,
+	[6070] = 3202,
+	[6075] = 3202,
+	[6080] = 3202,
+	[6085] = 3202,
+	[6090] = 3202,
  -- Deltascape
     [19474] = 3202,
     [19468] = 3202,
@@ -291,6 +314,17 @@ ItemIdArmoryTable =
 [39991] = 3202,
 
  --ArmoryHands = 3203
+ -- Vintage
+	[6051] = 3203,
+	[6056] = 3203,
+	[6061] = 3203,
+	[6066] = 3203,
+	[6071] = 3203,
+	[7956] = 3203,
+	[6076] = 3203,
+	[6081] = 3203,
+	[6086] = 3203,
+	[6091] = 3203,
  -- Deltascape
     [19475] = 3203,
     [19469] = 3203,
@@ -388,6 +422,17 @@ ItemIdArmoryTable =
 [39987] = 3203,
 [39992] = 3203,
  --ArmoryLegs = 3205
+ -- Vintage
+	[6052] = 3205,
+	[6057] = 3205,
+	[6062] = 3205,
+	[6067] = 3205,
+	[6072] = 3205,
+	[7955] = 3205,
+	[6077] = 3205,
+	[6082] = 3205,
+	[6087] = 3205,
+	[6092] = 3205,
  -- Deltascape
     [19476] = 3205,
     [19470] = 3205,
@@ -485,6 +530,17 @@ ItemIdArmoryTable =
 [39988] = 3205,
 [39993] = 3205,
  --ArmoryFeets = 3206
+ -- Vintage
+	[6053] = 3206,
+	[6058] = 3206,
+	[6063] = 3206,
+	[6068] = 3206,
+	[7957] = 3206,
+	[6073] = 3206,
+	[6078] = 3206,
+	[6083] = 3206,
+	[6088] = 3206,
+	[6093] = 3206,
  -- Deltascape
     [19477] = 3206,
     [19471] = 3206,
@@ -879,7 +935,23 @@ ItemIdArmoryTable =
 [40013] = 3300,
 [40014] = 3300,
 }
+-----------------------------------------------------------------------------
+-- Vintage item ids / tables
+AntiqueHelmID = 9387
+AntiqueMailID = 9388
+AntiqueGauntletsID = 9389
+AntiqueBreechesID = 9390
+AntiqueSolleretsID = 9391
 
+AntiqueHelmCount = Inventory.GetItemCount(AntiqueHelmID)
+AntiqueMailCount = Inventory.GetItemCount(AntiqueMailID)
+AntiqueGauntletsCount = Inventory.GetItemCount(AntiqueGauntletsID)
+AntiqueBreechesCount = Inventory.GetItemCount(AntiqueBreechesID)
+AntiqueSolleretsCount = Inventory.GetItemCount(AntiqueSolleretsID)
+
+KakalanTable {
+-----------
+	}
 ------------------------------------------------------------------------------
 -- Deltascape item ids / tables
 DeltascapeLensID = 19111
@@ -1959,15 +2031,15 @@ function IsThereTradeItem()
         TotalExchangeItem = TotalExchangeItem + count
     end
 
-
+ ----------------------------   VINTAGE   --------------------------------------------
+	
+	VintageTurnInCount = math.floor((AntiqueHelmCount / AntiqueBuyAmount) +
+    math.floor(AntiqueMailCount / AntiqueBuyAmount) +
+    math.floor(AntiqueGauntletsCount / AntiqueBuyAmount) +
+    math.floor(AntiqueBreechesCount / AntiqueBuyAmount) +
+    math.floor(AntiqueSolleretsCount / AntiqueBuyAmount)
+			
  ----------------------------   GORDIAN   --------------------------------------------
-
-    GordianLensCount = Inventory.GetItemCount(GordianLensID)
-    GordianShaftCount = Inventory.GetItemCount(GordianShaftID)
-    GordianCrankCount = Inventory.GetItemCount(GordianCrankID)
-    GordianSpringCount = Inventory.GetItemCount(GordianSpringID)
-    GordianPedalCount = Inventory.GetItemCount(GordianPedalID)
-    GordianBoltCount = Inventory.GetItemCount(GordianBoltID)
 
     GordianTurnInCount = math.floor(GordianLensCount / HelmBuyAmount) +
     math.floor(GordianShaftCount / ChestBuyAmount) +
@@ -1978,13 +2050,6 @@ function IsThereTradeItem()
 
  ----------------------------   MIDAN   --------------------------------------------
 
-    MidanLensCount = Inventory.GetItemCount(MidanLensID)
-    MidanShaftCount = Inventory.GetItemCount(MidanShaftID)
-    MidanCrankCount = Inventory.GetItemCount(MidanCrankID)
-    MidanSpringCount = Inventory.GetItemCount(MidanSpringID)
-    MidanPedalCount = Inventory.GetItemCount(MidanPedalID)
-    MidanBoltCount = Inventory.GetItemCount(MidanBoltID)
-
     MidanTurnInCount = math.floor(MidanLensCount / HelmBuyAmount) +
     math.floor(MidanShaftCount / ChestBuyAmount) +
     math.floor(MidanCrankCount / HandsBuyAmount) +
@@ -1993,13 +2058,6 @@ function IsThereTradeItem()
     math.floor(MidanBoltCount / AccessoryBuyAmount)
 
  ----------------------------   Alexandrian   --------------------------------------------
-
-    AlexandrianLensCount = Inventory.GetItemCount(AlexandrianLensID)
-    AlexandrianShaftCount = Inventory.GetItemCount(AlexandrianShaftID)
-    AlexandrianCrankCount = Inventory.GetItemCount(AlexandrianCrankID)
-    AlexandrianSpringCount = Inventory.GetItemCount(AlexandrianSpringID)
-    AlexandrianPedalCount = Inventory.GetItemCount(AlexandrianPedalID)
-    AlexandrianBoltCount = Inventory.GetItemCount(AlexandrianBoltID)
 
     AlexandrianTurnInCount = math.floor(AlexandrianLensCount / HelmBuyAmount) +
     math.floor(AlexandrianShaftCount / ChestBuyAmount) +
@@ -2010,13 +2068,6 @@ function IsThereTradeItem()
 
  ------------------------------  Deltascape  ----------------------------------------------
 
-    DeltascapeLensCount = Inventory.GetItemCount(DeltascapeLensID)
-    DeltascapeShaftCount = Inventory.GetItemCount(DeltascapeShaftID)
-    DeltascapeCrankCount = Inventory.GetItemCount(DeltascapeCrankID)
-    DeltascapeSpringCount = Inventory.GetItemCount(DeltascapeSpringID)
-    DeltascapePedalCount = Inventory.GetItemCount(DeltascapePedalID)
-    DeltascapeBoltCount = Inventory.GetItemCount(DeltascapeBoltID)
-
     DeltascapeTurnInCount = math.floor(DeltascapeLensCount / HelmBuyAmount) +
     math.floor(DeltascapeShaftCount / ChestBuyAmount) +
     math.floor(DeltascapeCrankCount / HandsBuyAmount) +
@@ -2025,13 +2076,6 @@ function IsThereTradeItem()
     math.floor(DeltascapeBoltCount / AccessoryBuyAmount)
 
 ------------------------------  Sigmascape  ----------------------------------------------
-
-    SigmascapeLensCount = Inventory.GetItemCount(SigmascapeLensID)
-    SigmascapeShaftCount = Inventory.GetItemCount(SigmascapeShaftID)
-    SigmascapeCrankCount = Inventory.GetItemCount(SigmascapeCrankID)
-    SigmascapeSpringCount = Inventory.GetItemCount(SigmascapeSpringID)
-    SigmascapePedalCount = Inventory.GetItemCount(SigmascapePedalID)
-    SigmascapeBoltCount = Inventory.GetItemCount(SigmascapeBoltID)
 
     SigmascapeTurnInCount = math.floor(SigmascapeLensCount / HelmBuyAmount) +
     math.floor(SigmascapeShaftCount / ChestBuyAmount) +
@@ -2042,13 +2086,6 @@ function IsThereTradeItem()
 
 ------------------------------  Alphascape  ----------------------------------------------
 
-    AlphascapeLensCount = Inventory.GetItemCount(AlphascapeLensID)
-    AlphascapeShaftCount = Inventory.GetItemCount(AlphascapeShaftID)
-    AlphascapeCrankCount = Inventory.GetItemCount(AlphascapeCrankID)
-    AlphascapeSpringCount = Inventory.GetItemCount(AlphascapeSpringID)
-    AlphascapePedalCount = Inventory.GetItemCount(AlphascapePedalID)
-    AlphascapeBoltCount = Inventory.GetItemCount(AlphascapeBoltID)
-
     AlphascapeTurnInCount = math.floor(AlphascapeLensCount / HelmBuyAmount) +
     math.floor(AlphascapeShaftCount / ChestBuyAmount) +
     math.floor(AlphascapeCrankCount / HandsBuyAmount) +
@@ -2057,13 +2094,6 @@ function IsThereTradeItem()
     math.floor(AlphascapeBoltCount / AccessoryBuyAmount)
 
     ------------------------------  Edengate  ----------------------------------------------
-
-    EarlyHelmCount = Inventory.GetItemCount(EarlyHelmID)
-    EarlyArmorCount = Inventory.GetItemCount(EarlyArmorID)
-    EarlyGauntletCount = Inventory.GetItemCount(EarlyGauntletID)
-    EarlyChaussesCount = Inventory.GetItemCount(EarlyChaussesID)
-    EarlyGreavesCount = Inventory.GetItemCount(EarlyGreavesID)
-    EarlyAccessoryCount = Inventory.GetItemCount(EarlyAccessoryID)
 
     EdengateTurnInCount = math.floor(EarlyHelmCount / HelmBuyAmount) +
     math.floor(EarlyArmorCount / ChestBuyAmount) +
@@ -2074,13 +2104,6 @@ function IsThereTradeItem()
 
         ------------------------------  Edenverse  ----------------------------------------------
 
-    GoldenHelmCount = Inventory.GetItemCount(GoldenHelmID)
-    GoldenArmorCount = Inventory.GetItemCount(GoldenArmorID)
-    GoldenGauntletCount = Inventory.GetItemCount(GoldenGauntletID)
-    GoldenChaussesCount = Inventory.GetItemCount(GoldenChaussesID)
-    GoldenGreavesCount = Inventory.GetItemCount(GoldenGreavesID)
-    GoldenAccessoryCount = Inventory.GetItemCount(GoldenAccessoryID)
-
     EdenverseTurnInCount = math.floor(GoldenHelmCount / HelmBuyAmount) +
     math.floor(GoldenArmorCount / ChestBuyAmount) +
     math.floor(GoldenGauntletCount / HandsBuyAmount) +
@@ -2089,13 +2112,6 @@ function IsThereTradeItem()
     math.floor(GoldenAccessoryCount / AccessoryBuyAmount)
 
         ------------------------------  Edenpromise  ----------------------------------------------
-
-    LostHelmCount = Inventory.GetItemCount(LostHelmID)
-    LostArmorCount = Inventory.GetItemCount(LostArmorID)
-    LostGauntletCount = Inventory.GetItemCount(LostGauntletID)
-    LostChaussesCount = Inventory.GetItemCount(LostChaussesID)
-    LostGreavesCount = Inventory.GetItemCount(LostGreavesID)
-    LostAccessoryCount = Inventory.GetItemCount(LostAccessoryID)
 
     EdenpromiseTurnInCount = math.floor(LostHelmCount / HelmBuyAmount) +
     math.floor(LostArmorCount / ChestBuyAmount) +
@@ -2106,13 +2122,6 @@ function IsThereTradeItem()
 
             ------------------------------  Asphodelos  ----------------------------------------------
 
-    AsphodelosHelmCount = Inventory.GetItemCount(AsphodelosHelmID)
-    AsphodelosArmorCount = Inventory.GetItemCount(AsphodelosArmorID)
-    AsphodelosGauntletCount = Inventory.GetItemCount(AsphodelosGauntletID)
-    AsphodelosChaussesCount = Inventory.GetItemCount(AsphodelosChaussesID)
-    AsphodelosGreavesCount = Inventory.GetItemCount(AsphodelosGreavesID)
-    AsphodelosAccessoryCount = Inventory.GetItemCount(AsphodelosAccessoryID)
-
     AsphodelosTurnInCount = math.floor(AsphodelosHelmCount / HelmBuyAmount) +
     math.floor(AsphodelosArmorCount / ChestBuyAmount) +
     math.floor(AsphodelosGauntletCount / HandsBuyAmount) +
@@ -2122,13 +2131,6 @@ function IsThereTradeItem()
 
             ------------------------------  Abyssos  ----------------------------------------------
 
-    AbyssosHelmCount = Inventory.GetItemCount(AbyssosHelmID)
-    AbyssosArmorCount = Inventory.GetItemCount(AbyssosArmorID)
-    AbyssosGauntletCount = Inventory.GetItemCount(AbyssosGauntletID)
-    AbyssosChaussesCount = Inventory.GetItemCount(AbyssosChaussesID)
-    AbyssosGreavesCount = Inventory.GetItemCount(AbyssosGreavesID)
-    AbyssosAccessoryCount = Inventory.GetItemCount(AbyssosAccessoryID)
-
     AbyssosTurnInCount = math.floor(AbyssosHelmCount / HelmBuyAmount) +
     math.floor(AbyssosArmorCount / ChestBuyAmount) +
     math.floor(AbyssosGauntletCount / HandsBuyAmount) +
@@ -2137,13 +2139,6 @@ function IsThereTradeItem()
     math.floor(AbyssosAccessoryCount / AccessoryBuyAmount)
 
         ------------------------------  Anabaseios  ----------------------------------------------
-
-    AnabaseiosHelmCount = Inventory.GetItemCount(AnabaseiosHelmID)
-    AnabaseiosArmorCount = Inventory.GetItemCount(AnabaseiosArmorID)
-    AnabaseiosGauntletCount = Inventory.GetItemCount(AnabaseiosGauntletID)
-    AnabaseiosChaussesCount = Inventory.GetItemCount(AnabaseiosChaussesID)
-    AnabaseiosGreavesCount = Inventory.GetItemCount(AnabaseiosGreavesID)
-    AnabaseiosAccessoryCount = Inventory.GetItemCount(AnabaseiosAccessoryID)
 
     AnabaseiosTurnInCount = math.floor(AnabaseiosHelmCount / HelmBuyAmount) +
     math.floor(AnabaseiosArmorCount / ChestBuyAmount) +
@@ -2157,7 +2152,7 @@ function IsThereTradeItem()
         return true
     end
     
-    if GordianTurnInCount < 1 and MidanTurnInCount < 1 and AlexandrianTurnInCount < 1 and DeltascapeTurnInCount < 1 and SigmascapeTurnInCount < 1 and AlphascapeTurnInCount < 1 and EdengateTurnInCount < 1 and EdenverseTurnInCount < 1 and EdenpromiseTurnInCount < 1 and AsphodelosTurnInCount < 1 and AbyssosTurnInCount < 1 and AnabaseiosTurnInCount < 1 then
+    if VintageTurnInCount < 1 and GordianTurnInCount < 1 and MidanTurnInCount < 1 and AlexandrianTurnInCount < 1 and DeltascapeTurnInCount < 1 and SigmascapeTurnInCount < 1 and AlphascapeTurnInCount < 1 and EdengateTurnInCount < 1 and EdenverseTurnInCount < 1 and EdenpromiseTurnInCount < 1 and AsphodelosTurnInCount < 1 and AbyssosTurnInCount < 1 and AnabaseiosTurnInCount < 1 then
         return false
     else
         return true
