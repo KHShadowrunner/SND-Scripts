@@ -950,8 +950,56 @@ AntiqueBreechesCount = Inventory.GetItemCount(AntiqueBreechesID)
 AntiqueSolleretsCount = Inventory.GetItemCount(AntiqueSolleretsID)
 
 KakalanTable {
------------
-	}
+----------- DOW Item IDs
+{2, AntiqueHelmID, AnitqueBuyAmount, 6049, 0,2},
+{2, AntiqueHelmID, AnitqueBuyAmount, 6049, 1,2},
+{2, AntiqueHelmID, AnitqueBuyAmount, 6049, 2,2},
+{2, AntiqueHelmID, AnitqueBuyAmount, 6049, 3,2},
+{2, AntiqueHelmID, AnitqueBuyAmount, 6049, 4,2},
+{2, AntiqueHelmID, AnitqueBuyAmount, 6049, 5,2},
+{2, AntiqueMailID, AnitqueBuyAmount, 6049, 6,2},
+{2, AntiqueMailID, AnitqueBuyAmount, 6049, 7,2},
+{2, AntiqueMailID, AnitqueBuyAmount, 6049, 8,2},
+{2, AntiqueMailID, AnitqueBuyAmount, 6049, 9,2},
+{2, AntiqueMailID, AnitqueBuyAmount, 6049, 10,2},
+{2, AntiqueMailID, AnitqueBuyAmount, 6049, 11,2},
+{2, AntiqueGauntletsID, AnitqueBuyAmount, 6049, 12,2},
+{2, AntiqueGauntletsID, AnitqueBuyAmount, 6049, 13,2},
+{2, AntiqueGauntletsID, AnitqueBuyAmount, 6049, 14,2},
+{2, AntiqueGauntletsID, AnitqueBuyAmount, 6049, 15,2},
+{2, AntiqueGauntletsID, AnitqueBuyAmount, 6049, 16,2},
+{2, AntiqueGauntletsID, AnitqueBuyAmount, 6049, 17,2},
+{2, AntiqueBreechesID, AnitqueBuyAmount, 6049, 18,2},
+{2, AntiqueBreechesID, AnitqueBuyAmount, 6049, 19,2},
+{2, AntiqueBreechesID, AnitqueBuyAmount, 6049, 20,2},
+{2, AntiqueBreechesID, AnitqueBuyAmount, 6049, 21,2},
+{2, AntiqueBreechesID, AnitqueBuyAmount, 6049, 22,2},
+{2, AntiqueBreechesID, AnitqueBuyAmount, 6049, 23,2},
+{2, AntiqueSolleretsID, AnitqueBuyAmount, 6049, 24,2},
+{2, AntiqueSolleretsID, AnitqueBuyAmount, 6049, 25,2},
+{2, AntiqueSolleretsID, AnitqueBuyAmount, 6049, 26,2},
+{2, AntiqueSolleretsID, AnitqueBuyAmount, 6049, 27,2},
+{2, AntiqueSolleretsID, AnitqueBuyAmount, 6049, 28,2},
+{2, AntiqueSolleretsID, AnitqueBuyAmount, 6049, 29,2},
+------------ DOM  Item IDs
+{3, AntiqueHelmID, AnitqueBuyAmount, 6049, 0,3},
+{3, AntiqueHelmID, AnitqueBuyAmount, 6049, 1,3},
+{3, AntiqueHelmID, AnitqueBuyAmount, 6049, 2,3},
+{3, AntiqueHelmID, AnitqueBuyAmount, 6049, 3,3},
+{3, AntiqueMailID, AnitqueBuyAmount, 6049, 4,3},
+{3, AntiqueMailID, AnitqueBuyAmount, 6049, 5,3},
+{3, AntiqueMailID, AnitqueBuyAmount, 6049, 6,3},
+{3, AntiqueMailID, AnitqueBuyAmount, 6049, 7,3},
+{3, AntiqueGauntletsID, AnitqueBuyAmount, 6049, 8,3},
+{3, AntiqueGauntletsID, AnitqueBuyAmount, 6049, 9,3},
+{3, AntiqueGauntletsID, AnitqueBuyAmount, 6049, 10,3},
+{3, AntiqueGauntletsID, AnitqueBuyAmount, 6049, 11,3},
+{3, AntiqueBreechesID, AnitqueBuyAmount, 6049, 12,3},
+{3, AntiqueBreechesID, AnitqueBuyAmount, 6049, 13,3},
+{3, AntiqueBreechesID, AnitqueBuyAmount, 6049, 14,3},
+{3, AntiqueBreechesID, AnitqueBuyAmount, 6049, 15,3},
+{3, AntiqueBreechesID, AnitqueBuyAmount, 6049, 16,3},
+}
 ------------------------------------------------------------------------------
 -- Deltascape item ids / tables
 DeltascapeLensID = 19111
@@ -1010,7 +1058,7 @@ GelfradusTable =
 {0, DeltascapeBoltID, AccessoryBuyAmount, 19484, 17,0},
 {0, DeltascapeBoltID, AccessoryBuyAmount, 19480, 16,0},
 {0, DeltascapeBoltID, AccessoryBuyAmount, 19479, 15,0},
-{0, DeltascapePedalID, FeetBuyAmount, 19453, 14,0},
+{0, DeltascapePedalID, FeetBuyAmount, 19453, 14,0},w
 {0, DeltascapePedalID, FeetBuyAmount, 19447, 13,0},
 {0, DeltascapePedalID, FeetBuyAmount, 19441, 12,0},
 {0, DeltascapeSpringID, LegsBuyAmount, 19452, 11,0},
@@ -1982,6 +2030,23 @@ function TeleportToRadz()
     PlayerTest()
 end
 
+function TeleportToMor()
+    if Svc.ClientState.TerritoryType == 156 then
+        Dalamud.Log("[Debug]Tried Teleporting but already at zone: 156(Mor Dhona)")
+    else
+        while Svc.ClientState.TerritoryType ~= 156 do
+            yield("/wait 0.13")
+            if Svc.Condition[27] then
+                yield("/wait 2")
+            else
+                yield("/tp Revenant's Toll")
+                yield("/wait 2") 
+            end
+        end
+    end
+    PlayerTest()
+end
+
 function TeleportGC()
     while Svc.ClientState.TerritoryType == 478 or Svc.ClientState.TerritoryType == 635 or Svc.ClientState.TerritoryType == 820 or Svc.ClientState.TerritoryType == 963 do
         yield("/wait 0.15")
@@ -2026,6 +2091,11 @@ function IsThereTradeItem()
         TotalExchangeItem = TotalExchangeItem + count
     end
         for _, entry in ipairs(DjoleTable) do
+        local itemID = entry[4]
+        local count = Inventory.GetItemCount(itemID)
+        TotalExchangeItem = TotalExchangeItem + count
+    end
+		for _, entry in ipairs(KakalanTable) do
         local itemID = entry[4]
         local count = Inventory.GetItemCount(itemID)
         TotalExchangeItem = TotalExchangeItem + count
@@ -2257,6 +2327,8 @@ function TurnIn(TableName,MaxArmoryValue)
         NpcName = "Yhal Yal"
     elseif TableName == DjoleTable then
         NpcName = "Djole"
+	elseif TableName == KakalanTable then
+		NpcName = "Kakalan"
     end
 	
 function GetTargetName()
@@ -2506,6 +2578,19 @@ while IsThereTradeItem() do
             TurnIn(DjoleTable,true)
         end
         TurnIn(DjoleTable,false)
+	elseif VintageTurnInCount >= 1 and Inventory.GetFreeInventorySlots() ~= 0 then
+        yield("/echo Vintage Count: "..VintageTurnInCount)
+        TeleportToRadz()
+		local NPCTarget = Vector3(38.292,29,-796.534)
+        local DistanceToKakalan = Vector3.Distance(Entity.Player.Position, NPCTarget)
+        if DistanceToKakalan > 2 then
+            MountUp()
+            WalkTo(38.292,29,-796.534, 1)
+        end
+        if MaxArmory then
+            TurnIn(KakalanTable,true)
+        end
+        TurnIn(KakalanTable,false)
     end
     yield("/echo TotalExchangeItem: ".. TotalExchangeItem)
     if TotalExchangeItem > 0 then
