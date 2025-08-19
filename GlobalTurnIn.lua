@@ -2531,7 +2531,7 @@ while IsThereTradeItem() do
                 SummoningBellSell()
             end
         else
-            --TeleportGC()
+            TeleportGC()
             GcDelivero()
         end
     end
