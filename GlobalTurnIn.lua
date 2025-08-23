@@ -2,7 +2,7 @@
 [[SND Metadata]]
 author: 'Still Working On It'
 version: 1.0.0
-description: Turn in macro for as many token-based gear drops I can find.
+description: "Turn in macro for as many token-based gear drops I can find."
 configs:
     AetheriteTickets:
         default: false
@@ -12,7 +12,7 @@ configs:
         description: "Do you wish to use (and turn in) items from the armory chest?"
     FillArmoryAmount:
         default: 1
-        description: How many slots do you wish to keep free before turning in items?
+        description: "How many slots do you wish to keep free before turning in items?"
     VendorTurnIn:
         default: false
         description: "Do you want to sell the traded gear to your retainer, or trade to the Grand Company for points? False = GC, True = Vendor"
@@ -2307,6 +2307,14 @@ function WhichArmoryItem(ItemToBuy)
 	end
 end
 
+function GetTargetName()
+  if (Entity.Target) then
+    return Entity.Target.Name
+  else
+    return ""
+  end
+end
+
 function TurnIn(TableName,MaxArmoryValue)
     --yield("/echo Enabling TurnIn Function.")
     if IPC.IsInstalled("Automaton") then
@@ -2317,7 +2325,7 @@ function TurnIn(TableName,MaxArmoryValue)
         yield("/inventory")
     end
     local lastShopType = nil
-    local LastIconShopType = nil
+    local lastIconShopType = nil
     local NpcName = "Sabina"
     if TableName == SabinaTable then
         NpcName = "Sabina"
@@ -2330,20 +2338,18 @@ function TurnIn(TableName,MaxArmoryValue)
 	elseif TableName == KakalanTable then
 		NpcName = "Kakalan"
     end
-	
-function GetTargetName()
-  if (Entity.Target) then
-    return Entity.Target.Name
-  else
-    return ""
-  end
-end
 
-    local function OpenShopMenu(SelectIconString,SelectString,Npc)
+    local function OpenShopMenu(SelectIconString,LastIconString,SelectString,Npc)
         while Addons.GetAddon("ShopExchangeItem").Ready do
             yield("/pcall ShopExchangeItem true -1")
-            yield("/wait 0.1")
+            yield("/wait 0.5")
         end
+		if LastIconString ~= SelectIconString then
+			while Addons.GetAddon("SelectString").Ready do
+				yield("/pcall SelectString true -1")
+				yield("/wait 0.5")
+			end
+		end
         while not Addons.GetAddon("ShopExchangeItem").Ready do
             yield("/wait 0.11")
             if GetTargetName() ~= Npc then
@@ -2419,9 +2425,18 @@ end
             Dalamud.Log("SlotArmoryINV: "..SlotArmoryINV)
             Dalamud.Log("CanExchange: "..CanExchange)
             Dalamud.Log("GearAmount: "..GearAmount)
-            if shopType ~= lastShopType then
-                OpenShopMenu(iconShopType,shopType,NpcName)
+			Dalamud.Log("Shop Type: "..shopType)
+			Dalamud.Log("iconShopType: "..iconShopType)
+			if lastShopType ~= nil then
+				Dalamud.Log("lastShopType: "..lastShopType)
+			end
+			if lastIconShopType ~= nil then
+				Dalamud.Log("lastIconShopType: "..lastIconShopType)
+			end
+            if shopType ~= lastShopType or iconShopType ~= lastIconShopType then
+                OpenShopMenu(iconShopType,lastIconShopType,shopType,NpcName)
                 lastShopType = shopType
+				lastIconShopType = iconShopType
             end
             if MaxArmoryValue then
                 if SlotArmoryINV == 0 then
@@ -2435,10 +2450,6 @@ end
             else
                 Exchange(gearItem, pcallValue, 1)
             end    
-            if LastIconShopType ~= nil and iconShopType ~= LastIconShopType then
-                GetOUT()
-            end
-            iconShopType = LastIconShopType
             Dalamud.Log("Exchange END ...................")
         end
     end
