@@ -2344,7 +2344,7 @@ function TurnIn(TableName,MaxArmoryValue)
             yield("/pcall ShopExchangeItem true -1")
             yield("/wait 0.1")
         end
-		if LastIconString ~= SelectIconString) then
+		if LastIconString ~= SelectIconString then
 			while Addons.GetAddon("SelectString").Ready do
 				yield("/pcall SelectString true -1")
 				yield("/wait 0.1")
@@ -2429,7 +2429,6 @@ function TurnIn(TableName,MaxArmoryValue)
                 OpenShopMenu(iconShopType,lastIconShopType,shopType,NpcName)
                 lastShopType = shopType
 				lastIconShopType = iconShopType
-				
             end
             if MaxArmoryValue then
                 if SlotArmoryINV == 0 then
