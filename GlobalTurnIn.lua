@@ -2339,14 +2339,16 @@ function TurnIn(TableName,MaxArmoryValue)
 		NpcName = "Kakalan"
     end
 
-    local function OpenShopMenu(SelectIconString,SelectString,Npc)
+    local function OpenShopMenu(SelectIconString,LastIconString,SelectString,Npc)
         while Addons.GetAddon("ShopExchangeItem").Ready do
             yield("/pcall ShopExchangeItem true -1")
             yield("/wait 0.1")
         end
-		while Addons.GetAddon("SelectString").Ready do
-			yield("/pcall SelectString true -1")
-			yield("/wait 0.1")
+		if LastIconString ~= SelectIconString) then
+			while Addons.GetAddon("SelectString").Ready do
+				yield("/pcall SelectString true -1")
+				yield("/wait 0.1")
+			end
 		end
         while not Addons.GetAddon("ShopExchangeItem").Ready do
             yield("/wait 0.11")
@@ -2424,7 +2426,7 @@ function TurnIn(TableName,MaxArmoryValue)
             Dalamud.Log("CanExchange: "..CanExchange)
             Dalamud.Log("GearAmount: "..GearAmount)
             if shopType ~= lastShopType or iconShopType ~= lastIconShopType then
-                OpenShopMenu(iconShopType,shopType,NpcName)
+                OpenShopMenu(iconShopType,lastIconShopType,shopType,NpcName)
                 lastShopType = shopType
 				lastIconShopType = iconShopType
 				
