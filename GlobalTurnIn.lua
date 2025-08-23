@@ -2,7 +2,7 @@
 [[SND Metadata]]
 author: 'Still Working On It'
 version: 1.0.0
-description: Turn in macro for as many token-based gear drops I can find.
+description: "Turn in macro for as many token-based gear drops I can find."
 configs:
     AetheriteTickets:
         default: false
@@ -12,7 +12,7 @@ configs:
         description: "Do you wish to use (and turn in) items from the armory chest?"
     FillArmoryAmount:
         default: 1
-        description: How many slots do you wish to keep free before turning in items?
+        description: "How many slots do you wish to keep free before turning in items?"
     VendorTurnIn:
         default: false
         description: "Do you want to sell the traded gear to your retainer, or trade to the Grand Company for points? False = GC, True = Vendor"
@@ -2342,12 +2342,12 @@ function TurnIn(TableName,MaxArmoryValue)
     local function OpenShopMenu(SelectIconString,LastIconString,SelectString,Npc)
         while Addons.GetAddon("ShopExchangeItem").Ready do
             yield("/pcall ShopExchangeItem true -1")
-            yield("/wait 0.1")
+            yield("/wait 0.5")
         end
 		if LastIconString ~= SelectIconString then
 			while Addons.GetAddon("SelectString").Ready do
 				yield("/pcall SelectString true -1")
-				yield("/wait 0.1")
+				yield("/wait 0.5")
 			end
 		end
         while not Addons.GetAddon("ShopExchangeItem").Ready do
@@ -2425,6 +2425,14 @@ function TurnIn(TableName,MaxArmoryValue)
             Dalamud.Log("SlotArmoryINV: "..SlotArmoryINV)
             Dalamud.Log("CanExchange: "..CanExchange)
             Dalamud.Log("GearAmount: "..GearAmount)
+			Dalamud.Log("Shop Type: "..shopType)
+			Dalamud.Log("iconShopType: "..iconShopType)
+			if lastShopType ~= nil then
+				Dalamud.Log("lastShopType: "..lastShopType)
+			end
+			if lastIconShopType ~= nil then
+				Dalamud.Log("lastIconShopType: "..lastIconShopType)
+			end
             if shopType ~= lastShopType or iconShopType ~= lastIconShopType then
                 OpenShopMenu(iconShopType,lastIconShopType,shopType,NpcName)
                 lastShopType = shopType
