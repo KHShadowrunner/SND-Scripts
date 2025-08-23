@@ -96,16 +96,16 @@ ItemIdArmoryTable =
 {
  -- ArmoryHead = 3201
  -- Vintage
-	[6049] = 3201,
-	[6054] = 3201,
-	[6064] = 3201,
-	[6059] = 3201,
-	[7953] = 3201,
-	[6069] = 3201,
-	[6079] = 3201,
-	[6084] = 3201,
-	[6074] = 3201,
-	[6089] = 3201,
+    [6049] = 3201,
+    [6054] = 3201,
+    [6064] = 3201,
+    [6059] = 3201,
+    [7953] = 3201,
+    [6069] = 3201,
+    [6079] = 3201,
+    [6084] = 3201,
+    [6074] = 3201,
+    [6089] = 3201,
  -- Deltascape
     [19437] = 3201,
     [19443] = 3201,
@@ -205,16 +205,16 @@ ItemIdArmoryTable =
 
  -- ArmoryBody = 3202
  -- Vintage
-	[6050] = 3202,
-	[6055] = 3202,
-	[6060] = 3202,
-	[6065] = 3202,
-	[7954] = 3202,
-	[6070] = 3202,
-	[6075] = 3202,
-	[6080] = 3202,
-	[6085] = 3202,
-	[6090] = 3202,
+    [6050] = 3202,
+    [6055] = 3202,
+    [6060] = 3202,
+    [6065] = 3202,
+    [7954] = 3202,
+    [6070] = 3202,
+    [6075] = 3202,
+    [6080] = 3202,
+    [6085] = 3202,
+    [6090] = 3202,
  -- Deltascape
     [19474] = 3202,
     [19468] = 3202,
@@ -314,16 +314,16 @@ ItemIdArmoryTable =
 
  --ArmoryHands = 3203
  -- Vintage
-	[6051] = 3203,
-	[6056] = 3203,
-	[6061] = 3203,
-	[6066] = 3203,
-	[6071] = 3203,
-	[7956] = 3203,
-	[6076] = 3203,
-	[6081] = 3203,
-	[6086] = 3203,
-	[6091] = 3203,
+    [6051] = 3203,
+    [6056] = 3203,
+    [6061] = 3203,
+    [6066] = 3203,
+    [6071] = 3203,
+    [7956] = 3203,
+    [6076] = 3203,
+    [6081] = 3203,
+    [6086] = 3203,
+    [6091] = 3203,
  -- Deltascape
     [19475] = 3203,
     [19469] = 3203,
@@ -422,16 +422,16 @@ ItemIdArmoryTable =
 [39992] = 3203,
  --ArmoryLegs = 3205
  -- Vintage
-	[6052] = 3205,
-	[6057] = 3205,
-	[6062] = 3205,
-	[6067] = 3205,
-	[6072] = 3205,
-	[7955] = 3205,
-	[6077] = 3205,
-	[6082] = 3205,
-	[6087] = 3205,
-	[6092] = 3205,
+    [6052] = 3205,
+    [6057] = 3205,
+    [6062] = 3205,
+    [6067] = 3205,
+    [6072] = 3205,
+    [7955] = 3205,
+    [6077] = 3205,
+    [6082] = 3205,
+    [6087] = 3205,
+    [6092] = 3205,
  -- Deltascape
     [19476] = 3205,
     [19470] = 3205,
@@ -530,16 +530,16 @@ ItemIdArmoryTable =
 [39993] = 3205,
  --ArmoryFeets = 3206
  -- Vintage
-	[6053] = 3206,
-	[6058] = 3206,
-	[6063] = 3206,
-	[6068] = 3206,
-	[7957] = 3206,
-	[6073] = 3206,
-	[6078] = 3206,
-	[6083] = 3206,
-	[6088] = 3206,
-	[6093] = 3206,
+    [6053] = 3206,
+    [6058] = 3206,
+    [6063] = 3206,
+    [6068] = 3206,
+    [7957] = 3206,
+    [6073] = 3206,
+    [6078] = 3206,
+    [6083] = 3206,
+    [6088] = 3206,
+    [6093] = 3206,
  -- Deltascape
     [19477] = 3206,
     [19471] = 3206,
@@ -980,7 +980,7 @@ KakalanTable =
 {2, AntiqueSolleretsID, AntiqueBuyAmount, 6068, 26,2},
 {2, AntiqueSolleretsID, AntiqueBuyAmount, 6063, 27,2},
 {2, AntiqueSolleretsID, AntiqueBuyAmount, 7957, 28,2},
-{2, AntiqueSolleretsID, AntiqueBuyAmount, 6073	, 29,2},
+{2, AntiqueSolleretsID, AntiqueBuyAmount, 6073    , 29,2},
 ------------ DOM  Item IDs
 {3, AntiqueHelmID, AntiqueBuyAmount, 6079, 0,3},
 {3, AntiqueHelmID, AntiqueBuyAmount, 6084, 1,3},
@@ -1001,7 +1001,7 @@ KakalanTable =
 {3, AntiqueSolleretsID, AntiqueBuyAmount, 6083, 15,3},
 {3, AntiqueSolleretsID, AntiqueBuyAmount, 6088, 15,3},
 {3, AntiqueSolleretsID, AntiqueBuyAmount, 6078, 15,3},
-{3, AntiqueSolleretsID, AntiqueBuyAmount, 6093	, 15,3},
+{3, AntiqueSolleretsID, AntiqueBuyAmount, 6093    , 15,3},
 }
 ------------------------------------------------------------------------------
 -- Deltascape item ids / tables
@@ -1956,7 +1956,7 @@ end
 
 function WalkTo(valuex, valuey, valuez, stopdistance)
     MeshCheck()
-	local dest = Vector3(valuex, valuey, valuez)
+    local dest = Vector3(valuex, valuey, valuez)
     IPC.vnavmesh.PathfindAndMoveTo(dest, false)
     while ((IPC.vnavmesh.IsRunning() or IPC.vnavmesh.PathfindInProgress()) and Vector3.Distance(Entity.Player.Position, dest) > stopdistance) do
         yield("/wait 0.3")
@@ -2060,13 +2060,13 @@ function TeleportGC()
                 TeleportToGCTown(UseTicket)
                 else
                 if Player.GrandCompany == 1 then
-					yield("/pcall SelectString true -1")
+                    yield("/pcall SelectString true -1")
                     yield("/tp Limsa")
                 elseif Player.GrandCompany == 2 then
-					yield("/pcall SelectString true -1")
+                    yield("/pcall SelectString true -1")
                     yield("/tp Gridania")
                 elseif Player.GrandCompany == 3 then
-					yield("/pcall SelectString true -1")
+                    yield("/pcall SelectString true -1")
                     yield("/tp Ul")
                 end
                 yield("/wait 2")
@@ -2098,21 +2098,32 @@ function IsThereTradeItem()
         local count = Inventory.GetItemCount(itemID)
         TotalExchangeItem = TotalExchangeItem + count
     end
-		for _, entry in ipairs(KakalanTable) do
+        for _, entry in ipairs(KakalanTable) do
         local itemID = entry[4]
         local count = Inventory.GetItemCount(itemID)
         TotalExchangeItem = TotalExchangeItem + count
     end
 
  ----------------------------   VINTAGE   --------------------------------------------
-	
-	VintageTurnInCount = math.floor(AntiqueHelmCount / AntiqueBuyAmount) +
+    AntiqueHelmCount = Inventory.GetItemCount(AntiqueHelmID)
+    AntiqueMailCount = Inventory.GetItemCount(AntiqueMailID)
+    AntiqueGauntletsCount = Inventory.GetItemCount(AntiqueGauntletsID)
+    AntiqueBreechesCount = Inventory.GetItemCount(AntiqueBreechesID)
+    AntiqueSolleretsCount = Inventory.GetItemCount(AntiqueSolleretsID)
+
+    VintageTurnInCount = math.floor(AntiqueHelmCount / AntiqueBuyAmount) +
     math.floor(AntiqueMailCount / AntiqueBuyAmount) +
     math.floor(AntiqueGauntletsCount / AntiqueBuyAmount) +
     math.floor(AntiqueBreechesCount / AntiqueBuyAmount) +
     math.floor(AntiqueSolleretsCount / AntiqueBuyAmount)
-			
+            
  ----------------------------   GORDIAN   --------------------------------------------
+    GordianLensCount = Inventory.GetItemCount(GordianLensID)
+    GordianShaftCount = Inventory.GetItemCount(GordianShaftID)
+    GordianCrankCount = Inventory.GetItemCount(GordianCrankID)
+    GordianSpringCount = Inventory.GetItemCount(GordianSpringID)
+    GordianPedalCount = Inventory.GetItemCount(GordianPedalID)
+    GordianBoltCount = Inventory.GetItemCount(GordianBoltID)
 
     GordianTurnInCount = math.floor(GordianLensCount / HelmBuyAmount) +
     math.floor(GordianShaftCount / ChestBuyAmount) +
@@ -2122,6 +2133,12 @@ function IsThereTradeItem()
     math.floor(GordianBoltCount / AccessoryBuyAmount)
 
  ----------------------------   MIDAN   --------------------------------------------
+    MidanLensCount = Inventory.GetItemCount(MidanLensID)
+    MidanShaftCount = Inventory.GetItemCount(MidanShaftID)
+    MidanCrankCount = Inventory.GetItemCount(MidanCrankID)
+    MidanSpringCount = Inventory.GetItemCount(MidanSpringID)
+    MidanPedalCount = Inventory.GetItemCount(MidanPedalID)
+    MidanBoltCount = Inventory.GetItemCount(MidanBoltID)
 
     MidanTurnInCount = math.floor(MidanLensCount / HelmBuyAmount) +
     math.floor(MidanShaftCount / ChestBuyAmount) +
@@ -2131,6 +2148,12 @@ function IsThereTradeItem()
     math.floor(MidanBoltCount / AccessoryBuyAmount)
 
  ----------------------------   Alexandrian   --------------------------------------------
+    AlexandrianLensCount = Inventory.GetItemCount(AlexandrianLensID)
+    AlexandrianShaftCount = Inventory.GetItemCount(AlexandrianShaftID)
+    AlexandrianCrankCount = Inventory.GetItemCount(AlexandrianCrankID)
+    AlexandrianSpringCount = Inventory.GetItemCount(AlexandrianSpringID)
+    AlexandrianPedalCount = Inventory.GetItemCount(AlexandrianPedalID)
+    AlexandrianBoltCount = Inventory.GetItemCount(AlexandrianBoltID)    
 
     AlexandrianTurnInCount = math.floor(AlexandrianLensCount / HelmBuyAmount) +
     math.floor(AlexandrianShaftCount / ChestBuyAmount) +
@@ -2140,6 +2163,12 @@ function IsThereTradeItem()
     math.floor(AlexandrianBoltCount / AccessoryBuyAmount)
 
  ------------------------------  Deltascape  ----------------------------------------------
+    DeltascapeLensCount = Inventory.GetItemCount(DeltascapeLensID)
+    DeltascapeShaftCount = Inventory.GetItemCount(DeltascapeShaftID)
+    DeltascapeCrankCount = Inventory.GetItemCount(DeltascapeCrankID)
+    DeltascapeSpringCount = Inventory.GetItemCount(DeltascapeSpringID)
+    DeltascapePedalCount = Inventory.GetItemCount(DeltascapePedalID)
+    DeltascapeBoltCount = Inventory.GetItemCount(DeltascapeBoltID)    
 
     DeltascapeTurnInCount = math.floor(DeltascapeLensCount / HelmBuyAmount) +
     math.floor(DeltascapeShaftCount / ChestBuyAmount) +
@@ -2149,6 +2178,12 @@ function IsThereTradeItem()
     math.floor(DeltascapeBoltCount / AccessoryBuyAmount)
 
 ------------------------------  Sigmascape  ----------------------------------------------
+    SigmascapeLensCount = Inventory.GetItemCount(SigmascapeLensID)
+    SigmascapeShaftCount = Inventory.GetItemCount(SigmascapeShaftID)
+    SigmascapeCrankCount = Inventory.GetItemCount(SigmascapeCrankID)
+    SigmascapeSpringCount = Inventory.GetItemCount(SigmascapeSpringID)
+    SigmascapePedalCount = Inventory.GetItemCount(SigmascapePedalID)
+    SigmascapeBoltCount = Inventory.GetItemCount(SigmascapeBoltID)
 
     SigmascapeTurnInCount = math.floor(SigmascapeLensCount / HelmBuyAmount) +
     math.floor(SigmascapeShaftCount / ChestBuyAmount) +
@@ -2158,6 +2193,12 @@ function IsThereTradeItem()
     math.floor(SigmascapeBoltCount / AccessoryBuyAmount)
 
 ------------------------------  Alphascape  ----------------------------------------------
+    AlphascapeLensCount = Inventory.GetItemCount(AlphascapeLensID)
+    AlphascapeShaftCount = Inventory.GetItemCount(AlphascapeShaftID)
+    AlphascapeCrankCount = Inventory.GetItemCount(AlphascapeCrankID)
+    AlphascapeSpringCount = Inventory.GetItemCount(AlphascapeSpringID)
+    AlphascapePedalCount = Inventory.GetItemCount(AlphascapePedalID)
+    AlphascapeBoltCount = Inventory.GetItemCount(AlphascapeBoltID)
 
     AlphascapeTurnInCount = math.floor(AlphascapeLensCount / HelmBuyAmount) +
     math.floor(AlphascapeShaftCount / ChestBuyAmount) +
@@ -2167,6 +2208,12 @@ function IsThereTradeItem()
     math.floor(AlphascapeBoltCount / AccessoryBuyAmount)
 
     ------------------------------  Edengate  ----------------------------------------------
+    EarlyHelmCount = Inventory.GetItemCount(EarlyHelmID)
+    EarlyArmorCount = Inventory.GetItemCount(EarlyArmorID)
+    EarlyGauntletCount = Inventory.GetItemCount(EarlyGauntletID)
+    EarlyChaussesCount = Inventory.GetItemCount(EarlyChaussesID)
+    EarlyGreavesCount = Inventory.GetItemCount(EarlyGreavesID)
+    EarlyAccessoryCount = Inventory.GetItemCount(EarlyAccessoryID)
 
     EdengateTurnInCount = math.floor(EarlyHelmCount / HelmBuyAmount) +
     math.floor(EarlyArmorCount / ChestBuyAmount) +
@@ -2176,6 +2223,12 @@ function IsThereTradeItem()
     math.floor(EarlyAccessoryCount / AccessoryBuyAmount)
 
         ------------------------------  Edenverse  ----------------------------------------------
+    GoldenHelmCount = Inventory.GetItemCount(GoldenHelmID)
+    GoldenArmorCount = Inventory.GetItemCount(GoldenArmorID)
+    GoldenGauntletCount = Inventory.GetItemCount(GoldenGauntletID)
+    GoldenChaussesCount = Inventory.GetItemCount(GoldenChaussesID)
+    GoldenGreavesCount = Inventory.GetItemCount(GoldenGreavesID)
+    GoldenAccessoryCount = Inventory.GetItemCount(GoldenAccessoryID)
 
     EdenverseTurnInCount = math.floor(GoldenHelmCount / HelmBuyAmount) +
     math.floor(GoldenArmorCount / ChestBuyAmount) +
@@ -2185,6 +2238,12 @@ function IsThereTradeItem()
     math.floor(GoldenAccessoryCount / AccessoryBuyAmount)
 
         ------------------------------  Edenpromise  ----------------------------------------------
+    LostHelmCount = Inventory.GetItemCount(LostHelmID)
+    LostArmorCount = Inventory.GetItemCount(LostArmorID)
+    LostGauntletCount = Inventory.GetItemCount(LostGauntletID)
+    LostChaussesCount = Inventory.GetItemCount(LostChaussesID)
+    LostGreavesCount = Inventory.GetItemCount(LostGreavesID)
+    LostAccessoryCount = Inventory.GetItemCount(LostAccessoryID)
 
     EdenpromiseTurnInCount = math.floor(LostHelmCount / HelmBuyAmount) +
     math.floor(LostArmorCount / ChestBuyAmount) +
@@ -2194,6 +2253,12 @@ function IsThereTradeItem()
     math.floor(LostAccessoryCount / AccessoryBuyAmount)
 
             ------------------------------  Asphodelos  ----------------------------------------------
+    AsphodelosHelmCount = Inventory.GetItemCount(AsphodelosHelmID)
+    AsphodelosArmorCount = Inventory.GetItemCount(AsphodelosArmorID)
+    AsphodelosGauntletCount = Inventory.GetItemCount(AsphodelosGauntletID)
+    AsphodelosChaussesCount = Inventory.GetItemCount(AsphodelosChaussesID)
+    AsphodelosGreavesCount = Inventory.GetItemCount(AsphodelosGreavesID)
+    AsphodelosAccessoryCount = Inventory.GetItemCount(AsphodelosAccessoryID)
 
     AsphodelosTurnInCount = math.floor(AsphodelosHelmCount / HelmBuyAmount) +
     math.floor(AsphodelosArmorCount / ChestBuyAmount) +
@@ -2203,6 +2268,12 @@ function IsThereTradeItem()
     math.floor(AsphodelosAccessoryCount / AccessoryBuyAmount)
 
             ------------------------------  Abyssos  ----------------------------------------------
+    AbyssosHelmCount = Inventory.GetItemCount(AbyssosHelmID)
+    AbyssosArmorCount = Inventory.GetItemCount(AbyssosArmorID)
+    AbyssosGauntletCount = Inventory.GetItemCount(AbyssosGauntletID)
+    AbyssosChaussesCount = Inventory.GetItemCount(AbyssosChaussesID)
+    AbyssosGreavesCount = Inventory.GetItemCount(AbyssosGreavesID)
+    AbyssosAccessoryCount = Inventory.GetItemCount(AbyssosAccessoryID)
 
     AbyssosTurnInCount = math.floor(AbyssosHelmCount / HelmBuyAmount) +
     math.floor(AbyssosArmorCount / ChestBuyAmount) +
@@ -2212,6 +2283,12 @@ function IsThereTradeItem()
     math.floor(AbyssosAccessoryCount / AccessoryBuyAmount)
 
         ------------------------------  Anabaseios  ----------------------------------------------
+    AnabaseiosHelmCount = Inventory.GetItemCount(AnabaseiosHelmID)
+    AnabaseiosArmorCount = Inventory.GetItemCount(AnabaseiosArmorID)
+    AnabaseiosGauntletCount = Inventory.GetItemCount(AnabaseiosGauntletID)
+    AnabaseiosChaussesCount = Inventory.GetItemCount(AnabaseiosChaussesID)
+    AnabaseiosGreavesCount = Inventory.GetItemCount(AnabaseiosGreavesID)
+    AnabaseiosAccessoryCount = Inventory.GetItemCount(AnabaseiosAccessoryID)
 
     AnabaseiosTurnInCount = math.floor(AnabaseiosHelmCount / HelmBuyAmount) +
     math.floor(AnabaseiosArmorCount / ChestBuyAmount) +
@@ -2286,25 +2363,25 @@ end
 
 function WhichArmoryItem(ItemToBuy)
     local ArmoryId = ItemIdArmoryTable[ItemToBuy]
-	if ArmoryId == 3201 then 
-	return Inventory.GetInventoryContainer(InventoryType.ArmoryHead)
-	elseif ArmoryId == 3202 then 
-	return Inventory.GetInventoryContainer(InventoryType.ArmoryBody)
-	elseif ArmoryId == 3203 then 
-	return Inventory.GetInventoryContainer(InventoryType.ArmoryHands)
-	elseif ArmoryId == 3205 then 
-	return Inventory.GetInventoryContainer(InventoryType.ArmoryLegs)
-	elseif ArmoryId == 3206 then 
-	return Inventory.GetInventoryContainer(InventoryType.ArmoryFeets)
-	elseif ArmoryId == 3207 then 
-	return Inventory.GetInventoryContainer(InventoryType.ArmoryEar)
-	elseif ArmoryId == 3208 then 
-	return Inventory.GetInventoryContainer(InventoryType.ArmoryNeck)
-	elseif ArmoryId == 3209 then 
-	return Inventory.GetInventoryContainer(InventoryType.ArmoryWrist)
-	elseif ArmoryId == 3300 then 
-	return Inventory.GetInventoryContainer(InventoryType.ArmoryRings)
-	end
+    if ArmoryId == 3201 then 
+    return Inventory.GetInventoryContainer(InventoryType.ArmoryHead)
+    elseif ArmoryId == 3202 then 
+    return Inventory.GetInventoryContainer(InventoryType.ArmoryBody)
+    elseif ArmoryId == 3203 then 
+    return Inventory.GetInventoryContainer(InventoryType.ArmoryHands)
+    elseif ArmoryId == 3205 then 
+    return Inventory.GetInventoryContainer(InventoryType.ArmoryLegs)
+    elseif ArmoryId == 3206 then 
+    return Inventory.GetInventoryContainer(InventoryType.ArmoryFeets)
+    elseif ArmoryId == 3207 then 
+    return Inventory.GetInventoryContainer(InventoryType.ArmoryEar)
+    elseif ArmoryId == 3208 then 
+    return Inventory.GetInventoryContainer(InventoryType.ArmoryNeck)
+    elseif ArmoryId == 3209 then 
+    return Inventory.GetInventoryContainer(InventoryType.ArmoryWrist)
+    elseif ArmoryId == 3300 then 
+    return Inventory.GetInventoryContainer(InventoryType.ArmoryRings)
+    end
 end
 
 function GetTargetName()
@@ -2335,8 +2412,8 @@ function TurnIn(TableName,MaxArmoryValue)
         NpcName = "Yhal Yal"
     elseif TableName == DjoleTable then
         NpcName = "Djole"
-	elseif TableName == KakalanTable then
-		NpcName = "Kakalan"
+    elseif TableName == KakalanTable then
+        NpcName = "Kakalan"
     end
 
     local function OpenShopMenu(SelectIconString,LastIconString,SelectString,Npc)
@@ -2344,12 +2421,12 @@ function TurnIn(TableName,MaxArmoryValue)
             yield("/pcall ShopExchangeItem true -1")
             yield("/wait 0.5")
         end
-		if LastIconString ~= SelectIconString then
-			while Addons.GetAddon("SelectString").Ready do
-				yield("/pcall SelectString true -1")
-				yield("/wait 0.5")
-			end
-		end
+        if LastIconString ~= SelectIconString then
+            while Addons.GetAddon("SelectString").Ready do
+                yield("/pcall SelectString true -1")
+                yield("/wait 0.5")
+            end
+        end
         while not Addons.GetAddon("ShopExchangeItem").Ready do
             yield("/wait 0.11")
             if GetTargetName() ~= Npc then
@@ -2414,7 +2491,7 @@ function TurnIn(TableName,MaxArmoryValue)
         local CanExchange = math.floor(ItemAmount / itemTypeBuy)
         local SlotINV = Inventory.GetFreeInventorySlots()
         local ArmoryType = WhichArmoryItem(gearItem)
-		--yield("/echo Do We Get Here?")
+        --yield("/echo Do We Get Here?")
         local SlotArmoryINV = ArmoryType.FreeSlots
         if MaxArmory then
             SlotINV = SlotINV - MaxArmoryFreeSlot
@@ -2425,18 +2502,18 @@ function TurnIn(TableName,MaxArmoryValue)
             Dalamud.Log("SlotArmoryINV: "..SlotArmoryINV)
             Dalamud.Log("CanExchange: "..CanExchange)
             Dalamud.Log("GearAmount: "..GearAmount)
-			Dalamud.Log("Shop Type: "..shopType)
-			Dalamud.Log("iconShopType: "..iconShopType)
-			if lastShopType ~= nil then
-				Dalamud.Log("lastShopType: "..lastShopType)
-			end
-			if lastIconShopType ~= nil then
-				Dalamud.Log("lastIconShopType: "..lastIconShopType)
-			end
+            Dalamud.Log("Shop Type: "..shopType)
+            Dalamud.Log("iconShopType: "..iconShopType)
+            if lastShopType ~= nil then
+                Dalamud.Log("lastShopType: "..lastShopType)
+            end
+            if lastIconShopType ~= nil then
+                Dalamud.Log("lastIconShopType: "..lastIconShopType)
+            end
             if shopType ~= lastShopType or iconShopType ~= lastIconShopType then
                 OpenShopMenu(iconShopType,lastIconShopType,shopType,NpcName)
                 lastShopType = shopType
-				lastIconShopType = iconShopType
+                lastIconShopType = iconShopType
             end
             if MaxArmoryValue then
                 if SlotArmoryINV == 0 then
@@ -2459,10 +2536,10 @@ end
 
 function GcDelivero()
     yield("/ays deliver")
-	while (IPC.AutoRetainer.IsBusy()) do
-		yield("/wait 1")
-	end
-	PlayerTest()
+    while (IPC.AutoRetainer.IsBusy()) do
+        yield("/wait 1")
+    end
+    PlayerTest()
 end
 
 function MountUp()
@@ -2534,7 +2611,7 @@ while IsThereTradeItem() do
         yield("/echo Midan Count: "..MidanTurnInCount)
         yield("/echo Alexandrian: "..AlexandrianTurnInCount)
         TeleportToIdlishire()
-		local NPCTarget = Vector3(-19.0, 211.0, -35.9)
+        local NPCTarget = Vector3(-19.0, 211.0, -35.9)
         local DistanceToSabina = Vector3.Distance(Entity.Player.Position, NPCTarget)
         if DistanceToSabina > 2 then
             MountUp()
@@ -2549,7 +2626,7 @@ while IsThereTradeItem() do
         yield("/echo Sigmascape Count: "..SigmascapeTurnInCount)
         yield("/echo Alphascape Count: "..AlphascapeTurnInCount)
         TeleportToRhalgr()
-		local NPCTarget = Vector3(125.0, 0.7, 40.8)
+        local NPCTarget = Vector3(125.0, 0.7, 40.8)
         local DistanceToGelfradus = Vector3.Distance(Entity.Player.Position, NPCTarget)
         if DistanceToGelfradus > 2 then
             MountUp()
@@ -2564,7 +2641,7 @@ while IsThereTradeItem() do
         yield("/echo Edenverse Count: "..EdenverseTurnInCount)
         yield("/echo Edenpromise Count: "..EdenpromiseTurnInCount)
         TeleportToEulmore()
-		local NPCTarget = Vector3(-55.854, 84.194, 14.951)
+        local NPCTarget = Vector3(-55.854, 84.194, 14.951)
         local DistanceToYhal = Vector3.Distance(Entity.Player.Position, NPCTarget)
         if DistanceToYhal > 2 then
             MountUp()
@@ -2579,7 +2656,7 @@ while IsThereTradeItem() do
         yield("/echo Abyssos Count: "..AbyssosTurnInCount)
         yield("/echo Anabaseios Count: "..AnabaseiosTurnInCount)
         TeleportToRadz()
-		local NPCTarget = Vector3(-42.701,0.920,-77.701)
+        local NPCTarget = Vector3(-42.701,0.920,-77.701)
         local DistanceToDjole = Vector3.Distance(Entity.Player.Position, NPCTarget)
         if DistanceToDjole > 2 then
             MountUp()
@@ -2589,10 +2666,10 @@ while IsThereTradeItem() do
             TurnIn(DjoleTable,true)
         end
         TurnIn(DjoleTable,false)
-	elseif VintageTurnInCount >= 1 and Inventory.GetFreeInventorySlots() ~= 0 then
+    elseif VintageTurnInCount >= 1 and Inventory.GetFreeInventorySlots() ~= 0 then
         yield("/echo Vintage Count: "..VintageTurnInCount)
         TeleportToMor()
-		local NPCTarget = Vector3(38.292,29,-796.534)
+        local NPCTarget = Vector3(38.292,29,-796.534)
         local DistanceToKakalan = Vector3.Distance(Entity.Player.Position, NPCTarget)
         if DistanceToKakalan > 2 then
             MountUp()
@@ -2623,7 +2700,7 @@ while IsThereTradeItem() do
             end
         else
             --TeleportGC()
-			GetOUT()
+            GetOUT()
             GcDelivero()
         end
     end
