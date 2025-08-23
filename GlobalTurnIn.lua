@@ -2307,6 +2307,14 @@ function WhichArmoryItem(ItemToBuy)
 	end
 end
 
+function GetTargetName()
+  if (Entity.Target) then
+    return Entity.Target.Name
+  else
+    return ""
+  end
+end
+
 function TurnIn(TableName,MaxArmoryValue)
     --yield("/echo Enabling TurnIn Function.")
     if IPC.IsInstalled("Automaton") then
@@ -2317,7 +2325,7 @@ function TurnIn(TableName,MaxArmoryValue)
         yield("/inventory")
     end
     local lastShopType = nil
-    local LastIconShopType = nil
+    local lastIconShopType = nil
     local NpcName = "Sabina"
     if TableName == SabinaTable then
         NpcName = "Sabina"
@@ -2330,20 +2338,16 @@ function TurnIn(TableName,MaxArmoryValue)
 	elseif TableName == KakalanTable then
 		NpcName = "Kakalan"
     end
-	
-function GetTargetName()
-  if (Entity.Target) then
-    return Entity.Target.Name
-  else
-    return ""
-  end
-end
 
     local function OpenShopMenu(SelectIconString,SelectString,Npc)
         while Addons.GetAddon("ShopExchangeItem").Ready do
             yield("/pcall ShopExchangeItem true -1")
             yield("/wait 0.1")
         end
+		while Addons.GetAddon("SelectString").Ready do
+			yield("/pcall SelectString true -1")
+			yield("/wait 0.1")
+		end
         while not Addons.GetAddon("ShopExchangeItem").Ready do
             yield("/wait 0.11")
             if GetTargetName() ~= Npc then
@@ -2419,9 +2423,11 @@ end
             Dalamud.Log("SlotArmoryINV: "..SlotArmoryINV)
             Dalamud.Log("CanExchange: "..CanExchange)
             Dalamud.Log("GearAmount: "..GearAmount)
-            if shopType ~= lastShopType then
+            if shopType ~= lastShopType or iconShopType ~= lastIconShopType then
                 OpenShopMenu(iconShopType,shopType,NpcName)
                 lastShopType = shopType
+				lastIconShopType = iconShopType
+				
             end
             if MaxArmoryValue then
                 if SlotArmoryINV == 0 then
@@ -2435,10 +2441,6 @@ end
             else
                 Exchange(gearItem, pcallValue, 1)
             end    
-            if LastIconShopType ~= nil and iconShopType ~= LastIconShopType then
-                GetOUT()
-            end
-            iconShopType = LastIconShopType
             Dalamud.Log("Exchange END ...................")
         end
     end
