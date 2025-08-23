@@ -117,6 +117,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Amalj'aa",
         mainQuests        = { first = 1217, last = 1221 },
         dailyQuests       = { first = 1222, last = 1251, blackList = { [1245] = true } },
+        questGiver        = "Fibubb Gah",
         x                 = 103.12,
         y                 = 15.05,
         z                 = -359.51,
@@ -139,6 +140,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Kobolds",
         mainQuests        = { first = 1320, last = 1324 },
         dailyQuests       = { first = 1325, last = 1373 },
+        questGiver        = "Tonaxia",
         x                 = 12.857726,
         y                 = 16.164295,
         z                 = -178.77,
@@ -150,6 +152,8 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Sahagin",
         mainQuests        = { first = 1374, last = 1378 },
         dailyQuests       = { first = 1380, last = 1409 },
+        questGiver        = "789th Order Dustman Bo Bu",
+        questGiver        = "Houu",
         x                 = -244.53,
         y                 = -41.46,
         z                 = 52.75,
@@ -161,6 +165,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Ixal",
         mainQuests        = { first = 1486, last = 1493 },
         dailyQuests       = { first = 1521, last = 1568 },
+        questGiver        = "Ehcatl Nine Manciple",
         x                 = 173.21,
         y                 = -5.37,
         z                 = 81.85,
@@ -172,6 +177,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Vanu Vanu",
         mainQuests        = { first = 2164, last = 2225 },
         dailyQuests       = { first = 2171, last = 2200 },
+        questGiver        = "Muna Vanu",
         x                 = -796.3722,
         y                 = -133.27,
         z                 = -404.35,
@@ -183,6 +189,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Vath",
         mainQuests        = { first = 2164, last = 2225 },
         dailyQuests       = { first = 2171, last = 2200 },
+        questGiver        = "Vath Keeneye",
         x                 = 58.80,
         y                 = -48.00,
         z                 = -171.64,
@@ -194,6 +201,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Moogles",
         mainQuests        = { first = 2320, last = 2327 },
         dailyQuests       = { first = 2290, last = 2319 },
+        questGiver        = "Mogek the Marvelous",
         x                 = -335.28,
         y                 = 58.94,
         z                 = 316.30,
@@ -205,6 +213,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Kojin",
         mainQuests        = { first = 2973, last = 2978 },
         dailyQuests       = { first = 2979, last = 3002 },
+        questGiver        = "Zukin",
         x                 = 391.22,
         y                 = -119.59,
         z                 = -234.92,
@@ -216,6 +225,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Ananta",
         mainQuests        = { first = 3036, last = 3041 },
         dailyQuests       = { first = 3043, last = 3069 },
+        questGiver        = "Eshana",
         x                 = -26.91,
         y                 = 56.12,
         z                 = 233.53,
@@ -227,6 +237,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Namazu",
         mainQuests        = { first = 3096, last = 3102 },
         dailyQuests       = { first = 3103, last = 3129 },
+        questGiver        = "Seigetsu the Enlightened",
         x                 = -777.72,
         y                 = 127.81,
         z                 = 98.76,
@@ -238,6 +249,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Pixies",
         mainQuests        = { first = 3683, last = 3688 },
         dailyQuests       = { first = 3689, last = 3716 },
+        questGiver        = "Uin Nee",
         x                 = -453.69,
         y                 = 71.21,
         z                 = 573.54,
@@ -249,6 +261,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Qitari",
         mainQuests        = { first = 3794, last = 3805 },
         dailyQuests       = { first = 3806, last = 3833 },
+        questGiver        = "Qhoterl Pasol",
         x                 = 786.83,
         y                 = -45.82,
         z                 = -214.51,
@@ -260,6 +273,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Dwarves",
         mainQuests        = { first = 3896, last = 3901 },
         dailyQuests       = { first = 3902, last = 3929 },
+        questGiver        = "Regitt",
         x                 = -615.48,
         y                 = 65.60,
         z                 = -423.82,
@@ -271,6 +285,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Arkasodara",
         mainQuests        = { first = 4545, last = 4550 },
         dailyQuests       = { first = 4551, last = 4578 },
+        questGiver        = "Maru",
         x                 = -68.21,
         y                 = 39.99,
         z                 = 323.31,
@@ -282,6 +297,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Loporrits",
         mainQuests        = { first = 4681, last = 4686 },
         dailyQuests       = { first = 4687, last = 4714 },
+        questGiver        = "Managingway",
         x                 = -201.27,
         y                 = -49.15,
         z                 = -273.8,
@@ -293,6 +309,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Omicrons",
         mainQuests        = { first = 4601, last = 4606 },
         dailyQuests       = { first = 4607, last = 4634 },
+        questGiver        = "Stigma-4",
         x                 = 315.84,
         y                 = 481.99,
         z                 = 152.08,
@@ -304,6 +321,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Pelupelu",
         mainQuests        = { first = 5193, last = 5198 },
         dailyQuests       = { first = 5199, last = 5226 },
+        questGiver        = "Yubli",
         x                 = 770.89954,
         y                 = 12.846571,
         z                 = -261.0889,
@@ -315,6 +333,7 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Mamool Ja",
         mainQuests        = { first = 5255, last = 5260 },
         dailyQuests       = { first = 5261, last = 5288 },
+        questGiver        = "Kageel Ja",
         x                 = 589.3,
         y                 = -142.9,
         z                 = 730.5,
@@ -426,34 +445,19 @@ for _, alliedSociety in ipairs(ToDoList) do
         local quests = {}
         local blackList = alliedSocietyTable.dailyQuests.blackList or {}
 
-        for questId = alliedSocietyTable.dailyQuests.first, alliedSocietyTable.dailyQuests.last do
-            if not IPC.Questionable.IsQuestLocked(tostring(questId)) and not blackList[questId] then
-                table.insert(quests, questId)
-                IPC.Questionable.ClearQuestPriority()
-                IPC.Questionable.AddQuestPriority(tostring(questId))
+        for i=1,3 do
+            yield("/target "..alliedSocietyTable.questGiver)
+            yield("/interact")
 
-                repeat
-                    if not IPC.Questionable.IsRunning() then
-                        yield("/qst start")
-                    elseif os.time() - timeout > 15 then
-                        Dalamud.Log("[AlliedQuests] Took more than 15 seconds to pick up the quest. Questionable may be stuck. Reloading...")
-                        yield("/qst reload")
-                        timeout = os.time()
-                    end
-                    yield("/wait 0.3")
-                until Quests.IsQuestAccepted(questId)
-                if Player.Entity and Player.Entity.IsCasting then
-                    yield('/send ESCAPE')
-                end
-                timeout = os.time()
-                yield("/qst stop")
-            end
+            repeat
+                yield("/wait 1")
+            until Addons.GetAddon("SelectIconString").Ready
+            yield("/callback SelectIconString true 0")
+            repeat
+                yield("/wait 1")
+            until Player.Available
         end
-
-        for _, questId in ipairs(quests) do
-            IPC.Questionable.AddQuestPriority(tostring(questId))
-        end
-
+    
         repeat
             if not IPC.Questionable.IsRunning() then
                 yield("/qst start")
