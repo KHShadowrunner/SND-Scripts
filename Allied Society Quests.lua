@@ -456,6 +456,8 @@ for _, alliedSociety in ipairs(ToDoList) do
             repeat
                 yield("/wait 1")
             until Player.Available
+            yield("/wait 1")
+            yield ("/echo Quest "..i.." picked up.")
         end
     
         repeat
