@@ -165,10 +165,10 @@ AlliedSocietiesTable = {
         alliedSocietyName = "Ixal",
         mainQuests        = { first = 1486, last = 1493 },
         dailyQuests       = { first = 1521, last = 1568 },
-        questGiver        = "Ehcatl Nine Manciple",
-        x                 = 173.21,
-        y                 = -5.37,
-        z                 = 81.85,
+        questGiver        = "Jezul Ahuatan the Second",
+        x                 = 163.373,
+        y                 = -22.798,
+        z                 = 112.532,
         zoneId            = 154,
         aetheryteName     = "Fallgourd Float",
         expac             = "A Realm Reborn"
@@ -446,9 +446,11 @@ for _, alliedSociety in ipairs(ToDoList) do
         local blackList = alliedSocietyTable.dailyQuests.blackList or {}
 
         for i=1,3 do
-            yield("/target "..alliedSocietyTable.questGiver)
+            repeat
+              yield("/target "..alliedSocietyTable.questGiver)
+              yield("/wait 0.5")
+            until Entity.Target.Name == alliedSocietyTable.questGiver) 
             yield("/interact")
-
             repeat
                 yield("/wait 1")
             until Addons.GetAddon("SelectIconString").Ready
