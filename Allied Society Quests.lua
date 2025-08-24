@@ -446,9 +446,11 @@ for _, alliedSociety in ipairs(ToDoList) do
         local blackList = alliedSocietyTable.dailyQuests.blackList or {}
 
         for i=1,3 do
-            yield("/target "..alliedSocietyTable.questGiver)
+            repeat
+              yield("/target "..alliedSocietyTable.questGiver)
+              yield("/wait 0.5")
+            until Entity.Target.Name == alliedSocietyTable.questGiver) 
             yield("/interact")
-
             repeat
                 yield("/wait 1")
             until Addons.GetAddon("SelectIconString").Ready
