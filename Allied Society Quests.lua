@@ -449,7 +449,7 @@ for _, alliedSociety in ipairs(ToDoList) do
             repeat
               yield("/target "..alliedSocietyTable.questGiver)
               yield("/wait 0.5")
-            until Entity.Target.Name == alliedSocietyTable.questGiver) 
+            until Entity.Target.Name == alliedSocietyTable.questGiver
             yield("/interact")
             repeat
                 yield("/wait 1")
