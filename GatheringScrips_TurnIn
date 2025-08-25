@@ -14,9 +14,17 @@ configs:
         description: "Do you wish to use (and turn in) items from the armory chest?"
         choices: ["Purple", "Orange"]
         is_choice: true
-    UseSpiritbondPotion:
-        default: false
+    UsePotion:
+        type: list
         description: "Should we be using Spritbond Potions?"
+		choices: ["None", "Spritbond Potion", "Spiritbond Potion <hq>", "Potent Spiritbond Potion", "Potent Spiritbond Potion <hq>", "Superior Spiritbond Potion", "Superior Spiritbond Potion <hq>"]
+		ischoice: true
+	UseSquadronManual:
+		description: "Do you wish to use a Squadron Spiritbonding Manual?"
+		default: false
+	FoodToUse:
+		description" "Food to use, if desired."
+		default: None
 
 [[End Metadata]]
 --]=====]
@@ -31,8 +39,7 @@ configs:
 
 Created by: pot0to (https://ko-fi.com/pot0to)
 
-Crafts orange scrip item matching whatever class you're on, turns it in, buys
-stuff, repeat.
+Details go here. GBR can be configured to handle Cordials.
 
     -> 0.0.1 Attempting to rewrite this script to act as a gatherer helper.
 
@@ -61,7 +68,7 @@ ScripColor                  = Config.Get("ScripType")
 ItemToBuy                   = Config.Get("ItemToBuy")
 HubCity                     = "Solution Nine"           --Options:Limsa/Gridania/Ul'dah/Solution Nine. Where to turn in the scrips and access retainer bell
 
-Potion                      = "Superior Spiritbond Potion <hq>"     -- WARNING: This will overwrite any crafter's pots you have.
+Potion                      = Config.Get("UsePotion")     -- WARNING: This will overwrite any crafter's pots you have.
 
 Retainers                   = true
 GrandCompanyTurnIn          = true
@@ -139,126 +146,7 @@ ScripExchangeItems = {
 ]]
 
 OrangeCrafterScripId = 41784
-OrangeScripRecipes =
-{
-    {
-        className="Carpenter",
-        classId=8,
-        itemName="Rarefied Claro Walnut Fishing Rod",
-        itemId=44190,
-        recipeId=35787
-    },
-    {
-        className="Blacksmith",
-        classId=9,
-        itemName="Rarefied Ra'Kaznar Round Knife",
-        itemId=44196,
-        recipeId=35793
-    },
-    {
-        className="Armorer",
-        classId=10,
-        itemName="Rarefied Ra'Kaznar Ring",
-        itemId=44202,
-        recipeId=35799
-    },
-    {
-        className="Goldsmith",
-        classId=11,
-        itemName="Rarefied Black Star Earrings",
-        itemId=44208,
-        recipeId=35805
-    },
-    {
-        className="Leatherworker",
-        classId=12,
-        itemName="Rarefied Gargantuaskin Hat",
-        itemId=44214,
-        recipeId=35817
-    },
-    {
-        className="Weaver",
-        classId=13,
-        itemName="Rarefied Thunderyard Silk Culottes",
-        itemId=44220,
-        recipeId=35817
-    },
-    {
-        className="Alchemist",
-        classId=14,
-        itemName="Rarefied Claro Walnut Flat Brush",
-        itemId=44226,
-        recipeId=35823
-    },
-    {
-        className="Culinarian",
-        classId=15,
-        itemName="Rarefied Tacos de Carne Asada",
-        itemId=44232,
-        recipeId=35829
-    }
-}
-
 PurpleCrafterScripId = 33913
-PurpleScripRecipes =
-{
-    {
-        className="Carpenter",
-        classId=8,
-        itemName="Rarefied Claro Walnut Grinding Wheel",
-        itemId=44189,
-        recipeId=35786
-    },
-    {
-        className="Blacksmith",
-        classId=9,
-        itemName="Rarefied Ra'Kaznar War Scythe",
-        itemId=44195,
-        recipeId=35792
-    },
-    {
-        className="Armorer",
-        classId=10,
-        itemName="Rarefied Ra'Kaznar Greaves",
-        itemId=44201,
-        recipeId=35798
-    },
-    {
-        className="Goldsmith",
-        classId=11,
-        itemName="Rarefied Ra'Kaznar Orrery",
-        itemId=44207,
-        recipeId=35804
-    },
-    {
-        className="Leatherworker",
-        classId=12,
-        itemName="Rarefied Gargantuaskin Trouser",
-        itemId=44213,
-        recipeId=35816
-    },
-    {
-        className="Weaver",
-        classId=13,
-        itemName="Rarefied Thunderyards Silk Gloves",
-        itemId=44219,
-        recipeId=35816
-    },
-    {
-        className="Alchemist",
-        classId=14,
-        itemName="Rarefied Gemdraught of Vitality",
-        itemId=44225,
-        recipeId=35822
-    },
-    {
-        className="Culinarian",
-        classId=15,
-        itemName="Rarefied Stuffed Peppers",
-        itemId=44231,
-        recipeId=35828
-    }
-}
 
 HubCities =
 {
@@ -308,18 +196,6 @@ HubCities =
     }
 }
 
-ClassList =
-{
-    crp = { classId=8, className="Carpenter" },
-    bsm = { classId=9, className="Blacksmith" },
-    arm = { classId=10, className="Armorer" },
-    gsm = { classId=11, className="Goldsmith" },
-    ltw = { classId=12, className="Leatherworker" },
-    wvr = { classId=13, className="Weaver" },
-    alc = { classId=14, className="Alchemist" },
-    cul = { classId=15, className="Culinarian"}
-}
-
 CharacterCondition =
 {
     craftingMode = 5,
@@ -342,130 +218,10 @@ function TeleportTo(aetheryteName)
     end
     yield("/wait 1") -- wait for that microsecond in between the cast finishing and the transition beginning
     while GetCharacterCondition(CharacterCondition.betweenAreas) do
-        LogInfo("[FATE] Teleporting...")
+        LogInfo("Teleporting...")
         yield("/wait 1")
     end
     yield("/wait 1")
-end
-
-function OutOfCrystals()
-    local crystalsRequired1 = tonumber(GetNodeText("RecipeNote", 28, 4))
-    local crystalsInInventory1 = tonumber(GetNodeText("RecipeNote", 28, 3))
-    if crystalsRequired1 ~= nil and crystalsInInventory1 ~= nil and crystalsRequired1 > crystalsInInventory1 then
-        return true
-    end
-
-    local crystalsRequired2 = tonumber(GetNodeText("RecipeNote", 29, 4))
-    local crystalsInInventory2 = tonumber(GetNodeText("RecipeNote", 29, 3))
-    if crystalsRequired2 ~= nil and crystalsInInventory2 ~= nil and crystalsRequired2> crystalsInInventory2 then
-        return true
-    end
-
-    return false
-end
-
-function OutOfMaterials()
-    while not IsAddonReady("RecipeNote") do
-        if not IsAddonVisible("RecipeNote") then
-            LogInfo("[OrangeCrafters] RecipeNote no longer visible")
-            return false
-        end
-        yield("/wait 0.1")
-    end
-
-    for i=0,5 do
-        local materialCountNQ = GetNodeText("RecipeNote", 18 + i, 8)
-        local materialCountHQ = GetNodeText("RecipeNote", 18 + i, 5)
-        local materialRequirement = GetNodeText("RecipeNote", 18 + i, 15)
-        if materialCountNQ ~= "" and materialCountHQ ~= "" and materialRequirement ~= "" and
-            materialCountNQ ~= nil and materialCountHQ ~= nil and materialRequirement ~= nil
-        then
-            LogInfo("[OrangeCrafters] materialCountNQ: "..materialCountNQ..", materialCountHQ: "..materialCountHQ..", materialRequirement: "..materialRequirement)
-            if tonumber(materialCountNQ) + tonumber(materialCountHQ) < tonumber(materialRequirement) then
-                return true
-            end
-        end
-    end
-
-    LogInfo("[Orange Crafters] Regular mats available. Checking crystals.")
-
-    if OutOfCrystals() then
-        yield("/echo Out of crystals. Stopping script.")
-        StopFlag = true
-        return true
-    end
-
-    LogInfo("[Orange Crafters] All mats and crystals available.")
-    return false
-end
-
-function Crafting()
-    if (HasPlugin("Lifestream") and LifestreamIsBusy()) or GetCharacterCondition(CharacterCondition.occupiedInQuestEvent) then
-        yield("/wait 1")
-        return
-    elseif not AtInn and HomeCommand ~= "" then
-        yield(HomeCommand)
-        while LifestreamIsBusy() do
-            yield("/wait 1")
-        end
-        AtInn = true
-        return
-    end
-
-    local slots = GetInventoryFreeSlotCount()
-    if ArtisanGetEnduranceStatus() then
-        return
-    elseif slots == nil then
-        yield("/echo [OrangeCrafters] GetInventoryFreeSlotCount() is nil. WHYYY???")
-    elseif not LogInfo("[OrangeCrafters] Check Artisan running") and (ArtisanIsListRunning() and not ArtisanIsListPaused()) or IsAddonVisible("Synthesis") then
-        yield("/wait 1")
-    elseif not LogInfo("[OrangeCrafters] Check slots count") and slots <= MinInventoryFreeSlots then
-        LogInfo("[OrangeCrafters] Out of inventory space")
-        if IsAddonVisible("RecipeNote") then
-            yield("/pcall RecipeNote true -1")
-        elseif not GetCharacterCondition(CharacterCondition.craftingMode) then
-            State = CharacterState.turnIn
-            LogInfo("State Change: TurnIn")
-        end
-    elseif not LogInfo("[OrangeCrafters] Check out of materials") and IsAddonVisible("RecipeNote") and OutOfMaterials() then
-        LogInfo("[OrangeCrafters] Out of materials")
-        if not StopFlag then
-            if slots > MinInventoryFreeSlots and (ArtisanTimeoutStartTime == 0) then
-                LogInfo("[OrangeCrafters] Attempting to craft intermediate materials")
-                yield("/artisan lists "..ArtisanListId.." start")
-                ArtisanTimeoutStartTime = os.clock()
-            elseif GetItemCount(ItemId) > 0 then
-                LogInfo("[OrangeCrafters] Turning In")
-                yield("/callback RecipeNote true -1")
-                State = CharacterState.turnIn
-                LogInfo("[OrangeCrafters] State Change: TurnIn")
-            elseif os.clock() - ArtisanTimeoutStartTime > 5 then
-                LogInfo("[OrangeCrafters] Artisan not starting, StopFlag = true")
-                -- if artisan has not entered crafting mode within 15s of being called,
-                -- then you're probably out of mats so just stop the script
-                yield("/echo Artisan took too long to start. Are you out of intermediate mat materials?")
-                StopFlag = true
-            end
-        end
-    elseif not LogInfo("[OrangeCrafters] Check new Artisan craft") and not IsAddonVisible("Synthesis") then -- GetCharacterCondition(CharacterCondition.craftingMode) then
-        LogInfo("[OrangeCrafters] Attempting to craft "..(slots - MinInventoryFreeSlots).." of recipe #"..RecipeId)
-        ArtisanTimeoutStartTime = 0
-        ArtisanCraftItem(RecipeId, slots - MinInventoryFreeSlots)
-        yield("/wait 5")
-    else
-        LogInfo("[OrangeCrafters] Else condition hit")
-    end
-end
-
-function GoToHubCity()
-    if not IsPlayerAvailable() then
-        yield("/wait 1")
-    elseif not IsInZone(SelectedHubCity.zoneId) then
-        TeleportTo(SelectedHubCity.aetheryte)
-    else
-        State = CharacterState.ready
-        LogInfo("State Change: Ready")
-    end
 end
 
 function TurnIn()
@@ -693,12 +449,11 @@ end
 CharacterState =
 {
     ready = Ready,
-    crafting = Crafting,
+    gathering = Gathering,
     goToHubCity = GoToHubCity,
     turnIn = TurnIn,
     scripExchange = ScripExchange,
     processRetainers = ProcessRetainers,
-    gcTurnIn = ExecuteGrandCompanyTurnIn
 }
 
 StopFlag = false
