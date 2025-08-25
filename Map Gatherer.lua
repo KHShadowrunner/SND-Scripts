@@ -112,7 +112,7 @@ TimewornMapIds = {
     -- Dawntrail Maps
     {itemId=43556, itemName="Timeworn Loboskin Map"},
     {itemId=43557, itemName="Timeworn Br'aaxskin Map"}
-    {itemId=46185, itemName="Timeworn Gargantuaskin Map")
+    {itemId=46185, itemName="Timeworn Gargantuaskin Map"}
 }
 
 function GetMapInfo()
@@ -311,4 +311,5 @@ else
     until not Multimode and (not HasMapAllowance() or (Inventory.GetItemCount(MapInfo.itemId) > 0 and not Mail))
 yield("/xldisableplugin Gatherbuddy Reborn")
 end
+
 
