@@ -3,8 +3,6 @@
 author: 'pot0to (https://ko-fi.com/pot0to) || Updated by: Minnu'
 version: 2.0.0
 description: Short script to enable GBR and gather a map. Allows for multi-character gathering but will have to be manually edited to support.
-plugin_dependencies:
-- Gatherbuddy Reborn (And its dependencies) 
 configs:
   MapName:
     description: The name of the map to be gathered (MUST MATCH THE MAP SET IN GBR)
@@ -111,7 +109,7 @@ TimewornMapIds = {
 
     -- Dawntrail Maps
     {itemId=43556, itemName="Timeworn Loboskin Map"},
-    {itemId=43557, itemName="Timeworn Br'aaxskin Map"}
+    {itemId=43557, itemName="Timeworn Br'aaxskin Map"},
     {itemId=46185, itemName="Timeworn Gargantuaskin Map"}
 }
 
@@ -311,5 +309,6 @@ else
     until not Multimode and (not HasMapAllowance() or (Inventory.GetItemCount(MapInfo.itemId) > 0 and not Mail))
 yield("/xldisableplugin Gatherbuddy Reborn")
 end
+
 
 
