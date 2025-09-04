@@ -278,7 +278,7 @@ function Ready()
         end
         --]]
     elseif not HasMapAllowance() then
-        yield("Do I get here?")
+        yield("/echo Do I get here?")
         if Multimode then
             State = CharacterState.swapping
         end
@@ -309,6 +309,7 @@ else
     until not Multimode and (not HasMapAllowance() or (Inventory.GetItemCount(MapInfo.itemId) > 0 and not Mail))
 yield("/xldisableplugin Gatherbuddy Reborn")
 end
+
 
 
 
