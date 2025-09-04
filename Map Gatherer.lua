@@ -59,7 +59,7 @@ and relogs as the next character.
 ]]
 yield("/xlenableplugin Gatherbuddy Reborn")
 yield("/wait 5")
-MapName = GetConfig("MapName") -- must match the map on your GBR list
+MapName = Config.Get("MapName") -- must match the map on your GBR list
 
 Multimode = false
 Characters =
@@ -309,6 +309,7 @@ else
     until not Multimode and (not HasMapAllowance() or (Inventory.GetItemCount(MapInfo.itemId) > 0 and not Mail))
 yield("/xldisableplugin Gatherbuddy Reborn")
 end
+
 
 
 
