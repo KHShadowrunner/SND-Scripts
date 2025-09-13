@@ -457,8 +457,7 @@ for _, alliedSociety in ipairs(ToDoList) do
             yield("/callback SelectIconString true 0")
             repeat
                 yield("/wait 1")
-            until Player.Available
-            yield("/wait 1")
+            until Player.Available and not Entity.Target
             yield ("/echo Quest "..i.." picked up.")
         end
     
