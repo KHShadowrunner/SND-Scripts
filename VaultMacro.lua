@@ -22,19 +22,6 @@ function HasStatus(id)
     return false
 end
 
-function LeaveDuty()
-    while Svc.Condition[34] do
-        if Addons.GetAddon("SelectYesno").Ready then
-            yield("/callback SelectYesno true 0")
-        elseif Addons.GetAddon("ContentsFinderMenu").Ready then
-            yield("/callback ContentsFinderMenu true 0")
-        else
-            yield("/dutyfinder")
-        end
-        yield("/wait 0.1")
-    end
-end
-
 function MeshCheck()
     local was_ready = IPC.vnavmesh.IsReady()
     if not IPC.vnavmesh.IsReady() then
@@ -69,13 +56,11 @@ looptotal = 80
 for i = 1, looptotal, 1 do
 
 -- Get into the Instance
-    yield("/hold SHIFT")
-    yield("/send D")
-    yield("/release SHIFT")
-    yield('/waitaddon ContentsFinder')
-    yield("/pcall ContentsFinder True 12 0") --Duty LoadD
-    yield("/wait 1.5")
-    yield("/pcall ContentsFinderConfirm True 8")
+    Instances.DutyFinder.IsUnrestrictedParty = true
+    Instances.DutyFinder.IsLevelSync = true
+    Instances.DutyFinder:QueueDuty(34)
+    yield("/waitaddon ContentsFinderConfirm")
+    if Addons.GetAddon("ContentsFinderConfirm").Ready then yield("/click ContentsFinderConfirm Commence") end
     repeat
       yield("/wait 1")
     until Svc.ClientState.TerritoryType == 1066 and Addons.GetAddon("_Image").Ready
@@ -159,7 +144,7 @@ for i = 1, looptotal, 1 do
 
 -- Take us out
     yield('/wait 3')
-    LeaveDuty()
+    InstancedContent.LeaveCurrentContent()
     yield('/echo Loop: ' .. i)
     repeat
         yield('/wait 0.5')
