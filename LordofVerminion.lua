@@ -35,12 +35,11 @@ configs:
   VerminionRuns:
     default: 5
     description: The number of runs of Verminion
-    min: 1
 
 [[End Metadata]]
 --]=====]
 
-local need_to_play = Config.Get("VerminionRuns")
+need_to_play = Config.Get("VerminionRuns")
 
 --[[
 ********************************************************************************
@@ -48,16 +47,13 @@ local need_to_play = Config.Get("VerminionRuns")
 ********************************************************************************
 ]]
 
-for i=need_to_play, 1, -1 do
-    if not Addons.GetAddon("ContentsFinder").Ready then yield("/dutyfinder") end
-    yield("/waitaddon ContentsFinder")
-    nodeDetails = Addons.GetAddon("ContentsFinder"):GetNode(1, 52, 61006, 2, 4, 2)
-    while nodeDetails.IsVisible == false do
-        yield("/pcall ContentsFinder true 12 1")
-        yield("/pcall ContentsFinder true 3 7")
-    end
-
-    yield("/pcall ContentsFinder true 12 0 <wait.1>")
+gamesplayed = 0
+for i = need_to_play, 1, -1 do
+    Instances.DutyFinder.IsUnrestrictedParty = false
+    Instances.DutyFinder.IsLevelSync = false
+    Instances.DutyFinder:QueueDuty(578)
+    gamesplayed = gamesplayed + 1
+    yield("/waitaddon ContentsFinderConfirm")
     if Addons.GetAddon("ContentsFinderConfirm").Ready then yield("/click ContentsFinderConfirm Commence") end
 
     while not Addons.GetAddon("LovmResult").Ready do
@@ -70,4 +66,5 @@ for i=need_to_play, 1, -1 do
         zone = Svc.ClientState.TerritoryType
         yield("/wait 1")
     until zone ~= 506
+    yield("/echo Games played: " .. gamesplayed)
 end    
