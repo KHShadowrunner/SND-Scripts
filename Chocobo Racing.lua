@@ -33,12 +33,7 @@ for loops = totalruns, 1, -1 do
 
     zone = Svc.ClientState.TerritoryType 
 
-    if not Addons.GetAddon("JournalDetail").Ready then yield("/dutyfinder") end
-    yield("/waitaddon JournalDetail")
-    yield("/pcall ContentsFinder true 1 9")
-    yield("/pcall ContentsFinder true 12 1")
-    yield("/pcall ContentsFinder true 3 15")
-    yield("/pcall ContentsFinder true 12 0 <wait.1>")
+    Instances.DutyFinder:QueueRoulette(22)
     yield("/waitaddon ContentsFinderConfirm")
     if Addons.GetAddon("ContentsFinderConfirm").Ready then yield("/click ContentsFinderConfirm Commence") end
 
@@ -75,6 +70,7 @@ for loops = totalruns, 1, -1 do
     until zone ~= 390
 end
 yield("/echo Chocobo Racing Complete.")
+
 
 
 
