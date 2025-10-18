@@ -12,7 +12,7 @@ configs:
   FirstAlliedSociety:
     description: The first allied society from which to accept quests.
     type: list
-    choices: ["Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja"]
+    choices: ["Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja", "Yok Huy"]
     is_choice: true
     required: true
   FirstClass:
@@ -24,7 +24,7 @@ configs:
   SecondAlliedSociety:
     description: The second allied society from which to accept quests.
     type: list
-    choices: [" ", "Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja"]
+    choices: [" ", "Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja", "Yok Huy"]
     is_choice: true
   SecondClass:
     description: Class to assign for second allied society.
@@ -34,7 +34,7 @@ configs:
   ThirdAlliedSociety:
     description: The third allied society from which to accept quests.
     type: list
-    choices: [" ", "Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja"]
+    choices: [" ", "Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja", "Yok Huy"]
     is_choice: true
   ThirdClass:
     description: Class to assign for third allied society.
@@ -44,7 +44,7 @@ configs:
   FourthAlliedSociety:
     description: The fourth allied society from which to accept quests.
     type: list
-    choices: [" ", "Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja"]
+    choices: [" ", "Amalj'aa", "Sylphs", "Kobolds", "Sahagin", "Ixal", "Vanu Vanu", "Vath", "Moogles", "Kojin", "Ananta", "Namazu", "Pixies", "Qitari", "Dwarves", "Arkasodara", "Loporrits", "Omicrons", "Pelupelu", "Mamool Ja", "Yok Huy"]
     is_choice: true
   FourthClass:
     description: Class to assign for fourth allied society.
@@ -339,6 +339,18 @@ AlliedSocietiesTable = {
         z                 = 730.5,
         zoneId            = 1189,
         aetheryteName     = "Mamook",
+        expac             = "Dawntrail"
+    },
+    yokhuy = {
+        alliedSocietyName = "Yok Huy",
+        questGiver        = "Vuyargur",
+        mainQuests        = { first = 5330, last = 5335 },
+        dailyQuests       = { first = 5336, last = 5363 },
+        x                 = 495.40,
+        y                 = 142.24,
+        z                 = 784.53,
+        zoneId            = 1187,
+        aetheryteName     = "Worlar's Echo",
         expac             = "Dawntrail"
     }
 }
