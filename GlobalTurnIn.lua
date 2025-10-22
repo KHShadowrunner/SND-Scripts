@@ -2701,6 +2701,10 @@ while IsThereTradeItem() do
         else
             --TeleportGC()
             GetOUT()
+            yield("/wait 1")
+            if Addons.GetAddon("SelectString").Ready then
+                yield("/pcall SelectString true -1")
+            end
             GcDelivero()
         end
     end
