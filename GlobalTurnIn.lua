@@ -2314,21 +2314,27 @@ function GetOUT()
         yield("/wait 0.1")
         if Addons.GetAddon("SelectYesno").Ready then
             yield("/pcall SelectYesno true 0")
+            yield("/wait 0.3")
         end
         if Addons.GetAddon("SelectIconString").Ready then
             yield("/pcall SelectIconString true -1")
+            yield("/wait 0.3")
         end
         if Addons.GetAddon("SelectString").Ready then
             yield("/pcall SelectString true -1")
+            yield("/wait 0.3")
         end
         if Addons.GetAddon("ShopExchangeItem").Ready then
             yield("/pcall ShopExchangeItem true -1")
+            yield("/wait 0.3")
         end
         if Addons.GetAddon("RetainerList").Ready then
             yield("/pcall RetainerList true -1")
+            yield("/wait 0.3")
         end
         if Addons.GetAddon("InventoryRetainer").Ready then
             yield("/pcall InventoryRetainer true -1")
+            yield("/wait 0.3")
         end
     until Player.Available
 end
