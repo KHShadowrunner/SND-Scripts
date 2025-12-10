@@ -444,7 +444,7 @@ for _, alliedSociety in ipairs(ToDoList) do
 
         local destination = Vector3(alliedSocietyTable.x, alliedSocietyTable.y, alliedSocietyTable.z)
         IPC.vnavmesh.PathfindAndMoveTo(destination, true)
-
+        yield("/wait 1")
         repeat
             yield("/wait 1")
         until not IPC.vnavmesh.IsRunning() and not IPC.vnavmesh.PathfindInProgress()
