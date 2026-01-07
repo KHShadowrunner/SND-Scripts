@@ -57,28 +57,27 @@ function MeshCheck()
         Dalamud.Log("[Debug]Navmesh ready!")
     end
 end
-
-if not Addons.GetAddon("ContentsFinder").Ready then yield("/dutyfinder") end
-yield("/waitaddon ContentsFinder")
-nodeDetails = Addons.GetAddon("ContentsFinder"):GetNode(1, 52, 6, 2, 4, 2)
-while nodeDetails.IsVisible == false do
-    yield("/pcall ContentsFinder true 12 1")
-    yield("/pcall ContentsFinder true 3 1")
-end
-yield("/pcall ContentsFinder true 12 0 <wait.1>")
-if Addons.GetAddon("ContentsFinderConfirm").Ready then yield("/click ContentsFinderConfirm Commence") end
+zone = Svc.ClientState.TerritoryType
+if zone ~= 579 then
+    Instances.DutyFinder.IsUnrestrictedParty = true
+    Instances.DutyFinder.IsLevelSync = true
+    Instances.DutyFinder:QueueDuty(195)
+    yield("/waitaddon ContentsFinderConfirm")
+    if Addons.GetAddon("ContentsFinderConfirm").Ready then yield("/click ContentsFinderConfirm Commence") end
 repeat
     zone = Svc.ClientState.TerritoryType
     yield("/wait 1")
 until zone == 579
-WalkTo(8.87, -1.03, -6.38,1)
+end
+WalkTo(-8.03, -0.98, -7.18,1)
 repeat
-    yield("/target Prideful Stag")
+    yield("/target Wyra")
     yield("/wait 0.5")
-until Entity.Target.Name == "Prideful Stag"
+until Entity.Target.Name == "Wyra “Greenhands” Lyehga"
 repeat
     yield("/interact")
     yield("/wait 0.5")
+    
 until Addons.GetAddon("SelectIconString").Ready
 yield("/pcall SelectIconString true 0")
 yield("/waitaddon TripleTriadRequest")
@@ -90,7 +89,3 @@ yield("/waitaddon ContentsFinderMenu")
 yield("/callback ContentsFinderMenu true 0")
 yield("/waitaddon SelectYesno")
 yield("/callback SelectYesno true 0")
-
-
-
-
