@@ -16,7 +16,6 @@ configs:
   NumberOfRacesToRun:
     default: 20
     description: The number of races you want to run.
-    min: 1
     required: true
 
 [[End Metadata]]
@@ -70,6 +69,7 @@ for loops = totalruns, 1, -1 do
     until zone ~= 390
 end
 yield("/echo Chocobo Racing Complete.")
+
 
 
 
