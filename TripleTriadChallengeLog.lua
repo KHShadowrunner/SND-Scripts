@@ -76,10 +76,13 @@ repeat
 until Entity.Target.Name == "Wyra “Greenhands” Lyehga"
 repeat
     yield("/interact")
-    yield("/wait 0.5")
-    
+    yield("/wait 0.5")    
 until Addons.GetAddon("SelectIconString").Ready
+yield("/saucy tt play 15")
+yield("/saucy tt go")
 yield("/pcall SelectIconString true 0")
+yield("/wait 0.5")
+yield("/click Talk Click")
 yield("/waitaddon TripleTriadRequest")
 repeat
     yield("/wait 1")
@@ -89,3 +92,7 @@ yield("/waitaddon ContentsFinderMenu")
 yield("/callback ContentsFinderMenu true 0")
 yield("/waitaddon SelectYesno")
 yield("/callback SelectYesno true 0")
+
+
+
+
