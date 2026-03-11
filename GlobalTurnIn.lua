@@ -2616,6 +2616,7 @@ while IsThereTradeItem() do
         yield("/echo Gordian Count: "..GordianTurnInCount)
         yield("/echo Midan Count: "..MidanTurnInCount)
         yield("/echo Alexandrian: "..AlexandrianTurnInCount)
+        GetOUT()
         TeleportToIdlishire()
         local NPCTarget = Vector3(-19.0, 211.0, -35.9)
         local DistanceToSabina = Vector3.Distance(Entity.Player.Position, NPCTarget)
@@ -2631,6 +2632,7 @@ while IsThereTradeItem() do
         yield("/echo Deltascape Count: "..DeltascapeTurnInCount)
         yield("/echo Sigmascape Count: "..SigmascapeTurnInCount)
         yield("/echo Alphascape Count: "..AlphascapeTurnInCount)
+        GetOUT()
         TeleportToRhalgr()
         local NPCTarget = Vector3(125.0, 0.7, 40.8)
         local DistanceToGelfradus = Vector3.Distance(Entity.Player.Position, NPCTarget)
@@ -2646,6 +2648,7 @@ while IsThereTradeItem() do
         yield("/echo Edengate Count: "..EdengateTurnInCount)
         yield("/echo Edenverse Count: "..EdenverseTurnInCount)
         yield("/echo Edenpromise Count: "..EdenpromiseTurnInCount)
+        GetOUT()
         TeleportToEulmore()
         local NPCTarget = Vector3(-55.854, 84.194, 14.951)
         local DistanceToYhal = Vector3.Distance(Entity.Player.Position, NPCTarget)
@@ -2661,6 +2664,7 @@ while IsThereTradeItem() do
         yield("/echo Asphodelos Count: "..AsphodelosTurnInCount)
         yield("/echo Abyssos Count: "..AbyssosTurnInCount)
         yield("/echo Anabaseios Count: "..AnabaseiosTurnInCount)
+        GetOUT()
         TeleportToRadz()
         local NPCTarget = Vector3(-42.701,0.920,-77.701)
         local DistanceToDjole = Vector3.Distance(Entity.Player.Position, NPCTarget)
@@ -2674,6 +2678,7 @@ while IsThereTradeItem() do
         TurnIn(DjoleTable,false)
     elseif VintageTurnInCount >= 1 and Inventory.GetFreeInventorySlots() ~= 0 then
         yield("/echo Vintage Count: "..VintageTurnInCount)
+        GetOUT()
         TeleportToMor()
         local NPCTarget = Vector3(38.292,29,-796.534)
         local DistanceToKakalan = Vector3.Distance(Entity.Player.Position, NPCTarget)
@@ -2707,10 +2712,6 @@ while IsThereTradeItem() do
         else
             --TeleportGC()
             GetOUT()
-            yield("/wait 1")
-            if Addons.GetAddon("SelectString").Ready then
-                yield("/pcall SelectString true -1")
-            end
             GcDelivero()
         end
     end
