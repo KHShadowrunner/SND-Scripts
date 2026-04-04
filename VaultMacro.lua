@@ -1,14 +1,3 @@
---[[
-//////////////////////////////////////////////////////////////////////////////////////////////
-//                                   WARNING                                                //
-//////////////////////////////////////////////////////////////////////////////////////////////
-
-This LUA script is for personal use. It is designed specifically for a specific setup and with a specific
-BLU job list in mind. It will almost always not work unless configured explicitly as it expects. Even
-then, it is prone to failing for one reason or another. You are almost entirely on your own if you wish to try
-to use it. There are surely MUCH more optimal ways to do this. But this is mine. And it works for me.
---]]
-
 import("System.Numerics")
 
 function HasStatus(id)
@@ -86,39 +75,39 @@ for i = 1, looptotal, 1 do
     yield('/wait 0.5')
     yield('/send F11 <wait.0.5>')
     yield('/blueaction "J Kick"')
-    yield('/wait 0.5')
-    Actions.ExecuteAction(11419) -- The Ram's Voice
+    yield('/wait 1')
+    yield('/blueaction "The Ram'.. "'" .. 's Voice"') -- The Ram's Voice
     yield('/wait 2.5')
     yield('/blueaction "Shock Strike"') -- Shock Strike
     yield('/wait 1')
     yield('/target Vault Ostiary')
-    Actions.ExecuteAction(11430) -- Glass Dance
+    yield('/blueaction "Glass Dance"') -- Glass Dance
     yield('/wait 1')
-    Actions.ExecuteAction(23287) -- Both Ends
+    yield('/blueaction "Both Ends"') -- Both Ends
     yield('/wait 0.7')
 
     while Svc.Condition[26] do
-        Actions.ExecuteAction(11394)
+        yield('/blueaction "Mind Blast"')
         yield('/wait 2.5')
     end
 
 -- Sprint to Pack2
-    Actions.ExecuteAction(3)
+    yield('/action "Sprint"') -- Sprint
     WalkTo(51.53,-299.98,-9.55,1)
 
 -- Kill Pack 2 Ez
-    Actions.ExecuteAction(11419) -- The Ram's Voice
+    yield('/blueaction "The Ram'.. "'" .. 's Voice"') -- The Ram's Voice
     yield('/wait 2')
-    Actions.ExecuteAction(7561)
+    yield('/action "Swiftcast"') -- Swiftcast
     yield('/wait 1')
-    Actions.ExecuteAction(23277)
+    yield('/blueaction "Ultravibration"') -- Ultravibration
 
 -- Run to Pack 3
     WalkTo(-8.25,-299.99,-30.000,1)
 
 -- Attack 3rd Pack
     yield('/wait 1')
-    Actions.ExecuteAction(11419) -- The Ram's Voice
+    yield('/blueaction "The Ram'.. "'" .. 's Voice"') -- The Ram's Voice
     yield('/wait 2')
     WalkTo(-11.01,-299.99,-30.000,1)
     yield('/wait 0.8')
@@ -131,7 +120,7 @@ for i = 1, looptotal, 1 do
     yield('/wait 2.5')
 
     while Svc.Condition[26] do
-        Actions.ExecuteAction(11394)
+        yield('/blueaction "Mind Blast"')
         yield('/wait 2.5')
     end
 
@@ -140,7 +129,7 @@ for i = 1, looptotal, 1 do
 
 -- Kill Last Pack
     yield('/wait 1')
-    Actions.ExecuteAction(11419) -- The Ram's Voice
+    yield('/blueaction "The Ram'.. "'" .. 's Voice"') -- The Ram's Voice
     yield('/wait 2')
     yield('/blueaction "Surpanakha"')
     yield('/wait 1')
@@ -158,12 +147,13 @@ for i = 1, looptotal, 1 do
     yield('/wait 1')
 
     while Svc.Condition[26] do
-        Actions.ExecuteAction(11394)
+        yield('/blueaction "Mind Blast"')
         yield('/wait 2.5')
     end
 
 -- Take us out
     yield('/wait 3')
+    yield('/echo Loop Number: ' .. i .. ' completed!')
     InstancedContent.LeaveCurrentContent()
     repeat
         yield('/wait 0.5')
