@@ -50,12 +50,15 @@ function WalkTo(valuex, valuey, valuez, stopdistance)
 end
 
 -- Initialization
-looptotal = 80
+looptotal = 90
 
 -- Start Macro
 for i = 1, looptotal, 1 do
-
+    if  Svc.ClientState.TerritoryType == 1066 then
+        goto group1
+    end
 -- Get into the Instance
+    yield('/echo Starting Loop Number: ' .. i)
     Instances.DutyFinder.IsUnrestrictedParty = true
     Instances.DutyFinder.IsLevelSync = true
     Instances.DutyFinder:QueueDuty(34)
@@ -70,58 +73,66 @@ for i = 1, looptotal, 1 do
         if Player.Entity and Player.Entity.IsCasting then
             yield('/wait 0.5')
         else
-            yield("/hold CONTROL")
-            yield('/send KEY_3')
-            yield("/release CONTROL")
+            yield('/blueaction "Basic Instinct"')
         end
     end
     yield('/wait 2')
-
+   
 -- Moving up to first pack
+    ::group1::
     WalkTo(-0.47,-299.982,56.104, 1)
 
 -- Attack First Pack and recheck for Basic
     yield('/wait 0.5')
-
     yield('/send F11 <wait.0.5>')
-    yield('/send 51 <wait.0.3>')
-    yield('/send 49 <wait.2.5>')
-    yield('/send 53 <wait.1>')
+    yield('/blueaction "J Kick"')
+    yield('/wait 0.5')
+    Actions.ExecuteAction(11419) -- The Ram's Voice
+    yield('/wait 2.5')
+    yield('/blueaction "Shock Strike"') -- Shock Strike
+    yield('/wait 1')
     yield('/target Vault Ostiary')
-    yield('/send 52 <wait.1>')
-    yield('/send 54 <wait.0.7>')
+    Actions.ExecuteAction(11430) -- Glass Dance
+    yield('/wait 1')
+    Actions.ExecuteAction(23287) -- Both Ends
+    yield('/wait 0.7')
 
     while Svc.Condition[26] do
-        yield('/send 50 <wait.2.5>')
+        Actions.ExecuteAction(11394)
+        yield('/wait 2.5')
     end
 
 -- Sprint to Pack2
-    yield('/hold CONTROL')
-    yield('/send KEY_0 <wait.0.1>')
-    yield('/release CONTROL')
+    Actions.ExecuteAction(3)
     WalkTo(51.53,-299.98,-9.55,1)
 
 -- Kill Pack 2 Ez
-    yield('/send KEY_1 <wait.2>')
-    yield('/send KEY_9 <wait.1>')
-    yield('/send KEY_0 ')
+    Actions.ExecuteAction(11419) -- The Ram's Voice
+    yield('/wait 2')
+    Actions.ExecuteAction(7561)
+    yield('/wait 1')
+    Actions.ExecuteAction(23277)
 
 -- Run to Pack 3
     WalkTo(-8.25,-299.99,-30.000,1)
 
 -- Attack 3rd Pack
     yield('/wait 1')
-    yield('/send KEY_1 <wait.2>')
+    Actions.ExecuteAction(11419) -- The Ram's Voice
+    yield('/wait 2')
     WalkTo(-11.01,-299.99,-30.000,1)
-    yield('/wait 1')
+    yield('/wait 0.8')
     yield('/target Vault Deacon <wait.0.2>')
     yield('/send 70')
     yield('/wait 0.5')
-    yield('/send KEY_7 <wait.4.5>')
-    yield('/send KEY_7 <wait.2.5>')
+    yield('/blueaction "Phantom Flurry"')
+    yield('/wait 4.5')
+    yield('/blueaction "Phantom Flurry"')
+    yield('/wait 2.5')
 
     while Svc.Condition[26] do
-        yield('/send 50 <wait.2.5>')
+        Actions.ExecuteAction(11394)
+        yield('/wait 2.5')
     end
 
 -- Move to Final Pack
@@ -129,23 +140,31 @@ for i = 1, looptotal, 1 do
 
 -- Kill Last Pack
     yield('/wait 1')
-    yield('/send KEY_1 <wait.2>')
-    yield('/send KEY_8 <wait.0.8>')
-    yield('/send KEY_8 <wait.0.8>')
-    yield('/send KEY_8 <wait.0.8>')
-    yield('/send KEY_8 <wait.0.8>')
-    yield('/send RETURN')
-    yield('/send KEY_3 <wait.1.5>')
-    yield('/send KEY_5 <wait.1>')
+    Actions.ExecuteAction(11419) -- The Ram's Voice
+    yield('/wait 2')
+    yield('/blueaction "Surpanakha"')
+    yield('/wait 1')
+    yield('/blueaction "Surpanakha"')
+    yield('/wait 1')
+    yield('/blueaction "Surpanakha"')
+    yield('/wait 1')
+    yield('/blueaction "Surpanakha"')
+    yield('/wait 1')
+    yield('/send F11')
+    yield('/wait 0.5')
+    yield('/blueaction "J Kick"')
+    yield('/wait 1.5')
+    yield('/blueaction "Shock Strike"') -- Shock Strike
+    yield('/wait 1')
 
     while Svc.Condition[26] do
-        yield('/send 50 <wait.2.5>')
+        Actions.ExecuteAction(11394)
+        yield('/wait 2.5')
     end
 
 -- Take us out
     yield('/wait 3')
     InstancedContent.LeaveCurrentContent()
-    yield('/echo Loop: ' .. i)
     repeat
         yield('/wait 0.5')
     until not (Svc.ClientState.TerritoryType == 1066) and not Svc.Condition[34] and not Svc.Condition[56] and not Svc.Condition[45]
@@ -156,4 +175,4 @@ yield('/shutdown')
 yield('/send TAB <wait.0.5>')
 yield('/send TAB <wait.0.5>')
 yield('/wait 1')
---yield('/send RETURN')
+yield('/send RETURN')
