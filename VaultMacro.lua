@@ -1,3 +1,14 @@
+--[[
+//////////////////////////////////////////////////////////////////////////////////////////////
+//                                   WARNING                                                //
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+This LUA script is for personal use. It is designed specifically for a specific setup and with a specific
+BLU job list in mind. It will almost always not work unless configured explicitly as it expects. Even
+then, it is prone to failing for one reason or another. You are almost entirely on your own if you wish to try
+to use it. There are surely MUCH more optimal ways to do this. But this is mine. And it works for me.
+--]]
+
 import("System.Numerics")
 
 function HasStatus(id)
