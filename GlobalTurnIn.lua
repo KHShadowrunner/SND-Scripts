@@ -155,53 +155,56 @@ ItemIdArmoryTable =
     [16421] = 3201,
     [16427] = 3201,
 -- Edensgate
-[27015] = 3201,
-[27021] = 3201,
-[27027] = 3201,
-[27033] = 3201,
-[27039] = 3201,
-[27045] = 3201,
-[27051] = 3201,
+    [27015] = 3201,
+    [27021] = 3201,
+    [27027] = 3201,
+    [27033] = 3201,
+    [27039] = 3201,
+    [27045] = 3201,
+    [27051] = 3201,
 -- Edensverse
-[29117] = 3201,
-[29123] = 3201,
-[29129] = 3201,
-[29135] = 3201,
-[29141] = 3201,
-[29147] = 3201,
-[29153] = 3201,
+    [29117] = 3201,
+    [29123] = 3201,
+    [29129] = 3201,
+    [29135] = 3201,
+    [29141] = 3201,
+    [29147] = 3201,
+    [29153] = 3201,
 -- Edenspromise
-[32356] = 3201,
-[32362] = 3201,
-[32368] = 3201,
-[32374] = 3201,
-[32380] = 3201,
-[32386] = 3201,
-[32392] = 3201,
+    [32356] = 3201,
+    [32362] = 3201,
+    [32368] = 3201,
+    [32374] = 3201,
+    [32380] = 3201,
+    [32386] = 3201,
+    [32392] = 3201,
 -- Asphodelos
-[34965] = 3201,
-[34970] = 3201,
-[34975] = 3201,
-[34980] = 3201,
-[34985] = 3201,
-[34990] = 3201,
-[34995] = 3201,
+    [34965] = 3201,
+    [34970] = 3201,
+    [34975] = 3201,
+    [34980] = 3201,
+    [34985] = 3201,
+    [34990] = 3201,
+    [34995] = 3201,
 -- Abyssos
-[37876] = 3201,
-[37881] = 3201,
-[37886] = 3201,
-[37891] = 3201,
-[37896] = 3201,
-[37901] = 3201,
-[37906] = 3201,
+    [37876] = 3201,
+    [37881] = 3201,
+    [37886] = 3201,
+    [37891] = 3201,
+    [37896] = 3201,
+    [37901] = 3201,
+    [37906] = 3201,
 -- Anabaseios
-[39960] = 3201,
-[39965] = 3201,
-[39970] = 3201,
-[39975] = 3201,
-[39980] = 3201,
-[39985] = 3201,
-[39990] = 3201,
+    [39960] = 3201,
+    [39965] = 3201,
+    [39970] = 3201,
+    [39975] = 3201,
+    [39980] = 3201,
+    [39985] = 3201,
+    [39990] = 3201,
+-- Lightweight
+-- Cruiserweight
+-- Heavyweight
 
  -- ArmoryBody = 3202
  -- Vintage
@@ -1974,7 +1977,7 @@ function TeleportToIdlishire()
             if Svc.Condition[27] then
                 yield("/wait 2")
             else
-                yield("/tp Idyllshire")
+                yield("/li Idyllshire")
                 yield("/wait 2") 
             end
         end
@@ -1991,7 +1994,7 @@ function TeleportToRhalgr()
             if Svc.Condition[27] then
                 yield("/wait 2")
             else
-                yield("/tp Rhalgr")
+                yield("/li Rhalgr")
                 yield("/wait 2") 
             end
         end
@@ -2008,7 +2011,7 @@ function TeleportToEulmore()
             if Svc.Condition[27] then
                 yield("/wait 2")
             else
-                yield("/tp Eulmore")
+                yield("/li Eulmore")
                 yield("/wait 2") 
             end
         end
@@ -2025,7 +2028,7 @@ function TeleportToRadz()
             if Svc.Condition[27] then
                 yield("/wait 2")
             else
-                yield("/tp Radz-at-Han")
+                yield("/li Radz-at-Han")
                 yield("/wait 2") 
             end
         end
@@ -2042,7 +2045,7 @@ function TeleportToMor()
             if Svc.Condition[27] then
                 yield("/wait 2")
             else
-                yield("/tp Revenant's Toll")
+                yield("/li Revenant's Toll")
                 yield("/wait 2") 
             end
         end
@@ -2061,13 +2064,13 @@ function TeleportGC()
                 else
                 if Player.GrandCompany == 1 then
                     yield("/pcall SelectString true -1")
-                    yield("/tp Limsa")
+                    yield("/li Limsa")
                 elseif Player.GrandCompany == 2 then
                     yield("/pcall SelectString true -1")
-                    yield("/tp Gridania")
+                    yield("/li Gridania")
                 elseif Player.GrandCompany == 3 then
                     yield("/pcall SelectString true -1")
-                    yield("/tp Ul")
+                    yield("/li Ul")
                 end
                 yield("/wait 2")
             end
@@ -2612,7 +2615,7 @@ end
 
 while IsThereTradeItem() do
     yield("/wait 0.1")
-    if (GordianTurnInCount >= 1 or AlexandrianTurnInCount >= 1 or MidanTurnInCount >= 1) and Inventory.GetFreeInventorySlots() ~= 0 then
+    if (GordianTurnInCount >= 1 or AlexandrianTurnInCount >= 1 or MidanTurnInCount >= 1) then
         yield("/echo Gordian Count: "..GordianTurnInCount)
         yield("/echo Midan Count: "..MidanTurnInCount)
         yield("/echo Alexandrian: "..AlexandrianTurnInCount)
@@ -2628,7 +2631,7 @@ while IsThereTradeItem() do
             TurnIn(SabinaTable,true)
         end
         TurnIn(SabinaTable,false)
-    elseif (DeltascapeTurnInCount >= 1 or SigmascapeTurnInCount >= 1 or AlphascapeTurnInCount >= 1) and Inventory.GetFreeInventorySlots() ~= 0 then
+    elseif (DeltascapeTurnInCount >= 1 or SigmascapeTurnInCount >= 1 or AlphascapeTurnInCount >= 1) then
         yield("/echo Deltascape Count: "..DeltascapeTurnInCount)
         yield("/echo Sigmascape Count: "..SigmascapeTurnInCount)
         yield("/echo Alphascape Count: "..AlphascapeTurnInCount)
@@ -2644,7 +2647,7 @@ while IsThereTradeItem() do
             TurnIn(GelfradusTable,true)
         end
         TurnIn(GelfradusTable,false)
-    elseif (EdengateTurnInCount >= 1 or EdenverseTurnInCount >= 1 or EdenpromiseTurnInCount >= 1) and Inventory.GetFreeInventorySlots() ~= 0 then
+    elseif (EdengateTurnInCount >= 1 or EdenverseTurnInCount >= 1 or EdenpromiseTurnInCount >= 1) then
         yield("/echo Edengate Count: "..EdengateTurnInCount)
         yield("/echo Edenverse Count: "..EdenverseTurnInCount)
         yield("/echo Edenpromise Count: "..EdenpromiseTurnInCount)
@@ -2660,7 +2663,7 @@ while IsThereTradeItem() do
             TurnIn(YhalTable,true)
         end
         TurnIn(YhalTable,false)
-    elseif (AsphodelosTurnInCount >= 1 or AbyssosTurnInCount >= 1 or AnabaseiosTurnInCount >= 1) and Inventory.GetFreeInventorySlots() ~= 0 then
+    elseif (AsphodelosTurnInCount >= 1 or AbyssosTurnInCount >= 1 or AnabaseiosTurnInCount >= 1) then
         yield("/echo Asphodelos Count: "..AsphodelosTurnInCount)
         yield("/echo Abyssos Count: "..AbyssosTurnInCount)
         yield("/echo Anabaseios Count: "..AnabaseiosTurnInCount)
